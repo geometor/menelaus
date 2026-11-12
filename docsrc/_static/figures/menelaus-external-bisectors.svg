@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" class="euclid-graphic" data-graphic-id="menelaus-external-bisectors">
+  <style>
+.euclid-graphic {
+    --svg-bg: #fafaf9;
+    --ink: #1c1917;
+    --label-halo: rgba(250, 250, 249, 0.92);
+    --given: #334155;
+    --aux: #0284c7;
+    --cevian: #059669;
+    --transversal: #d97706;
+    --limb: #64748b;
+    --pt-given: #0f172a;
+    --pt-trace: #d97706;
+    --pt-cevian: #059669;
+    --pt-aux: #0284c7;
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic {
+      --svg-bg: #141417;
+      --ink: #f4f4f5;
+      --label-halo: rgba(20, 20, 23, 0.92);
+      --given: #cbd5e1;
+      --aux: #38bdf8;
+      --cevian: #34d399;
+      --transversal: #fbbf24;
+      --limb: #94a3b8;
+      --pt-given: #f1f5f9;
+      --pt-trace: #fbbf24;
+      --pt-cevian: #34d399;
+      --pt-aux: #38bdf8;
+    }
+  }
+  .euclid-graphic .bg { fill: var(--svg-bg); }
+  .euclid-graphic .geom-line { fill: none; stroke: var(--given); stroke-width: 1.75; stroke-linecap: round; }
+  .euclid-graphic .geom-line.auxiliary, .euclid-graphic .geom-line.bisector { stroke: var(--aux); stroke-width: 1.45; stroke-dasharray: 6 4; opacity: 0.88; }
+  .euclid-graphic .geom-line.cevian { stroke: var(--cevian); stroke-width: 1.65; stroke-dasharray: 4 3; }
+  .euclid-graphic .geom-line.transversal, .euclid-graphic .geom-line.result { stroke: var(--transversal); stroke-width: 2.65; stroke-dasharray: none; }
+  .euclid-graphic .geom-line.back-arc { stroke-dasharray: 3.5 4.5; opacity: 0.42; }
+  .euclid-graphic .geom-segment { fill: none; stroke: var(--aux); stroke-width: 2.2; stroke-linecap: round; }
+  .euclid-graphic .geom-segment.extension { stroke: var(--given); stroke-dasharray: 5 3.5; stroke-width: 1.6; }
+  .euclid-graphic .geom-circle { fill: none; stroke: var(--given); stroke-width: 1.85; opacity: 0.88; }
+  .euclid-graphic .geom-circle.sphere-limb { stroke: var(--limb); stroke-width: 2.2; fill: var(--aux); fill-opacity: 0.04; }
+  .euclid-graphic .geom-polygon { fill: var(--aux); fill-opacity: 0.06; stroke: var(--given); stroke-width: 2.1; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.cevian { fill: var(--cevian); fill-opacity: 0.07; stroke: var(--cevian); stroke-width: 1.6; }
+  .euclid-graphic .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5; }
+  .euclid-graphic .geom-point.trace, .euclid-graphic .geom-point.result { fill: var(--pt-trace); stroke-width: 1.8; }
+  .euclid-graphic .geom-point.cevian { fill: var(--pt-cevian); }
+  .euclid-graphic .geom-point.auxiliary, .euclid-graphic .geom-point.center { fill: var(--pt-aux); }
+  .euclid-graphic .geom-label {
+    fill: var(--ink);
+    font-size: 14px;
+    font-weight: 600;
+    paint-order: stroke fill;
+    stroke: var(--label-halo);
+    stroke-width: 3.6px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .geom-label-sub { font-size: 10.5px; font-weight: 600; }
+  </style>
+  <defs>
+    <path id="geom-tick-1" d="M 0,-5.5 L 0,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <path id="geom-tick-2" d="M -2.4,-5.5 L -2.4,5.5 M 2.4,-5.5 L 2.4,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <path id="geom-tick-3" d="M -4.2,-5.5 L -4.2,5.5 M 0,-5.5 L 0,5.5 M 4.2,-5.5 L 4.2,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  </defs>
+  <rect class="bg" width="100%" height="100%"/>
+  <g id="elements">
+    <g id="graphics">
+      <polygon class="geom-polygon" points="267.33,119.16 380,269.39 467.63,269.39" data-ref="&lt; A B C &gt;"/>
+      <path class="geom-line bisector" d="M 54 332.49 L 177.56 208.92 L 301.13 85.36" data-ref="[ A Aper ]" data-aliases="[ A De ] | [ De A ] | / A De / | / De A /"/>
+      <path class="geom-line bisector" d="M 54 106.39 L 380 269.39 L 706 432.39" data-ref="[ B Bper ]" data-aliases="[ B Ee ] | [ Ee B ] | / B Ee / | / Ee B /"/>
+      <path class="geom-line bisector" d="M 412.55 434.64 L 470.76 260 L 528.98 85.36" data-ref="[ C Cper ]" data-aliases="[ C Fe ] | [ Fe C ] | / C Fe / | / Fe C /"/>
+      <path class="geom-line given" d="M 54 269.39 L 380 269.39 L 706 269.39" data-ref="[ B C ]" data-aliases="[ C B ] | / B C / | / C B / | [ B De ] | [ De B ] | / B De / | / De B / | [ C De ] | [ De C ] | / C De / | / De C /"/>
+      <path class="geom-line given" d="M 687.97 434.64 L 455.12 260 L 222.26 85.36" data-ref="[ C A ]" data-aliases="[ A C ] | / A C / | / C A / | [ A Ee ] | [ Ee A ] | / A Ee / | / Ee A / | [ C Ee ] | [ Ee C ] | / C Ee / | / Ee C /"/>
+      <path class="geom-line given" d="M 503.94 434.64 L 372.96 260 L 241.98 85.36" data-ref="[ A B ]" data-aliases="[ B A ] | / A B / | / B A / | [ A Fe ] | [ Fe A ] | / A Fe / | / Fe A / | [ B Fe ] | [ Fe B ] | / B Fe / | / Fe B /"/>
+      <path class="geom-line transversal result" d="M 54 253.62 L 380 335.12 L 706 416.62" data-ref="[ De Ee ]" data-aliases="[ Ee De ] | / De Ee / | / Ee De / | [ De Fe ] | [ Fe De ] | / De Fe / | / Fe De / | [ Ee Fe ] | [ Fe Ee ] | / Ee Fe / | / Fe Ee /"/>
+    </g>
+    <g id="highlights" aria-hidden="true">
+      <polygon class="geom-polygon geom-highlight" points="267.33,119.16 380,269.39 467.63,269.39" data-ref="&lt; A B C &gt;"/>
+      <path class="geom-line geom-highlight" d="M 54 332.49 L 177.56 208.92 L 301.13 85.36" data-ref="[ A Aper ]" data-aliases="[ A De ] | [ De A ] | / A De / | / De A /"/>
+      <path class="geom-line geom-highlight" d="M 54 106.39 L 380 269.39 L 706 432.39" data-ref="[ B Bper ]" data-aliases="[ B Ee ] | [ Ee B ] | / B Ee / | / Ee B /"/>
+      <path class="geom-line geom-highlight" d="M 412.55 434.64 L 470.76 260 L 528.98 85.36" data-ref="[ C Cper ]" data-aliases="[ C Fe ] | [ Fe C ] | / C Fe / | / Fe C /"/>
+      <path class="geom-line geom-highlight" d="M 54 269.39 L 380 269.39 L 706 269.39" data-ref="[ B C ]" data-aliases="[ C B ] | / B C / | / C B / | [ B De ] | [ De B ] | / B De / | / De B / | [ C De ] | [ De C ] | / C De / | / De C /"/>
+      <path class="geom-line geom-highlight" d="M 687.97 434.64 L 455.12 260 L 222.26 85.36" data-ref="[ C A ]" data-aliases="[ A C ] | / A C / | / C A / | [ A Ee ] | [ Ee A ] | / A Ee / | / Ee A / | [ C Ee ] | [ Ee C ] | / C Ee / | / Ee C /"/>
+      <path class="geom-line geom-highlight" d="M 503.94 434.64 L 372.96 260 L 241.98 85.36" data-ref="[ A B ]" data-aliases="[ B A ] | / A B / | / B A / | [ A Fe ] | [ Fe A ] | / A Fe / | / Fe A / | [ B Fe ] | [ Fe B ] | / B Fe / | / Fe B /"/>
+      <path class="geom-line geom-highlight" d="M 54 253.62 L 380 335.12 L 706 416.62" data-ref="[ De Ee ]" data-aliases="[ Ee De ] | / De Ee / | / Ee De / | [ De Fe ] | [ Fe De ] | / De Fe / | / Fe De / | [ Ee Fe ] | [ Fe Ee ] | / Ee Fe / | / Fe Ee /"/>
+    </g>
+    <g id="points">
+      <circle class="geom-point given" cx="267.33" cy="119.16" r="3.9" data-ref="A"><title>A = (-9, 12)</title></circle>
+      <circle class="geom-point given" cx="380" cy="269.39" r="3.9" data-ref="B"><title>B = (0, 0)</title></circle>
+      <circle class="geom-point given" cx="467.63" cy="269.39" r="3.9" data-ref="C"><title>C = (7, 0)</title></circle>
+      <circle class="geom-point center" cx="392.52" cy="244.35" r="3.9" data-ref="I"><title>I = (1, 2)</title></circle>
+      <circle class="geom-point trace result" cx="117.1" cy="269.39" r="4.6" data-ref="De"><title>De = (-21, 0)</title></circle>
+      <circle class="geom-point trace result" cx="642.9" cy="400.84" r="4.6" data-ref="Ee"><title>Ee = (21, -21/2)</title></circle>
+      <circle class="geom-point trace result" cx="440.67" cy="350.28" r="4.6" data-ref="Fe"><title>Fe = (63/13, -84/13)</title></circle>
+    </g>
+    <g id="labels">
+      <text class="geom-label" x="261.78" y="104.06" data-ref="A">A</text>
+      <text class="geom-label" x="374.46" y="294.34" data-ref="B">B</text>
+      <text class="geom-label" x="469.83" y="292.94" data-ref="C">C</text>
+      <text class="geom-label" x="372.11" y="235.12" data-ref="I">I</text>
+      <text class="geom-label" x="108.86" y="253.59" data-ref="De">D<tspan class="geom-label-sub" dy="3">e</tspan></text>
+      <text class="geom-label" x="634.67" y="385.05" data-ref="Ee">E<tspan class="geom-label-sub" dy="3">e</tspan></text>
+      <text class="geom-label" x="449.38" y="340.56" data-ref="Fe">F<tspan class="geom-label-sub" dy="3">e</tspan></text>
+    </g>
+  </g>
+</svg>

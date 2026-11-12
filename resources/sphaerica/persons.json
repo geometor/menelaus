@@ -1,0 +1,236 @@
+{
+  "menelaus": {
+    "slug": "menelaus",
+    "name": "Menelaus of Alexandria",
+    "dates": "c. 70 – c. 140 CE",
+    "role": "Alexandrian Geometer & Astronomer; Author of Sphaerica",
+    "bio": "Greco-Roman mathematician and astronomer born in Alexandria and active at Rome (where Ptolemy records two lunar occultation observations made by Menelaus in the first year of Emperor Trajan, 98 CE, Almagest VII.3). In his Sphaerica (three books), Menelaus emancipated spherical geometry from the purely stereometric circle-on-sphere treatises of Autolycus and Theodosius, defining the intrinsic spherical triangle (Book I), establishing rising-time arc inequalities (Book II), and founding spherical trigonometry upon the six-quantity Spherical Transversal Theorem (Book III.1).",
+    "works": [
+      "Sphaerica (Libri III — extant in Arabic, Hebrew, and Latin)",
+      "Chords in a Circle (6 books — lost, attested by Theon of Alexandria)",
+      "Elements of Geometry (3 books — lost, attested in Arabic bibliographies)"
+    ]
+  },
+  "ptolemy": {
+    "slug": "ptolemy",
+    "name": "Claudius Ptolemy",
+    "dates": "c. 100 – c. 170 CE",
+    "role": "Alexandrian Mathematician & Astronomer",
+    "bio": "Author of the Syntaxis Mathematica (Almagest), Planetary Hypotheses, Planisphaerium, and Geography. In Almagest I.13 (Heiberg pp. 68–76), Ptolemy preserves the oldest surviving Greek demonstration of the Planar and Spherical Menelaus Lemmas in chords of double arcs, deploying them throughout Books I–II as the sole trigonometric engine of ancient mathematical astronomy, and cites Menelaus's 98 CE Roman astronomical observations in Almagest VII.3.",
+    "works": [
+      "Syntaxis Mathematica (Almagest)",
+      "Planisphaerium",
+      "Optica"
+    ]
+  },
+  "euclid": {
+    "slug": "euclid",
+    "name": "Euclid of Alexandria",
+    "dates": "fl. c. 300 BCE",
+    "role": "Alexandrian Geometer",
+    "bio": "Author of the Elements and Phaenomena. Menelaus explicitly models Book I of the Sphaerica as the intrinsic spherical counterpart of Euclid's Elements Book I—replacing straight lines with minor arcs of great circles, preserving SAS/SSS/ASA congruence and side-angle inequalities while overturning Euclid I.32 (angle sum = 2 right angles -> > 2 right angles in Sphaerica I.11) and establishing AAA congruence (Sphaerica I.17).",
+    "works": [
+      "Elements (Books I–XIII)",
+      "Phaenomena",
+      "Data"
+    ]
+  },
+  "theodosius": {
+    "slug": "theodosius",
+    "name": "Theodosius of Bithynia",
+    "dates": "c. 160 – c. 90 BCE",
+    "role": "Greek Geometer & Astronomer",
+    "bio": "Author of an earlier three-book Sphaerica treating great and parallel circles on a sphere by Euclidean solid geometry without ever defining a spherical triangle or computing trigonometric chord ratios. In Book II of Menelaus's Sphaerica (as Halley notes on pp. 75–76), single propositions of Menelaus (such as II.10) supersede and generalize multiple propositions of Theodosius Book III.",
+    "works": [
+      "Sphaerica (Books I–III)",
+      "De Habitationibus",
+      "De Diebus et Noctibus"
+    ]
+  },
+  "hipparchus": {
+    "slug": "hipparchus",
+    "name": "Hipparchus of Nicaea",
+    "dates": "c. 190 – c. 120 BCE",
+    "role": "Greek Astronomer & Pioneer of Chord Tables",
+    "bio": "Compiled a twelve-book treatise on chords in a circle (attested by Theon of Alexandria alongside Menelaus's six-book chord treatise) and discovered the precession of the equinoxes. His chord methods prepared the ground for Menelaus's deductive axiomatization of spherical trigonometry.",
+    "works": [
+      "On Chords in a Circle (12 books — lost)",
+      "Commentary on Aratus and Eudoxus"
+    ]
+  },
+  "pappus": {
+    "slug": "pappus",
+    "name": "Pappus of Alexandria",
+    "dates": "c. 290 – c. 350 CE",
+    "role": "Late Antique Alexandrian Geometer",
+    "bio": "Author of the Synagoge (Mathematical Collection). In Book VI of the Synagoge, Pappus comments directly on Menelaus's Sphaerica (calling him Menelaos ho Alexandreus) and rising-time arcs; in Book VII, Pappus proves projective cross-ratio invariance and collinearity lemmas closely allied to Menelaus's spherical cross-ratio theorem (Sphaerica III.8).",
+    "works": [
+      "Synagoge (Mathematical Collection, Books I–VIII)"
+    ]
+  },
+  "theon": {
+    "slug": "theon",
+    "name": "Theon of Alexandria",
+    "dates": "c. 335 – c. 405 CE",
+    "role": "Alexandrian Mathematician & Commentator on Ptolemy",
+    "bio": "Commentator on Ptolemy's Almagest I.13 who proved the remaining case variations of the Planar and Spherical Menelaus Theorem (including external transversal configurations noted by Halley 1758 pp. 84–85) and attested Menelaus's six-book treatise on chords.",
+    "works": [
+      "Commentary on Ptolemy's Syntaxis Mathematica"
+    ]
+  },
+  "proclus": {
+    "slug": "proclus",
+    "name": "Proclus Diadochus",
+    "dates": "412 – 485 CE",
+    "role": "Neoplatonic Philosopher & Commentator on Euclid Book I",
+    "bio": "In his Commentary on the First Book of Euclid's Elements (Friedlein p. 345), Proclus preserves an alternative direct proof by Menelaus of Euclid I.25 (avoiding reductio ad absurdum), confirming Menelaus's lifelong preoccupation with direct, intrinsic proofs free of indirect case-splitting.",
+    "works": [
+      "Commentary on the First Book of Euclid's Elements"
+    ]
+  },
+  "ishaq-ibn-hunayn": {
+    "slug": "ishaq-ibn-hunayn",
+    "name": "Isḥāq ibn Ḥunayn",
+    "dates": "c. 830 – c. 910 CE",
+    "role": "Baghdad Translator of Greek Mathematical Classics into Arabic",
+    "bio": "Son of Ḥunayn ibn Isḥāq in Abbasid Baghdad, renowned translator of Euclid's Elements, Ptolemy's Almagest, and Menelaus's Sphaerica from Greek into Arabic (attested in the Bodleian Hebrew colophon cited by Costard 1758 p. iv: ex Versione R. Isaaci Filii Honaini).",
+    "works": [
+      "Arabic Translation of Menelaus's Sphaerica",
+      "Arabic Translation of Euclid's Elements (revised by Thābit ibn Qurra)"
+    ]
+  },
+  "thabit-ibn-qurra": {
+    "slug": "thabit-ibn-qurra",
+    "name": "Thābit ibn Qurra",
+    "dates": "836 – 901 CE",
+    "role": "Harranian Mathematician & Astronomer in Baghdad",
+    "bio": "Composed an influential Arabic treatise on the Sector Figure (Risāla fī al-Shakl al-Qaṭṭāʿ), exhaustively classifying all eighteen combinatorially valid cases of Menelaus's compound-ratio theorem and transmitting it to Latin Europe as Figura Kata / Figura Alchata.",
+    "works": [
+      "Kitāb fī al-Shakl al-Qaṭṭāʿ (On the Sector Figure)"
+    ]
+  },
+  "abu-nasr-mansur": {
+    "slug": "abu-nasr-mansur",
+    "name": "Abū Naṣr Manṣūr ibn ʿAlī ibn ʿIrāq",
+    "dates": "c. 960 – 1036 CE",
+    "role": "Khwarazmian Geometer, Teacher of al-Bīrūnī & Redactor of Menelaus",
+    "bio": "Completed in 1007–1008 CE the definitive medieval Arabic critical redaction of Menelaus's Sphaerica, replacing Greek chords of double arcs with explicit sines (jayb) while scrupulously preserving Menelaus's geometric architecture, and co-discovering the autonomous Spherical Law of Sines.",
+    "works": [
+      "Kitāb Mānalāwus fī al-Ukar (Redaction of Menelaus's Sphaerica)"
+    ]
+  },
+  "gerard-of-cremona": {
+    "slug": "gerard-of-cremona",
+    "name": "Gerard of Cremona",
+    "dates": "c. 1114 – 1187 CE",
+    "role": "Toledan Translator of Arabic Science into Latin",
+    "bio": "Translated Ptolemy's Almagest and an Arabic redaction of Menelaus's Sphaerica (Liber Menelai de Sphaericis) into Latin at Toledo in the twelfth century, introducing Menelaus's spherical geometry to Campanus, Jordanus, Fibonacci, and Simon Bredon.",
+    "works": [
+      "Liber Menelai de Sphaericis (Latin translation)"
+    ]
+  },
+  "jacob-ben-machir": {
+    "slug": "jacob-ben-machir",
+    "name": "Jacob ben Machir ibn Tibbon (Prophatius Judaeus)",
+    "dates": "c. 1236 – c. 1304 CE",
+    "role": "Provençal Hebrew Translator & Astronomer",
+    "bio": "Translated Menelaus's Sphaerica from Isḥāq ibn Ḥunayn's Arabic lineage into Hebrew at Montpellier in the late thirteenth century—the exact Hebrew manuscript witness in the Bodleian Huntington collection collated by Edmond Halley (Costard 1758 p. iv; Halley Scholion p. 82).",
+    "works": [
+      "Sefer Menelaus ba-Temunot ha-Kaduriyot (Hebrew translation of Sphaerica)"
+    ]
+  },
+  "maurolico": {
+    "slug": "maurolico",
+    "name": "Francesco Maurolico (Franciscus Maurolycus)",
+    "dates": "1494 – 1575",
+    "role": "Sicilian Benedictine Mathematician & First Printed Editor of Menelaus",
+    "bio": "Published at Messina in 1558 the editio princeps of Menelaus's Sphaerica alongside Theodosius, freely restructuring proofs and interpolating Renaissance trigonometric corollaries while recognizing Menelaus's treatise (in his 1543 letter to Cardinal Bembo) as the fountainhead whence 'the whole science of spherical triangles flows'.",
+    "works": [
+      "Menelai Sphaericorum Lib. III (Messina, 1558)"
+    ]
+  },
+  "mersenne": {
+    "slug": "mersenne",
+    "name": "Marin Mersenne",
+    "dates": "1588 – 1648",
+    "role": "French Minim Friar & Mathematical Editor",
+    "bio": "Included an abridged Latin synopsis of Menelaus's Sphaerica (under the medieval corrupted name Mileus) inside his Universae Geometriae Mixtaeque Mathematicae Synopsis (Paris, 1644), heavily dependent on Maurolico's 1558 recension.",
+    "works": [
+      "Universae Geometriae Mixtaeque Mathematicae Synopsis (1644)"
+    ]
+  },
+  "halley": {
+    "slug": "halley",
+    "name": "Edmond Halley",
+    "dates": "1656 – 1742",
+    "role": "Savilian Professor of Geometry at Oxford, Astronomer Royal & Editor of Menelaus",
+    "bio": "After editing Apollonius's De Sectione Rationis (1706) from Arabic and Conica (1710), Halley collated Bodleian Hebrew (Huntington) and Arabic manuscripts to establish the first philologically faithful Latin edition of Menelaus's Sphaerica, engraving its plates and printing sheets pp. 1–112 at Oxford before his death; published posthumously in 1758 with a preface by George Costard.",
+    "works": [
+      "Menelai Sphaericorum Libri III (Oxford, printed c. 1712–1741, issued 1758)",
+      "Apollonii Pergaei Conicorum Libri Octo (1710)"
+    ]
+  },
+  "costard": {
+    "slug": "costard",
+    "name": "George Costard",
+    "dates": "1710 – 1782",
+    "role": "Oxford Orientalist, Historian of Astronomy & Author of the 1758 Preface",
+    "bio": "Fellow of Wadham College, Oxford, who authored the eight-page Latin scholarly preface (Benevolo Lectori, pp. [i]–[viii]) bringing Halley's long-printed sheets of Menelaus's Sphaerica before the public in 1758, documenting the Bodleian Huntington manuscripts and ancient Greek witnesses.",
+    "works": [
+      "Praefatio ad Menelai Sphaericorum Libros III (Oxford, 1758)",
+      "The History of Astronomy (1767)"
+    ]
+  },
+  "ceva": {
+    "slug": "ceva",
+    "name": "Giovanni Ceva",
+    "dates": "1647 – 1734",
+    "role": "Italian Geometer; Discoverer of Ceva's Concurrency Theorem",
+    "bio": "Published De lineis rectis se invicem secantibus statica constructio (Milan, 1678), both rediscovering Planar Menelaus via statics/centers of gravity and proving its exact projective point-line dual—Ceva's Theorem on concurrent cevians (+1 signed ratio product vs. Menelaus's -1).",
+    "works": [
+      "De lineis rectis se invicem secantibus statica constructio (1678)"
+    ]
+  },
+  "carnot": {
+    "slug": "carnot",
+    "name": "Lazare Carnot",
+    "dates": "1753 – 1823",
+    "role": "French Geometer; Pioneer of Modern Projective Transversal Theory",
+    "bio": "In his Géométrie de position (1803) and Essai sur la théorie des transversales (1806), Carnot placed Menelaus's Transversal Theorem at the center of modern synthetic projective geometry, generalizing it to algebraic curves of arbitrary degree (Carnot's Theorem) and signed segment ratios.",
+    "works": [
+      "Géométrie de position (1803)",
+      "Essai sur la théorie des transversales (1806)"
+    ]
+  },
+  "poncelet": {
+    "slug": "poncelet",
+    "name": "Jean-Victor Poncelet",
+    "dates": "1788 – 1867",
+    "role": "French Mathematician; Co-Founder of Projective Geometry",
+    "bio": "In his Traité des propriétés projectives des figures (1822), Poncelet elevated Menelaus's Theorem, harmonic cross-ratios, and pole-polar duality into universal projective principles uniting Desargues, Pascal, Monge, and Ceva.",
+    "works": [
+      "Traité des propriétés projectives des figures (1822)"
+    ]
+  },
+  "bjornbo": {
+    "slug": "bjornbo",
+    "name": "Axel Anthon Björnbo",
+    "dates": "1874 – 1911",
+    "role": "Danish Historian of Mathematics & Philologist of Menelaus",
+    "bio": "Student of Heiberg and Zeuthen whose landmark Teubner monograph Studien über Menelaos' Sphärik (1902) systematically reconstructed the proposition numbering, terminology, and textual stemma of Menelaus's Sphaerica across Greek, Arabic, Hebrew, and Latin witnesses.",
+    "works": [
+      "Studien über Menelaos' Sphärik (Leipzig: Teubner, 1902)"
+    ]
+  },
+  "heiberg": {
+    "slug": "heiberg",
+    "name": "Johan Ludvig Heiberg",
+    "dates": "1854 – 1928",
+    "role": "Danish Classical Philologist & Critical Editor of Euclid and Ptolemy",
+    "bio": "Edited the authoritative Teubner Greek critical editions of Euclid's Elements (1883–1888) and Ptolemy's Syntaxis Mathematica (1898–1903), establishing the polytonic Greek text of the Menelaus Lemmas in Almagest I.13.",
+    "works": [
+      "Claudii Ptolemaei Syntaxis Mathematica (Teubner, 1898–1903)",
+      "Euclidis Elementa (Teubner, 1883–1888)"
+    ]
+  }
+}
