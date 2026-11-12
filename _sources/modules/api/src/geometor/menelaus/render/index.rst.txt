@@ -1,0 +1,78 @@
+src.geometor.menelaus.render
+============================
+
+.. py:module:: src.geometor.menelaus.render
+
+.. autoapi-nested-parse::
+
+   Publication-grade `.euclid-graphic` SVG renderer for 2D planar and 3D spherical Menelaus models.
+
+   Supports both:
+
+   1. **2D Planar** :class:`~geometor.model.Model` constructions (:func:`render_planar_svg`,
+      :func:`export_planar_svg`), clipping infinite algebraic lines cleanly to a padded frame,
+      rendering 3-vertex midpoint ``<path>`` segments, and avoiding point-label collisions.
+   2. **3D Unit-Sphere** :math:`S^2` constructions (:func:`render_spherical_svg`,
+      :func:`export_spherical_svg`), projecting exact :class:`~geometor.menelaus.spherical.SphericalPoint`
+      and :class:`~geometor.menelaus.spherical.GreatCircle` elements orthographically onto 2D
+      while preserving full interactive ``svg.euclid-graphic`` ``data-ref`` wiring for ``publish``.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   src.geometor.menelaus.render.EMBEDDED_SVG_STYLE
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   src.geometor.menelaus.render.render_planar_svg
+   src.geometor.menelaus.render.export_planar_svg
+   src.geometor.menelaus.render.render_spherical_svg
+   src.geometor.menelaus.render.export_spherical_svg
+
+
+Module Contents
+---------------
+
+.. py:data:: EMBEDDED_SVG_STYLE
+   :type:  str
+   :value: ''
+
+
+.. py:function:: render_planar_svg(model: geometor.model.Model, *, graphic_id: str = 'menelaus-planar', width: int = 760, height: int = 520, padding_px: float = 54.0, label_overrides: dict[str, str] | None = None) -> str
+
+   Render a 2D :class:`~geometor.model.Model` into a complete `.euclid-graphic` SVG string.
+
+
+.. py:function:: export_planar_svg(model: geometor.model.Model, output_path: pathlib.Path | str, **kwargs: Any) -> pathlib.Path
+
+   Write a 2D :class:`~geometor.model.Model` SVG to ``output_path``.
+
+
+.. py:function:: render_spherical_svg(*, points: Sequence[tuple[geometor.menelaus.spherical.SphericalPoint, str]], arcs: Sequence[tuple[geometor.menelaus.spherical.SphericalPoint, geometor.menelaus.spherical.SphericalPoint, str, str]], full_circles: Sequence[tuple[geometor.menelaus.spherical.GreatCircle, str, str]] = (), graphic_id: str = 'menelaus-spherical', width: int = 640, height: int = 560, azimuth_deg: float = 36.0, elevation_deg: float = 24.0, label_overrides: dict[str, str] | None = None) -> str
+
+   Render an orthographic 3D projection of :math:`S^2` as an interactive `.euclid-graphic` SVG.
+
+   :param points: Sequence of ``(SphericalPoint, css_role)`` (e.g. ``"given"``, ``"trace result"``).
+   :param arcs: Sequence of ``(P, Q, css_role, data_ref)`` geodesic minor arcs on :math:`S^2`.
+   :param full_circles: Sequence of ``(GreatCircle, css_role, data_ref)`` full great circles (front/back split).
+   :param graphic_id: Interactive graphic ID.
+   :param width: SVG width in pixels.
+   :param height: SVG height in pixels.
+   :param azimuth_deg: Camera azimuth angle in degrees.
+   :param elevation_deg: Camera elevation angle in degrees.
+   :param label_overrides: Optional label text map.
+
+
+.. py:function:: export_spherical_svg(output_path: pathlib.Path | str, **kwargs: Any) -> pathlib.Path
+
+   Write a 3D orthographic unit-sphere SVG to ``output_path``.
+
+

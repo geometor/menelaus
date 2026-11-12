@@ -1,0 +1,50 @@
+src.geometor.menelaus.concordance
+=================================
+
+.. py:module:: src.geometor.menelaus.concordance
+
+.. autoapi-nested-parse::
+
+   Concordance and scholarly apparatus registry loader for ``geometor-menelaus``.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   src.geometor.menelaus.concordance.DEFAULT_RESOURCES_DIR
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   src.geometor.menelaus.concordance.load_concordance
+   src.geometor.menelaus.concordance.load_sources_manifest
+   src.geometor.menelaus.concordance.load_apparatus_registries
+
+
+Module Contents
+---------------
+
+.. py:data:: DEFAULT_RESOURCES_DIR
+   :type:  pathlib.Path
+
+.. py:function:: load_concordance(resources_dir: pathlib.Path | None = None) -> list[dict[str, Any]]
+
+   Load the cross-tradition proposition concordance (Halley 1758 / Maurolico / Björnbo / Euclid).
+
+
+.. py:function:: load_sources_manifest(resources_dir: pathlib.Path | None = None) -> dict[str, Any]
+
+   Load the public-domain primary-source provenance manifest.
+
+
+.. py:function:: load_apparatus_registries(resources_dir: pathlib.Path | None = None) -> dict[str, dict[str, Any]]
+
+   Load ``persons.json``, ``citations.json``, and ``glossary.json``.
+
+

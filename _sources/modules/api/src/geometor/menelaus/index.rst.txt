@@ -1,0 +1,56 @@
+src.geometor.menelaus
+=====================
+
+.. py:module:: src.geometor.menelaus
+
+.. autoapi-nested-parse::
+
+   GEOMETOR Menelaus: Digital Scriptorium Codex of *Sphaerica* and Exact Symbolic Transversals.
+
+   Provides 100% exact SymPy & :mod:`geometor.model` constructions and theorems for:
+
+   - **Planar Menelaus & Converse** (:mod:`geometor.menelaus.planar_transversal`):
+     Euclidean parallel-auxiliary proof (Ptolemy *Almagest* I.13 / Halley Lemma I), universal
+     polynomial converse, External Angle-Bisector Axis, Desargues's Axis, Pascal's Hexagram,
+     Monge's Three-Circle Similicenters, and Wildberger Rational Trigonometry invariants.
+   - **Intrinsic Spherical Geometry & Spherical Menelaus** (:mod:`geometor.menelaus.spherical`):
+     Exact 3D unit-sphere solver (:math:`x^2 + y^2 + z^2 = 1`), spherical excess (:math:`A+B+C > \pi`),
+     polar triangle duality & AAA congruence (*Sphaerica* I.17), Spherical Menelaus (*Sphaerica* III.1)
+     in both Ptolemaic double-arc chords and sines, spherical cross-ratio pencil invariance (III.8),
+     and spherical orthocenter concurrency (III.10).
+   - **Projective Menelaus–Ceva Duality** (:mod:`geometor.menelaus.duality_ceva`):
+     Homogeneous :math:`\mathbb{P}^2` polarity, complete-quadrangle harmonic conjugation, and trilinear
+     polars of classic ETC triangle centers (``X(1)``, ``X(2)``, ``X(4)``, ``X(7)``).
+
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /modules/api/src/geometor/menelaus/__main__/index
+   /modules/api/src/geometor/menelaus/concordance/index
+   /modules/api/src/geometor/menelaus/duality_ceva/index
+   /modules/api/src/geometor/menelaus/planar_transversal/index
+   /modules/api/src/geometor/menelaus/render/index
+   /modules/api/src/geometor/menelaus/spherical/index
+   /modules/api/src/geometor/menelaus/sphinx_ext/index
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   src.geometor.menelaus.__version__
+
+
+Package Contents
+----------------
+
+.. py:data:: __version__
+   :value: '0.1.0'
+
+

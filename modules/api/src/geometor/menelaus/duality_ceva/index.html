@@ -1,0 +1,253 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>src.geometor.menelaus.duality_ceva &mdash; GEOMETOR • menelaus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../../index.html">
+        <img src="../../../../../../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">menelaus</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../../sphaerica/index.html"  >MENELAI SPHAERICORUM LIBRI III</a>
+        </li>
+        <li>
+          <a href="../../../../../../demos/index.html"  >Symbolic Demonstrations</a>
+        </li>
+        <li>
+          <a href="../../../../../../mission/index.html"  >mission</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../../index.html" title="Return to Project Portal">&larr; menelaus</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../../index.html">GEOMETOR • menelaus</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-src.geometor.menelaus.duality_ceva">
+        <span id="src-geometor-menelaus-duality-ceva"></span><h1>src.geometor.menelaus.duality_ceva<a class="headerlink" href="#module-src.geometor.menelaus.duality_ceva" title="Link to this heading">¶</a></h1>
+        <p>Exact projective Menelaus–Ceva point-line duality and trilinear polar constructions.</p>
+        <p>Connects <code class="docutils literal notranslate"><span class="pre">geometor/menelaus</span></code> directly to <code class="docutils literal notranslate"><span class="pre">geometor/ceva</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor/altshiller-court</span></code>
+        (Chapters VI &amp; X), <code class="docutils literal notranslate"><span class="pre">geometor/pappus</span></code>, and <code class="docutils literal notranslate"><span class="pre">geometor/etc</span></code>:</p>
+        <ol class="arabic">
+        <li><p><strong>Projective Polarity in</strong> <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span> (<a class="reference internal" href="#src.geometor.menelaus.duality_ceva.verify_projective_menelaus_ceva_duality" title="src.geometor.menelaus.duality_ceva.verify_projective_menelaus_ceva_duality"><code class="xref py py-func docutils literal notranslate"><span class="pre">verify_projective_menelaus_ceva_duality()</span></code></a>):
+        Demonstrates how standard homogeneous polarity <span class="math notranslate nohighlight">\([x : y : z] \leftrightarrow \{xX + yY + zZ = 0\}\)</span>
+        maps a collinear <strong>Menelaus transversal</strong> (<span class="math notranslate nohighlight">\(\det(D, E, F) = 0\)</span>, product <span class="math notranslate nohighlight">\(-1\)</span>) to a
+        concurrent <strong>Ceva triple</strong> (<span class="math notranslate nohighlight">\(\det(d^*, e^*, f^*) = 0\)</span>, product <span class="math notranslate nohighlight">\(+1\)</span>) on the dual triangle.</p></li>
+        <li><p><strong>Harmonic Conjugation &amp; Trilinear Polars</strong> (<a class="reference internal" href="#src.geometor.menelaus.duality_ceva.construct_trilinear_polar" title="src.geometor.menelaus.duality_ceva.construct_trilinear_polar"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_trilinear_polar()</span></code></a>,
+        <a class="reference internal" href="#src.geometor.menelaus.duality_ceva.verify_universal_trilinear_polar" title="src.geometor.menelaus.duality_ceva.verify_universal_trilinear_polar"><code class="xref py py-func docutils literal notranslate"><span class="pre">verify_universal_trilinear_polar()</span></code></a>):
+        Proves that replacing each Ceva trace <span class="math notranslate nohighlight">\((D_c, E_c, F_c)\)</span> of a point <span class="math notranslate nohighlight">\(P\)</span> by its
+        harmonic conjugate <span class="math notranslate nohighlight">\((D_m, E_m, F_m)\)</span> with respect to the vertices of <span class="math notranslate nohighlight">\(\triangle ABC\)</span>
+        negates all three side ratios:</p>
+        <div class="math notranslate nohighlight">
+        \[\left(-\frac{\overline{AF_c}}{\overline{F_c B}}\right)
+        \left(-\frac{\overline{BD_c}}{\overline{D_c C}}\right)
+        \left(-\frac{\overline{CE_c}}{\overline{E_c A}}\right)
+        = (-1)^3 (+1) = -1,\]</div>
+        <p>forcing <span class="math notranslate nohighlight">\(D_m = BC \cap E_c F_c\)</span>, <span class="math notranslate nohighlight">\(E_m = CA \cap F_c D_c\)</span>, and
+        <span class="math notranslate nohighlight">\(F_m = AB \cap D_c E_c\)</span> onto a single line: the <strong>trilinear polar</strong> <span class="math notranslate nohighlight">\(\ell_P\)</span> of <span class="math notranslate nohighlight">\(P\)</span>.</p>
+        </li>
+        <li><p><strong>ETC Triangle Center Catalogue</strong> (<a class="reference internal" href="#src.geometor.menelaus.duality_ceva.etc_trilinear_polar_catalogue" title="src.geometor.menelaus.duality_ceva.etc_trilinear_polar_catalogue"><code class="xref py py-func docutils literal notranslate"><span class="pre">etc_trilinear_polar_catalogue()</span></code></a>):
+        Evaluates exact rational trilinear polars for <code class="docutils literal notranslate"><span class="pre">X(1)</span></code> (anti-orthic axis), <code class="docutils literal notranslate"><span class="pre">X(4)</span></code> (orthic axis,
+        planar limit of Menelaus <em>Sphaerica</em> III.10), <code class="docutils literal notranslate"><span class="pre">X(7)</span></code> (Gergonne line), and <code class="docutils literal notranslate"><span class="pre">X(2)</span></code> (ideal line
+        at infinity via parallel medial sides).</p></li>
+        </ol>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.duality_ceva.harmonic_conjugate_collinear" title="src.geometor.menelaus.duality_ceva.harmonic_conjugate_collinear"><code class="xref py py-obj docutils literal notranslate"><span class="pre">harmonic_conjugate_collinear</span></code></a>(P, Q, R) → sympy.geometry.Point</p></td>
+        <td><p>Return the exact projective harmonic conjugate <code class="docutils literal notranslate"><span class="pre">R'</span></code> of <code class="docutils literal notranslate"><span class="pre">R</span></code> with respect to <code class="docutils literal notranslate"><span class="pre">(P,</span> <span class="pre">Q)</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.menelaus.duality_ceva.construct_trilinear_polar" title="src.geometor.menelaus.duality_ceva.construct_trilinear_polar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_trilinear_polar</span></code></a>([A_coords, B_coords, ...]) → tuple[geometor.model.Model, dict[str, Any]]</p></td>
+        <td><p>Build an exact <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> demonstration of Ceva–Menelaus harmonic duality.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.duality_ceva.verify_projective_menelaus_ceva_duality" title="src.geometor.menelaus.duality_ceva.verify_projective_menelaus_ceva_duality"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_projective_menelaus_ceva_duality</span></code></a>() → dict[str, Any]</p></td>
+        <td><p>Prove exact <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span> polarity pairing Menelaus transversals with Ceva perspectors.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.menelaus.duality_ceva.verify_universal_trilinear_polar" title="src.geometor.menelaus.duality_ceva.verify_universal_trilinear_polar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_universal_trilinear_polar</span></code></a>() → dict[str, Any]</p></td>
+        <td><p>Alias wrapper returning exact universal homogeneous proof data.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.duality_ceva.etc_trilinear_polar_catalogue" title="src.geometor.menelaus.duality_ceva.etc_trilinear_polar_catalogue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">etc_trilinear_polar_catalogue</span></code></a>() → dict[str, dict[str, Any]]</p></td>
+        <td><p>Construct exact rational Ceva–Menelaus trilinear polar pairings for classic ETC centers.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.duality_ceva.harmonic_conjugate_collinear">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.duality_ceva.</span></span><span class="sig-name descname"><span class="pre">harmonic_conjugate_collinear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">P</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Q</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">R</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.geometry.Point</span></span></span><a class="headerlink" href="#src.geometor.menelaus.duality_ceva.harmonic_conjugate_collinear" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the exact projective harmonic conjugate <code class="docutils literal notranslate"><span class="pre">R'</span></code> of <code class="docutils literal notranslate"><span class="pre">R</span></code> with respect to <code class="docutils literal notranslate"><span class="pre">(P,</span> <span class="pre">Q)</span></code>.</p>
+        <p>If <code class="docutils literal notranslate"><span class="pre">R</span></code> divides <code class="docutils literal notranslate"><span class="pre">PQ</span></code> in signed ratio <span class="math notranslate nohighlight">\(\lambda = \overline{PR}/\overline{RQ}\)</span> (<span class="math notranslate nohighlight">\(\lambda \neq 1\)</span>),
+        then <code class="docutils literal notranslate"><span class="pre">R'</span></code> divides <code class="docutils literal notranslate"><span class="pre">PQ</span></code> in signed ratio <span class="math notranslate nohighlight">\(-\lambda\)</span>, satisfying <span class="math notranslate nohighlight">\((P, Q; R, R') = -1\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.duality_ceva.construct_trilinear_polar">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.duality_ceva.</span></span><span class="sig-name descname"><span class="pre">construct_trilinear_polar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(2,</span> <span class="pre">9)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">C_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(10,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">P_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(3,</span> <span class="pre">3)</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Model</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.duality_ceva.construct_trilinear_polar" title="Link to this definition">¶</a></dt>
+        <dd><p>Build an exact <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> demonstration of Ceva–Menelaus harmonic duality.</p>
+        <p>Default coordinates <code class="docutils literal notranslate"><span class="pre">A=(2,9),</span> <span class="pre">B=(0,0),</span> <span class="pre">C=(10,0),</span> <span class="pre">P=(3,3)</span></code> produce a compact, completely
+        rational configuration where <code class="docutils literal notranslate"><span class="pre">Dm=(-15,0)</span></code>, <code class="docutils literal notranslate"><span class="pre">Em=(14,-3)</span></code>, <code class="docutils literal notranslate"><span class="pre">Fm=(-2,-9)</span></code> all have small
+        integer coordinates!</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.duality_ceva.verify_projective_menelaus_ceva_duality">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.duality_ceva.</span></span><span class="sig-name descname"><span class="pre">verify_projective_menelaus_ceva_duality</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.duality_ceva.verify_projective_menelaus_ceva_duality" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove exact <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span> polarity pairing Menelaus transversals with Ceva perspectors.</p>
+        <p>Works in homogeneous coordinates relative to the canonical projective reference triangle
+        <span class="math notranslate nohighlight">\(A = [1:0:0], B = [0:1:0], C = [0:0:1]\)</span>:</p>
+        <ul class="simple">
+        <li><p>Any transversal line <span class="math notranslate nohighlight">\(\ell = [p : q : r]^T\)</span> (<span class="math notranslate nohighlight">\(pqr \neq 0\)</span>) meets <span class="math notranslate nohighlight">\(BC (x=0)\)</span>
+        at <span class="math notranslate nohighlight">\(D = [0 : r : -q]\)</span>, <span class="math notranslate nohighlight">\(CA (y=0)\)</span> at <span class="math notranslate nohighlight">\(E = [-r : 0 : p]\)</span>, and
+        <span class="math notranslate nohighlight">\(AB (z=0)\)</span> at <span class="math notranslate nohighlight">\(F = [q : -p : 0]\)</span>, with <span class="math notranslate nohighlight">\(\det(D, E, F) = 0\)</span> and directed
+        barycentric Menelaus product <span class="math notranslate nohighlight">\((-p/q)(-q/r)(-r/p) = -1\)</span>.</p></li>
+        <li><p>Under point-line polarity <span class="math notranslate nohighlight">\(\ell \mapsto L^* = [p^{-1} : q^{-1} : r^{-1}]\)</span> (or isotopic
+        reciprocal / dual basis), the dual lines through the dual vertices concur at <span class="math notranslate nohighlight">\([p : q : r]\)</span>,
+        with Ceva trace ratios <span class="math notranslate nohighlight">\((+q/p)(+r/q)(+p/r) = +1\)</span>, while the trilinear polar of
+        <span class="math notranslate nohighlight">\(P = [u : v : w]\)</span> is the exact dual line <span class="math notranslate nohighlight">\(\frac{x}{u} + \frac{y}{v} + \frac{z}{w} = 0\)</span>!</p></li>
+        </ul>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.duality_ceva.verify_universal_trilinear_polar">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.duality_ceva.</span></span><span class="sig-name descname"><span class="pre">verify_universal_trilinear_polar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.duality_ceva.verify_universal_trilinear_polar" title="Link to this definition">¶</a></dt>
+        <dd><p>Alias wrapper returning exact universal homogeneous proof data.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.duality_ceva.etc_trilinear_polar_catalogue">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.duality_ceva.</span></span><span class="sig-name descname"><span class="pre">etc_trilinear_polar_catalogue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.duality_ceva.etc_trilinear_polar_catalogue" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct exact rational Ceva–Menelaus trilinear polar pairings for classic ETC centers.</p>
+        <p>Evaluated on the scalene Heronian reference triangle <code class="docutils literal notranslate"><span class="pre">A=(-9,12),</span> <span class="pre">B=(0,0),</span> <span class="pre">C=(7,0)</span></code>
+        (side lengths <code class="docutils literal notranslate"><span class="pre">a=7,</span> <span class="pre">b=20,</span> <span class="pre">c=15</span></code>):</p>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">X(1)</span></code> <strong>Incenter</strong> <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">2)</span></code> <span class="math notranslate nohighlight">\(\longleftrightarrow\)</span> <strong>Anti-orthic axis</strong> (external bisector traces).</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">X(4)</span></code> <strong>Orthocenter</strong> <code class="docutils literal notranslate"><span class="pre">(-9,</span> <span class="pre">-27/4)</span></code> <span class="math notranslate nohighlight">\(\longleftrightarrow\)</span> <strong>Orthic axis</strong> (planar limit of
+        Menelaus <em>Sphaerica</em> III.10).</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">X(7)</span></code> <strong>Gergonne point</strong> <code class="docutils literal notranslate"><span class="pre">(-27/19,</span> <span class="pre">24/19)</span></code> <span class="math notranslate nohighlight">\(\longleftrightarrow\)</span> <strong>Gergonne line</strong> (perspectivity
+        axis of the contact triangle).</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">X(2)</span></code> <strong>Centroid</strong> <code class="docutils literal notranslate"><span class="pre">(-2/3,</span> <span class="pre">4)</span></code> <span class="math notranslate nohighlight">\(\longleftrightarrow\)</span> <strong>Ideal line at infinity</strong> (verified by
+        exact parallelism of the medial triangle sides <span class="math notranslate nohighlight">\(E_c F_c \parallel BC\)</span>, etc.).</p></li>
+        </ul>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../../index.html">GEOMETOR • menelaus</a>
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../../log/26.316-initial-codex/index.html">Initial Release: Menelai Sphaericorum Libri III Codex & Exact Symbolic Transversals</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../index.html" class="is-active" aria-selected="true" >Modules</a></li>
+        <li><a href="../../../../../../about/index.html"  >About</a></li>
+        <li><a href="../../../../../../connect.html"  >connect</a></li>
+        <li><a href="../../../../../../log/index.html"  >Log</a></li>
+        <li><a href="../../../../../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 100 CE (Halley 1758 / Heiberg 1898 / Björnbo 1902) • Digital Edition GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

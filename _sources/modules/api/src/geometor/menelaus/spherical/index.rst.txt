@@ -1,0 +1,489 @@
+src.geometor.menelaus.spherical
+===============================
+
+.. py:module:: src.geometor.menelaus.spherical
+
+.. autoapi-nested-parse::
+
+   Exact 3D unit-sphere solver, intrinsic spherical invariants, and Spherical Menelaus Theorem.
+
+   Implements 100% exact symbolic spherical geometry on :math:`S^2 = \{(x, y, z) : x^2 + y^2 + z^2 = 1\}`
+   over :math:`\mathbb{Q}` and closed-form quadratic radical extensions (zero ``float`` or ``sp.Float``):
+
+   - :class:`SphericalPoint`, :class:`GreatCircle`, and :class:`SphericalTriangle`.
+   - **Book I Intrinsic Spherical Foundations**:
+
+     - Spherical triangle inequality (*Sphaerica* I.5, Halley p. 6).
+     - Spherical angle-sum excess :math:`A + B + C > \pi` (*Sphaerica* I.11, Halley p. 11), certified
+       purely rationally via the Euler–Eriksson half-excess tangent
+       :math:`\tan(E/2) = |\det(\mathbf{A},\mathbf{B},\mathbf{C})| / (1 + \mathbf{A}\cdot\mathbf{B} + \mathbf{B}\cdot\mathbf{C} + \mathbf{C}\cdot\mathbf{A}) \in \mathbb{Q}_{>0}`.
+     - Polar triangle duality :math:`\triangle A^*B^*C^*` and **AAA Spherical Congruence**
+       (*Sphaerica* I.17, Halley pp. 18–19).
+
+   - **Book III Spherical Menelaus Theorem (*Theorema Menelai*, Prop. III.1, Halley pp. 80–82;
+     Ptolemy *Syntaxis* I.13, Heiberg pp. 74–76)**:
+
+     - Evaluated both in Ptolemaic chords of double arcs :math:`\operatorname{crd}(2\widehat{PQ}) = 2\|\mathbf{P}\times\mathbf{Q}\|`
+       and directed sines :math:`\sin_{\pm}\widehat{PQ}` on rational points of :math:`S^2(\mathbb{Q})`,
+       together with Menelaus's central gnomonic projection from :math:`O=(0,0,0)` onto a planar transversal
+       and a universal symbolic 3D vector proof.
+
+   - **Spherical Anharmonic / Cross-Ratio Pencil Invariance (*Sphaerica* Prop. III.8, Halley pp. 93–94)**
+     and **Concurrency of Spherical Altitudes (*Sphaerica* Prop. III.10, Halley pp. 95–97)**.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   src.geometor.menelaus.spherical.SphericalPoint
+   src.geometor.menelaus.spherical.GreatCircle
+   src.geometor.menelaus.spherical.SphericalTriangle
+   src.geometor.menelaus.spherical.SphericalMenelausResult
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   src.geometor.menelaus.spherical.intersect_great_circles
+   src.geometor.menelaus.spherical.double_arc_chord
+   src.geometor.menelaus.spherical.signed_spherical_sine_ratio
+   src.geometor.menelaus.spherical.spherical_excess_report
+   src.geometor.menelaus.spherical.polar_triangle
+   src.geometor.menelaus.spherical.verify_spherical_menelaus
+   src.geometor.menelaus.spherical.spherical_menelaus_default
+   src.geometor.menelaus.spherical.gnomonic_projection_menelaus
+   src.geometor.menelaus.spherical.verify_spherical_menelaus_universal
+   src.geometor.menelaus.spherical.spherical_cross_ratio
+   src.geometor.menelaus.spherical.verify_spherical_cross_ratio_invariance
+   src.geometor.menelaus.spherical.spherical_orthocenter_menelaus
+
+
+Module Contents
+---------------
+
+.. py:class:: SphericalPoint(x: Any, y: Any, z: Any, label: str = '')
+
+   Exact point :math:`(x, y, z)` on the unit sphere :math:`x^2 + y^2 + z^2 = 1`.
+
+
+   .. py:attribute:: x
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: y
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: z
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: label
+      :type:  str
+      :value: ''
+
+
+
+   .. py:method:: from_vector(vec: sympy.Matrix | tuple[Any, Any, Any], label: str = '') -> SphericalPoint
+      :classmethod:
+
+
+      Normalize a non-zero exact 3D ray vector ``vec`` onto :math:`S^2`.
+
+
+
+   .. py:method:: vector() -> sympy.Matrix
+
+      Return the column :class:`sympy.Matrix` ``[x, y, z]^T``.
+
+
+
+   .. py:method:: antipode(label: str = '') -> SphericalPoint
+
+      Return the exact antipodal point :math:`(-x, -y, -z)` on :math:`S^2`.
+
+
+
+   .. py:method:: dot(other: SphericalPoint) -> sympy.Expr
+
+      Exact Euclidean dot product :math:`\mathbf{P}\cdot\mathbf{Q} = \cos\widehat{PQ}`.
+
+
+
+   .. py:method:: cross_vec(other: SphericalPoint) -> sympy.Matrix
+
+      Exact 3D cross product :math:`\mathbf{P}\times\mathbf{Q}`.
+
+
+
+   .. py:method:: chord_quadrance(other: SphericalPoint) -> sympy.Expr
+
+      Exact 3D Euclidean chord quadrance :math:`\|\mathbf{P} - \mathbf{Q}\|^2 = 2(1 - \cos\widehat{PQ})`.
+
+
+
+   .. py:method:: sin_arc(other: SphericalPoint) -> sympy.Expr
+
+      Exact non-negative sine of central angle :math:`\sin\widehat{PQ} = \|\mathbf{P}\times\mathbf{Q}\|`.
+
+
+
+.. py:class:: GreatCircle(nx: Any, ny: Any, nz: Any, label: str = '')
+
+   Exact great circle on :math:`S^2` represented by its central plane normal :math:`\mathbf{n}`.
+
+
+   .. py:attribute:: nx
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: ny
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: nz
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: label
+      :type:  str
+      :value: ''
+
+
+
+   .. py:method:: through(P: SphericalPoint, Q: SphericalPoint, label: str = '') -> GreatCircle
+      :classmethod:
+
+
+      Construct the oriented great circle from ``P`` toward ``Q`` (:math:`\mathbf{n} = \mathbf{P}\times\mathbf{Q}`).
+
+
+
+   .. py:method:: normal() -> sympy.Matrix
+
+      Return the unnormalized exact normal vector ``[nx, ny, nz]^T``.
+
+
+
+   .. py:method:: unit_pole(label: str = '') -> SphericalPoint
+
+      Return the positive unit pole :math:`\mathbf{n}/\|\mathbf{n}\| \in S^2` (*Sphaerica* Def. pole).
+
+
+
+   .. py:method:: contains(P: SphericalPoint) -> bool
+
+      Return ``True`` iff ``P`` lies on this great circle (:math:`\mathbf{n}\cdot\mathbf{P} = 0`).
+
+
+
+.. py:function:: intersect_great_circles(gc1: GreatCircle, gc2: GreatCircle, *, near: SphericalPoint | sympy.Matrix | None = None, label: str = '') -> tuple[SphericalPoint, SphericalPoint]
+
+   Intersect two distinct great circles in an exact antipodal pair ``(P, -P)`` on :math:`S^2`.
+
+   If ``near`` is provided, orders ``(P, -P)`` so that ``P`` has positive dot product with ``near``.
+
+
+.. py:function:: double_arc_chord(P: SphericalPoint, Q: SphericalPoint) -> sympy.Expr
+
+   Compute Ptolemy's chord of the double arc :math:`\operatorname{crd}(2\widehat{PQ}) = 2\sin\widehat{PQ}`.
+
+   In Ptolemy's *Syntaxis Mathematica* I.13 (Heiberg pp. 74–76) and Menelaus's Greek/Hebrew
+   tradition (Halley 1758 p. 82 Scholion: *subtensa dupli arcus*), spherical trigonometric
+   ratios are stated in terms of chords subtending double the given arcs on a unit-radius sphere:
+   :math:`\operatorname{crd}(2\theta) = 2\sin\theta = 2\|\mathbf{P}\times\mathbf{Q}\|`.
+
+
+.. py:function:: signed_spherical_sine_ratio(P: SphericalPoint, Q: SphericalPoint, R: SphericalPoint) -> sympy.Expr
+
+   Compute the exact directed spherical sine ratio :math:`\frac{\sin_{\pm}\widehat{PR}}{\sin_{\pm}\widehat{RQ}}`.
+
+   For ``R`` on the great circle ``PQ`` (:math:`\mathbf{R} = \alpha\mathbf{P} + \beta\mathbf{Q}`):
+
+   - :math:`\mathbf{P}\times\mathbf{R} = \beta(\mathbf{P}\times\mathbf{Q})` and
+     :math:`\mathbf{R}\times\mathbf{Q} = \alpha(\mathbf{P}\times\mathbf{Q})`,
+   - so the directed ratio of oriented cross products along :math:`\mathbf{n}_{PQ} = \mathbf{P}\times\mathbf{Q}`
+     equals :math:`\beta / \alpha`, which is **rational** whenever ``P, Q`` and the cutting great-circle
+     normal are rational!
+   - Positive when ``R`` lies on the minor arc ``PQ`` (or opposite minor arc), negative when ``R``
+     divides ``PQ`` externally.
+
+
+.. py:class:: SphericalTriangle
+
+   Intrinsic spherical triangle :math:`\triangle ABC` bounded by three minor great-circle arcs
+
+   (*Menelai Sphaericorum* Book I, Def. I–II, Halley 1758 p. 1: *spatium comprehensum sub arcubus
+   circulorum magnorum in superficie Sphaerae... semper minores semicirculo*).
+
+
+   .. py:attribute:: A
+      :type:  SphericalPoint
+
+
+   .. py:attribute:: B
+      :type:  SphericalPoint
+
+
+   .. py:attribute:: C
+      :type:  SphericalPoint
+
+
+   .. py:method:: __post_init__() -> None
+
+
+   .. py:method:: determinant() -> sympy.Expr
+
+      Signed scalar triple product :math:`\det(\mathbf{A}, \mathbf{B}, \mathbf{C})`.
+
+
+
+   .. py:method:: side_great_circles() -> tuple[GreatCircle, GreatCircle, GreatCircle]
+
+      Return oriented side great circles ``(BC, CA, AB)``.
+
+
+
+   .. py:method:: side_cosines() -> dict[str, sympy.Expr]
+
+      Return exact cosines :math:`(\cos a, \cos b, \cos c)` of minor side arcs.
+
+
+
+   .. py:method:: side_sines() -> dict[str, sympy.Expr]
+
+      Return exact sines :math:`(\sin a, \sin b, \sin c)` of minor side arcs.
+
+
+
+   .. py:method:: dihedral_cosines() -> dict[str, sympy.Expr]
+
+      Compute exact interior dihedral cosines :math:`(\cos A, \cos B, \cos C)` via Spherical Law of Cosines.
+
+      .. math::
+
+         \cos A = \frac{\cos a - \cos b\,\cos c}{\sin b\,\sin c}.
+
+
+
+   .. py:method:: dihedral_sines() -> dict[str, sympy.Expr]
+
+      Compute exact interior dihedral sines :math:`(\sin A, \sin B, \sin C)`:
+
+      .. math::
+
+         \sin A = \frac{|\det(\mathbf{A}, \mathbf{B}, \mathbf{C})|}{\sin b\,\sin c}.
+
+
+
+.. py:function:: spherical_excess_report(tri: SphericalTriangle) -> dict[str, Any]
+
+   Certify Menelaus *Sphaerica* Prop. I.11 (:math:`A + B + C > \pi`) and Spherical Law of Sines (III.2).
+
+   Uses the Euler–Eriksson exact rational formula for the half-excess tangent:
+
+   .. math::
+
+      \tan\!\left(\frac{E}{2}\right) =
+      \frac{|\det(\mathbf{A}, \mathbf{B}, \mathbf{C})|}{1 + \mathbf{A}\cdot\mathbf{B} + \mathbf{B}\cdot\mathbf{C} + \mathbf{C}\cdot\mathbf{A}},
+
+   where :math:`E = A + B + C - \pi \in (0, 2\pi)` is the spherical excess (and area on unit :math:`S^2`).
+   Also verifies the Spherical Law of Sines (*Sphaerica* III.2, Halley p. 86):
+   :math:`\frac{\sin A}{\sin a} = \frac{\sin B}{\sin b} = \frac{\sin C}{\sin c}`.
+
+
+.. py:function:: polar_triangle(tri: SphericalTriangle) -> tuple[SphericalTriangle, dict[str, Any]]
+
+   Construct the exact polar triangle :math:`\triangle A^*B^*C^*` and verify AAA Congruence (Prop. I.17).
+
+   Defines :math:`\mathbf{A}^* = \operatorname{sgn}(\det)\frac{\mathbf{B}\times\mathbf{C}}{\|\mathbf{B}\times\mathbf{C}\|}`
+   (and cyclically :math:`\mathbf{B}^*, \mathbf{C}^*`) so that :math:`\mathbf{A}^*\cdot\mathbf{A} > 0`.
+
+   Verifies the exact supplementary duality laws:
+
+   .. math::
+
+      \cos a^* = -\cos A,\quad \cos b^* = -\cos B,\quad \cos c^* = -\cos C,
+
+      \cos A^* = -\cos a,\quad \cos B^* = -\cos b,\quad \cos C^* = -\cos c,
+
+   proving that fixing the three dihedral angles :math:`(A, B, C)` of a spherical triangle uniquely
+   determines the three side lengths :math:`(a^*, b^*, c^*)` of its polar triangle, hence (by SSS
+   congruence, *Sphaerica* I.8) uniquely determines :math:`\triangle A^*B^*C^*` and its polar
+   :math:`(\triangle A^*B^*C^*)^* = \triangle ABC` (**AAA Spherical Congruence**, *Sphaerica* I.17,
+   Halley 1758 pp. 18–19).
+
+
+.. py:class:: SphericalMenelausResult
+
+   Exact symbolic results for a Spherical Menelaus configuration (*Sphaerica* III.1).
+
+
+   .. py:attribute:: triangle
+      :type:  SphericalTriangle
+
+
+   .. py:attribute:: transversal
+      :type:  GreatCircle
+
+
+   .. py:attribute:: D
+      :type:  SphericalPoint
+
+
+   .. py:attribute:: E
+      :type:  SphericalPoint
+
+
+   .. py:attribute:: F
+      :type:  SphericalPoint
+
+
+   .. py:attribute:: sin_AF_FB
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: sin_BD_DC
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: sin_CE_EA
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: signed_sine_product
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: crd_2AF
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: crd_2FB
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: crd_2BD
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: crd_2DC
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: crd_2CE
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: crd_2EA
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: unsigned_chord_product
+      :type:  sympy.Expr
+
+
+.. py:function:: verify_spherical_menelaus(tri: SphericalTriangle, transversal: GreatCircle) -> SphericalMenelausResult
+
+   Intersect ``tri``'s extended great-circle sides with ``transversal`` and prove *Sphaerica* III.1.
+
+   Verifies to exact ``0`` in SymPy:
+
+   1. **Signed Spherical Sine Law**:
+      :math:`\frac{\sin_{\pm}\widehat{AF}}{\sin_{\pm}\widehat{FB}} \cdot \frac{\sin_{\pm}\widehat{BD}}{\sin_{\pm}\widehat{DC}} \cdot \frac{\sin_{\pm}\widehat{CE}}{\sin_{\pm}\widehat{EA}} = -1`.
+   2. **Ptolemy / Halley Double-Arc Chord Compound Ratio** (*Almagest* I.13, Heiberg pp. 74–76;
+      Halley 1758 Prop. III.1, pp. 80–82):
+      :math:`\frac{\operatorname{crd}(2\widehat{AF})}{\operatorname{crd}(2\widehat{FB})} = \frac{\operatorname{crd}(2\widehat{AE})}{\operatorname{crd}(2\widehat{EC})} \cdot \frac{\operatorname{crd}(2\widehat{DC})}{\operatorname{crd}(2\widehat{BD})}`
+      (equivalently, unsigned product :math:`= +1`).
+
+
+.. py:function:: spherical_menelaus_default() -> SphericalMenelausResult
+
+   Construct the canonical rational :math:`S^2(\mathbb{Q})` Spherical Menelaus configuration.
+
+   Uses exact rational vertices:
+
+   - :math:`A = (0, 0, 1)` (North Pole),
+   - :math:`B = (3/5, 4/5, 0)` (Pythagorean point on the equator),
+   - :math:`C = (2/3, 2/3, 1/3)` (rational point on :math:`S^2(\mathbb{Q})`),
+
+   cut by the transversal great circle with rational normal :math:`\mathbf{n}_t = (2, -3, 1)`
+   (so :math:`F` divides :math:`AB` internally, :math:`E` divides :math:`CA` internally, and :math:`D`
+   divides :math:`BC` externally, directly mirroring Halley 1758 Prop. III.1's diagram!).
+
+
+.. py:function:: gnomonic_projection_menelaus(res: SphericalMenelausResult) -> dict[str, Any]
+
+   Reproduce Menelaus's & Ptolemy's 3D-to-2D central projection proof (*Sphaerica* III.1, Halley p. 80).
+
+   Projects the six unit vectors ``A, B, C, D, E, F`` from sphere center ``O=(0,0,0)`` onto the
+   affine plane :math:`\mathbf{u}\cdot\mathbf{x} = 1` (with :math:`\mathbf{u} = (1, 1, 1)`), obtaining
+   planar points :math:`A', B', C', D', E', F'` where great circles become straight lines!
+   Verifies that Planar Menelaus holds on :math:`\triangle A'B'C'` and that multiplying by the
+   telescoping radial factors :math:`\frac{\|OA\|}{\|OB\|}\cdot\frac{\|OB\|}{\|OC\|}\cdot\frac{\|OC\|}{\|OA\|} = 1`
+   yields Spherical Menelaus.
+
+
+.. py:function:: verify_spherical_menelaus_universal() -> dict[str, sympy.Expr]
+
+   Prove Spherical Menelaus universally over symbolic 3D vectors ``A, B, C, nt``.
+
+   For any non-coplanar vectors :math:`\mathbf{A}, \mathbf{B}, \mathbf{C}` and transversal plane
+   normal :math:`\mathbf{n}_t`, the ray intersections :math:`\mathbf{v}_D = (\mathbf{B}\times\mathbf{C})\times\mathbf{n}_t`,
+   :math:`\mathbf{v}_E = (\mathbf{C}\times\mathbf{A})\times\mathbf{n}_t`, and
+   :math:`\mathbf{v}_F = (\mathbf{A}\times\mathbf{B})\times\mathbf{n}_t` satisfy:
+
+   .. math::
+
+      \frac{(\mathbf{A}\times\mathbf{v}_F)\cdot(\mathbf{A}\times\mathbf{B})}{(\mathbf{v}_F\times\mathbf{B})\cdot(\mathbf{A}\times\mathbf{B})}
+      = -\frac{\mathbf{A}\cdot\mathbf{n}_t}{\mathbf{B}\cdot\mathbf{n}_t},
+
+   whose cyclic product around :math:`\triangle ABC` simplifies identically to :math:`-1`.
+
+
+.. py:function:: spherical_cross_ratio(P1: SphericalPoint, P2: SphericalPoint, P3: SphericalPoint, P4: SphericalPoint) -> sympy.Expr
+
+   Compute the exact spherical sine cross-ratio :math:`(P_1, P_2; P_3, P_4)_{S^2}` along a great circle:
+
+   .. math::
+
+      (P_1, P_2; P_3, P_4)_{S^2} =
+      \frac{\sin_{\pm}\widehat{P_1 P_3}\cdot\sin_{\pm}\widehat{P_2 P_4}}{\sin_{\pm}\widehat{P_2 P_3}\cdot\sin_{\pm}\widehat{P_1 P_4}}.
+
+   Note: Using :func:`signed_spherical_sine_ratio`, notice that
+   :math:`\frac{\sin_{\pm}\widehat{P_1 P_3}}{\sin_{\pm}\widehat{P_3 P_2}} \div \frac{\sin_{\pm}\widehat{P_1 P_4}}{\sin_{\pm}\widehat{P_4 P_2}} = (P_1, P_2; P_3, P_4)_{S^2}`!
+
+
+.. py:function:: verify_spherical_cross_ratio_invariance() -> dict[str, Any]
+
+   Prove Spherical Anharmonic Pencil Invariance (*Menelai Sphaericorum* Prop. III.8, Halley pp. 93–94).
+
+   Constructs a pencil of four great circles concurrent at apex :math:`V = (0, 0, 1)` with rational
+   tangent directions, cuts them with two completely independent oblique great circles
+   :math:`g_1` (normal :math:`(1, 2, -3)`) and :math:`g_2` (normal :math:`(-2, 1, -4)`), and verifies
+   that their spherical sine cross-ratios agree to exact ``0`` in SymPy:
+
+   .. math::
+
+      (X_1, X_2; X_3, X_4)_{S^2} = (Y_1, Y_2; Y_3, Y_4)_{S^2},
+
+   plus verifies a harmonic pencil (:math:`\text{cross-ratio} = -1`, matching internal/external
+   spherical angle bisectors in *Sphaerica* III.6 & III.8!).
+
+
+.. py:function:: spherical_orthocenter_menelaus(tri: SphericalTriangle | None = None) -> dict[str, Any]
+
+   Verify Menelaus *Sphaerica* Prop. III.10 (Halley pp. 95–97): concurrency of spherical altitudes.
+
+   Through each vertex :math:`A, B, C`, constructs the great circle perpendicular to the opposite
+   side great circle :math:`BC, CA, AB` (passing through its pole :math:`A^*, B^*, C^*`), verifies
+   that all three spherical altitudes concur at the spherical orthocenter :math:`H_{S^2}`, and
+   verifies that the spherical Ceva product of the altitude feet :math:`H_a, H_b, H_c` equals :math:`+1`
+   while their spherical harmonic conjugates lie on the spherical orthic axis (product :math:`-1`).
+
+

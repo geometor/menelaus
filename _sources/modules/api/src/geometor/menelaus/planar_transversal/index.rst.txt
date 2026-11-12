@@ -1,0 +1,239 @@
+src.geometor.menelaus.planar_transversal
+========================================
+
+.. py:module:: src.geometor.menelaus.planar_transversal
+
+.. autoapi-nested-parse::
+
+   Exact symbolic Planar Menelaus constructions, Converse theorems, and Rational Trigonometry.
+
+   Implements:
+
+   - Classical Euclidean parallel-auxiliary demonstration of **Planar Menelaus's Theorem**
+     (Ptolemy *Syntaxis Mathematica* I.13, ed. Heiberg 1898 pp. 68–70; Halley 1758 *Menelai
+     Sphaericorum Libri III*, Lemma I, p. 83), verifying both the directed ratio product
+     :math:`\frac{\overline{AF}}{\overline{FB}} \cdot \frac{\overline{BD}}{\overline{DC}} \cdot \frac{\overline{CE}}{\overline{EA}} = -1`
+     and the unsigned magnitude product :math:`= +1`.
+   - Universal symbolic polynomial proof over :math:`\mathbb{Q}(x_A, y_A, x_B, y_B, x_C, y_C, u, v, w)`
+     establishing both the forward theorem and the **Converse of Menelaus**.
+   - Constructive applications of the Converse of Menelaus:
+
+     1. **External Angle-Bisector Axis** (the three external angle bisectors of a scalene
+        triangle meet the opposite sides in three collinear points; cf. Menelaus *Sphaerica* III.6).
+     2. **Desargues's Two-Triangle Theorem** (three Menelaus applications on :math:`\triangle OBC`,
+        :math:`\triangle OCA`, :math:`\triangle OAB`).
+     3. **Pascal's Hexagrammum Mysticum** (three Menelaus applications on the diagonal triangle
+        combined with Euclid III.35/III.36 chord power products).
+     4. **Monge's Three-Circle Similicenter Theorem** (collinearity of the three exsimilicenters
+        and three pairs of insimilicenters + one exsimilicenter).
+
+   - **Rational Trigonometry** formulation (Wildberger *Divine Proportions*) expressing Planar
+     Menelaus purely over :math:`\mathbb{Q}` via ``quadrance``, ``line_spread``, ``vertex_spread``,
+     and ``cross_ratio`` without square roots or transcendental functions.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   src.geometor.menelaus.planar_transversal.MenelausReport
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   src.geometor.menelaus.planar_transversal.signed_segment_ratio
+   src.geometor.menelaus.planar_transversal.menelaus_product
+   src.geometor.menelaus.planar_transversal.verify_menelaus_converse
+   src.geometor.menelaus.planar_transversal.construct_parallel_through
+   src.geometor.menelaus.planar_transversal.construct_menelaus_planar
+   src.geometor.menelaus.planar_transversal.verify_planar_menelaus_universal
+   src.geometor.menelaus.planar_transversal.menelaus_rational_trig_invariants
+   src.geometor.menelaus.planar_transversal.construct_external_bisector_axis
+   src.geometor.menelaus.planar_transversal.construct_desargues_axis
+   src.geometor.menelaus.planar_transversal.construct_pascal_hexagram
+   src.geometor.menelaus.planar_transversal.construct_monge_exsimilicenters
+
+
+Module Contents
+---------------
+
+.. py:function:: signed_segment_ratio(P: sympy.geometry.Point, Q: sympy.geometry.Point, R: sympy.geometry.Point) -> sympy.Expr
+
+   Compute the exact directed ratio :math:`\overline{PR} / \overline{RQ}` for collinear ``P, Q, R``.
+
+   Under this classical tail-to-trace / trace-to-head convention:
+
+   - ``signed_segment_ratio(P, Q, R) > 0`` when ``R`` divides segment ``PQ`` *internally*
+     (strictly between ``P`` and ``Q``).
+   - ``signed_segment_ratio(P, Q, R) < 0`` when ``R`` divides line ``PQ`` *externally*
+     (outside segment ``PQ``).
+
+   :param P: Segment tail vertex.
+   :param Q: Segment head vertex.
+   :param R: Collinear division point (:math:`R \neq Q`).
+
+   :returns: Exact simplified :class:`sympy.Expr` equal to :math:`\overline{PR} / \overline{RQ}`.
+
+   :raises ValueError: If ``P, Q, R`` are not collinear or ``R`` coincides with ``Q``.
+
+
+.. py:function:: menelaus_product(A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, D: sympy.geometry.Point, E: sympy.geometry.Point, F: sympy.geometry.Point) -> dict[str, sympy.Expr]
+
+   Evaluate the three directed side ratios and signed/unsigned Menelaus products.
+
+   Expects ``D`` on line ``BC``, ``E`` on line ``CA``, and ``F`` on line ``AB``.
+
+   :returns: Dictionary with exact symbolic entries ``AF_FB``, ``BD_DC``, ``CE_EA``,
+             ``signed_product`` (:math:`-1` for collinear ``D, E, F``; :math:`+1` for concurrent cevians),
+             and ``unsigned_product`` (:math:`+1` in magnitude).
+
+
+.. py:function:: verify_menelaus_converse(A: sympy.geometry.Point, B: sympy.geometry.Point, C: sympy.geometry.Point, D: sympy.geometry.Point, E: sympy.geometry.Point, F: sympy.geometry.Point) -> MenelausReport
+
+   Verify the Converse of Menelaus: signed ratio product ``== -1`` implies ``D, E, F`` collinear.
+
+
+.. py:class:: MenelausReport
+
+   Exact symbolic summary of a Planar Menelaus configuration.
+
+
+   .. py:attribute:: AF_FB
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: BD_DC
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: CE_EA
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: signed_product
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: unsigned_product
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: collinear
+      :type:  bool
+
+
+.. py:function:: construct_parallel_through(model: geometor.model.Model, ref_line: sympy.geometry.Line, through_pt: sympy.geometry.Point, *, guide_aux_id: str = 'Paux', classes: list[str] | None = None) -> sympy.geometry.Line
+
+   Construct the exact Euclidean line through ``through_pt`` parallel to ``ref_line`` (Euclid I.31).
+
+
+.. py:function:: construct_menelaus_planar(A_coords: tuple[Any, Any] = (3, 6), B_coords: tuple[Any, Any] = (0, 0), C_coords: tuple[Any, Any] = (9, 0), D_coords: tuple[Any, Any] = (12, 0), F_coords: tuple[Any, Any] = (2, 4)) -> tuple[geometor.model.Model, dict[str, Any]]
+
+   Build and verify the exact Planar Menelaus model with Euclidean parallel auxiliary ``CH``.
+
+   With default integer coordinates ``A=(3,6), B=(0,0), C=(9,0), D=(12,0), F=(2,4)``:
+
+   - ``E = (7, 2)`` on ``CA`` and ``H = (3/2, 3)`` on ``AB``.
+   - ``AF/FB = 1/2``, ``BD/DC = -4``, ``CE/EA = 1/2``, yielding ``(1/2)*(-4)*(1/2) = -1``.
+
+
+.. py:function:: verify_planar_menelaus_universal() -> dict[str, sympy.Expr]
+
+   Prove Planar Menelaus and its Converse universally over ``Q(xA, yA, xB, yB, xC, yC, u, v, w)``.
+
+   Parametrizes:
+
+   - :math:`F = (1 - u)A + uB` on :math:`AB` (:math:`\overline{AF}/\overline{FB} = u/(1-u)`),
+   - :math:`D = (1 - w)B + wC` on :math:`BC` (:math:`\overline{BD}/\overline{DC} = w/(1-w)`),
+   - :math:`E = (1 - v)C + vA` on :math:`CA` (:math:`\overline{CE}/\overline{EA} = v/(1-v)`).
+
+   Proves the exact polynomial determinant factorization:
+
+   .. math::
+
+      \det\begin{pmatrix} x_D & y_D & 1 \\ x_E & y_E & 1 \\ x_F & y_F & 1 \end{pmatrix}
+      = 2\,\operatorname{Area}(\triangle ABC)\,\bigl(u v w + (1 - u)(1 - v)(1 - w)\bigr),
+
+   which vanishes for non-degenerate :math:`\triangle ABC` if and only if
+   :math:`\frac{u}{1-u}\frac{w}{1-w}\frac{v}{1-v} = -1`.
+
+
+.. py:function:: menelaus_rational_trig_invariants(model: geometor.model.Model, data: dict[str, Any]) -> dict[str, Any]
+
+   Compute and verify Wildberger Rational Trigonometry invariants for Planar Menelaus.
+
+   Proves two purely rational (:math:`\mathbb{Q}`-valued, square-root-free) formulations:
+
+   1. **Menelaus Quadrance Law**:
+      :math:`Q(A, F)\,Q(B, D)\,Q(C, E) = Q(F, B)\,Q(D, C)\,Q(E, A)`.
+   2. **Menelaus Spread Telescoping Law**:
+      Applying the Spread Law to sub-triangles :math:`\triangle AFE`, :math:`\triangle BDF`,
+      and :math:`\triangle CDE` cut by transversal :math:`t` against side lines :math:`a, b, c`:
+
+      .. math::
+
+         \frac{Q(A, F)}{Q(E, A)} = \frac{s(t, b)}{s(t, c)},\quad
+         \frac{Q(B, D)}{Q(F, B)} = \frac{s(t, c)}{s(t, a)},\quad
+         \frac{Q(C, E)}{Q(D, C)} = \frac{s(t, a)}{s(t, b)},
+
+      whose product telescopes identically to :math:`1` over :math:`\mathbb{Q}`.
+
+
+.. py:function:: construct_external_bisector_axis(A_coords: tuple[Any, Any] = (-9, 12), B_coords: tuple[Any, Any] = (0, 0), C_coords: tuple[Any, Any] = (7, 0)) -> tuple[geometor.model.Model, dict[str, Any]]
+
+   Construct the External Angle-Bisector Axis (anti-orthic axis) via Converse of Menelaus.
+
+   Uses scalene Heronian triangle ``A=(-9,12), B=(0,0), C=(7,0)`` with exact integer side lengths
+   ``a = 7, b = 20, c = 15``, integer incenter ``I = (1, 2)``, and external bisector traces
+   ``De = (-21, 0)``, ``Ee = (21, -21/2)``, ``Fe = (63/13, -84/13)``.
+   Cf. Menelaus *Sphaerica* III.6 (external spherical angle-bisector sine ratio).
+
+
+.. py:function:: construct_desargues_axis(O_coords: tuple[Any, Any] = (0, 12), A_coords: tuple[Any, Any] = (-3, 7), B_coords: tuple[Any, Any] = (-1, 5), C_coords: tuple[Any, Any] = (4, 8), kA: sympy.Expr = sp.Rational(2, 1), kB: sympy.Expr = sp.Rational(12, 7), kC: sympy.Expr = sp.Rational(5, 2)) -> tuple[geometor.model.Model, dict[str, Any]]
+
+   Prove Desargues's Two-Triangle Theorem via three applications of Planar Menelaus.
+
+   Given center ``O`` and perspective triangles ``ABC`` and ``A1B1C1`` along rays ``OA, OB, OC``,
+   applies Menelaus to:
+
+   1. :math:`\triangle OBC` with transversal :math:`B_1 C_1 D`,
+   2. :math:`\triangle OCA` with transversal :math:`C_1 A_1 E`,
+   3. :math:`\triangle OAB` with transversal :math:`A_1 B_1 F`,
+
+   multiplying all three identities to cancel the ``O``-ray ratios and deduce
+   :math:`\frac{\overline{AF}}{\overline{FB}} \cdot \frac{\overline{BD}}{\overline{DC}} \cdot \frac{\overline{CE}}{\overline{EA}} = -1`,
+   establishing collinearity of ``D, E, F`` on Desargues's axis by the Converse of Menelaus.
+
+
+.. py:function:: construct_pascal_hexagram() -> tuple[geometor.model.Model, dict[str, Any]]
+
+   Prove Pascal's *Hexagrammum Mysticum* on a circle via three Planar Menelaus applications.
+
+   Uses six exact integer points on the circle :math:`x^2 + y^2 = 100`:
+   ``P1=(10,0), P2=(-6,8), P3=(0,-10), P4=(6,8), P5=(8,-6), P6=(-8,-6)``.
+
+   Forms diagonal triangle :math:`\triangle UVW` from ``(P1P2, P3P4, P5P6)``:
+
+   - ``U = P3P4 ∩ P5P6``, ``V = P5P6 ∩ P1P2``, ``W = P1P2 ∩ P3P4``,
+
+   applies Planar Menelaus to :math:`\triangle UVW` with transversals ``P2P3M``, ``P4P5L``,
+   and ``P6P1N``, cancels chord power products via Euclid III.35/III.36, and concludes by the
+   Converse of Menelaus that opposite-side intersections ``L, M, N`` are collinear on Pascal's line.
+
+
+.. py:function:: construct_monge_exsimilicenters(A_coords: tuple[Any, Any] = (0, 8), B_coords: tuple[Any, Any] = (-4, 0), C_coords: tuple[Any, Any] = (8, 0), rA: sympy.Expr = sp.Integer(1), rB: sympy.Expr = sp.Integer(2), rC: sympy.Expr = sp.Integer(4)) -> tuple[geometor.model.Model, dict[str, Any]]
+
+   Prove Monge's Three-Circle Theorem via the Converse of Menelaus.
+
+   Given circles centered at ``A, B, C`` with distinct exact positive radii ``rA, rB, rC``,
+   their external centers of similitude ``Sab, Sbc, Sca`` divide the center segments externally
+   in ratios ``-rA/rB``, ``-rB/rC``, ``-rC/rA``, whose product is identically ``-1``, placing
+   ``Sab, Sbc, Sca`` on Monge's external axis of similitude! Also constructs the three internal
+   similicenters ``Iab, Ibc, Ica`` to verify all four Monge axes of the complete quadrilateral.
+
+

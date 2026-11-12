@@ -1,0 +1,662 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>src.geometor.menelaus.spherical &mdash; GEOMETOR • menelaus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../../index.html">
+        <img src="../../../../../../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">menelaus</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../../sphaerica/index.html"  >MENELAI SPHAERICORUM LIBRI III</a>
+        </li>
+        <li>
+          <a href="../../../../../../demos/index.html"  >Symbolic Demonstrations</a>
+        </li>
+        <li>
+          <a href="../../../../../../mission/index.html"  >mission</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../../index.html" title="Return to Project Portal">&larr; menelaus</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../../index.html">GEOMETOR • menelaus</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-src.geometor.menelaus.spherical">
+        <span id="src-geometor-menelaus-spherical"></span><h1>src.geometor.menelaus.spherical<a class="headerlink" href="#module-src.geometor.menelaus.spherical" title="Link to this heading">¶</a></h1>
+        <p>Exact 3D unit-sphere solver, intrinsic spherical invariants, and Spherical Menelaus Theorem.</p>
+        <p>Implements 100% exact symbolic spherical geometry on <span class="math notranslate nohighlight">\(S^2 = \{(x, y, z) : x^2 + y^2 + z^2 = 1\}\)</span>
+        over <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span> and closed-form quadratic radical extensions (zero <code class="docutils literal notranslate"><span class="pre">float</span></code> or <code class="docutils literal notranslate"><span class="pre">sp.Float</span></code>):</p>
+        <ul class="simple">
+        <li><p><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">SphericalPoint</span></code></a>, <a class="reference internal" href="#src.geometor.menelaus.spherical.GreatCircle" title="src.geometor.menelaus.spherical.GreatCircle"><code class="xref py py-class docutils literal notranslate"><span class="pre">GreatCircle</span></code></a>, and <a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalTriangle" title="src.geometor.menelaus.spherical.SphericalTriangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">SphericalTriangle</span></code></a>.</p></li>
+        <li><p><strong>Book I Intrinsic Spherical Foundations</strong>:</p>
+        <ul>
+        <li><p>Spherical triangle inequality (<em>Sphaerica</em> I.5, Halley p. 6).</p></li>
+        <li><p>Spherical angle-sum excess <span class="math notranslate nohighlight">\(A + B + C &gt; \pi\)</span> (<em>Sphaerica</em> I.11, Halley p. 11), certified
+        purely rationally via the Euler–Eriksson half-excess tangent
+        <span class="math notranslate nohighlight">\(\tan(E/2) = |\det(\mathbf{A},\mathbf{B},\mathbf{C})| / (1 + \mathbf{A}\cdot\mathbf{B} + \mathbf{B}\cdot\mathbf{C} + \mathbf{C}\cdot\mathbf{A}) \in \mathbb{Q}_{&gt;0}\)</span>.</p></li>
+        <li><p>Polar triangle duality <span class="math notranslate nohighlight">\(\triangle A^*B^*C^*\)</span> and <strong>AAA Spherical Congruence</strong>
+        (<em>Sphaerica</em> I.17, Halley pp. 18–19).</p></li>
+        </ul>
+        </li>
+        <li><p><strong>Book III Spherical Menelaus Theorem (*Theorema Menelai*, Prop. III.1, Halley pp. 80–82;
+        Ptolemy *Syntaxis* I.13, Heiberg pp. 74–76)</strong>:</p>
+        <ul>
+        <li><p>Evaluated both in Ptolemaic chords of double arcs <span class="math notranslate nohighlight">\(\operatorname{crd}(2\widehat{PQ}) = 2\|\mathbf{P}\times\mathbf{Q}\|\)</span>
+        and directed sines <span class="math notranslate nohighlight">\(\sin_{\pm}\widehat{PQ}\)</span> on rational points of <span class="math notranslate nohighlight">\(S^2(\mathbb{Q})\)</span>,
+        together with Menelaus’s central gnomonic projection from <span class="math notranslate nohighlight">\(O=(0,0,0)\)</span> onto a planar transversal
+        and a universal symbolic 3D vector proof.</p></li>
+        </ul>
+        </li>
+        <li><p><strong>Spherical Anharmonic / Cross-Ratio Pencil Invariance (*Sphaerica* Prop. III.8, Halley pp. 93–94)</strong>
+        and <strong>Concurrency of Spherical Altitudes (*Sphaerica* Prop. III.10, Halley pp. 95–97)</strong>.</p></li>
+        </ul>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SphericalPoint</span></code></a></p></td>
+        <td><p>Exact point <span class="math notranslate nohighlight">\((x, y, z)\)</span> on the unit sphere <span class="math notranslate nohighlight">\(x^2 + y^2 + z^2 = 1\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.GreatCircle" title="src.geometor.menelaus.spherical.GreatCircle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GreatCircle</span></code></a></p></td>
+        <td><p>Exact great circle on <span class="math notranslate nohighlight">\(S^2\)</span> represented by its central plane normal <span class="math notranslate nohighlight">\(\mathbf{n}\)</span>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalTriangle" title="src.geometor.menelaus.spherical.SphericalTriangle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SphericalTriangle</span></code></a></p></td>
+        <td><p>Intrinsic spherical triangle <span class="math notranslate nohighlight">\(\triangle ABC\)</span> bounded by three minor great-circle arcs</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalMenelausResult" title="src.geometor.menelaus.spherical.SphericalMenelausResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SphericalMenelausResult</span></code></a></p></td>
+        <td><p>Exact symbolic results for a Spherical Menelaus configuration (<em>Sphaerica</em> III.1).</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.intersect_great_circles" title="src.geometor.menelaus.spherical.intersect_great_circles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">intersect_great_circles</span></code></a>(gc1, gc2, *[, near, label]) → tuple[SphericalPoint, SphericalPoint]</p></td>
+        <td><p>Intersect two distinct great circles in an exact antipodal pair <code class="docutils literal notranslate"><span class="pre">(P,</span> <span class="pre">-P)</span></code> on <span class="math notranslate nohighlight">\(S^2\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.double_arc_chord" title="src.geometor.menelaus.spherical.double_arc_chord"><code class="xref py py-obj docutils literal notranslate"><span class="pre">double_arc_chord</span></code></a>(P, Q) → sympy.Expr</p></td>
+        <td><p>Compute Ptolemy's chord of the double arc <span class="math notranslate nohighlight">\(\operatorname{crd}(2\widehat{PQ}) = 2\sin\widehat{PQ}\)</span>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.signed_spherical_sine_ratio" title="src.geometor.menelaus.spherical.signed_spherical_sine_ratio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">signed_spherical_sine_ratio</span></code></a>(P, Q, R) → sympy.Expr</p></td>
+        <td><p>Compute the exact directed spherical sine ratio <span class="math notranslate nohighlight">\(\frac{\sin_{\pm}\widehat{PR}}{\sin_{\pm}\widehat{RQ}}\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.spherical_excess_report" title="src.geometor.menelaus.spherical.spherical_excess_report"><code class="xref py py-obj docutils literal notranslate"><span class="pre">spherical_excess_report</span></code></a>(tri) → dict[str, Any]</p></td>
+        <td><p>Certify Menelaus <em>Sphaerica</em> Prop. I.11 (<span class="math notranslate nohighlight">\(A + B + C &gt; \pi\)</span>) and Spherical Law of Sines (III.2).</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.polar_triangle" title="src.geometor.menelaus.spherical.polar_triangle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">polar_triangle</span></code></a>(tri) → tuple[SphericalTriangle, dict[str, Any]]</p></td>
+        <td><p>Construct the exact polar triangle <span class="math notranslate nohighlight">\(\triangle A^*B^*C^*\)</span> and verify AAA Congruence (Prop. I.17).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.verify_spherical_menelaus" title="src.geometor.menelaus.spherical.verify_spherical_menelaus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_spherical_menelaus</span></code></a>(tri, transversal) → SphericalMenelausResult</p></td>
+        <td><p>Intersect <code class="docutils literal notranslate"><span class="pre">tri</span></code>'s extended great-circle sides with <code class="docutils literal notranslate"><span class="pre">transversal</span></code> and prove <em>Sphaerica</em> III.1.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.spherical_menelaus_default" title="src.geometor.menelaus.spherical.spherical_menelaus_default"><code class="xref py py-obj docutils literal notranslate"><span class="pre">spherical_menelaus_default</span></code></a>() → SphericalMenelausResult</p></td>
+        <td><p>Construct the canonical rational <span class="math notranslate nohighlight">\(S^2(\mathbb{Q})\)</span> Spherical Menelaus configuration.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.gnomonic_projection_menelaus" title="src.geometor.menelaus.spherical.gnomonic_projection_menelaus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gnomonic_projection_menelaus</span></code></a>(res) → dict[str, Any]</p></td>
+        <td><p>Reproduce Menelaus's &amp; Ptolemy's 3D-to-2D central projection proof (<em>Sphaerica</em> III.1, Halley p. 80).</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.verify_spherical_menelaus_universal" title="src.geometor.menelaus.spherical.verify_spherical_menelaus_universal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_spherical_menelaus_universal</span></code></a>() → dict[str, sympy.Expr]</p></td>
+        <td><p>Prove Spherical Menelaus universally over symbolic 3D vectors <code class="docutils literal notranslate"><span class="pre">A,</span> <span class="pre">B,</span> <span class="pre">C,</span> <span class="pre">nt</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.spherical_cross_ratio" title="src.geometor.menelaus.spherical.spherical_cross_ratio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">spherical_cross_ratio</span></code></a>(P1, P2, P3, P4) → sympy.Expr</p></td>
+        <td><p>Compute the exact spherical sine cross-ratio <span class="math notranslate nohighlight">\((P_1, P_2; P_3, P_4)_{S^2}\)</span> along a great circle:</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.verify_spherical_cross_ratio_invariance" title="src.geometor.menelaus.spherical.verify_spherical_cross_ratio_invariance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_spherical_cross_ratio_invariance</span></code></a>() → dict[str, Any]</p></td>
+        <td><p>Prove Spherical Anharmonic Pencil Invariance (<em>Menelai Sphaericorum</em> Prop. III.8, Halley pp. 93–94).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.menelaus.spherical.spherical_orthocenter_menelaus" title="src.geometor.menelaus.spherical.spherical_orthocenter_menelaus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">spherical_orthocenter_menelaus</span></code></a>([tri]) → dict[str, Any]</p></td>
+        <td><p>Verify Menelaus <em>Sphaerica</em> Prop. III.10 (Halley pp. 95–97): concurrency of spherical altitudes.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py class">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalPoint">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">SphericalPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalPoint" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact point <span class="math notranslate nohighlight">\((x, y, z)\)</span> on the unit sphere <span class="math notranslate nohighlight">\(x^2 + y^2 + z^2 = 1\)</span>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalPoint.x">
+        <span class="sig-name descname"><span class="pre">x</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalPoint.x" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalPoint.y">
+        <span class="sig-name descname"><span class="pre">y</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalPoint.y" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalPoint.z">
+        <span class="sig-name descname"><span class="pre">z</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalPoint.z" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalPoint.label">
+        <span class="sig-name descname"><span class="pre">label</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalPoint.label" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalPoint.from_vector">
+        <span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">from_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vec</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Matrix</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalPoint.from_vector" title="Link to this definition">¶</a></dt>
+        <dd><p>Normalize a non-zero exact 3D ray vector <code class="docutils literal notranslate"><span class="pre">vec</span></code> onto <span class="math notranslate nohighlight">\(S^2\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalPoint.vector">
+        <span class="sig-name descname"><span class="pre">vector</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Matrix</span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalPoint.vector" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the column <code class="xref py py-class docutils literal notranslate"><span class="pre">sympy.Matrix</span></code> <code class="docutils literal notranslate"><span class="pre">[x,</span> <span class="pre">y,</span> <span class="pre">z]^T</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalPoint.antipode">
+        <span class="sig-name descname"><span class="pre">antipode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalPoint.antipode" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the exact antipodal point <span class="math notranslate nohighlight">\((-x, -y, -z)\)</span> on <span class="math notranslate nohighlight">\(S^2\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalPoint.dot">
+        <span class="sig-name descname"><span class="pre">dot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalPoint.dot" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact Euclidean dot product <span class="math notranslate nohighlight">\(\mathbf{P}\cdot\mathbf{Q} = \cos\widehat{PQ}\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalPoint.cross_vec">
+        <span class="sig-name descname"><span class="pre">cross_vec</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Matrix</span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalPoint.cross_vec" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact 3D cross product <span class="math notranslate nohighlight">\(\mathbf{P}\times\mathbf{Q}\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalPoint.chord_quadrance">
+        <span class="sig-name descname"><span class="pre">chord_quadrance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalPoint.chord_quadrance" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact 3D Euclidean chord quadrance <span class="math notranslate nohighlight">\(\|\mathbf{P} - \mathbf{Q}\|^2 = 2(1 - \cos\widehat{PQ})\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalPoint.sin_arc">
+        <span class="sig-name descname"><span class="pre">sin_arc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalPoint.sin_arc" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact non-negative sine of central angle <span class="math notranslate nohighlight">\(\sin\widehat{PQ} = \|\mathbf{P}\times\mathbf{Q}\|\)</span>.</p>
+        </dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.GreatCircle">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">GreatCircle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ny</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nz</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.geometor.menelaus.spherical.GreatCircle" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact great circle on <span class="math notranslate nohighlight">\(S^2\)</span> represented by its central plane normal <span class="math notranslate nohighlight">\(\mathbf{n}\)</span>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.GreatCircle.nx">
+        <span class="sig-name descname"><span class="pre">nx</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.GreatCircle.nx" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.GreatCircle.ny">
+        <span class="sig-name descname"><span class="pre">ny</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.GreatCircle.ny" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.GreatCircle.nz">
+        <span class="sig-name descname"><span class="pre">nz</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.GreatCircle.nz" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.GreatCircle.label">
+        <span class="sig-name descname"><span class="pre">label</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.GreatCircle.label" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.GreatCircle.through">
+        <span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">through</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">P</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">Q</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.geometor.menelaus.spherical.GreatCircle" title="src.geometor.menelaus.spherical.GreatCircle"><span class="pre">GreatCircle</span></a></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.GreatCircle.through" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct the oriented great circle from <code class="docutils literal notranslate"><span class="pre">P</span></code> toward <code class="docutils literal notranslate"><span class="pre">Q</span></code> (<span class="math notranslate nohighlight">\(\mathbf{n} = \mathbf{P}\times\mathbf{Q}\)</span>).</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.GreatCircle.normal">
+        <span class="sig-name descname"><span class="pre">normal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Matrix</span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.GreatCircle.normal" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the unnormalized exact normal vector <code class="docutils literal notranslate"><span class="pre">[nx,</span> <span class="pre">ny,</span> <span class="pre">nz]^T</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.GreatCircle.unit_pole">
+        <span class="sig-name descname"><span class="pre">unit_pole</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.GreatCircle.unit_pole" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the positive unit pole <span class="math notranslate nohighlight">\(\mathbf{n}/\|\mathbf{n}\| \in S^2\)</span> (<em>Sphaerica</em> Def. pole).</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.GreatCircle.contains">
+        <span class="sig-name descname"><span class="pre">contains</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">P</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.GreatCircle.contains" title="Link to this definition">¶</a></dt>
+        <dd><p>Return <code class="docutils literal notranslate"><span class="pre">True</span></code> iff <code class="docutils literal notranslate"><span class="pre">P</span></code> lies on this great circle (<span class="math notranslate nohighlight">\(\mathbf{n}\cdot\mathbf{P} = 0\)</span>).</p>
+        </dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.intersect_great_circles">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">intersect_great_circles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gc1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.GreatCircle" title="src.geometor.menelaus.spherical.GreatCircle"><span class="pre">GreatCircle</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">gc2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.GreatCircle" title="src.geometor.menelaus.spherical.GreatCircle"><span class="pre">GreatCircle</span></a></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">near</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Matrix</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.intersect_great_circles" title="Link to this definition">¶</a></dt>
+        <dd><p>Intersect two distinct great circles in an exact antipodal pair <code class="docutils literal notranslate"><span class="pre">(P,</span> <span class="pre">-P)</span></code> on <span class="math notranslate nohighlight">\(S^2\)</span>.</p>
+        <p>If <code class="docutils literal notranslate"><span class="pre">near</span></code> is provided, orders <code class="docutils literal notranslate"><span class="pre">(P,</span> <span class="pre">-P)</span></code> so that <code class="docutils literal notranslate"><span class="pre">P</span></code> has positive dot product with <code class="docutils literal notranslate"><span class="pre">near</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.double_arc_chord">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">double_arc_chord</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">P</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">Q</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.double_arc_chord" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute Ptolemy’s chord of the double arc <span class="math notranslate nohighlight">\(\operatorname{crd}(2\widehat{PQ}) = 2\sin\widehat{PQ}\)</span>.</p>
+        <p>In Ptolemy’s <em>Syntaxis Mathematica</em> I.13 (Heiberg pp. 74–76) and Menelaus’s Greek/Hebrew
+        tradition (Halley 1758 p. 82 Scholion: <em>subtensa dupli arcus</em>), spherical trigonometric
+        ratios are stated in terms of chords subtending double the given arcs on a unit-radius sphere:
+        <span class="math notranslate nohighlight">\(\operatorname{crd}(2\theta) = 2\sin\theta = 2\|\mathbf{P}\times\mathbf{Q}\|\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.signed_spherical_sine_ratio">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">signed_spherical_sine_ratio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">P</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">Q</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">R</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.signed_spherical_sine_ratio" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the exact directed spherical sine ratio <span class="math notranslate nohighlight">\(\frac{\sin_{\pm}\widehat{PR}}{\sin_{\pm}\widehat{RQ}}\)</span>.</p>
+        <p>For <code class="docutils literal notranslate"><span class="pre">R</span></code> on the great circle <code class="docutils literal notranslate"><span class="pre">PQ</span></code> (<span class="math notranslate nohighlight">\(\mathbf{R} = \alpha\mathbf{P} + \beta\mathbf{Q}\)</span>):</p>
+        <ul class="simple">
+        <li><p><span class="math notranslate nohighlight">\(\mathbf{P}\times\mathbf{R} = \beta(\mathbf{P}\times\mathbf{Q})\)</span> and
+        <span class="math notranslate nohighlight">\(\mathbf{R}\times\mathbf{Q} = \alpha(\mathbf{P}\times\mathbf{Q})\)</span>,</p></li>
+        <li><p>so the directed ratio of oriented cross products along <span class="math notranslate nohighlight">\(\mathbf{n}_{PQ} = \mathbf{P}\times\mathbf{Q}\)</span>
+        equals <span class="math notranslate nohighlight">\(\beta / \alpha\)</span>, which is <strong>rational</strong> whenever <code class="docutils literal notranslate"><span class="pre">P,</span> <span class="pre">Q</span></code> and the cutting great-circle
+        normal are rational!</p></li>
+        <li><p>Positive when <code class="docutils literal notranslate"><span class="pre">R</span></code> lies on the minor arc <code class="docutils literal notranslate"><span class="pre">PQ</span></code> (or opposite minor arc), negative when <code class="docutils literal notranslate"><span class="pre">R</span></code>
+        divides <code class="docutils literal notranslate"><span class="pre">PQ</span></code> externally.</p></li>
+        </ul>
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalTriangle">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">SphericalTriangle</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalTriangle" title="Link to this definition">¶</a></dt>
+        <dd><p>Intrinsic spherical triangle <span class="math notranslate nohighlight">\(\triangle ABC\)</span> bounded by three minor great-circle arcs</p>
+        <p>(<em>Menelai Sphaericorum</em> Book I, Def. I–II, Halley 1758 p. 1: <em>spatium comprehensum sub arcubus
+        circulorum magnorum in superficie Sphaerae… semper minores semicirculo</em>).</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalTriangle.A">
+        <span class="sig-name descname"><span class="pre">A</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalTriangle.A" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalTriangle.B">
+        <span class="sig-name descname"><span class="pre">B</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalTriangle.B" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalTriangle.C">
+        <span class="sig-name descname"><span class="pre">C</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalTriangle.C" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalTriangle.__post_init__">
+        <span class="sig-name descname"><span class="pre">__post_init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalTriangle.__post_init__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalTriangle.determinant">
+        <span class="sig-name descname"><span class="pre">determinant</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalTriangle.determinant" title="Link to this definition">¶</a></dt>
+        <dd><p>Signed scalar triple product <span class="math notranslate nohighlight">\(\det(\mathbf{A}, \mathbf{B}, \mathbf{C})\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalTriangle.side_great_circles">
+        <span class="sig-name descname"><span class="pre">side_great_circles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#src.geometor.menelaus.spherical.GreatCircle" title="src.geometor.menelaus.spherical.GreatCircle"><span class="pre">GreatCircle</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#src.geometor.menelaus.spherical.GreatCircle" title="src.geometor.menelaus.spherical.GreatCircle"><span class="pre">GreatCircle</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#src.geometor.menelaus.spherical.GreatCircle" title="src.geometor.menelaus.spherical.GreatCircle"><span class="pre">GreatCircle</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalTriangle.side_great_circles" title="Link to this definition">¶</a></dt>
+        <dd><p>Return oriented side great circles <code class="docutils literal notranslate"><span class="pre">(BC,</span> <span class="pre">CA,</span> <span class="pre">AB)</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalTriangle.side_cosines">
+        <span class="sig-name descname"><span class="pre">side_cosines</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalTriangle.side_cosines" title="Link to this definition">¶</a></dt>
+        <dd><p>Return exact cosines <span class="math notranslate nohighlight">\((\cos a, \cos b, \cos c)\)</span> of minor side arcs.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalTriangle.side_sines">
+        <span class="sig-name descname"><span class="pre">side_sines</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalTriangle.side_sines" title="Link to this definition">¶</a></dt>
+        <dd><p>Return exact sines <span class="math notranslate nohighlight">\((\sin a, \sin b, \sin c)\)</span> of minor side arcs.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalTriangle.dihedral_cosines">
+        <span class="sig-name descname"><span class="pre">dihedral_cosines</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalTriangle.dihedral_cosines" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute exact interior dihedral cosines <span class="math notranslate nohighlight">\((\cos A, \cos B, \cos C)\)</span> via Spherical Law of Cosines.</p>
+        <div class="math notranslate nohighlight">
+        \[\cos A = \frac{\cos a - \cos b\,\cos c}{\sin b\,\sin c}.\]</div>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalTriangle.dihedral_sines">
+        <span class="sig-name descname"><span class="pre">dihedral_sines</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalTriangle.dihedral_sines" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute exact interior dihedral sines <span class="math notranslate nohighlight">\((\sin A, \sin B, \sin C)\)</span>:</p>
+        <div class="math notranslate nohighlight">
+        \[\sin A = \frac{|\det(\mathbf{A}, \mathbf{B}, \mathbf{C})|}{\sin b\,\sin c}.\]</div>
+        </dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.spherical_excess_report">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">spherical_excess_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tri</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalTriangle" title="src.geometor.menelaus.spherical.SphericalTriangle"><span class="pre">SphericalTriangle</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.spherical_excess_report" title="Link to this definition">¶</a></dt>
+        <dd><p>Certify Menelaus <em>Sphaerica</em> Prop. I.11 (<span class="math notranslate nohighlight">\(A + B + C &gt; \pi\)</span>) and Spherical Law of Sines (III.2).</p>
+        <p>Uses the Euler–Eriksson exact rational formula for the half-excess tangent:</p>
+        <div class="math notranslate nohighlight">
+        \[\tan\!\left(\frac{E}{2}\right) =
+        \frac{|\det(\mathbf{A}, \mathbf{B}, \mathbf{C})|}{1 + \mathbf{A}\cdot\mathbf{B} + \mathbf{B}\cdot\mathbf{C} + \mathbf{C}\cdot\mathbf{A}},\]</div>
+        <p>where <span class="math notranslate nohighlight">\(E = A + B + C - \pi \in (0, 2\pi)\)</span> is the spherical excess (and area on unit <span class="math notranslate nohighlight">\(S^2\)</span>).
+        Also verifies the Spherical Law of Sines (<em>Sphaerica</em> III.2, Halley p. 86):
+        <span class="math notranslate nohighlight">\(\frac{\sin A}{\sin a} = \frac{\sin B}{\sin b} = \frac{\sin C}{\sin c}\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.polar_triangle">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">polar_triangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tri</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalTriangle" title="src.geometor.menelaus.spherical.SphericalTriangle"><span class="pre">SphericalTriangle</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalTriangle" title="src.geometor.menelaus.spherical.SphericalTriangle"><span class="pre">SphericalTriangle</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.polar_triangle" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct the exact polar triangle <span class="math notranslate nohighlight">\(\triangle A^*B^*C^*\)</span> and verify AAA Congruence (Prop. I.17).</p>
+        <p>Defines <span class="math notranslate nohighlight">\(\mathbf{A}^* = \operatorname{sgn}(\det)\frac{\mathbf{B}\times\mathbf{C}}{\|\mathbf{B}\times\mathbf{C}\|}\)</span>
+        (and cyclically <span class="math notranslate nohighlight">\(\mathbf{B}^*, \mathbf{C}^*\)</span>) so that <span class="math notranslate nohighlight">\(\mathbf{A}^*\cdot\mathbf{A} &gt; 0\)</span>.</p>
+        <p>Verifies the exact supplementary duality laws:</p>
+        <div class="math notranslate nohighlight">
+        \[ \begin{align}\begin{aligned}\cos a^* = -\cos A,\quad \cos b^* = -\cos B,\quad \cos c^* = -\cos C,\\\cos A^* = -\cos a,\quad \cos B^* = -\cos b,\quad \cos C^* = -\cos c,\end{aligned}\end{align} \]</div>
+        <p>proving that fixing the three dihedral angles <span class="math notranslate nohighlight">\((A, B, C)\)</span> of a spherical triangle uniquely
+        determines the three side lengths <span class="math notranslate nohighlight">\((a^*, b^*, c^*)\)</span> of its polar triangle, hence (by SSS
+        congruence, <em>Sphaerica</em> I.8) uniquely determines <span class="math notranslate nohighlight">\(\triangle A^*B^*C^*\)</span> and its polar
+        <span class="math notranslate nohighlight">\((\triangle A^*B^*C^*)^* = \triangle ABC\)</span> (<strong>AAA Spherical Congruence</strong>, <em>Sphaerica</em> I.17,
+        Halley 1758 pp. 18–19).</p>
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">SphericalMenelausResult</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic results for a Spherical Menelaus configuration (<em>Sphaerica</em> III.1).</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.triangle">
+        <span class="sig-name descname"><span class="pre">triangle</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalTriangle" title="src.geometor.menelaus.spherical.SphericalTriangle"><span class="pre">SphericalTriangle</span></a></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.triangle" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.transversal">
+        <span class="sig-name descname"><span class="pre">transversal</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#src.geometor.menelaus.spherical.GreatCircle" title="src.geometor.menelaus.spherical.GreatCircle"><span class="pre">GreatCircle</span></a></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.transversal" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.D">
+        <span class="sig-name descname"><span class="pre">D</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.D" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.E">
+        <span class="sig-name descname"><span class="pre">E</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.E" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.F">
+        <span class="sig-name descname"><span class="pre">F</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.F" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.sin_AF_FB">
+        <span class="sig-name descname"><span class="pre">sin_AF_FB</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.sin_AF_FB" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.sin_BD_DC">
+        <span class="sig-name descname"><span class="pre">sin_BD_DC</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.sin_BD_DC" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.sin_CE_EA">
+        <span class="sig-name descname"><span class="pre">sin_CE_EA</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.sin_CE_EA" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.signed_sine_product">
+        <span class="sig-name descname"><span class="pre">signed_sine_product</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.signed_sine_product" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.crd_2AF">
+        <span class="sig-name descname"><span class="pre">crd_2AF</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.crd_2AF" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.crd_2FB">
+        <span class="sig-name descname"><span class="pre">crd_2FB</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.crd_2FB" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.crd_2BD">
+        <span class="sig-name descname"><span class="pre">crd_2BD</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.crd_2BD" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.crd_2DC">
+        <span class="sig-name descname"><span class="pre">crd_2DC</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.crd_2DC" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.crd_2CE">
+        <span class="sig-name descname"><span class="pre">crd_2CE</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.crd_2CE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.crd_2EA">
+        <span class="sig-name descname"><span class="pre">crd_2EA</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.crd_2EA" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.SphericalMenelausResult.unsigned_chord_product">
+        <span class="sig-name descname"><span class="pre">unsigned_chord_product</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.SphericalMenelausResult.unsigned_chord_product" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.verify_spherical_menelaus">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">verify_spherical_menelaus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tri</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalTriangle" title="src.geometor.menelaus.spherical.SphericalTriangle"><span class="pre">SphericalTriangle</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">transversal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.GreatCircle" title="src.geometor.menelaus.spherical.GreatCircle"><span class="pre">GreatCircle</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalMenelausResult" title="src.geometor.menelaus.spherical.SphericalMenelausResult"><span class="pre">SphericalMenelausResult</span></a></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.verify_spherical_menelaus" title="Link to this definition">¶</a></dt>
+        <dd><p>Intersect <code class="docutils literal notranslate"><span class="pre">tri</span></code>’s extended great-circle sides with <code class="docutils literal notranslate"><span class="pre">transversal</span></code> and prove <em>Sphaerica</em> III.1.</p>
+        <p>Verifies to exact <code class="docutils literal notranslate"><span class="pre">0</span></code> in SymPy:</p>
+        <ol class="arabic simple">
+        <li><p><strong>Signed Spherical Sine Law</strong>:
+        <span class="math notranslate nohighlight">\(\frac{\sin_{\pm}\widehat{AF}}{\sin_{\pm}\widehat{FB}} \cdot \frac{\sin_{\pm}\widehat{BD}}{\sin_{\pm}\widehat{DC}} \cdot \frac{\sin_{\pm}\widehat{CE}}{\sin_{\pm}\widehat{EA}} = -1\)</span>.</p></li>
+        <li><p><strong>Ptolemy / Halley Double-Arc Chord Compound Ratio</strong> (<em>Almagest</em> I.13, Heiberg pp. 74–76;
+        Halley 1758 Prop. III.1, pp. 80–82):
+        <span class="math notranslate nohighlight">\(\frac{\operatorname{crd}(2\widehat{AF})}{\operatorname{crd}(2\widehat{FB})} = \frac{\operatorname{crd}(2\widehat{AE})}{\operatorname{crd}(2\widehat{EC})} \cdot \frac{\operatorname{crd}(2\widehat{DC})}{\operatorname{crd}(2\widehat{BD})}\)</span>
+        (equivalently, unsigned product <span class="math notranslate nohighlight">\(= +1\)</span>).</p></li>
+        </ol>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.spherical_menelaus_default">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">spherical_menelaus_default</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalMenelausResult" title="src.geometor.menelaus.spherical.SphericalMenelausResult"><span class="pre">SphericalMenelausResult</span></a></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.spherical_menelaus_default" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct the canonical rational <span class="math notranslate nohighlight">\(S^2(\mathbb{Q})\)</span> Spherical Menelaus configuration.</p>
+        <p>Uses exact rational vertices:</p>
+        <ul class="simple">
+        <li><p><span class="math notranslate nohighlight">\(A = (0, 0, 1)\)</span> (North Pole),</p></li>
+        <li><p><span class="math notranslate nohighlight">\(B = (3/5, 4/5, 0)\)</span> (Pythagorean point on the equator),</p></li>
+        <li><p><span class="math notranslate nohighlight">\(C = (2/3, 2/3, 1/3)\)</span> (rational point on <span class="math notranslate nohighlight">\(S^2(\mathbb{Q})\)</span>),</p></li>
+        </ul>
+        <p>cut by the transversal great circle with rational normal <span class="math notranslate nohighlight">\(\mathbf{n}_t = (2, -3, 1)\)</span>
+        (so <span class="math notranslate nohighlight">\(F\)</span> divides <span class="math notranslate nohighlight">\(AB\)</span> internally, <span class="math notranslate nohighlight">\(E\)</span> divides <span class="math notranslate nohighlight">\(CA\)</span> internally, and <span class="math notranslate nohighlight">\(D\)</span>
+        divides <span class="math notranslate nohighlight">\(BC\)</span> externally, directly mirroring Halley 1758 Prop. III.1’s diagram!).</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.gnomonic_projection_menelaus">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">gnomonic_projection_menelaus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">res</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalMenelausResult" title="src.geometor.menelaus.spherical.SphericalMenelausResult"><span class="pre">SphericalMenelausResult</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.gnomonic_projection_menelaus" title="Link to this definition">¶</a></dt>
+        <dd><p>Reproduce Menelaus’s &amp; Ptolemy’s 3D-to-2D central projection proof (<em>Sphaerica</em> III.1, Halley p. 80).</p>
+        <p>Projects the six unit vectors <code class="docutils literal notranslate"><span class="pre">A,</span> <span class="pre">B,</span> <span class="pre">C,</span> <span class="pre">D,</span> <span class="pre">E,</span> <span class="pre">F</span></code> from sphere center <code class="docutils literal notranslate"><span class="pre">O=(0,0,0)</span></code> onto the
+        affine plane <span class="math notranslate nohighlight">\(\mathbf{u}\cdot\mathbf{x} = 1\)</span> (with <span class="math notranslate nohighlight">\(\mathbf{u} = (1, 1, 1)\)</span>), obtaining
+        planar points <span class="math notranslate nohighlight">\(A', B', C', D', E', F'\)</span> where great circles become straight lines!
+        Verifies that Planar Menelaus holds on <span class="math notranslate nohighlight">\(\triangle A'B'C'\)</span> and that multiplying by the
+        telescoping radial factors <span class="math notranslate nohighlight">\(\frac{\|OA\|}{\|OB\|}\cdot\frac{\|OB\|}{\|OC\|}\cdot\frac{\|OC\|}{\|OA\|} = 1\)</span>
+        yields Spherical Menelaus.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.verify_spherical_menelaus_universal">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">verify_spherical_menelaus_universal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.verify_spherical_menelaus_universal" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove Spherical Menelaus universally over symbolic 3D vectors <code class="docutils literal notranslate"><span class="pre">A,</span> <span class="pre">B,</span> <span class="pre">C,</span> <span class="pre">nt</span></code>.</p>
+        <p>For any non-coplanar vectors <span class="math notranslate nohighlight">\(\mathbf{A}, \mathbf{B}, \mathbf{C}\)</span> and transversal plane
+        normal <span class="math notranslate nohighlight">\(\mathbf{n}_t\)</span>, the ray intersections <span class="math notranslate nohighlight">\(\mathbf{v}_D = (\mathbf{B}\times\mathbf{C})\times\mathbf{n}_t\)</span>,
+        <span class="math notranslate nohighlight">\(\mathbf{v}_E = (\mathbf{C}\times\mathbf{A})\times\mathbf{n}_t\)</span>, and
+        <span class="math notranslate nohighlight">\(\mathbf{v}_F = (\mathbf{A}\times\mathbf{B})\times\mathbf{n}_t\)</span> satisfy:</p>
+        <div class="math notranslate nohighlight">
+        \[\frac{(\mathbf{A}\times\mathbf{v}_F)\cdot(\mathbf{A}\times\mathbf{B})}{(\mathbf{v}_F\times\mathbf{B})\cdot(\mathbf{A}\times\mathbf{B})}
+        = -\frac{\mathbf{A}\cdot\mathbf{n}_t}{\mathbf{B}\cdot\mathbf{n}_t},\]</div>
+        <p>whose cyclic product around <span class="math notranslate nohighlight">\(\triangle ABC\)</span> simplifies identically to <span class="math notranslate nohighlight">\(-1\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.spherical_cross_ratio">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">spherical_cross_ratio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">P1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">P2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">P3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">P4</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalPoint" title="src.geometor.menelaus.spherical.SphericalPoint"><span class="pre">SphericalPoint</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.spherical_cross_ratio" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the exact spherical sine cross-ratio <span class="math notranslate nohighlight">\((P_1, P_2; P_3, P_4)_{S^2}\)</span> along a great circle:</p>
+        <div class="math notranslate nohighlight">
+        \[(P_1, P_2; P_3, P_4)_{S^2} =
+        \frac{\sin_{\pm}\widehat{P_1 P_3}\cdot\sin_{\pm}\widehat{P_2 P_4}}{\sin_{\pm}\widehat{P_2 P_3}\cdot\sin_{\pm}\widehat{P_1 P_4}}.\]</div>
+        <p>Note: Using <a class="reference internal" href="#src.geometor.menelaus.spherical.signed_spherical_sine_ratio" title="src.geometor.menelaus.spherical.signed_spherical_sine_ratio"><code class="xref py py-func docutils literal notranslate"><span class="pre">signed_spherical_sine_ratio()</span></code></a>, notice that
+        <span class="math notranslate nohighlight">\(\frac{\sin_{\pm}\widehat{P_1 P_3}}{\sin_{\pm}\widehat{P_3 P_2}} \div \frac{\sin_{\pm}\widehat{P_1 P_4}}{\sin_{\pm}\widehat{P_4 P_2}} = (P_1, P_2; P_3, P_4)_{S^2}\)</span>!</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.verify_spherical_cross_ratio_invariance">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">verify_spherical_cross_ratio_invariance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.verify_spherical_cross_ratio_invariance" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove Spherical Anharmonic Pencil Invariance (<em>Menelai Sphaericorum</em> Prop. III.8, Halley pp. 93–94).</p>
+        <p>Constructs a pencil of four great circles concurrent at apex <span class="math notranslate nohighlight">\(V = (0, 0, 1)\)</span> with rational
+        tangent directions, cuts them with two completely independent oblique great circles
+        <span class="math notranslate nohighlight">\(g_1\)</span> (normal <span class="math notranslate nohighlight">\((1, 2, -3)\)</span>) and <span class="math notranslate nohighlight">\(g_2\)</span> (normal <span class="math notranslate nohighlight">\((-2, 1, -4)\)</span>), and verifies
+        that their spherical sine cross-ratios agree to exact <code class="docutils literal notranslate"><span class="pre">0</span></code> in SymPy:</p>
+        <div class="math notranslate nohighlight">
+        \[(X_1, X_2; X_3, X_4)_{S^2} = (Y_1, Y_2; Y_3, Y_4)_{S^2},\]</div>
+        <p>plus verifies a harmonic pencil (<span class="math notranslate nohighlight">\(\text{cross-ratio} = -1\)</span>, matching internal/external
+        spherical angle bisectors in <em>Sphaerica</em> III.6 &amp; III.8!).</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.spherical.spherical_orthocenter_menelaus">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.spherical.</span></span><span class="sig-name descname"><span class="pre">spherical_orthocenter_menelaus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tri</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.menelaus.spherical.SphericalTriangle" title="src.geometor.menelaus.spherical.SphericalTriangle"><span class="pre">SphericalTriangle</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.spherical.spherical_orthocenter_menelaus" title="Link to this definition">¶</a></dt>
+        <dd><p>Verify Menelaus <em>Sphaerica</em> Prop. III.10 (Halley pp. 95–97): concurrency of spherical altitudes.</p>
+        <p>Through each vertex <span class="math notranslate nohighlight">\(A, B, C\)</span>, constructs the great circle perpendicular to the opposite
+        side great circle <span class="math notranslate nohighlight">\(BC, CA, AB\)</span> (passing through its pole <span class="math notranslate nohighlight">\(A^*, B^*, C^*\)</span>), verifies
+        that all three spherical altitudes concur at the spherical orthocenter <span class="math notranslate nohighlight">\(H_{S^2}\)</span>, and
+        verifies that the spherical Ceva product of the altitude feet <span class="math notranslate nohighlight">\(H_a, H_b, H_c\)</span> equals <span class="math notranslate nohighlight">\(+1\)</span>
+        while their spherical harmonic conjugates lie on the spherical orthic axis (product <span class="math notranslate nohighlight">\(-1\)</span>).</p>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../../index.html">GEOMETOR • menelaus</a>
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../../log/26.316-initial-codex/index.html">Initial Release: Menelai Sphaericorum Libri III Codex & Exact Symbolic Transversals</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../index.html" class="is-active" aria-selected="true" >Modules</a></li>
+        <li><a href="../../../../../../about/index.html"  >About</a></li>
+        <li><a href="../../../../../../connect.html"  >connect</a></li>
+        <li><a href="../../../../../../log/index.html"  >Log</a></li>
+        <li><a href="../../../../../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 100 CE (Halley 1758 / Heiberg 1898 / Björnbo 1902) • Digital Edition GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

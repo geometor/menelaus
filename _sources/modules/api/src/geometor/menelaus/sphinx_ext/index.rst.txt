@@ -1,0 +1,44 @@
+src.geometor.menelaus.sphinx_ext
+================================
+
+.. py:module:: src.geometor.menelaus.sphinx_ext
+
+.. autoapi-nested-parse::
+
+   Runtime Sphinx & photon-platform/publish integration for GEOMETOR Menelaus.
+
+   Refines the ``la`` companion-track tab label to ``"Latin (Halley 1758)"`` in
+   ``photon_platform.publish.book`` (without modifying ``photon-platform/publish``)
+   and binds local ``objects.inv`` inventories for sister GEOMETOR repositories so
+   offline sandbox builds produce zero warnings.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   src.geometor.menelaus.sphinx_ext.register_halley_latin_track_label
+   src.geometor.menelaus.sphinx_ext.configure_local_intersphinx
+   src.geometor.menelaus.sphinx_ext.setup
+
+
+Module Contents
+---------------
+
+.. py:function:: register_halley_latin_track_label() -> None
+
+   Update the ``la`` track label in ``photon_platform.publish.book`` to ``Latin (Halley 1758)``.
+
+
+.. py:function:: configure_local_intersphinx(intersphinx_mapping: dict[str, Any], project_root: pathlib.Path) -> None
+
+   Bind local ``objects.inv`` files for sister GEOMETOR codices and drop remote-only targets.
+
+
+.. py:function:: setup(app: Any) -> dict[str, Any]
+
+   Sphinx extension entry point.
+
+

@@ -1,0 +1,108 @@
+src.geometor.menelaus.duality_ceva
+==================================
+
+.. py:module:: src.geometor.menelaus.duality_ceva
+
+.. autoapi-nested-parse::
+
+   Exact projective Menelaus–Ceva point-line duality and trilinear polar constructions.
+
+   Connects ``geometor/menelaus`` directly to ``geometor/ceva``, ``geometor/altshiller-court``
+   (Chapters VI & X), ``geometor/pappus``, and ``geometor/etc``:
+
+   1. **Projective Polarity in** :math:`\mathbb{P}^2` (:func:`verify_projective_menelaus_ceva_duality`):
+      Demonstrates how standard homogeneous polarity :math:`[x : y : z] \leftrightarrow \{xX + yY + zZ = 0\}`
+      maps a collinear **Menelaus transversal** (:math:`\det(D, E, F) = 0`, product :math:`-1`) to a
+      concurrent **Ceva triple** (:math:`\det(d^*, e^*, f^*) = 0`, product :math:`+1`) on the dual triangle.
+   2. **Harmonic Conjugation & Trilinear Polars** (:func:`construct_trilinear_polar`,
+      :func:`verify_universal_trilinear_polar`):
+      Proves that replacing each Ceva trace :math:`(D_c, E_c, F_c)` of a point :math:`P` by its
+      harmonic conjugate :math:`(D_m, E_m, F_m)` with respect to the vertices of :math:`\triangle ABC`
+      negates all three side ratios:
+
+      .. math::
+
+         \left(-\frac{\overline{AF_c}}{\overline{F_c B}}\right)
+         \left(-\frac{\overline{BD_c}}{\overline{D_c C}}\right)
+         \left(-\frac{\overline{CE_c}}{\overline{E_c A}}\right)
+         = (-1)^3 (+1) = -1,
+
+      forcing :math:`D_m = BC \cap E_c F_c`, :math:`E_m = CA \cap F_c D_c`, and
+      :math:`F_m = AB \cap D_c E_c` onto a single line: the **trilinear polar** :math:`\ell_P` of :math:`P`.
+   3. **ETC Triangle Center Catalogue** (:func:`etc_trilinear_polar_catalogue`):
+      Evaluates exact rational trilinear polars for ``X(1)`` (anti-orthic axis), ``X(4)`` (orthic axis,
+      planar limit of Menelaus *Sphaerica* III.10), ``X(7)`` (Gergonne line), and ``X(2)`` (ideal line
+      at infinity via parallel medial sides).
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   src.geometor.menelaus.duality_ceva.harmonic_conjugate_collinear
+   src.geometor.menelaus.duality_ceva.construct_trilinear_polar
+   src.geometor.menelaus.duality_ceva.verify_projective_menelaus_ceva_duality
+   src.geometor.menelaus.duality_ceva.verify_universal_trilinear_polar
+   src.geometor.menelaus.duality_ceva.etc_trilinear_polar_catalogue
+
+
+Module Contents
+---------------
+
+.. py:function:: harmonic_conjugate_collinear(P: sympy.geometry.Point, Q: sympy.geometry.Point, R: sympy.geometry.Point) -> sympy.geometry.Point
+
+   Return the exact projective harmonic conjugate ``R'`` of ``R`` with respect to ``(P, Q)``.
+
+   If ``R`` divides ``PQ`` in signed ratio :math:`\lambda = \overline{PR}/\overline{RQ}` (:math:`\lambda \neq 1`),
+   then ``R'`` divides ``PQ`` in signed ratio :math:`-\lambda`, satisfying :math:`(P, Q; R, R') = -1`.
+
+
+.. py:function:: construct_trilinear_polar(A_coords: tuple[Any, Any] = (2, 9), B_coords: tuple[Any, Any] = (0, 0), C_coords: tuple[Any, Any] = (10, 0), P_coords: tuple[Any, Any] = (3, 3)) -> tuple[geometor.model.Model, dict[str, Any]]
+
+   Build an exact ``geometor.model`` demonstration of Ceva–Menelaus harmonic duality.
+
+   Default coordinates ``A=(2,9), B=(0,0), C=(10,0), P=(3,3)`` produce a compact, completely
+   rational configuration where ``Dm=(-15,0)``, ``Em=(14,-3)``, ``Fm=(-2,-9)`` all have small
+   integer coordinates!
+
+
+.. py:function:: verify_projective_menelaus_ceva_duality() -> dict[str, Any]
+
+   Prove exact :math:`\mathbb{P}^2` polarity pairing Menelaus transversals with Ceva perspectors.
+
+   Works in homogeneous coordinates relative to the canonical projective reference triangle
+   :math:`A = [1:0:0], B = [0:1:0], C = [0:0:1]`:
+
+   - Any transversal line :math:`\ell = [p : q : r]^T` (:math:`pqr \neq 0`) meets :math:`BC (x=0)`
+     at :math:`D = [0 : r : -q]`, :math:`CA (y=0)` at :math:`E = [-r : 0 : p]`, and
+     :math:`AB (z=0)` at :math:`F = [q : -p : 0]`, with :math:`\det(D, E, F) = 0` and directed
+     barycentric Menelaus product :math:`(-p/q)(-q/r)(-r/p) = -1`.
+   - Under point-line polarity :math:`\ell \mapsto L^* = [p^{-1} : q^{-1} : r^{-1}]` (or isotopic
+     reciprocal / dual basis), the dual lines through the dual vertices concur at :math:`[p : q : r]`,
+     with Ceva trace ratios :math:`(+q/p)(+r/q)(+p/r) = +1`, while the trilinear polar of
+     :math:`P = [u : v : w]` is the exact dual line :math:`\frac{x}{u} + \frac{y}{v} + \frac{z}{w} = 0`!
+
+
+.. py:function:: verify_universal_trilinear_polar() -> dict[str, Any]
+
+   Alias wrapper returning exact universal homogeneous proof data.
+
+
+.. py:function:: etc_trilinear_polar_catalogue() -> dict[str, dict[str, Any]]
+
+   Construct exact rational Ceva–Menelaus trilinear polar pairings for classic ETC centers.
+
+   Evaluated on the scalene Heronian reference triangle ``A=(-9,12), B=(0,0), C=(7,0)``
+   (side lengths ``a=7, b=20, c=15``):
+
+   - ``X(1)`` **Incenter** ``(1, 2)`` :math:`\longleftrightarrow` **Anti-orthic axis** (external bisector traces).
+   - ``X(4)`` **Orthocenter** ``(-9, -27/4)`` :math:`\longleftrightarrow` **Orthic axis** (planar limit of
+     Menelaus *Sphaerica* III.10).
+   - ``X(7)`` **Gergonne point** ``(-27/19, 24/19)`` :math:`\longleftrightarrow` **Gergonne line** (perspectivity
+     axis of the contact triangle).
+   - ``X(2)`` **Centroid** ``(-2/3, 4)`` :math:`\longleftrightarrow` **Ideal line at infinity** (verified by
+     exact parallelism of the medial triangle sides :math:`E_c F_c \parallel BC`, etc.).
+
+

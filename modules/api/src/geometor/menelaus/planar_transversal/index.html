@@ -1,0 +1,414 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>src.geometor.menelaus.planar_transversal &mdash; GEOMETOR • menelaus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../../index.html">
+        <img src="../../../../../../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">menelaus</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../../sphaerica/index.html"  >MENELAI SPHAERICORUM LIBRI III</a>
+        </li>
+        <li>
+          <a href="../../../../../../demos/index.html"  >Symbolic Demonstrations</a>
+        </li>
+        <li>
+          <a href="../../../../../../mission/index.html"  >mission</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../../index.html" title="Return to Project Portal">&larr; menelaus</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../../index.html">GEOMETOR • menelaus</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-src.geometor.menelaus.planar_transversal">
+        <span id="src-geometor-menelaus-planar-transversal"></span><h1>src.geometor.menelaus.planar_transversal<a class="headerlink" href="#module-src.geometor.menelaus.planar_transversal" title="Link to this heading">¶</a></h1>
+        <p>Exact symbolic Planar Menelaus constructions, Converse theorems, and Rational Trigonometry.</p>
+        <p>Implements:</p>
+        <ul class="simple">
+        <li><p>Classical Euclidean parallel-auxiliary demonstration of <strong>Planar Menelaus’s Theorem</strong>
+        (Ptolemy <em>Syntaxis Mathematica</em> I.13, ed. Heiberg 1898 pp. 68–70; Halley 1758 <em>Menelai
+        Sphaericorum Libri III</em>, Lemma I, p. 83), verifying both the directed ratio product
+        <span class="math notranslate nohighlight">\(\frac{\overline{AF}}{\overline{FB}} \cdot \frac{\overline{BD}}{\overline{DC}} \cdot \frac{\overline{CE}}{\overline{EA}} = -1\)</span>
+        and the unsigned magnitude product <span class="math notranslate nohighlight">\(= +1\)</span>.</p></li>
+        <li><p>Universal symbolic polynomial proof over <span class="math notranslate nohighlight">\(\mathbb{Q}(x_A, y_A, x_B, y_B, x_C, y_C, u, v, w)\)</span>
+        establishing both the forward theorem and the <strong>Converse of Menelaus</strong>.</p></li>
+        <li><p>Constructive applications of the Converse of Menelaus:</p>
+        <ol class="arabic simple">
+        <li><p><strong>External Angle-Bisector Axis</strong> (the three external angle bisectors of a scalene
+        triangle meet the opposite sides in three collinear points; cf. Menelaus <em>Sphaerica</em> III.6).</p></li>
+        <li><p><strong>Desargues’s Two-Triangle Theorem</strong> (three Menelaus applications on <span class="math notranslate nohighlight">\(\triangle OBC\)</span>,
+        <span class="math notranslate nohighlight">\(\triangle OCA\)</span>, <span class="math notranslate nohighlight">\(\triangle OAB\)</span>).</p></li>
+        <li><p><strong>Pascal’s Hexagrammum Mysticum</strong> (three Menelaus applications on the diagonal triangle
+        combined with Euclid III.35/III.36 chord power products).</p></li>
+        <li><p><strong>Monge’s Three-Circle Similicenter Theorem</strong> (collinearity of the three exsimilicenters
+        and three pairs of insimilicenters + one exsimilicenter).</p></li>
+        </ol>
+        </li>
+        <li><p><strong>Rational Trigonometry</strong> formulation (Wildberger <em>Divine Proportions</em>) expressing Planar
+        Menelaus purely over <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span> via <code class="docutils literal notranslate"><span class="pre">quadrance</span></code>, <code class="docutils literal notranslate"><span class="pre">line_spread</span></code>, <code class="docutils literal notranslate"><span class="pre">vertex_spread</span></code>,
+        and <code class="docutils literal notranslate"><span class="pre">cross_ratio</span></code> without square roots or transcendental functions.</p></li>
+        </ul>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.planar_transversal.MenelausReport" title="src.geometor.menelaus.planar_transversal.MenelausReport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenelausReport</span></code></a></p></td>
+        <td><p>Exact symbolic summary of a Planar Menelaus configuration.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.planar_transversal.signed_segment_ratio" title="src.geometor.menelaus.planar_transversal.signed_segment_ratio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">signed_segment_ratio</span></code></a>(P, Q, R) → sympy.Expr</p></td>
+        <td><p>Compute the exact directed ratio <span class="math notranslate nohighlight">\(\overline{PR} / \overline{RQ}\)</span> for collinear <code class="docutils literal notranslate"><span class="pre">P,</span> <span class="pre">Q,</span> <span class="pre">R</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.menelaus.planar_transversal.menelaus_product" title="src.geometor.menelaus.planar_transversal.menelaus_product"><code class="xref py py-obj docutils literal notranslate"><span class="pre">menelaus_product</span></code></a>(A, B, C, D, E, F) → dict[str, sympy.Expr]</p></td>
+        <td><p>Evaluate the three directed side ratios and signed/unsigned Menelaus products.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.planar_transversal.verify_menelaus_converse" title="src.geometor.menelaus.planar_transversal.verify_menelaus_converse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_menelaus_converse</span></code></a>(A, B, C, D, E, F) → MenelausReport</p></td>
+        <td><p>Verify the Converse of Menelaus: signed ratio product <code class="docutils literal notranslate"><span class="pre">==</span> <span class="pre">-1</span></code> implies <code class="docutils literal notranslate"><span class="pre">D,</span> <span class="pre">E,</span> <span class="pre">F</span></code> collinear.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.menelaus.planar_transversal.construct_parallel_through" title="src.geometor.menelaus.planar_transversal.construct_parallel_through"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_parallel_through</span></code></a>(model, ref_line, through_pt, *) → sympy.geometry.Line</p></td>
+        <td><p>Construct the exact Euclidean line through <code class="docutils literal notranslate"><span class="pre">through_pt</span></code> parallel to <code class="docutils literal notranslate"><span class="pre">ref_line</span></code> (Euclid I.31).</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.planar_transversal.construct_menelaus_planar" title="src.geometor.menelaus.planar_transversal.construct_menelaus_planar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_menelaus_planar</span></code></a>([A_coords, B_coords, ...]) → tuple[geometor.model.Model, dict[str, Any]]</p></td>
+        <td><p>Build and verify the exact Planar Menelaus model with Euclidean parallel auxiliary <code class="docutils literal notranslate"><span class="pre">CH</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.menelaus.planar_transversal.verify_planar_menelaus_universal" title="src.geometor.menelaus.planar_transversal.verify_planar_menelaus_universal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_planar_menelaus_universal</span></code></a>() → dict[str, sympy.Expr]</p></td>
+        <td><p>Prove Planar Menelaus and its Converse universally over <code class="docutils literal notranslate"><span class="pre">Q(xA,</span> <span class="pre">yA,</span> <span class="pre">xB,</span> <span class="pre">yB,</span> <span class="pre">xC,</span> <span class="pre">yC,</span> <span class="pre">u,</span> <span class="pre">v,</span> <span class="pre">w)</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.planar_transversal.menelaus_rational_trig_invariants" title="src.geometor.menelaus.planar_transversal.menelaus_rational_trig_invariants"><code class="xref py py-obj docutils literal notranslate"><span class="pre">menelaus_rational_trig_invariants</span></code></a>(model, data) → dict[str, Any]</p></td>
+        <td><p>Compute and verify Wildberger Rational Trigonometry invariants for Planar Menelaus.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.menelaus.planar_transversal.construct_external_bisector_axis" title="src.geometor.menelaus.planar_transversal.construct_external_bisector_axis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_external_bisector_axis</span></code></a>([A_coords, B_coords, ...]) → tuple[geometor.model.Model, dict[str, Any]]</p></td>
+        <td><p>Construct the External Angle-Bisector Axis (anti-orthic axis) via Converse of Menelaus.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.planar_transversal.construct_desargues_axis" title="src.geometor.menelaus.planar_transversal.construct_desargues_axis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_desargues_axis</span></code></a>([O_coords, A_coords, ...]) → tuple[geometor.model.Model, dict[str, Any]]</p></td>
+        <td><p>Prove Desargues's Two-Triangle Theorem via three applications of Planar Menelaus.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.menelaus.planar_transversal.construct_pascal_hexagram" title="src.geometor.menelaus.planar_transversal.construct_pascal_hexagram"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_pascal_hexagram</span></code></a>() → tuple[geometor.model.Model, dict[str, Any]]</p></td>
+        <td><p>Prove Pascal's <em>Hexagrammum Mysticum</em> on a circle via three Planar Menelaus applications.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.menelaus.planar_transversal.construct_monge_exsimilicenters" title="src.geometor.menelaus.planar_transversal.construct_monge_exsimilicenters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_monge_exsimilicenters</span></code></a>([A_coords, B_coords, ...]) → tuple[geometor.model.Model, dict[str, Any]]</p></td>
+        <td><p>Prove Monge's Three-Circle Theorem via the Converse of Menelaus.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.signed_segment_ratio">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.planar_transversal.</span></span><span class="sig-name descname"><span class="pre">signed_segment_ratio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">P</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Q</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">R</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.signed_segment_ratio" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the exact directed ratio <span class="math notranslate nohighlight">\(\overline{PR} / \overline{RQ}\)</span> for collinear <code class="docutils literal notranslate"><span class="pre">P,</span> <span class="pre">Q,</span> <span class="pre">R</span></code>.</p>
+        <p>Under this classical tail-to-trace / trace-to-head convention:</p>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">signed_segment_ratio(P,</span> <span class="pre">Q,</span> <span class="pre">R)</span> <span class="pre">&gt;</span> <span class="pre">0</span></code> when <code class="docutils literal notranslate"><span class="pre">R</span></code> divides segment <code class="docutils literal notranslate"><span class="pre">PQ</span></code> <em>internally</em>
+        (strictly between <code class="docutils literal notranslate"><span class="pre">P</span></code> and <code class="docutils literal notranslate"><span class="pre">Q</span></code>).</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">signed_segment_ratio(P,</span> <span class="pre">Q,</span> <span class="pre">R)</span> <span class="pre">&lt;</span> <span class="pre">0</span></code> when <code class="docutils literal notranslate"><span class="pre">R</span></code> divides line <code class="docutils literal notranslate"><span class="pre">PQ</span></code> <em>externally</em>
+        (outside segment <code class="docutils literal notranslate"><span class="pre">PQ</span></code>).</p></li>
+        </ul>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>P</strong> – Segment tail vertex.</p></li>
+        <li><p><strong>Q</strong> – Segment head vertex.</p></li>
+        <li><p><strong>R</strong> – Collinear division point (<span class="math notranslate nohighlight">\(R \neq Q\)</span>).</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact simplified <code class="xref py py-class docutils literal notranslate"><span class="pre">sympy.Expr</span></code> equal to <span class="math notranslate nohighlight">\(\overline{PR} / \overline{RQ}\)</span>.</p>
+        </dd>
+        <dt class="field-odd">Raises<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>ValueError</strong> – If <code class="docutils literal notranslate"><span class="pre">P,</span> <span class="pre">Q,</span> <span class="pre">R</span></code> are not collinear or <code class="docutils literal notranslate"><span class="pre">R</span></code> coincides with <code class="docutils literal notranslate"><span class="pre">Q</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.menelaus_product">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.planar_transversal.</span></span><span class="sig-name descname"><span class="pre">menelaus_product</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">C</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">D</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">F</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.menelaus_product" title="Link to this definition">¶</a></dt>
+        <dd><p>Evaluate the three directed side ratios and signed/unsigned Menelaus products.</p>
+        <p>Expects <code class="docutils literal notranslate"><span class="pre">D</span></code> on line <code class="docutils literal notranslate"><span class="pre">BC</span></code>, <code class="docutils literal notranslate"><span class="pre">E</span></code> on line <code class="docutils literal notranslate"><span class="pre">CA</span></code>, and <code class="docutils literal notranslate"><span class="pre">F</span></code> on line <code class="docutils literal notranslate"><span class="pre">AB</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Dictionary with exact symbolic entries <code class="docutils literal notranslate"><span class="pre">AF_FB</span></code>, <code class="docutils literal notranslate"><span class="pre">BD_DC</span></code>, <code class="docutils literal notranslate"><span class="pre">CE_EA</span></code>,
+        <code class="docutils literal notranslate"><span class="pre">signed_product</span></code> (<span class="math notranslate nohighlight">\(-1\)</span> for collinear <code class="docutils literal notranslate"><span class="pre">D,</span> <span class="pre">E,</span> <span class="pre">F</span></code>; <span class="math notranslate nohighlight">\(+1\)</span> for concurrent cevians),
+        and <code class="docutils literal notranslate"><span class="pre">unsigned_product</span></code> (<span class="math notranslate nohighlight">\(+1\)</span> in magnitude).</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.verify_menelaus_converse">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.planar_transversal.</span></span><span class="sig-name descname"><span class="pre">verify_menelaus_converse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">C</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">D</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">F</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.geometor.menelaus.planar_transversal.MenelausReport" title="src.geometor.menelaus.planar_transversal.MenelausReport"><span class="pre">MenelausReport</span></a></span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.verify_menelaus_converse" title="Link to this definition">¶</a></dt>
+        <dd><p>Verify the Converse of Menelaus: signed ratio product <code class="docutils literal notranslate"><span class="pre">==</span> <span class="pre">-1</span></code> implies <code class="docutils literal notranslate"><span class="pre">D,</span> <span class="pre">E,</span> <span class="pre">F</span></code> collinear.</p>
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.MenelausReport">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.planar_transversal.</span></span><span class="sig-name descname"><span class="pre">MenelausReport</span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.MenelausReport" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic summary of a Planar Menelaus configuration.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.MenelausReport.AF_FB">
+        <span class="sig-name descname"><span class="pre">AF_FB</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.MenelausReport.AF_FB" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.MenelausReport.BD_DC">
+        <span class="sig-name descname"><span class="pre">BD_DC</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.MenelausReport.BD_DC" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.MenelausReport.CE_EA">
+        <span class="sig-name descname"><span class="pre">CE_EA</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.MenelausReport.CE_EA" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.MenelausReport.signed_product">
+        <span class="sig-name descname"><span class="pre">signed_product</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.MenelausReport.signed_product" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.MenelausReport.unsigned_product">
+        <span class="sig-name descname"><span class="pre">unsigned_product</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.MenelausReport.unsigned_product" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.MenelausReport.collinear">
+        <span class="sig-name descname"><span class="pre">collinear</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.MenelausReport.collinear" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.construct_parallel_through">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.planar_transversal.</span></span><span class="sig-name descname"><span class="pre">construct_parallel_through</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Line</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">through_pt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">guide_aux_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Paux'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">classes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.geometry.Line</span></span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.construct_parallel_through" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct the exact Euclidean line through <code class="docutils literal notranslate"><span class="pre">through_pt</span></code> parallel to <code class="docutils literal notranslate"><span class="pre">ref_line</span></code> (Euclid I.31).</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.construct_menelaus_planar">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.planar_transversal.</span></span><span class="sig-name descname"><span class="pre">construct_menelaus_planar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(3,</span> <span class="pre">6)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">C_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(9,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">D_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(12,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">F_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Model</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.construct_menelaus_planar" title="Link to this definition">¶</a></dt>
+        <dd><p>Build and verify the exact Planar Menelaus model with Euclidean parallel auxiliary <code class="docutils literal notranslate"><span class="pre">CH</span></code>.</p>
+        <p>With default integer coordinates <code class="docutils literal notranslate"><span class="pre">A=(3,6),</span> <span class="pre">B=(0,0),</span> <span class="pre">C=(9,0),</span> <span class="pre">D=(12,0),</span> <span class="pre">F=(2,4)</span></code>:</p>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">E</span> <span class="pre">=</span> <span class="pre">(7,</span> <span class="pre">2)</span></code> on <code class="docutils literal notranslate"><span class="pre">CA</span></code> and <code class="docutils literal notranslate"><span class="pre">H</span> <span class="pre">=</span> <span class="pre">(3/2,</span> <span class="pre">3)</span></code> on <code class="docutils literal notranslate"><span class="pre">AB</span></code>.</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">AF/FB</span> <span class="pre">=</span> <span class="pre">1/2</span></code>, <code class="docutils literal notranslate"><span class="pre">BD/DC</span> <span class="pre">=</span> <span class="pre">-4</span></code>, <code class="docutils literal notranslate"><span class="pre">CE/EA</span> <span class="pre">=</span> <span class="pre">1/2</span></code>, yielding <code class="docutils literal notranslate"><span class="pre">(1/2)*(-4)*(1/2)</span> <span class="pre">=</span> <span class="pre">-1</span></code>.</p></li>
+        </ul>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.verify_planar_menelaus_universal">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.planar_transversal.</span></span><span class="sig-name descname"><span class="pre">verify_planar_menelaus_universal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.verify_planar_menelaus_universal" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove Planar Menelaus and its Converse universally over <code class="docutils literal notranslate"><span class="pre">Q(xA,</span> <span class="pre">yA,</span> <span class="pre">xB,</span> <span class="pre">yB,</span> <span class="pre">xC,</span> <span class="pre">yC,</span> <span class="pre">u,</span> <span class="pre">v,</span> <span class="pre">w)</span></code>.</p>
+        <p>Parametrizes:</p>
+        <ul class="simple">
+        <li><p><span class="math notranslate nohighlight">\(F = (1 - u)A + uB\)</span> on <span class="math notranslate nohighlight">\(AB\)</span> (<span class="math notranslate nohighlight">\(\overline{AF}/\overline{FB} = u/(1-u)\)</span>),</p></li>
+        <li><p><span class="math notranslate nohighlight">\(D = (1 - w)B + wC\)</span> on <span class="math notranslate nohighlight">\(BC\)</span> (<span class="math notranslate nohighlight">\(\overline{BD}/\overline{DC} = w/(1-w)\)</span>),</p></li>
+        <li><p><span class="math notranslate nohighlight">\(E = (1 - v)C + vA\)</span> on <span class="math notranslate nohighlight">\(CA\)</span> (<span class="math notranslate nohighlight">\(\overline{CE}/\overline{EA} = v/(1-v)\)</span>).</p></li>
+        </ul>
+        <p>Proves the exact polynomial determinant factorization:</p>
+        <div class="math notranslate nohighlight">
+        \[\begin{split}\det\begin{pmatrix} x_D &amp; y_D &amp; 1 \\ x_E &amp; y_E &amp; 1 \\ x_F &amp; y_F &amp; 1 \end{pmatrix}
+        = 2\,\operatorname{Area}(\triangle ABC)\,\bigl(u v w + (1 - u)(1 - v)(1 - w)\bigr),\end{split}\]</div>
+        <p>which vanishes for non-degenerate <span class="math notranslate nohighlight">\(\triangle ABC\)</span> if and only if
+        <span class="math notranslate nohighlight">\(\frac{u}{1-u}\frac{w}{1-w}\frac{v}{1-v} = -1\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.menelaus_rational_trig_invariants">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.planar_transversal.</span></span><span class="sig-name descname"><span class="pre">menelaus_rational_trig_invariants</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.menelaus_rational_trig_invariants" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute and verify Wildberger Rational Trigonometry invariants for Planar Menelaus.</p>
+        <p>Proves two purely rational (<span class="math notranslate nohighlight">\(\mathbb{Q}\)</span>-valued, square-root-free) formulations:</p>
+        <ol class="arabic">
+        <li><p><strong>Menelaus Quadrance Law</strong>:
+        <span class="math notranslate nohighlight">\(Q(A, F)\,Q(B, D)\,Q(C, E) = Q(F, B)\,Q(D, C)\,Q(E, A)\)</span>.</p></li>
+        <li><p><strong>Menelaus Spread Telescoping Law</strong>:
+        Applying the Spread Law to sub-triangles <span class="math notranslate nohighlight">\(\triangle AFE\)</span>, <span class="math notranslate nohighlight">\(\triangle BDF\)</span>,
+        and <span class="math notranslate nohighlight">\(\triangle CDE\)</span> cut by transversal <span class="math notranslate nohighlight">\(t\)</span> against side lines <span class="math notranslate nohighlight">\(a, b, c\)</span>:</p>
+        <div class="math notranslate nohighlight">
+        \[\frac{Q(A, F)}{Q(E, A)} = \frac{s(t, b)}{s(t, c)},\quad
+        \frac{Q(B, D)}{Q(F, B)} = \frac{s(t, c)}{s(t, a)},\quad
+        \frac{Q(C, E)}{Q(D, C)} = \frac{s(t, a)}{s(t, b)},\]</div>
+        <p>whose product telescopes identically to <span class="math notranslate nohighlight">\(1\)</span> over <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span>.</p>
+        </li>
+        </ol>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.construct_external_bisector_axis">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.planar_transversal.</span></span><span class="sig-name descname"><span class="pre">construct_external_bisector_axis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(-9,</span> <span class="pre">12)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">C_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(7,</span> <span class="pre">0)</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Model</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.construct_external_bisector_axis" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct the External Angle-Bisector Axis (anti-orthic axis) via Converse of Menelaus.</p>
+        <p>Uses scalene Heronian triangle <code class="docutils literal notranslate"><span class="pre">A=(-9,12),</span> <span class="pre">B=(0,0),</span> <span class="pre">C=(7,0)</span></code> with exact integer side lengths
+        <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">=</span> <span class="pre">7,</span> <span class="pre">b</span> <span class="pre">=</span> <span class="pre">20,</span> <span class="pre">c</span> <span class="pre">=</span> <span class="pre">15</span></code>, integer incenter <code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">=</span> <span class="pre">(1,</span> <span class="pre">2)</span></code>, and external bisector traces
+        <code class="docutils literal notranslate"><span class="pre">De</span> <span class="pre">=</span> <span class="pre">(-21,</span> <span class="pre">0)</span></code>, <code class="docutils literal notranslate"><span class="pre">Ee</span> <span class="pre">=</span> <span class="pre">(21,</span> <span class="pre">-21/2)</span></code>, <code class="docutils literal notranslate"><span class="pre">Fe</span> <span class="pre">=</span> <span class="pre">(63/13,</span> <span class="pre">-84/13)</span></code>.
+        Cf. Menelaus <em>Sphaerica</em> III.6 (external spherical angle-bisector sine ratio).</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.construct_desargues_axis">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.planar_transversal.</span></span><span class="sig-name descname"><span class="pre">construct_desargues_axis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">O_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(0,</span> <span class="pre">12)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">A_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(-3,</span> <span class="pre">7)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(-1,</span> <span class="pre">5)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">C_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(4,</span> <span class="pre">8)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kA</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">sp.Rational(2,</span> <span class="pre">1)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kB</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">sp.Rational(12,</span> <span class="pre">7)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">sp.Rational(5,</span> <span class="pre">2)</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Model</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.construct_desargues_axis" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove Desargues’s Two-Triangle Theorem via three applications of Planar Menelaus.</p>
+        <p>Given center <code class="docutils literal notranslate"><span class="pre">O</span></code> and perspective triangles <code class="docutils literal notranslate"><span class="pre">ABC</span></code> and <code class="docutils literal notranslate"><span class="pre">A1B1C1</span></code> along rays <code class="docutils literal notranslate"><span class="pre">OA,</span> <span class="pre">OB,</span> <span class="pre">OC</span></code>,
+        applies Menelaus to:</p>
+        <ol class="arabic simple">
+        <li><p><span class="math notranslate nohighlight">\(\triangle OBC\)</span> with transversal <span class="math notranslate nohighlight">\(B_1 C_1 D\)</span>,</p></li>
+        <li><p><span class="math notranslate nohighlight">\(\triangle OCA\)</span> with transversal <span class="math notranslate nohighlight">\(C_1 A_1 E\)</span>,</p></li>
+        <li><p><span class="math notranslate nohighlight">\(\triangle OAB\)</span> with transversal <span class="math notranslate nohighlight">\(A_1 B_1 F\)</span>,</p></li>
+        </ol>
+        <p>multiplying all three identities to cancel the <code class="docutils literal notranslate"><span class="pre">O</span></code>-ray ratios and deduce
+        <span class="math notranslate nohighlight">\(\frac{\overline{AF}}{\overline{FB}} \cdot \frac{\overline{BD}}{\overline{DC}} \cdot \frac{\overline{CE}}{\overline{EA}} = -1\)</span>,
+        establishing collinearity of <code class="docutils literal notranslate"><span class="pre">D,</span> <span class="pre">E,</span> <span class="pre">F</span></code> on Desargues’s axis by the Converse of Menelaus.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.construct_pascal_hexagram">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.planar_transversal.</span></span><span class="sig-name descname"><span class="pre">construct_pascal_hexagram</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Model</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.construct_pascal_hexagram" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove Pascal’s <em>Hexagrammum Mysticum</em> on a circle via three Planar Menelaus applications.</p>
+        <p>Uses six exact integer points on the circle <span class="math notranslate nohighlight">\(x^2 + y^2 = 100\)</span>:
+        <code class="docutils literal notranslate"><span class="pre">P1=(10,0),</span> <span class="pre">P2=(-6,8),</span> <span class="pre">P3=(0,-10),</span> <span class="pre">P4=(6,8),</span> <span class="pre">P5=(8,-6),</span> <span class="pre">P6=(-8,-6)</span></code>.</p>
+        <p>Forms diagonal triangle <span class="math notranslate nohighlight">\(\triangle UVW\)</span> from <code class="docutils literal notranslate"><span class="pre">(P1P2,</span> <span class="pre">P3P4,</span> <span class="pre">P5P6)</span></code>:</p>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">U</span> <span class="pre">=</span> <span class="pre">P3P4</span> <span class="pre">∩</span> <span class="pre">P5P6</span></code>, <code class="docutils literal notranslate"><span class="pre">V</span> <span class="pre">=</span> <span class="pre">P5P6</span> <span class="pre">∩</span> <span class="pre">P1P2</span></code>, <code class="docutils literal notranslate"><span class="pre">W</span> <span class="pre">=</span> <span class="pre">P1P2</span> <span class="pre">∩</span> <span class="pre">P3P4</span></code>,</p></li>
+        </ul>
+        <p>applies Planar Menelaus to <span class="math notranslate nohighlight">\(\triangle UVW\)</span> with transversals <code class="docutils literal notranslate"><span class="pre">P2P3M</span></code>, <code class="docutils literal notranslate"><span class="pre">P4P5L</span></code>,
+        and <code class="docutils literal notranslate"><span class="pre">P6P1N</span></code>, cancels chord power products via Euclid III.35/III.36, and concludes by the
+        Converse of Menelaus that opposite-side intersections <code class="docutils literal notranslate"><span class="pre">L,</span> <span class="pre">M,</span> <span class="pre">N</span></code> are collinear on Pascal’s line.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.menelaus.planar_transversal.construct_monge_exsimilicenters">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.menelaus.planar_transversal.</span></span><span class="sig-name descname"><span class="pre">construct_monge_exsimilicenters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(0,</span> <span class="pre">8)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(-4,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">C_coords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(8,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rA</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">sp.Integer(1)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rB</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">sp.Integer(2)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">sp.Integer(4)</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Model</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.menelaus.planar_transversal.construct_monge_exsimilicenters" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove Monge’s Three-Circle Theorem via the Converse of Menelaus.</p>
+        <p>Given circles centered at <code class="docutils literal notranslate"><span class="pre">A,</span> <span class="pre">B,</span> <span class="pre">C</span></code> with distinct exact positive radii <code class="docutils literal notranslate"><span class="pre">rA,</span> <span class="pre">rB,</span> <span class="pre">rC</span></code>,
+        their external centers of similitude <code class="docutils literal notranslate"><span class="pre">Sab,</span> <span class="pre">Sbc,</span> <span class="pre">Sca</span></code> divide the center segments externally
+        in ratios <code class="docutils literal notranslate"><span class="pre">-rA/rB</span></code>, <code class="docutils literal notranslate"><span class="pre">-rB/rC</span></code>, <code class="docutils literal notranslate"><span class="pre">-rC/rA</span></code>, whose product is identically <code class="docutils literal notranslate"><span class="pre">-1</span></code>, placing
+        <code class="docutils literal notranslate"><span class="pre">Sab,</span> <span class="pre">Sbc,</span> <span class="pre">Sca</span></code> on Monge’s external axis of similitude! Also constructs the three internal
+        similicenters <code class="docutils literal notranslate"><span class="pre">Iab,</span> <span class="pre">Ibc,</span> <span class="pre">Ica</span></code> to verify all four Monge axes of the complete quadrilateral.</p>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../../index.html">GEOMETOR • menelaus</a>
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../../log/26.316-initial-codex/index.html">Initial Release: Menelai Sphaericorum Libri III Codex & Exact Symbolic Transversals</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../index.html" class="is-active" aria-selected="true" >Modules</a></li>
+        <li><a href="../../../../../../about/index.html"  >About</a></li>
+        <li><a href="../../../../../../connect.html"  >connect</a></li>
+        <li><a href="../../../../../../log/index.html"  >Log</a></li>
+        <li><a href="../../../../../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 100 CE (Halley 1758 / Heiberg 1898 / Björnbo 1902) • Digital Edition GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>
