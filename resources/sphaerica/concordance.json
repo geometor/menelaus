@@ -1,0 +1,135 @@
+{
+  "title": "Menelaus Sphaerica Cross-Tradition Proposition & Ecosystem Concordance",
+  "entries": [
+    {
+      "unit": "unit-1",
+      "halley_1758": "Praefatio [pp. i–viii]; Lib. I Def. I–VI [p. 1]",
+      "maurolico_1558": "Lib. I Def. 1–6",
+      "bjornbo_1902": "§3–§5, Book I Defs.",
+      "greek_witness": "Pappus Synagoge VI (Hultsch p. 600: τρίπλευρον)",
+      "euclid_parallel": "Elements I Def. 15–23; XI Def. 6, 18",
+      "ecosystem_links": ["euclid:I.def.19", "elements:G.1"],
+      "theme": "Definition of the intrinsic spherical triangle (minor great-circle arcs) and dihedral spherical angles"
+    },
+    {
+      "unit": "unit-1",
+      "halley_1758": "Lib. I Prop. 1 [p. 2]",
+      "maurolico_1558": "Lib. I Prop. 1",
+      "bjornbo_1902": "I.1",
+      "greek_witness": "Theodosius Sphaerica I–II (circle poles)",
+      "euclid_parallel": "Elements I.23 (construct rectilinear angle equal to given angle)",
+      "ecosystem_links": ["euclid:I.23", "elements:G.39"],
+      "theme": "Problem: at a given point on a great circle, construct a spherical angle equal to a given spherical angle"
+    },
+    {
+      "unit": "unit-1",
+      "halley_1758": "Lib. I Prop. 4 & 8 [pp. 5, 8]",
+      "maurolico_1558": "Lib. I Prop. 4, 8",
+      "bjornbo_1902": "I.4, I.8",
+      "greek_witness": "Proclus In Eucl. p. 345 (Menelaus's direct proof of I.25)",
+      "euclid_parallel": "Elements I.4 (SAS), I.8 (SSS), I.24–I.25 (Hinge Theorem)",
+      "ecosystem_links": ["euclid:I.4", "euclid:I.8", "euclid:I.25", "proclus:I.25"],
+      "theme": "SAS and SSS spherical congruence and direct spherical hinge inequalities without superposition fallacies"
+    },
+    {
+      "unit": "unit-1",
+      "halley_1758": "Lib. I Prop. 5 [p. 6]",
+      "maurolico_1558": "Lib. I Prop. 5",
+      "bjornbo_1902": "I.5",
+      "greek_witness": "Euclid Elements XI.20 (trihedral solid angle)",
+      "euclid_parallel": "Elements I.20 (planar triangle inequality) & XI.20",
+      "ecosystem_links": ["euclid:I.20", "euclid:XI.20"],
+      "theme": "Spherical triangle inequality: any two sides of a spherical triangle taken together exceed the remaining side"
+    },
+    {
+      "unit": "unit-1",
+      "halley_1758": "Lib. I Prop. 11 [p. 11]",
+      "maurolico_1558": "Lib. I Prop. 11",
+      "bjornbo_1902": "I.11",
+      "greek_witness": "Antipodal lune demonstration",
+      "euclid_parallel": "Overturns Elements I.16 (exterior angle) & I.32 (angle sum = 2 right angles)",
+      "ecosystem_links": ["euclid:I.16", "euclid:I.32", "hilbert:parallel-independence"],
+      "theme": "Spherical Angle-Sum Excess: exterior angle < sum of remote interiors, and A + B + C > 2 right angles"
+    },
+    {
+      "unit": "unit-1",
+      "halley_1758": "Lib. I Prop. 14–16 [pp. 15–17]",
+      "maurolico_1558": "Lib. I Prop. 14–16",
+      "bjornbo_1902": "I.14–I.16",
+      "greek_witness": "Intrinsic spherical congruence",
+      "euclid_parallel": "Elements I.26 (ASA & AAS congruence)",
+      "ecosystem_links": ["euclid:I.26"],
+      "theme": "ASA and AAS spherical triangle congruence"
+    },
+    {
+      "unit": "unit-1",
+      "halley_1758": "Lib. I Prop. 17 [pp. 18–19]",
+      "maurolico_1558": "Lib. I Prop. 18",
+      "bjornbo_1902": "I.17",
+      "greek_witness": "No Euclidean planar analogue (impossibility of non-congruent homothetic triangles on S^2)",
+      "euclid_parallel": "Contrasts Elements VI.4 (equiangular planar triangles are similar, not congruent)",
+      "ecosystem_links": ["euclid:VI.4", "menelaus:polar_triangle"],
+      "theme": "AAA Spherical Congruence: equality of three spherical angles uniquely determines equality of all three sides"
+    },
+    {
+      "unit": "unit-2",
+      "halley_1758": "Lib. II Prop. 1–12 [pp. 48–79]",
+      "maurolico_1558": "Lib. II Prop. 1–19",
+      "bjornbo_1902": "II.1–II.12 (§8)",
+      "greek_witness": "Pappus Synagoge VI (Hultsch pp. 600–604); Theodosius Sphaerica III.5–9",
+      "euclid_parallel": "Euclid Phaenomena (rising times of zodiacal arcs)",
+      "ecosystem_links": ["pappus:book-vi"],
+      "theme": "Monotonicity and second-difference inequalities of oblique and parallel circles cutting great-circle arcs (superseding Theodosius III)"
+    },
+    {
+      "unit": "unit-3",
+      "halley_1758": "Lib. III Lemma I [p. 83]",
+      "maurolico_1558": "Lib. III Praemissa",
+      "bjornbo_1902": "Almagest Lemma",
+      "greek_witness": "Ptolemy Almagest I.13 (Heiberg pp. 68–70); Theon Comm.",
+      "euclid_parallel": "Elements I.31 (parallel), VI.2 & VI.4 (similar triangles), VI.23 (compound ratio)",
+      "ecosystem_links": ["euclid:VI.2", "altshiller-court:ch-vi-menelaus", "menelaus:construct_menelaus_planar"],
+      "theme": "Planar Menelaus Transversal Theorem proved by drawing a line parallel to one side or transversal"
+    },
+    {
+      "unit": "unit-3",
+      "halley_1758": "Lib. III Prop. 1 & Scholion [pp. 80–86]",
+      "maurolico_1558": "Lib. III Prop. 1",
+      "bjornbo_1902": "III.1 (Figura Kata / Sector Figure)",
+      "greek_witness": "Ptolemy Almagest I.13 (Heiberg pp. 74–76: διπλῆν τῆς περιφερείας)",
+      "euclid_parallel": "Central projection from sphere center onto planar Menelaus configuration",
+      "ecosystem_links": ["menelaus:verify_spherical_menelaus", "menelaus:gnomonic_projection_menelaus"],
+      "theme": "Theorema Menelai: six-arc spherical transversal compound sine/double-chord theorem"
+    },
+    {
+      "unit": "unit-3",
+      "halley_1758": "Lib. III Prop. 2–5 [pp. 86–90]",
+      "maurolico_1558": "Lib. III Prop. 2–6",
+      "bjornbo_1902": "III.2–III.5",
+      "greek_witness": "Applied in Almagest I.14–16 & II (declination, right ascension, rising times)",
+      "euclid_parallel": "Spherical counterparts of Elements VI proportions",
+      "ecosystem_links": ["menelaus:spherical_excess_report"],
+      "theme": "Rule of Four Quantities / Spherical Law of Sines (III.2), Rule of Tangents (III.3), and altitude arc-ratio theorems (III.4–5)"
+    },
+    {
+      "unit": "unit-4",
+      "halley_1758": "Lib. III Prop. 6–8 [pp. 91–94]",
+      "maurolico_1558": "Lib. III Prop. 7–9",
+      "bjornbo_1902": "III.6–III.8",
+      "greek_witness": "Anticipates Pappus Synagoge VII.129 planar cross-ratio invariance on the sphere!",
+      "euclid_parallel": "Elements VI.3 & VI.A (internal and external angle-bisector ratios)",
+      "ecosystem_links": ["euclid:VI.3", "pappus:cross-ratio", "menelaus:construct_external_bisector_axis", "menelaus:verify_spherical_cross_ratio_invariance"],
+      "theme": "Internal & external spherical angle bisectors (III.6), isogonal cevians (III.7), and spherical harmonic / 4-pencil cross-ratio invariance (III.8)"
+    },
+    {
+      "unit": "unit-4",
+      "halley_1758": "Lib. III Prop. 9–10 [pp. 95–97]",
+      "maurolico_1558": "Lib. III Prop. 10–11",
+      "bjornbo_1902": "III.9–III.10",
+      "greek_witness": "Complete spherical quadrilateral & altitude concurrency via triple Menelaus",
+      "euclid_parallel": "Elements IV.4 (incenter) & orthocenter concurrency",
+      "ecosystem_links": ["etc:X(1)", "etc:X(4)", "ceva:concurrency", "altshiller-court:ch-x-harmonic", "menelaus:construct_trilinear_polar", "menelaus:spherical_orthocenter_menelaus"],
+      "theme": "Concurrency of spherical angle bisectors (III.9) and spherical altitudes (III.10), bridging Menelaus (-1) and Ceva (+1) via trilinear polar duality"
+    }
+  ]
+}

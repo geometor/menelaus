@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" class="euclid-graphic" data-graphic-id="menelaus-monge-circles">
+  <style>
+.euclid-graphic {
+    --svg-bg: #fafaf9;
+    --ink: #1c1917;
+    --label-halo: rgba(250, 250, 249, 0.92);
+    --given: #334155;
+    --aux: #0284c7;
+    --cevian: #059669;
+    --transversal: #d97706;
+    --limb: #64748b;
+    --pt-given: #0f172a;
+    --pt-trace: #d97706;
+    --pt-cevian: #059669;
+    --pt-aux: #0284c7;
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic {
+      --svg-bg: #141417;
+      --ink: #f4f4f5;
+      --label-halo: rgba(20, 20, 23, 0.92);
+      --given: #cbd5e1;
+      --aux: #38bdf8;
+      --cevian: #34d399;
+      --transversal: #fbbf24;
+      --limb: #94a3b8;
+      --pt-given: #f1f5f9;
+      --pt-trace: #fbbf24;
+      --pt-cevian: #34d399;
+      --pt-aux: #38bdf8;
+    }
+  }
+  .euclid-graphic .bg { fill: var(--svg-bg); }
+  .euclid-graphic .geom-line { fill: none; stroke: var(--given); stroke-width: 1.75; stroke-linecap: round; }
+  .euclid-graphic .geom-line.auxiliary, .euclid-graphic .geom-line.bisector { stroke: var(--aux); stroke-width: 1.45; stroke-dasharray: 6 4; opacity: 0.88; }
+  .euclid-graphic .geom-line.cevian { stroke: var(--cevian); stroke-width: 1.65; stroke-dasharray: 4 3; }
+  .euclid-graphic .geom-line.transversal, .euclid-graphic .geom-line.result { stroke: var(--transversal); stroke-width: 2.65; stroke-dasharray: none; }
+  .euclid-graphic .geom-line.back-arc { stroke-dasharray: 3.5 4.5; opacity: 0.42; }
+  .euclid-graphic .geom-segment { fill: none; stroke: var(--aux); stroke-width: 2.2; stroke-linecap: round; }
+  .euclid-graphic .geom-segment.extension { stroke: var(--given); stroke-dasharray: 5 3.5; stroke-width: 1.6; }
+  .euclid-graphic .geom-circle { fill: none; stroke: var(--given); stroke-width: 1.85; opacity: 0.88; }
+  .euclid-graphic .geom-circle.sphere-limb { stroke: var(--limb); stroke-width: 2.2; fill: var(--aux); fill-opacity: 0.04; }
+  .euclid-graphic .geom-polygon { fill: var(--aux); fill-opacity: 0.06; stroke: var(--given); stroke-width: 2.1; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.cevian { fill: var(--cevian); fill-opacity: 0.07; stroke: var(--cevian); stroke-width: 1.6; }
+  .euclid-graphic .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5; }
+  .euclid-graphic .geom-point.trace, .euclid-graphic .geom-point.result { fill: var(--pt-trace); stroke-width: 1.8; }
+  .euclid-graphic .geom-point.cevian { fill: var(--pt-cevian); }
+  .euclid-graphic .geom-point.auxiliary, .euclid-graphic .geom-point.center { fill: var(--pt-aux); }
+  .euclid-graphic .geom-label {
+    fill: var(--ink);
+    font-size: 14px;
+    font-weight: 600;
+    paint-order: stroke fill;
+    stroke: var(--label-halo);
+    stroke-width: 3.6px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .geom-label-sub { font-size: 10.5px; font-weight: 600; }
+  </style>
+  <defs>
+    <path id="geom-tick-1" d="M 0,-5.5 L 0,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <path id="geom-tick-2" d="M -2.4,-5.5 L -2.4,5.5 M 2.4,-5.5 L 2.4,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <path id="geom-tick-3" d="M -4.2,-5.5 L -4.2,5.5 M 0,-5.5 L 0,5.5 M 4.2,-5.5 L 4.2,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  </defs>
+  <rect class="bg" width="100%" height="100%"/>
+  <g id="elements">
+    <g id="graphics">
+      <polygon class="geom-polygon" points="413.23,226.77 346.77,359.68 546.13,359.68" data-ref="&lt; A B C &gt;"/>
+      <circle class="geom-circle" cx="413.23" cy="226.77" r="16.61" data-ref="( A Ar )"/>
+      <circle class="geom-circle" cx="346.77" cy="359.68" r="33.23" data-ref="( B Br )"/>
+      <circle class="geom-circle" cx="546.13" cy="359.68" r="66.45" data-ref="( C Cr )"/>
+      <path class="geom-line given" d="M 91.6 359.68 L 380 359.68 L 668.4 359.68" data-ref="[ B C ]" data-aliases="[ C B ] | / B C / | / C B / | [ B Sbc ] | [ Sbc B ] | / B Sbc / | / Sbc B / | [ B Ibc ] | [ Ibc B ] | / B Ibc / | / Ibc B / | [ C Sbc ] | [ Sbc C ] | / C Sbc / | / Sbc C / | [ C Ibc ] | [ Ibc C ] | / C Ibc / | / Ibc C / | [ Sbc Ibc ] | [ Ibc Sbc ] | / Sbc Ibc / | / Ibc Sbc /"/>
+      <path class="geom-line given" d="M 652.45 466 L 446.45 260 L 240.45 54" data-ref="[ C A ]" data-aliases="[ A C ] | / A C / | / C A / | [ A Sca ] | [ Sca A ] | / A Sca / | / Sca A / | [ A Ica ] | [ Ica A ] | / A Ica / | / Ica A / | [ C Sca ] | [ Sca C ] | / C Sca / | / Sca C / | [ C Ica ] | [ Ica C ] | / C Ica / | / Ica C / | [ Sca Ica ] | [ Ica Sca ] | / Sca Ica / | / Ica Sca /"/>
+      <path class="geom-line given" d="M 293.61 466 L 396.61 260 L 499.61 54" data-ref="[ A B ]" data-aliases="[ B A ] | / A B / | / B A / | [ A Sab ] | [ Sab A ] | / A Sab / | / Sab A / | [ A Iab ] | [ Iab A ] | / A Iab / | / Iab A / | [ B Sab ] | [ Sab B ] | / B Sab / | / Sab B / | [ B Iab ] | [ Iab B ] | / B Iab / | / Iab B / | [ Sab Iab ] | [ Iab Sab ] | / Sab Iab / | / Iab Sab /"/>
+      <path class="geom-line transversal result" d="M 91.6 404.33 L 310.56 229.17 L 529.52 54" data-ref="[ Sbc Sca ]" data-aliases="[ Sca Sbc ] | / Sbc Sca / | / Sca Sbc / | [ Sbc Sab ] | [ Sab Sbc ] | / Sbc Sab / | / Sab Sbc / | [ Sca Sab ] | [ Sab Sca ] | / Sca Sab / | / Sab Sca /"/>
+    </g>
+    <g id="highlights" aria-hidden="true">
+      <polygon class="geom-polygon geom-highlight" points="413.23,226.77 346.77,359.68 546.13,359.68" data-ref="&lt; A B C &gt;"/>
+      <path class="geom-line geom-highlight" d="M 91.6 359.68 L 380 359.68 L 668.4 359.68" data-ref="[ B C ]" data-aliases="[ C B ] | / B C / | / C B / | [ B Sbc ] | [ Sbc B ] | / B Sbc / | / Sbc B / | [ B Ibc ] | [ Ibc B ] | / B Ibc / | / Ibc B / | [ C Sbc ] | [ Sbc C ] | / C Sbc / | / Sbc C / | [ C Ibc ] | [ Ibc C ] | / C Ibc / | / Ibc C / | [ Sbc Ibc ] | [ Ibc Sbc ] | / Sbc Ibc / | / Ibc Sbc /"/>
+      <path class="geom-line geom-highlight" d="M 652.45 466 L 446.45 260 L 240.45 54" data-ref="[ C A ]" data-aliases="[ A C ] | / A C / | / C A / | [ A Sca ] | [ Sca A ] | / A Sca / | / Sca A / | [ A Ica ] | [ Ica A ] | / A Ica / | / Ica A / | [ C Sca ] | [ Sca C ] | / C Sca / | / Sca C / | [ C Ica ] | [ Ica C ] | / C Ica / | / Ica C / | [ Sca Ica ] | [ Ica Sca ] | / Sca Ica / | / Ica Sca /"/>
+      <path class="geom-line geom-highlight" d="M 293.61 466 L 396.61 260 L 499.61 54" data-ref="[ A B ]" data-aliases="[ B A ] | / A B / | / B A / | [ A Sab ] | [ Sab A ] | / A Sab / | / Sab A / | [ A Iab ] | [ Iab A ] | / A Iab / | / Iab A / | [ B Sab ] | [ Sab B ] | / B Sab / | / Sab B / | [ B Iab ] | [ Iab B ] | / B Iab / | / Iab B / | [ Sab Iab ] | [ Iab Sab ] | / Sab Iab / | / Iab Sab /"/>
+      <path class="geom-line geom-highlight" d="M 91.6 404.33 L 310.56 229.17 L 529.52 54" data-ref="[ Sbc Sca ]" data-aliases="[ Sca Sbc ] | / Sbc Sca / | / Sca Sbc / | [ Sbc Sab ] | [ Sab Sbc ] | / Sbc Sab / | / Sab Sbc / | [ Sca Sab ] | [ Sab Sca ] | / Sca Sab / | / Sab Sca /"/>
+    </g>
+    <g id="points">
+      <circle class="geom-point given center" cx="413.23" cy="226.77" r="3.9" data-ref="A"><title>A = (0, 8)</title></circle>
+      <circle class="geom-point given center" cx="346.77" cy="359.68" r="3.9" data-ref="B"><title>B = (-4, 0)</title></circle>
+      <circle class="geom-point given center" cx="546.13" cy="359.68" r="3.9" data-ref="C"><title>C = (8, 0)</title></circle>
+      <circle class="geom-point trace result" cx="147.42" cy="359.68" r="4.6" data-ref="Sbc"><title>Sbc = (-16, 0)</title></circle>
+      <circle class="geom-point trace result" cx="368.92" cy="182.47" r="4.6" data-ref="Sca"><title>Sca = (-8/3, 32/3)</title></circle>
+      <circle class="geom-point trace result" cx="479.68" cy="93.87" r="4.6" data-ref="Sab"><title>Sab = (4, 16)</title></circle>
+      <circle class="geom-point auxiliary" cx="413.23" cy="359.68" r="3.9" data-ref="Ibc"><title>Ibc = (0, 0)</title></circle>
+      <circle class="geom-point auxiliary" cx="439.81" cy="253.35" r="3.9" data-ref="Ica"><title>Ica = (8/5, 32/5)</title></circle>
+      <circle class="geom-point auxiliary" cx="391.08" cy="271.08" r="3.9" data-ref="Iab"><title>Iab = (-4/3, 16/3)</title></circle>
+    </g>
+    <g id="labels">
+      <text class="geom-label" x="428.7" y="231.7" data-ref="A">A</text>
+      <text class="geom-label" x="326.37" y="350.45" data-ref="B">B</text>
+      <text class="geom-label" x="540.59" y="344.58" data-ref="C">C</text>
+      <text class="geom-label" x="136.5" y="343.88" data-ref="Sbc">S<tspan class="geom-label-sub" dy="3">bc</tspan></text>
+      <text class="geom-label" x="358" y="166.68" data-ref="Sca">S<tspan class="geom-label-sub" dy="3">ca</tspan></text>
+      <text class="geom-label" x="450.23" y="84.15" data-ref="Sab">S<tspan class="geom-label-sub" dy="3">ab</tspan></text>
+      <text class="geom-label" x="402.31" y="344.58" data-ref="Ibc">I<tspan class="geom-label-sub" dy="3">bc</tspan></text>
+      <text class="geom-label" x="428.89" y="278.31" data-ref="Ica">I<tspan class="geom-label-sub" dy="3">ca</tspan></text>
+      <text class="geom-label" x="362.12" y="261.85" data-ref="Iab">I<tspan class="geom-label-sub" dy="3">ab</tspan></text>
+    </g>
+  </g>
+</svg>

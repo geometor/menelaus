@@ -1,0 +1,107 @@
+{
+  "triangulum-sphaericum": {
+    "slug": "triangulum-sphaericum",
+    "headword": "triangulum sphaericum (τρίπλευρον σφαιρικόν)",
+    "language": "Latin (Halley 1758 Def. I) / Greek (Pappus VI)",
+    "translation": "spherical triangle (spherical trilateral)",
+    "definition": "Space on the surface of a sphere bounded by three arcs of great circles, each strictly less than a semicircle (Menelaus Sphaerica Book I, Def. I–II, Halley 1758 p. 1). Menelaus was the first geometer in antiquity to isolate the intrinsic spherical triangle as an autonomous object of deductive geometry."
+  },
+  "circulus-magnus": {
+    "slug": "circulus-magnus",
+    "headword": "circulus magnus (μέγιστος κύκλος)",
+    "language": "Latin / Greek",
+    "translation": "great circle (intrinsic geodesic of the sphere)",
+    "definition": "Intersection of the spherical surface S^2 with a plane passing through the center of the sphere. Minor arcs of great circles play the exact axiomatic role on S^2 that straight line segments play in Euclid's plane."
+  },
+  "angulus-sphaericus": {
+    "slug": "angulus-sphaericus",
+    "headword": "angulus sphaericus",
+    "language": "Latin (Halley 1758 Def. III–VI)",
+    "translation": "spherical (dihedral) angle",
+    "definition": "Angle contained by two intersecting great-circle arcs on a sphere, measured by the dihedral inclination of their planes (or equivalently by the arc intercepted on the great circle having the vertex as pole, Sphaerica Def. III–VI, Halley p. 1)."
+  },
+  "polus": {
+    "slug": "polus",
+    "headword": "polus (πόλος)",
+    "language": "Latin / Greek",
+    "translation": "pole of a great circle",
+    "definition": "Either of the two antipodal points on S^2 at quadrant arc distance (90 degrees) from every point of a given great circle, corresponding to the unit normal vector n = (P x Q)/||P x Q||."
+  },
+  "excessus-sphaericus": {
+    "slug": "excessus-sphaericus",
+    "headword": "excessus sphaericus",
+    "language": "Latin / Modern Spherical Geometry",
+    "translation": "spherical excess (E = A + B + C - pi)",
+    "definition": "Positive excess by which the three interior angles of any spherical triangle exceed two right angles (Menelaus Sphaerica Prop. I.11, Halley p. 11: tres anguli trianguli simul sumpti majores erunt duobus rectis), proportional to the surface area of the spherical triangle (Girard's theorem)."
+  },
+  "triangulum-polare": {
+    "slug": "triangulum-polare",
+    "headword": "triangulum polare",
+    "language": "Latin",
+    "translation": "polar (supplementary) triangle",
+    "definition": "Dual spherical triangle A*B*C* whose vertices are the hemisphere-coherent poles of sides BC, CA, AB; its sides and dihedral angles are exact supplements (pi - A, pi - a) of the angles and sides of ABC, grounding AAA spherical congruence (Sphaerica I.17)."
+  },
+  "subtensa-dupli-arcus": {
+    "slug": "subtensa-dupli-arcus",
+    "headword": "subtensa dupli arcus (ἡ ὑπὸ τὴν διπλῆν τῆς περιφερείας / נכחות)",
+    "language": "Latin (Halley 1758 p. 82) / Greek (Almagest I.13) / Hebrew",
+    "translation": "chord of the double arc (crd(2 theta) = 2R sin theta)",
+    "definition": "Classical Greek trigonometric primitive used by Hipparchus, Menelaus, and Ptolemy: the straight chord subtending twice a given arc. Because crd(2 alpha) / crd(2 beta) = sin(alpha) / sin(beta), compound ratios of double-arc chords translate directly into ratios of sines without altering a single proportion."
+  },
+  "sinus": {
+    "slug": "sinus",
+    "headword": "sinus (جيب / jayb)",
+    "language": "Latin / Arabic",
+    "translation": "sine (half-chord of the double arc)",
+    "definition": "Half the chord of twice the arc, introduced from Sanskrit jya into Arabic as jayb by Eastern astronomers and adopted in Abū Naṣr Manṣūr's and Halley's redactions of Menelaus Book III (Halley 1758 Scholion, p. 82)."
+  },
+  "figura-catha": {
+    "slug": "figura-catha",
+    "headword": "Figura Catha / al-Shakl al-Qaṭṭāʿ (القطاع)",
+    "language": "Medieval Latin / Arabic",
+    "translation": "The Sector (or Secant/Transversal) Figure",
+    "definition": "Traditional Arabic and medieval Latin name for the six-quantity Menelaus configuration of four intersecting arcs (or lines) forming a triangle crossed by a transversal (Halley 1758 p. 82 Scholion)."
+  },
+  "ratio-composita": {
+    "slug": "ratio-composita",
+    "headword": "ratio composita (λόγος συνημμένος)",
+    "language": "Latin / Greek (Euclid VI Def. 5; Almagest I.13)",
+    "translation": "compound ratio",
+    "definition": "Classical Greek way of expressing a product of two ratios: 'the ratio A:B is compounded of the ratios C:D and E:F' (A/B = (C/D)*(E/F)), employed throughout Ptolemy I.13 and Halley III.1."
+  },
+  "compositio-et-divisio-rationis": {
+    "slug": "compositio-et-divisio-rationis",
+    "headword": "componendo et dividendo (κατὰ σύνθεσιν καὶ κατὰ διαίρεσιν)",
+    "language": "Latin / Greek (Euclid V.17–18; Almagest I.13)",
+    "translation": "by composition and by division of ratios",
+    "definition": "Fundamental Euclidean proportion transformations (A+B):B = (C+D):D (synthesis / componendo) and (A-B):B = (C-D):D (diairesis / dividendo), corresponding to Ptolemy's two configurations of the Menelaus configuration."
+  },
+  "transversalis": {
+    "slug": "transversalis",
+    "headword": "transversalis",
+    "language": "Latin (Carnot 1806)",
+    "translation": "transversal line or great circle",
+    "definition": "Straight line (or great circle on S^2) intersecting all three extended sides BC, CA, AB of a reference triangle at traces D, E, F (an odd number—either 1 or 3—of intersections lying on external extensions)."
+  },
+  "sectio-harmonica": {
+    "slug": "sectio-harmonica",
+    "headword": "sectio harmonica",
+    "language": "Latin",
+    "translation": "harmonic range / harmonic conjugate ((A, B; C, D) = -1)",
+    "definition": "Collinear (or concyclic great-circle) quadruple whose internal division ratio equals the magnitude of its external division ratio, so the signed cross-ratio equals -1. Demonstrated on the sphere by Menelaus in Sphaerica III.6, III.8, and III.10."
+  },
+  "polaris-trilinearis": {
+    "slug": "polaris-trilinearis",
+    "headword": "polaris trilinearis",
+    "language": "Modern Latin / Projective Geometry",
+    "translation": "trilinear polar of a point",
+    "definition": "The Menelaus transversal line joining the harmonic conjugates (Dm, Em, Fm) of the Ceva traces (Dc, Ec, Fc) of a perspector P with respect to triangle ABC; equivalently, the Desargues axis of ABC and the cevian triangle DcEcFc."
+  },
+  "quadrantia-et-extensio": {
+    "slug": "quadrantia-et-extensio",
+    "headword": "quadrance & spread (Q, s)",
+    "language": "Rational Trigonometry (Wildberger)",
+    "translation": "squared distance Q and squared sine s between lines",
+    "definition": "Algebraic invariants Q(P, R) = (xR - xP)^2 + (yR - yP)^2 and s(l1, l2) = sin^2(theta) in Q, allowing Planar Menelaus to be proved purely over Q without square roots or transcendental functions."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "codex": "geometor-menelaus",
+  "title": "Menelai Sphaericorum Libri III — Digital Scriptorium Sources Manifest",
+  "copyright_policy": "100% Public-Domain Primary Witnesses Only (pre-1929). Zero reliance on post-1930 copyrighted editions or translations (explicitly excluding Krause 1936 and Rashed & Papadopoulos 2017). English translation authored 100% originally from multimodal visual inspection of Halley (1758) Latin and Heiberg (1898) Greek scans.",
+  "sources": [
+    {
+      "id": "halley-1758",
+      "author": "Menelaus of Alexandria; Edmond Halley (ed.); George Costard (pref.)",
+      "title": "Menelai Sphaericorum Libri III. Quos olim, collatis MSS. Hebraeis & Arabicis, Typis exprimendos curavit Vir Cl. Ed. Halleius LL.D. R.S.S. Praefationem addidit G. Costard, A.M.",
+      "place": "Oxonii (Oxford): Sumptibus Academicis",
+      "year": 1758,
+      "language": "Latin (with Hebrew & Arabic philological glosses and Greek point labels)",
+      "rights": "Public Domain (published 1758)",
+      "archive_org_id": "menelaisphaeric00costgoog",
+      "local_pdf": "resources/pdfs/halley_1758_menelai_sphaericorum.pdf",
+      "scan_offset_note": "scan_page = printed_page + 16 (Title = scan 7; Costard Preface [i]–[viii] = scans 9–16; Book I pp. 1–47 = scans 17–63; Book II pp. 48–79 = scans 64–95; Book III pp. 80–112 = scans 96–128)"
+    },
+    {
+      "id": "ptolemy-heiberg-1898",
+      "author": "Claudius Ptolemy; Johan Ludvig Heiberg (ed.)",
+      "title": "Claudii Ptolemaei Opera quae exstant omnia, Vol. I: Syntaxis Mathematica, Pars I (Libros I–VI continens)",
+      "place": "Lipsiae (Leipzig): In aedibus B. G. Teubneri",
+      "year": 1898,
+      "language": "Polytonic Ancient Greek",
+      "rights": "Public Domain (published 1898)",
+      "archive_org_id": "pt1claudiiptolemaei01ptoluoft",
+      "local_pdf": "resources/pdfs/ptolemy_1898_syntaxis_vol1_pt1.pdf",
+      "locus_note": "Book I, Ch. 13 (Προλαμβανόμενα εἰς τὰς σφαιρικὰς δείξεις), pp. 68–76 (scans 78–86): oldest surviving Greek proof of Planar & Spherical Menelaus in chords of double arcs"
+    },
+    {
+      "id": "bjornbo-1902",
+      "author": "Axel Anthon Björnbo",
+      "title": "Studien über Menelaos' Sphärik. Beiträge zur Geschichte der Sphärik und Trigonometrie der Griechen (Abhandlungen zur Geschichte der mathematischen Wissenschaften, XIV. Heft)",
+      "place": "Leipzig: Druck und Verlag von B. G. Teubner",
+      "year": 1902,
+      "language": "German (with Greek & Latin philological citations)",
+      "rights": "Public Domain (published 1902)",
+      "archive_org_id": "studienbermenel00bjgoog",
+      "local_pdf": "resources/pdfs/bjornbo_1902_studien_menelaos.pdf",
+      "locus_note": "Comprehensive stemmatic, structural, and proposition-by-proposition philological analysis comparing Halley (1758), Maurolico (1558), Mersenne (1644), Ptolemy, Theon, and Pappus"
+    },
+    {
+      "id": "maurolico-1558",
+      "author": "Francesco Maurolico (Franciscus Maurolycus)",
+      "title": "Theodosii Sphaericorum Elementorum Libri III. Ex traditione Maurolyci Messanensis Mathematici. Menelai Sphaericorum Lib. III. Ex traditione eiusdem.",
+      "place": "Messanae (Messina): Petrus Spira",
+      "year": 1558,
+      "language": "Latin",
+      "rights": "Public Domain (published 1558)",
+      "locus_note": "First printed Renaissance synthesis/reconstruction of Menelaus's Sphaerica (augmented with Maurolico's interpolations; critically collated in Costard 1758 pp. v–vii and Björnbo 1902)"
+    },
+    {
+      "id": "pappus-hultsch-1877",
+      "author": "Pappus of Alexandria; Friedrich Hultsch (ed.)",
+      "title": "Pappi Alexandrini Collectionis quae supersunt, Vol. II (Librorum VI et VII reliquias continens)",
+      "place": "Berolini (Berlin): Apud Weidmannos",
+      "year": 1877,
+      "language": "Polytonic Ancient Greek & Latin",
+      "rights": "Public Domain (published 1877)",
+      "locus_note": "Book VI astronomical commentary preserving Greek testimonies to Menelaus's Sphaerica (including the appellation Μενέλαος ὁ Ἀλεξανδρεύς and Book II rising-time theorems)"
+    }
+  ]
+}

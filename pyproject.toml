@@ -1,0 +1,53 @@
+[project]
+name = "geometor-menelaus"
+dynamic = ["version"]
+authors = [
+  { name = "geometor", email = "github@geometor.com" },
+]
+description = "Digital Scriptorium Book Codex of Menelaus of Alexandria's Sphaerica (Halley 1758 Latin & Greek primary witnesses) and exact SymPy / geometor.model demonstrations of the Planar & Spherical Menelaus Transversal Theorem."
+readme = "README.rst"
+requires-python = ">=3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "sympy",
+    "rich",
+    "geometor-model",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[project.scripts]
+menelaus = "geometor.menelaus.__main__:main"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["geometor"]
+namespaces = true
+
+[tool.setuptools.dynamic]
+version = {attr = "geometor.menelaus.__version__"}
+
+[project.urls]
+"Website" = "https://geometor.github.io/menelaus"
+"Repository" = "https://github.com/geometor/menelaus"
+"Issues" = "https://github.com/geometor/menelaus/issues"
+
+[tool.ruff]
+lint.select = ["E", "F", "I"]
+lint.ignore = ["E501"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

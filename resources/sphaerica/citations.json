@@ -1,0 +1,110 @@
+{
+  "halley-1758": {
+    "key": "halley-1758",
+    "author": "Menelaus of Alexandria; Edmond Halley (ed.); George Costard (pref.)",
+    "work": "Menelai Sphaericorum Libri III",
+    "locus": "Oxonii (Oxford): Sumptibus Academicis, 1758 (pp. [i]–[viii], 1–112; PD)"
+  },
+  "costard-1758": {
+    "key": "costard-1758",
+    "author": "Costard, George (1710 – 1782)",
+    "work": "Praefatio 'Benevolo Lectori' in Menelai Sphaericorum Libri III",
+    "locus": "Oxford, 1758, pp. [i]–[viii] (scans 9–16; PD)"
+  },
+  "ptolemy-almagest-i-13": {
+    "key": "ptolemy-almagest-i-13",
+    "author": "Claudius Ptolemy; J. L. Heiberg (ed.)",
+    "work": "Syntaxis Mathematica (Almagest), Book I, Ch. 13: Προλαμβανόμενα εἰς τὰς σφαιρικὰς δείξεις",
+    "locus": "Vol. I, Pars I, Leipzig: Teubner, 1898, pp. 68–76 (PD)"
+  },
+  "ptolemy-almagest-vii-3": {
+    "key": "ptolemy-almagest-vii-3",
+    "author": "Claudius Ptolemy; J. L. Heiberg (ed.)",
+    "work": "Syntaxis Mathematica (Almagest), Book VII, Ch. 3 (Menelaus's 98 CE Observations at Rome)",
+    "locus": "Vol. I, Pars II, Leipzig: Teubner, 1903, pp. 25–30 (PD)"
+  },
+  "bjornbo-1902": {
+    "key": "bjornbo-1902",
+    "author": "Björnbo, Axel Anthon (1874 – 1911)",
+    "work": "Studien über Menelaos' Sphärik. Beiträge zur Geschichte der Sphärik und Trigonometrie der Griechen",
+    "locus": "Abhandlungen zur Geschichte der mathematischen Wissenschaften, Heft XIV, Leipzig: Teubner, 1902 (PD)"
+  },
+  "maurolico-1558": {
+    "key": "maurolico-1558",
+    "author": "Maurolico, Francesco (1494 – 1575)",
+    "work": "Theodosii Sphaericorum Elementorum Libri III... Menelai Sphaericorum Lib. III",
+    "locus": "Messanae (Messina): Petrus Spira, 1558, fols. 45v–61r (PD)"
+  },
+  "mersenne-1644": {
+    "key": "mersenne-1644",
+    "author": "Mersenne, Marin (1588 – 1648)",
+    "work": "Universae Geometriae Mixtaeque Mathematicae Synopsis (Milei Sphaericorum Libri III)",
+    "locus": "Parisiis: Antonius Bertier, 1644 (PD)"
+  },
+  "pappus-hultsch-1877": {
+    "key": "pappus-hultsch-1877",
+    "author": "Pappus of Alexandria; Friedrich Hultsch (ed.)",
+    "work": "Pappi Alexandrini Collectionis quae supersunt, Lib. VI & VII",
+    "locus": "Vol. II, Berolini: Apud Weidmannos, 1877, pp. 600–604 (PD)"
+  },
+  "proclus-friedlein-1873": {
+    "key": "proclus-friedlein-1873",
+    "author": "Proclus Diadochus; Gottfried Friedlein (ed.)",
+    "work": "In Primum Euclidis Elementorum Librum Commentarii (Menelaus's direct proof of Euclid I.25)",
+    "locus": "Leipzig: Teubner, 1873, pp. 345–346 (PD)"
+  },
+  "theodosius-hunt-1707": {
+    "key": "theodosius-hunt-1707",
+    "author": "Theodosius of Bithynia; Joseph Hunt (ed.)",
+    "work": "Θεοδοσίου Σφαιρικῶν Βιβλία Γ' — Theodosii Sphaericorum Libri Tres",
+    "locus": "Oxoniae: E Theatro Sheldoniano, 1707 (PD)"
+  },
+  "euclid-heath-1908": {
+    "key": "euclid-heath-1908",
+    "author": "Euclid of Alexandria; Thomas Little Heath (tr. & comm.)",
+    "work": "The Thirteen Books of Euclid's Elements",
+    "locus": "Cambridge University Press, 3 vols., 1908 / 2nd ed. 1926 (PD)"
+  },
+  "heath-greek-math-1921": {
+    "key": "heath-greek-math-1921",
+    "author": "Heath, Sir Thomas Little (1861 – 1940)",
+    "work": "A History of Greek Mathematics, Vol. II: From Aristarchus to Diophantus ('Menelaus', pp. 260–273)",
+    "locus": "Oxford: Clarendon Press, 1921 (PD)"
+  },
+  "ceva-1678": {
+    "key": "ceva-1678",
+    "author": "Ceva, Giovanni (1647 – 1734)",
+    "work": "De lineis rectis se invicem secantibus statica constructio",
+    "locus": "Mediolani (Milan): Ex Typographia Ludovici Montiae, 1678 (PD)"
+  },
+  "carnot-1806": {
+    "key": "carnot-1806",
+    "author": "Carnot, Lazare (1753 – 1823)",
+    "work": "Essai sur la théorie des transversales",
+    "locus": "Paris: Courcier, 1806 (PD)"
+  },
+  "poncelet-1822": {
+    "key": "poncelet-1822",
+    "author": "Poncelet, Jean-Victor (1788 – 1867)",
+    "work": "Traité des propriétés projectives des figures",
+    "locus": "Paris: Bachelier, 1822 (PD)"
+  },
+  "chasles-1837": {
+    "key": "chasles-1837",
+    "author": "Chasles, Michel (1793 – 1880)",
+    "work": "Aperçu historique sur l'origine et le développement des méthodes en géométrie",
+    "locus": "Bruxelles: M. Hayez, 1837 (PD)"
+  },
+  "altshiller-court-1925": {
+    "key": "altshiller-court-1925",
+    "author": "Altshiller-Court, Nathan (1881 – 1968)",
+    "work": "College Geometry: A Second Course in Plane Geometry for Colleges and Normal Schools (Ch. VI: Transversals; Ch. X: Harmonic Section)",
+    "locus": "Richmond: Johnson Publishing Co., 1925 (1st ed. PD; cf. geometor/altshiller-court)"
+  },
+  "wildberger-2005": {
+    "key": "wildberger-2005",
+    "author": "Wildberger, Norman J.",
+    "work": "Divine Proportions: Rational Trigonometry to Universal Geometry",
+    "locus": "Sydney: Wild Egg, 2005 (cf. geometor/wildberger)"
+  }
+}
