@@ -1,5 +1,6 @@
 :navigation: footer
 :order: 15
+:nav_title: About
 
 .. _about-index:
 

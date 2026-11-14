@@ -1,5 +1,6 @@
 :navigation: header
-:order: 5
+:order: 25
+:nav_title: Demos
 
 .. _demos-index:
 

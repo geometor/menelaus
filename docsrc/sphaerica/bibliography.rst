@@ -1,10 +1,12 @@
-:title: Bibliographia et Fontes — Systematic Public-Domain Bibliography
-:layout: book
+:navigation: header
+:order: 6
+:nav_title: Bibliography
+:title: Bibliography — Systematic Public-Domain Bibliography
 
 .. _bibliography:
 
-Bibliographia et Fontes (Systematic Bibliography)
-=================================================
+Bibliography
+============
 
 .. rubric:: *Public-Domain Critical Editions, Primary Witnesses, and Projective Studies*
 
