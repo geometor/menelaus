@@ -46,7 +46,7 @@
           <a href="../sphaerica/bibliography.html"  >Bibliography</a>
         </li>
         <li>
-          <a href="../mission/index.html"  >Mission</a>
+          <a href="#" class="is-active" aria-selected="true" aria-current="page">About</a>
         </li>
         <li>
           <a href="../usage/index.html"  >Usage</a>
@@ -70,7 +70,7 @@
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../mission/index.html" title="Mission">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../demos/index.html" title="Symbolic Demonstrations">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
           </div>
@@ -80,9 +80,42 @@
         </div>
       </header>
       <div class="content body book-content" role="main">
-        <section class="level-1" id="about">
-        <span id="about-index"></span><h1>About<a class="headerlink" href="#about" title="Link to this heading">¶</a></h1>
-        <p>Historical, philological, and mathematical context for <span class="person-ref" data-person="menelaus" title="Menelaus of Alexandria (c. 70 – c. 140 CE) — Alexandrian Geometer &amp; Astronomer; Author of Sphaerica">Menelaus of Alexandria</span> (<em>c.</em> 70–140 CE) and his <em>Sphaerica</em> within the GEOMETOR Digital Scriptorium.</p>
+        <section class="level-1" id="about-index">
+        <span id="about"></span><span id="id1"></span><h1>About<a class="headerlink" href="#about-index" title="Link to this heading">¶</a></h1>
+        <p class="rubric">Extracting Historical Semantic Knowledge &amp; Repurposing It for Exact Symbolic Reasoning</p>
+        <section class="level-2" id="about-this-edition">
+        <h2>About This Edition<a class="headerlink" href="#about-this-edition" title="Link to this heading">¶</a></h2>
+        <p><code class="docutils literal notranslate"><span class="pre">geometor.menelaus</span></code> establishes a definitive Digital Scriptorium edition of <strong>Menelaus of Alexandria’s</strong> (<em>c.</em> 70–140 CE) groundbreaking three-book treatise <em>Sphaerica</em> (<em>Sphaericorum Libri III</em>). Menelaus marks a pivotal turning point in Hellenistic mathematics: by emancipating spherical geometry from three-dimensional solid stereometry, he was the first to define the intrinsic <strong>spherical triangle</strong> (<em>triangulum sphaericum</em>) bounded by great-circle arcs, proving positive <strong>spherical excess</strong> (<span class="math notranslate nohighlight">\(A + B + C &gt; \pi\)</span>, Prop. I.11) and <strong>AAA spherical triangle congruence</strong> (Prop. I.17) independently of Euclid’s Fifth Postulate.</p>
+        <p>Through this digital edition, the lost architectural core of Menelaus’s treatise is recovered and structured into machine-addressable semantic elements. The edition presents scan-verified Latin texts from <strong>Edmond Halley’s</strong> critical Oxford edition (<em>Menelai Sphaericorum Libri III</em>, 1758, overseen by George Costard) alongside the surviving polytonic Greek text of the Menelaus Transversal Lemma preserved in <strong>Claudius Ptolemy’s</strong> <em>Syntaxis Mathematica</em> I.13 (ed. J. L. Heiberg, 1898) and the philological stemma established by <strong>Axel Anthon Björnbo</strong> (<em>Studien über Menelaos’ Sphärik</em>, 1902). Accompanying these primary witnesses is a modern English translation, complete with step-by-step mathematical formalization, interactive <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVG diagrams, and dynamic 3D unit-sphere projections.</p>
+        <p>Within the wider GEOMETOR ecosystem, Menelaus’s transversal theorem forms the historical and projective link connecting the planar foundations of Euclid’s <em>Elements</em> (), the projective cross-ratio pencils of Pappus of Alexandria’s <em>Synagoge</em> Book VII (), the modern triangle transversals of the <em>Encyclopedia of Triangle Centers</em> (), and the operational complexity measures of Émile Lemoine’s <em>Géométrographie</em> (<code class="docutils literal notranslate"><span class="pre">geometor.lemoine</span></code>). Every planar, rational-trigonometric, unit-sphere, and projective <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span> Ceva–Menelaus duality configuration is formalized symbolically in <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> over exact algebraic number fields.</p>
+        </section>
+        <section class="level-2" id="the-geometor-mission">
+        <h2>The GEOMETOR Mission<a class="headerlink" href="#the-geometor-mission" title="Link to this heading">¶</a></h2>
+        <p>The GEOMETOR project, conceived and directed by <strong>phi ARCHITECT</strong>, is dedicated to a multi-generational synthesis of geometry, computation, and symbolic reasoning. At its core, the project operates across three foundational pillars:</p>
+        <section class="level-3" id="extracting-historical-semantic-knowledge">
+        <h3>Extracting Historical Semantic Knowledge<a class="headerlink" href="#extracting-historical-semantic-knowledge" title="Link to this heading">¶</a></h3>
+        <p>Moving beyond passive page scans and superficial OCR, GEOMETOR recovers the living deductive architecture of more than 2,300 years of geometric, axiomatic, and philosophical treatises. From ancient Greek codices and Renaissance folios to nineteenth-century synthetic treatises, our Digital Scriptorium elevates prose, marginal citations, primary-source folios (via <code class="docutils literal notranslate"><span class="pre">publish</span> <span class="pre">folio</span></code>), and calibrated Ink-to-Vector <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> diagrams into structured, machine-addressable semantic knowledge graphs. Every proposition, step, enunciation, and justification is isolated, verified, and interconnected across history.</p>
+        </section>
+        <section class="level-3" id="exact-symbolic-grounding-geometor-model">
+        <h3>Exact Symbolic Grounding (<code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>)<a class="headerlink" href="#exact-symbolic-grounding-geometor-model" title="Link to this heading">¶</a></h3>
+        <p>Geometry in GEOMETOR is never approximated through floating-point fuzz or numerical instability. Constructions are anchored in 100% exact symbolic algebra via <cite>SymPy</cite> and Norman Wildberger’s Rational Trigonometry invariants (quadrance, spread, and cross-ratio) over exact algebraic number fields. By eliminating rounding errors entirely, geometric configurations retain absolute fidelity, allowing geometric proofs, collinearities, and concyclicities to be verified symbolically with mathematical certainty.</p>
+        </section>
+        <section class="level-3" id="repurposing-knowledge-across-mediums">
+        <h3>Repurposing Knowledge Across Mediums<a class="headerlink" href="#repurposing-knowledge-across-mediums" title="Link to this heading">¶</a></h3>
+        <p>The extracted semantic graphs and exact algebraic models are re-deployed across a unified computational medium: synchronized multi-track <strong>Book Codices</strong> and EPUB 3 editions published with <cite>photon-platform/publish</cite>; computable deductive canons (such as <code class="docutils literal notranslate"><span class="pre">geometor.elements</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.etc</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.pappus</span></code>, and <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code>); interactive SVG laboratories powered by <code class="docutils literal notranslate"><span class="pre">geometor.explorer</span></code>; ultra-high-definition (QHD) visual broadcasts; and neuro-symbolic program synthesis guided by <code class="docutils literal notranslate"><span class="pre">geometor.seer</span></code> across <a class="reference external" href="https://geometor.com">geometor.com</a>.</p>
+        </section>
+        </section>
+        <section class="level-2" id="sources-provenance-methodology">
+        <h2>Sources, Provenance &amp; Methodology<a class="headerlink" href="#sources-provenance-methodology" title="Link to this heading">¶</a></h2>
+        <p>The textual transmission of Menelaus’s <em>Sphaerica</em> is among the most dramatic survivals in the history of mathematics: the continuous ancient Greek text was lost in late antiquity, surviving only through medieval Arabic and Hebrew translations, Renaissance reconstructions, and eighteenth-century scholarly collation. This edition relies on four public-domain primary witnesses:</p>
+        <ul class="simple">
+        <li><p><strong>Edmond Halley</strong>, <em>Menelai Sphaericorum Libri III</em> (Oxford: Clarendon Press, 1758; preface by George Costard), established from Hebrew and Arabic manuscripts preserved in the Bodleian Library.</p></li>
+        <li><p><strong>Claudius Ptolemy</strong>, <em>Syntaxis Mathematica</em> (Almagest) Book I, Chapter 13 (ed. J. L. Heiberg, Leipzig: Teubner, 1898), preserving the oldest extant continuous Greek text of the Menelaus Transversal Theorem.</p></li>
+        <li><p><strong>Francesco Maurolico</strong>, <em>Sphaericorum Menelai Libri III</em> in <em>Theodosii Sphaericorum Elementorum Libri III…</em> (Messina: Petrus Spira, 1558), offering the first Renaissance Latin reconstruction.</p></li>
+        <li><p><strong>Axel Anthon Björnbo</strong>, <em>Studien über Menelaos’ Sphärik: Beiträge zur Geschichte der Sphärik und Trigonometrie bei den Griechen</em> (Leipzig: B. G. Teubner, 1902), providing the comprehensive twentieth-century stemmatic and philological analysis.</p></li>
+        </ul>
+        <section class="level-3" id="child-essays-monographic-studies">
+        <h3>Child Essays &amp; Monographic Studies<a class="headerlink" href="#child-essays-monographic-studies" title="Link to this heading">¶</a></h3>
         <ul class="simple">
         <li><p><a class="reference internal" href="menelaus-of-alexandria.html#about-menelaus"><span class="std std-ref">Menelaus of Alexandria (c. 70–140 CE): Life, Works &amp; Roman Observations</span></a></p></li>
         <li><p><a class="reference internal" href="transmission-history.html#about-transmission"><span class="std std-ref">Textual Transmission: Lost Greek, Arabic, Hebrew, Maurolico (1558), Halley (1758) &amp; Björnbo (1902)</span></a></p></li>
@@ -91,13 +124,15 @@
         <div class="toctree-wrapper compound">
         </div>
         </section>
+        </section>
+        </section>
 
       </div>
       <footer class="book-footer">
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../mission/index.html" title="Mission">&larr; <span class="nav-label">Mission</span></a>
+            <a class="book-nav-btn" href="../demos/index.html" title="Symbolic Demonstrations">&larr; <span class="nav-label">Symbolic Demonstrations</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../index.html">GEOMETOR • menelaus</a>
@@ -146,7 +181,6 @@
       <ul>
         <li><a href="../sphaerica/concordance.html"  >Concordance</a></li>
         <li><a href="../sphaerica/glossary.html"  >Glossary</a></li>
-        <li><a href="#" class="is-active" aria-selected="true" aria-current="page">About</a></li>
         <li><a href="../connect.html"  >connect</a></li>
         <li><a href="../log/index.html"  >Log</a></li>
         <li><a href="../changelog.html"  >Changelog</a></li>
@@ -163,11 +197,12 @@
 
   <script src="../_static/jquery.js?v=5d32c60e"></script>
   <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../_static/documentation_options.js?v=a58bc63e"></script>
+  <script src="../_static/documentation_options.js?v=92734c54"></script>
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../_static/js/search_highlight.js"></script>
 
 </body>
