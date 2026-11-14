@@ -46,4 +46,4 @@ Exact Symbolic Demonstrations & Context
    sphaerica/index
    usage/index
    demos/index
-   mission/index
+   about/index
