@@ -1,7 +1,8 @@
 :navigation: footer
-:order: 10
+:order: 40
+:nav_title: Modules
 
 Modules
 =======
 
-.. include:: api/geometor/menelaus/index.rst
+.. include:: api/src/geometor/menelaus/index.rst

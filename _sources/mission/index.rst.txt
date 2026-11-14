@@ -1,7 +1,8 @@
 :navigation: header
 :order: 10
+:nav_title: Mission
 
-mission
+Mission
 =======
 
 ``geometor.menelaus`` recovers, translates, models, and proves the foundational geometric architecture of :person:`Menelaus of Alexandria <menelaus>` (*c.* 70–140 CE), author of the three-book *Sphaerica* (*Sphaericorum Libri III*) and discoverer of the **Menelaus Transversal Theorem**—the bridge linking Greek spherical astronomy to modern synthetic projective geometry.

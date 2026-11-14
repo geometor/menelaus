@@ -2,8 +2,9 @@
 :order: 1
 :layout: book
 :title: Sphaerica
-:book_title: Menelai Sphaericorum Libri III
-:book_subtitle: On Spherical Triangles, Rising-Time Arcs & the Six-Quantity Transversal Theorem
+:nav_title: Sphaerica
+:book_title: Sphaerica
+:book_subtitle: Menelai Sphaericorum Libri III — Menelaus of Alexandria (ed. Edmond Halley, 1758)
 :author: Menelaus of Alexandria (c. 70–140 CE)
 :series: GEOMETOR Classical Canon · Critical 4-Track Book Codex
 :publisher: GEOMETOR Scriptorium (ex Editionibus Halleii 1758, Heiberg 1898 et Björnbo 1902)
@@ -13,10 +14,10 @@
 .. _menelaus-index:
 .. _sphaerica-index:
 
-MENELAI SPHAERICORUM LIBRI III
-==============================
+Sphaerica
+=========
 
-.. rubric:: *On Intrinsic Spherical Triangles, Rising-Time Arc Inequalities, and the Planar & Spherical Transversal Theorem*
+.. rubric:: *Menelai Sphaericorum Libri III* — Menelaus of Alexandria (ed. Edmond Halley, 1758)
 
 .. container:: title-page
 
@@ -30,8 +31,8 @@ MENELAI SPHAERICORUM LIBRI III
 
 ----
 
-Conspectus Totius Operis
-------------------------
+Table of Contents
+-----------------
 
 *(Analytical Table of Contents)*
 
@@ -63,13 +64,13 @@ UNIT IV — BOOK III (PART 2): ANHARMONIC CROSS-RATIO, ALTITUDES & PROJECTIVE LE
 
 :ref:`English <unit-4-en>` · :ref:`Latin (Halley 1758) <unit-4-la>` · :ref:`Summary <unit-4-summary>` · :ref:`Notes <unit-4-notes>`
 
-Apparatus Criticus et Concordantia
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Scholarly Apparatus
+-------------------
 
 * :ref:`Cross-Tradition Concordance (Halley 1758 · Maurolico 1558 · Björnbo 1902 · Almagest I.13 · Euclid · GEOMETOR) <concordance>`
-* :ref:`Bibliographia et Fontes — Public-Domain Critical Editions & Studies (18 Entries) <bibliography>`
-* :ref:`Index Nominum — Biographical Register of Geometers, Translators & Editors (22 Persons) <persons>`
-* :ref:`Glossarium Technicum — Greek, Latin, Arabic, Hebrew & Projective Lexicon (15 Terms) <glossary>`
+* :ref:`Bibliography — Public-Domain Critical Editions & Studies (18 Entries) <bibliography>`
+* :ref:`People — Biographical Register of Geometers, Translators & Editors (22 Persons) <persons>`
+* :ref:`Glossary — Greek, Latin, Arabic, Hebrew & Projective Lexicon (15 Terms) <glossary>`
 
 .. toctree::
    :maxdepth: 2
@@ -84,7 +85,7 @@ Apparatus Criticus et Concordantia
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Editio Latina et Graeca
+   :caption: Latin & Greek Editions
 
    unit-1/unit-1-la
    unit-2/unit-2-la
@@ -108,7 +109,7 @@ Apparatus Criticus et Concordantia
 .. toctree::
    :maxdepth: 1
    :hidden:
-   :caption: Apparatus & Concordance
+   :caption: Scholarly Apparatus
 
    concordance
    bibliography
