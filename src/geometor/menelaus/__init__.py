@@ -18,7 +18,7 @@ Provides 100% exact SymPy & :mod:`geometor.model` constructions and theorems for
 
 from __future__ import annotations
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 from geometor.menelaus.concordance import (
     load_apparatus_registries,

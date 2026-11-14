@@ -1,10 +1,11 @@
-:title: Concordantia — Cross-Tradition Proposition & Ecosystem Concordance
-:layout: book
+:navigation: footer
+:nav_title: Concordance
+:title: Concordance — Cross-Tradition Proposition & Ecosystem Concordance
 
 .. _concordance:
 
-Concordantia Menelai (Cross-Tradition Concordance)
-==================================================
+Concordance
+===========
 
 .. rubric:: *Halley (1758) · Maurolico (1558) · Björnbo (1902) · Ptolemy Almagest I.13 (1898) · Euclid · GEOMETOR*
 

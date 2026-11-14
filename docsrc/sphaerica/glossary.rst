@@ -1,10 +1,11 @@
-:title: Glossarium Technicum — Greek, Latin & Projective Lexicon
-:layout: book
+:navigation: footer
+:nav_title: Glossary
+:title: Glossary — Greek, Latin & Projective Lexicon
 
 .. _glossary:
 
-Glossarium Technicum (Technical Glossary)
-=========================================
+Glossary
+========
 
 .. rubric:: *Lexicon of Intrinsic Spherical Geometry, Chord Trigonometry, and Projective Transversals*
 
