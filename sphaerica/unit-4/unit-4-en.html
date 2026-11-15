@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=8713e751" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=99410eb1" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -113,7 +113,28 @@
         <p><em>If from the right angle of a right-angled spherical triangle two arcs be drawn to the base containing equal angles with one of its legs: the sine of the arc compounded of the base and the arc adjoined to it shall be to the sine of that adjoined arc itself, as the sine of the segment of the base adjacent to the other leg of the triangle is to the sine of the remaining segment of the base; and conversely.</em></p>
         </div>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" class="euclid-graphic" data-graphic-id="spherical-cross-ratio-pencil">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" data-graphic-id="spherical-cross-ratio-pencil" width="640" height="560" data-svg-scope="s-ca69dafd">
+          <style>
+            svg[data-svg-scope="s-ca69dafd"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --given: #334155; --aux: #0284c7; --cevian: #059669; --transversal: #d97706; --limb: #64748b; --pt-given: #0f172a; --pt-trace: #d97706; --pt-cevian: #059669; --pt-aux: #0284c7; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca69dafd"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --given: #cbd5e1; --aux: #38bdf8; --cevian: #34d399; --transversal: #fbbf24; --limb: #94a3b8; --pt-given: #f1f5f9; --pt-trace: #fbbf24; --pt-cevian: #34d399; --pt-aux: #38bdf8 }
+            svg[data-svg-scope="s-ca69dafd"] .geom-line { fill: none; stroke: var(--given); stroke-width: 1.75; stroke-linecap: round }
+            svg[data-svg-scope="s-ca69dafd"] .geom-line.auxiliary, svg[data-svg-scope="s-ca69dafd"] .geom-line.bisector { stroke: var(--aux); stroke-width: 1.45; stroke-dasharray: 6 4; opacity: 0.88 }
+            svg[data-svg-scope="s-ca69dafd"] .geom-line.cevian { stroke: var(--cevian); stroke-width: 1.65; stroke-dasharray: 4 3 }
+            svg[data-svg-scope="s-ca69dafd"] .geom-line.transversal, svg[data-svg-scope="s-ca69dafd"] .geom-line.result { stroke: var(--transversal); stroke-width: 2.65; stroke-dasharray: none }
+            svg[data-svg-scope="s-ca69dafd"] .geom-line.back-arc { stroke-dasharray: 3.5 4.5; opacity: 0.42 }
+            svg[data-svg-scope="s-ca69dafd"] .geom-segment { fill: none; stroke: var(--aux); stroke-width: 2.2; stroke-linecap: round }
+            svg[data-svg-scope="s-ca69dafd"] .geom-segment.extension { stroke: var(--given); stroke-dasharray: 5 3.5; stroke-width: 1.6 }
+            svg[data-svg-scope="s-ca69dafd"] .geom-circle { fill: none; stroke: var(--given); stroke-width: 1.85; opacity: 0.88 }
+            svg[data-svg-scope="s-ca69dafd"] .geom-circle.sphere-limb { stroke: var(--limb); stroke-width: 2.2; fill: var(--aux); fill-opacity: 0.04 }
+            svg[data-svg-scope="s-ca69dafd"] .geom-polygon { fill: var(--aux); fill-opacity: 0.06; stroke: var(--given); stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-ca69dafd"] .geom-polygon.cevian { fill: var(--cevian); fill-opacity: 0.07; stroke: var(--cevian); stroke-width: 1.6 }
+            svg[data-svg-scope="s-ca69dafd"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-ca69dafd"] .geom-point.trace, svg[data-svg-scope="s-ca69dafd"] .geom-point.result { fill: var(--pt-trace); stroke-width: 1.8 }
+            svg[data-svg-scope="s-ca69dafd"] .geom-point.cevian { fill: var(--pt-cevian) }
+            svg[data-svg-scope="s-ca69dafd"] .geom-point.auxiliary, svg[data-svg-scope="s-ca69dafd"] .geom-point.center { fill: var(--pt-aux) }
+            svg[data-svg-scope="s-ca69dafd"] .geom-label { fill: var(--ink); font-size: 14px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-ca69dafd"] .geom-label-sub { font-size: 10.5px; font-weight: 600 }
+          </style>
           <defs>
             <path id="geom-tick-1" d="M 0,-5.5 L 0,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
             <path id="geom-tick-2" d="M -2.4,-5.5 L -2.4,5.5 M 2.4,-5.5 L 2.4,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
@@ -310,7 +331,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=92734c54"></script>
+  <script src="../../_static/documentation_options.js?v=360bc84d"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>

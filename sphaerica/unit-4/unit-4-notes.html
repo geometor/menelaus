@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=8713e751" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=99410eb1" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -105,7 +105,28 @@
         <h2>2. Converse of Menelaus Collinearity Gallery (<code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.menelaus.planar_transversal</span></code>)<a class="headerlink" href="#converse-of-menelaus-collinearity-gallery-geometor-menelaus-planar-transversal" title="Link to this heading">¶</a></h2>
         <p>Menelaus’s external bisector theorem (<em>Prop. III.6</em>, <cite>[§4.1]</cite>) and harmonic transversal methods blossom into four classic projective collinearity theorems proved in <code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.menelaus.planar_transversal</span></code> via the <strong>Converse of Menelaus</strong> (<span class="math notranslate nohighlight">\(\text{signed product} = -1\)</span>):</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" class="euclid-graphic" data-graphic-id="menelaus-external-bisectors">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" data-graphic-id="menelaus-external-bisectors" width="760" height="520" data-svg-scope="s-7bd5a46b">
+          <style>
+            svg[data-svg-scope="s-7bd5a46b"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --given: #334155; --aux: #0284c7; --cevian: #059669; --transversal: #d97706; --limb: #64748b; --pt-given: #0f172a; --pt-trace: #d97706; --pt-cevian: #059669; --pt-aux: #0284c7; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-7bd5a46b"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --given: #cbd5e1; --aux: #38bdf8; --cevian: #34d399; --transversal: #fbbf24; --limb: #94a3b8; --pt-given: #f1f5f9; --pt-trace: #fbbf24; --pt-cevian: #34d399; --pt-aux: #38bdf8 }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-line { fill: none; stroke: var(--given); stroke-width: 1.75; stroke-linecap: round }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-line.auxiliary, svg[data-svg-scope="s-7bd5a46b"] .geom-line.bisector { stroke: var(--aux); stroke-width: 1.45; stroke-dasharray: 6 4; opacity: 0.88 }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-line.cevian { stroke: var(--cevian); stroke-width: 1.65; stroke-dasharray: 4 3 }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-line.transversal, svg[data-svg-scope="s-7bd5a46b"] .geom-line.result { stroke: var(--transversal); stroke-width: 2.65; stroke-dasharray: none }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-line.back-arc { stroke-dasharray: 3.5 4.5; opacity: 0.42 }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-segment { fill: none; stroke: var(--aux); stroke-width: 2.2; stroke-linecap: round }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-segment.extension { stroke: var(--given); stroke-dasharray: 5 3.5; stroke-width: 1.6 }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-circle { fill: none; stroke: var(--given); stroke-width: 1.85; opacity: 0.88 }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-circle.sphere-limb { stroke: var(--limb); stroke-width: 2.2; fill: var(--aux); fill-opacity: 0.04 }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-polygon { fill: var(--aux); fill-opacity: 0.06; stroke: var(--given); stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-polygon.cevian { fill: var(--cevian); fill-opacity: 0.07; stroke: var(--cevian); stroke-width: 1.6 }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-point.trace, svg[data-svg-scope="s-7bd5a46b"] .geom-point.result { fill: var(--pt-trace); stroke-width: 1.8 }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-point.cevian { fill: var(--pt-cevian) }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-point.auxiliary, svg[data-svg-scope="s-7bd5a46b"] .geom-point.center { fill: var(--pt-aux) }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-label { fill: var(--ink); font-size: 14px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-7bd5a46b"] .geom-label-sub { font-size: 10.5px; font-weight: 600 }
+          </style>
           <defs>
             <path id="geom-tick-1" d="M 0,-5.5 L 0,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
             <path id="geom-tick-2" d="M -2.4,-5.5 L -2.4,5.5 M 2.4,-5.5 L 2.4,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
@@ -158,7 +179,28 @@
         <li><p><strong>External Angle-Bisector Axis</strong> (<code class="xref py py-func docutils literal notranslate"><span class="pre">construct_external_bisector_axis()</span></code>, planar counterpart of <em>Sphaerica</em> Prop. III.6): on Heronian <span class="geom-ref" data-ref="&lt; A B C &gt;" title="&lt; A B C &gt;">△ABC</span> (<span class="math notranslate nohighlight">\(a=7, b=20, c=15\)</span>, incenter <span class="geom-ref" data-ref="I" title="I">I</span>), the external bisector feet <span class="geom-ref" data-ref="De" title="De">De</span>, <span class="geom-ref" data-ref="Ee" title="Ee">Ee</span>, <span class="geom-ref" data-ref="Fe" title="Fe">Fe</span> satisfy <span class="math notranslate nohighlight">\((-c/a)(-b/c)(-a/b) = -1\)</span> and lie on the anti-orthic axis <span class="geom-ref" data-ref="[ De Ee ]" title="[ De Ee ]">DeEe</span> (the trilinear polar of <span class="geom-ref" data-ref="I" title="I">I</span>!).</p></li>
         </ul>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" class="euclid-graphic" data-graphic-id="menelaus-pascal-hexagram">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" data-graphic-id="menelaus-pascal-hexagram" width="760" height="520" data-svg-scope="s-2d02ce27">
+          <style>
+            svg[data-svg-scope="s-2d02ce27"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --given: #334155; --aux: #0284c7; --cevian: #059669; --transversal: #d97706; --limb: #64748b; --pt-given: #0f172a; --pt-trace: #d97706; --pt-cevian: #059669; --pt-aux: #0284c7; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-2d02ce27"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --given: #cbd5e1; --aux: #38bdf8; --cevian: #34d399; --transversal: #fbbf24; --limb: #94a3b8; --pt-given: #f1f5f9; --pt-trace: #fbbf24; --pt-cevian: #34d399; --pt-aux: #38bdf8 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-line { fill: none; stroke: var(--given); stroke-width: 1.75; stroke-linecap: round }
+            svg[data-svg-scope="s-2d02ce27"] .geom-line.auxiliary, svg[data-svg-scope="s-2d02ce27"] .geom-line.bisector { stroke: var(--aux); stroke-width: 1.45; stroke-dasharray: 6 4; opacity: 0.88 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-line.cevian { stroke: var(--cevian); stroke-width: 1.65; stroke-dasharray: 4 3 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-line.transversal, svg[data-svg-scope="s-2d02ce27"] .geom-line.result { stroke: var(--transversal); stroke-width: 2.65; stroke-dasharray: none }
+            svg[data-svg-scope="s-2d02ce27"] .geom-line.back-arc { stroke-dasharray: 3.5 4.5; opacity: 0.42 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-segment { fill: none; stroke: var(--aux); stroke-width: 2.2; stroke-linecap: round }
+            svg[data-svg-scope="s-2d02ce27"] .geom-segment.extension { stroke: var(--given); stroke-dasharray: 5 3.5; stroke-width: 1.6 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-circle { fill: none; stroke: var(--given); stroke-width: 1.85; opacity: 0.88 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-circle.sphere-limb { stroke: var(--limb); stroke-width: 2.2; fill: var(--aux); fill-opacity: 0.04 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-polygon { fill: var(--aux); fill-opacity: 0.06; stroke: var(--given); stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-2d02ce27"] .geom-polygon.cevian { fill: var(--cevian); fill-opacity: 0.07; stroke: var(--cevian); stroke-width: 1.6 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-point.trace, svg[data-svg-scope="s-2d02ce27"] .geom-point.result { fill: var(--pt-trace); stroke-width: 1.8 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-point.cevian { fill: var(--pt-cevian) }
+            svg[data-svg-scope="s-2d02ce27"] .geom-point.auxiliary, svg[data-svg-scope="s-2d02ce27"] .geom-point.center { fill: var(--pt-aux) }
+            svg[data-svg-scope="s-2d02ce27"] .geom-label { fill: var(--ink); font-size: 14px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-2d02ce27"] .geom-label-sub { font-size: 10.5px; font-weight: 600 }
+          </style>
           <defs>
             <path id="geom-tick-1" d="M 0,-5.5 L 0,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
             <path id="geom-tick-2" d="M -2.4,-5.5 L -2.4,5.5 M 2.4,-5.5 L 2.4,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
@@ -224,7 +266,28 @@
         <section class="level-2" id="projective-menelausceva-duality-etc-trilinear-polars-geometor-menelaus-duality-ceva">
         <h2>3. Projective Menelaus–Ceva Duality &amp; ETC Trilinear Polars (<code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.menelaus.duality_ceva</span></code>)<a class="headerlink" href="#projective-menelausceva-duality-etc-trilinear-polars-geometor-menelaus-duality-ceva" title="Link to this heading">¶</a></h2>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" class="euclid-graphic" data-graphic-id="menelaus-ceva-trilinear-polar">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" data-graphic-id="menelaus-ceva-trilinear-polar" width="760" height="520" data-svg-scope="s-5a81dbef">
+          <style>
+            svg[data-svg-scope="s-5a81dbef"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --given: #334155; --aux: #0284c7; --cevian: #059669; --transversal: #d97706; --limb: #64748b; --pt-given: #0f172a; --pt-trace: #d97706; --pt-cevian: #059669; --pt-aux: #0284c7; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5a81dbef"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --given: #cbd5e1; --aux: #38bdf8; --cevian: #34d399; --transversal: #fbbf24; --limb: #94a3b8; --pt-given: #f1f5f9; --pt-trace: #fbbf24; --pt-cevian: #34d399; --pt-aux: #38bdf8 }
+            svg[data-svg-scope="s-5a81dbef"] .geom-line { fill: none; stroke: var(--given); stroke-width: 1.75; stroke-linecap: round }
+            svg[data-svg-scope="s-5a81dbef"] .geom-line.auxiliary, svg[data-svg-scope="s-5a81dbef"] .geom-line.bisector { stroke: var(--aux); stroke-width: 1.45; stroke-dasharray: 6 4; opacity: 0.88 }
+            svg[data-svg-scope="s-5a81dbef"] .geom-line.cevian { stroke: var(--cevian); stroke-width: 1.65; stroke-dasharray: 4 3 }
+            svg[data-svg-scope="s-5a81dbef"] .geom-line.transversal, svg[data-svg-scope="s-5a81dbef"] .geom-line.result { stroke: var(--transversal); stroke-width: 2.65; stroke-dasharray: none }
+            svg[data-svg-scope="s-5a81dbef"] .geom-line.back-arc { stroke-dasharray: 3.5 4.5; opacity: 0.42 }
+            svg[data-svg-scope="s-5a81dbef"] .geom-segment { fill: none; stroke: var(--aux); stroke-width: 2.2; stroke-linecap: round }
+            svg[data-svg-scope="s-5a81dbef"] .geom-segment.extension { stroke: var(--given); stroke-dasharray: 5 3.5; stroke-width: 1.6 }
+            svg[data-svg-scope="s-5a81dbef"] .geom-circle { fill: none; stroke: var(--given); stroke-width: 1.85; opacity: 0.88 }
+            svg[data-svg-scope="s-5a81dbef"] .geom-circle.sphere-limb { stroke: var(--limb); stroke-width: 2.2; fill: var(--aux); fill-opacity: 0.04 }
+            svg[data-svg-scope="s-5a81dbef"] .geom-polygon { fill: var(--aux); fill-opacity: 0.06; stroke: var(--given); stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-5a81dbef"] .geom-polygon.cevian { fill: var(--cevian); fill-opacity: 0.07; stroke: var(--cevian); stroke-width: 1.6 }
+            svg[data-svg-scope="s-5a81dbef"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-5a81dbef"] .geom-point.trace, svg[data-svg-scope="s-5a81dbef"] .geom-point.result { fill: var(--pt-trace); stroke-width: 1.8 }
+            svg[data-svg-scope="s-5a81dbef"] .geom-point.cevian { fill: var(--pt-cevian) }
+            svg[data-svg-scope="s-5a81dbef"] .geom-point.auxiliary, svg[data-svg-scope="s-5a81dbef"] .geom-point.center { fill: var(--pt-aux) }
+            svg[data-svg-scope="s-5a81dbef"] .geom-label { fill: var(--ink); font-size: 14px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-5a81dbef"] .geom-label-sub { font-size: 10.5px; font-weight: 600 }
+          </style>
           <defs>
             <path id="geom-tick-1" d="M 0,-5.5 L 0,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
             <path id="geom-tick-2" d="M -2.4,-5.5 L -2.4,5.5 M 2.4,-5.5 L 2.4,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
@@ -372,7 +435,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=92734c54"></script>
+  <script src="../../_static/documentation_options.js?v=360bc84d"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
