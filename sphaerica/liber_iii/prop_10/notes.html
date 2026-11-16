@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>III.10: Scholarly &amp; GEOMETOR Notes: Orthocenter Concurrency &amp; Projective Duality — Sphaerica • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/menelaus/sphaerica/liber_iii/prop_10/notes.html" />
+  <meta name="description" content="In spherical_orthocenter_menelaus(), Menelaus’s three-transversal proof of Sphaerica III.10 ([§4.4], Halley pp. 95–97) is verified algebraically on S^2(\mathbb{Q}) alongside the concise…" />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="III.10: Scholarly &amp; GEOMETOR Notes: Orthocenter Concurrency &amp; Projective Duality — Sphaerica • GEOMETOR" />
+  <meta property="og:description" content="In spherical_orthocenter_menelaus(), Menelaus’s three-transversal proof of Sphaerica III.10 ([§4.4], Halley pp. 95–97) is verified algebraically on S^2(\mathbb{Q}) alongside the concise…" />
+  <meta property="og:url" content="https://geometor.github.io/menelaus/sphaerica/liber_iii/prop_10/notes.html" />
+  <meta property="og:image" content="https://geometor.github.io/menelaus/_static/social/sphaerica.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Menelaus of Alexandria — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="III.10: Scholarly &amp; GEOMETOR Notes: Orthocenter Concurrency &amp; Projective Duality — Sphaerica • GEOMETOR" />
+  <meta name="twitter:description" content="In spherical_orthocenter_menelaus(), Menelaus’s three-transversal proof of Sphaerica III.10 ([§4.4], Halley pp. 95–97) is verified algebraically on S^2(\mathbb{Q}) alongside the concise…" />
+  <meta name="twitter:image" content="https://geometor.github.io/menelaus/_static/social/sphaerica.png" />
+  <meta name="twitter:image:alt" content="Menelaus of Alexandria — GEOMETOR" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=81e79cc0" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif" data-folio="halley_1758_menelai_sphaericorum:0111">
+  <header>
+    <div class="logo">
+      <a href="../../../index.html" title="Home">
+        <img src="../../../_static/logo.png" class="logo" alt="GEOMETOR menelaus"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">menelaus</span>
+        </div>
+      </a>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../index.html" class="is-active" aria-selected="true" >Sphaerica</a>
+        </li>
+        <li>
+          <a href="../../persons.html"  >People</a>
+        </li>
+        <li>
+          <a href="../../bibliography.html"  >Bibliography</a>
+        </li>
+        <li>
+          <a href="../../../about/index.html"  >About</a>
+        </li>
+        <li>
+          <a href="../../../usage/index.html"  >Usage</a>
+        </li>
+        <li>
+          <a href="../../../demos/index.html"  >Demos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane" data-folio="halley_1758_menelai_sphaericorum:0111" data-canonical-id="III.10">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <a class="book-section-home-link" href="../../index.html">Sphaerica</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <a class="book-crumb-link" href="../index.html">Liber III</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <a class="book-crumb-link" href="la.html">Proposition III.10 (Notes)</a>
+          </nav>
+          <div class="book-provenance-badges">
+            <a class="book-badge folio-badge folio-link" href="https://github.com/geometor/menelaus/blob/main/resources/halley_1758_menelai_sphaericorum/folios/0111.png" target="_blank" rel="noopener" title="View Folio halley_1758_menelai_sphaericorum:0111">Folio halley_1758_menelai_sphaericorum:0111</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../prop_09/notes.html" title="Proposition III.9 — Concurrency of Spherical Angle Bisectors">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <a class="book-track-item" href="index.html">English</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="la.html">Latin</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="summary.html">Summary</a>
+              <span class="book-track-sep">&middot;</span>
+              <strong class="book-track-item is-active" aria-current="page">Notes</strong>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../prop_11_25/notes.html" title="Propositions III.11–III.25 — Astronomical Rising Times &amp; Closing Horizon"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="scholarly-geometor-notes-orthocenter-concurrency-projective-duality">
+        <span id="sphaerica-iii-10-notes"></span><h1>Scholarly &amp; GEOMETOR Notes: Orthocenter Concurrency &amp; Projective Duality<a class="headerlink" href="#scholarly-geometor-notes-orthocenter-concurrency-projective-duality" title="Link to this heading">¶</a></h1>
+        <p class="rubric"><em>Exact Vector Proofs, Collinearities &amp; Trilinear Polarity</em></p>
+        <section class="level-2" id="exact-symbolic-proof-of-spherical-orthocenter-concurrency">
+        <h2>1. Exact Symbolic Proof of Spherical Orthocenter Concurrency<a class="headerlink" href="#exact-symbolic-proof-of-spherical-orthocenter-concurrency" title="Link to this heading">¶</a></h2>
+        <p>In <a class="reference internal" href="../../../modules/api/geometor/menelaus/spherical/index.html#geometor.menelaus.spherical.spherical_orthocenter_menelaus" title="geometor.menelaus.spherical.spherical_orthocenter_menelaus"><code class="xref py py-func docutils literal notranslate"><span class="pre">spherical_orthocenter_menelaus()</span></code></a>, Menelaus’s three-transversal proof of <em>Sphaerica</em> III.10 (<cite>[§4.4]</cite>, Halley pp. 95–97) is verified algebraically on <span class="math notranslate nohighlight">\(S^2(\mathbb{Q})\)</span> alongside the concise Lagrange vector-triple-product identity for altitude normals <span class="math notranslate nohighlight">\(\mathbf{m}_A = (\mathbf{B} \times \mathbf{C}) \times \mathbf{A}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{m}_B = (\mathbf{C} \times \mathbf{A}) \times \mathbf{B}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{m}_C = (\mathbf{A} \times \mathbf{B}) \times \mathbf{C}\)</span>:</p>
+        <div class="math notranslate nohighlight">
+        \[\mathbf{m}_A + \mathbf{m}_B + \mathbf{m}_C \;\equiv\; \mathbf{0}
+        \quad\Longleftrightarrow\quad
+        \det(\mathbf{m}_A, \mathbf{m}_B, \mathbf{m}_C) \;=\; 0,\]</div>
+        <p>and the spherical orthocenter <span class="math notranslate nohighlight">\(\mathbf{H} \propto \mathbf{m}_A \times \mathbf{m}_B\)</span> satisfies exact dihedral orthogonality <span class="math notranslate nohighlight">\((\mathbf{A}\times\mathbf{H})\cdot(\mathbf{B}\times\mathbf{C}) = (\mathbf{B}\times\mathbf{H})\cdot(\mathbf{C}\times\mathbf{A}) = (\mathbf{C}\times\mathbf{H})\cdot(\mathbf{A}\times\mathbf{B}) = 0\)</span> on all three sides simultaneously. Remarkably, Menelaus’s auxiliary great circle <span class="math notranslate nohighlight">\(E\Delta\Theta\)</span> joining altitude feet <span class="math notranslate nohighlight">\(\Delta\)</span> and <span class="math notranslate nohighlight">\(E\)</span> is literally the <strong>orthic axis</strong>—the <a class="term-ref glossary-term" id="occ-term-polaris-trilinearis-1" href="../../glossary.html#term-polaris-trilinearis" data-term="polaris-trilinearis" title="polaris trilinearis (trilinear polar of a point): The Menelaus transversal line joining the harmonic conjugates (Dm, Em, Fm) of the Ceva traces (Dc, Ec, Fc) of a perspector P with respect to triangle ABC; equivalently, the Desargues axis of ABC and the cevian triangle DcEcFc.">trilinear polar</a> of the orthocenter <span class="math notranslate nohighlight">\(Z\)</span>!</p>
+        </section>
+        <section class="level-2" id="converse-of-menelaus-collinearity-gallery">
+        <h2>2. Converse of Menelaus Collinearity Gallery<a class="headerlink" href="#converse-of-menelaus-collinearity-gallery" title="Link to this heading">¶</a></h2>
+        <figure class="photon-picture photon-svg">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" data-graphic-id="menelaus-pascal-hexagram" width="760" height="520" data-svg-scope="s-2d02ce27">
+          <style>
+            svg[data-svg-scope="s-2d02ce27"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --given: #334155; --aux: #0284c7; --cevian: #059669; --transversal: #d97706; --limb: #64748b; --pt-given: #0f172a; --pt-trace: #d97706; --pt-cevian: #059669; --pt-aux: #0284c7; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-2d02ce27"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --given: #cbd5e1; --aux: #38bdf8; --cevian: #34d399; --transversal: #fbbf24; --limb: #94a3b8; --pt-given: #f1f5f9; --pt-trace: #fbbf24; --pt-cevian: #34d399; --pt-aux: #38bdf8 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-line { fill: none; stroke: var(--given); stroke-width: 1.75; stroke-linecap: round }
+            svg[data-svg-scope="s-2d02ce27"] .geom-line.auxiliary, svg[data-svg-scope="s-2d02ce27"] .geom-line.bisector { stroke: var(--aux); stroke-width: 1.45; stroke-dasharray: 6 4; opacity: 0.88 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-line.cevian { stroke: var(--cevian); stroke-width: 1.65; stroke-dasharray: 4 3 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-line.transversal, svg[data-svg-scope="s-2d02ce27"] .geom-line.result { stroke: var(--transversal); stroke-width: 2.65; stroke-dasharray: none }
+            svg[data-svg-scope="s-2d02ce27"] .geom-line.back-arc { stroke-dasharray: 3.5 4.5; opacity: 0.42 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-segment { fill: none; stroke: var(--aux); stroke-width: 2.2; stroke-linecap: round }
+            svg[data-svg-scope="s-2d02ce27"] .geom-segment.extension { stroke: var(--given); stroke-dasharray: 5 3.5; stroke-width: 1.6 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-circle { fill: none; stroke: var(--given); stroke-width: 1.85; opacity: 0.88 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-circle.sphere-limb { stroke: var(--limb); stroke-width: 2.2; fill: var(--aux); fill-opacity: 0.04 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-polygon { fill: var(--aux); fill-opacity: 0.06; stroke: var(--given); stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-2d02ce27"] .geom-polygon.cevian { fill: var(--cevian); fill-opacity: 0.07; stroke: var(--cevian); stroke-width: 1.6 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-point.trace, svg[data-svg-scope="s-2d02ce27"] .geom-point.result { fill: var(--pt-trace); stroke-width: 1.8 }
+            svg[data-svg-scope="s-2d02ce27"] .geom-point.cevian { fill: var(--pt-cevian) }
+            svg[data-svg-scope="s-2d02ce27"] .geom-point.auxiliary, svg[data-svg-scope="s-2d02ce27"] .geom-point.center { fill: var(--pt-aux) }
+            svg[data-svg-scope="s-2d02ce27"] .geom-label { fill: var(--ink); font-size: 14px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-2d02ce27"] .geom-label-sub { font-size: 10.5px; font-weight: 600 }
+          </style>
+          <defs>
+            <path id="geom-tick-1" d="M 0,-5.5 L 0,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path id="geom-tick-2" d="M -2.4,-5.5 L -2.4,5.5 M 2.4,-5.5 L 2.4,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path id="geom-tick-3" d="M -4.2,-5.5 L -4.2,5.5 M 0,-5.5 L 0,5.5 M 4.2,-5.5 L 4.2,5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </defs>
+          <g id="elements">
+            <g id="graphics">
+              <circle class="geom-circle" cx="281.41" cy="260" r="164.31" data-ref="( O P1 )"/>
+              <path class="geom-line given" d="M 54 64.14 L 380 227.14 L 706 390.14" data-ref="[ P1 P2 ]" data-aliases="[ P2 P1 ] | / P1 P2 / | / P2 P1 / | [ P1 L ] | [ L P1 ] | / P1 L / | / L P1 / | [ P1 V ] | [ V P1 ] | / P1 V / | / V P1 / | [ P1 W ] | [ W P1 ] | / P1 W / | / W P1 / | [ P2 L ] | [ L P2 ] | / P2 L / | / L P2 / | [ P2 V ] | [ V P2 ] | / P2 V / | / V P2 / | [ P2 W ] | [ W P2 ] | / P2 W / | / W P2 / | [ L V ] | [ V L ] | / L V / | / V L / | [ L W ] | [ W L ] | / L W / | / W L / | [ V W ] | [ W V ] | / V W / | / W V /"/>
+              <path class="geom-line given" d="M 294.56 463.75 L 226.64 260 L 158.72 56.25" data-ref="[ P2 P3 ]" data-aliases="[ P3 P2 ] | / P2 P3 / | / P3 P2 / | [ P2 M ] | [ M P2 ] | / P2 M / | / M P2 / | [ P3 M ] | [ M P3 ] | / P3 M / | / M P3 /"/>
+              <path class="geom-line given" d="M 268.27 463.75 L 336.18 260 L 404.1 56.25" data-ref="[ P3 P4 ]" data-aliases="[ P4 P3 ] | / P3 P4 / | / P4 P3 / | [ P3 N ] | [ N P3 ] | / P3 N / | / N P3 / | [ P3 U ] | [ U P3 ] | / P3 U / | / U P3 / | [ P3 W ] | [ W P3 ] | / P3 W / | / W P3 / | [ P4 N ] | [ N P4 ] | / P4 N / | / N P4 / | [ P4 U ] | [ U P4 ] | / P4 U / | / U P4 / | [ P4 W ] | [ W P4 ] | / P4 W / | / W P4 / | [ N U ] | [ U N ] | / N U / | / U N / | [ N W ] | [ W N ] | / N W / | / W N / | [ U W ] | [ W U ] | / U W / | / W U /"/>
+              <path class="geom-line given" d="M 427.89 463.75 L 398.78 260 L 369.67 56.25" data-ref="[ P4 P5 ]" data-aliases="[ P5 P4 ] | / P4 P5 / | / P5 P4 / | [ P4 L ] | [ L P4 ] | / P4 L / | / L P4 / | [ P5 L ] | [ L P5 ] | / P5 L / | / L P5 /"/>
+              <path class="geom-line given" d="M 54 358.59 L 380 358.59 L 706 358.59" data-ref="[ P5 P6 ]" data-aliases="[ P6 P5 ] | / P5 P6 / | / P6 P5 / | [ P5 M ] | [ M P5 ] | / P5 M / | / M P5 / | [ P5 U ] | [ U P5 ] | / P5 U / | / U P5 / | [ P5 V ] | [ V P5 ] | / P5 V / | / V P5 / | [ P6 M ] | [ M P6 ] | / P6 M / | / M P6 / | [ P6 U ] | [ U P6 ] | / P6 U / | / U P6 / | [ P6 V ] | [ V P6 ] | / P6 V / | / V P6 / | [ M U ] | [ U M ] | / M U / | / U M / | [ M V ] | [ V M ] | / M V / | / V M / | [ U V ] | [ V U ] | / U V / | / V U /"/>
+              <path class="geom-line given" d="M 54 390.58 L 380 281.91 L 706 173.24" data-ref="[ P6 P1 ]" data-aliases="[ P1 P6 ] | / P1 P6 / | / P6 P1 / | [ P1 N ] | [ N P1 ] | / P1 N / | / N P1 / | [ P6 N ] | [ N P6 ] | / P6 N / | / N P6 /"/>
+              <path class="geom-line transversal result" d="M 144.33 463.75 L 367.48 260 L 590.64 56.25" data-ref="[ L M ]" data-aliases="[ M L ] | / L M / | / M L / | [ L N ] | [ N L ] | / L N / | / N L / | [ M N ] | [ N M ] | / M N / | / N M /"/>
+            </g>
+            <g id="highlights" aria-hidden="true">
+              <path class="geom-line geom-highlight" d="M 54 64.14 L 380 227.14 L 706 390.14" data-ref="[ P1 P2 ]" data-aliases="[ P2 P1 ] | / P1 P2 / | / P2 P1 / | [ P1 L ] | [ L P1 ] | / P1 L / | / L P1 / | [ P1 V ] | [ V P1 ] | / P1 V / | / V P1 / | [ P1 W ] | [ W P1 ] | / P1 W / | / W P1 / | [ P2 L ] | [ L P2 ] | / P2 L / | / L P2 / | [ P2 V ] | [ V P2 ] | / P2 V / | / V P2 / | [ P2 W ] | [ W P2 ] | / P2 W / | / W P2 / | [ L V ] | [ V L ] | / L V / | / V L / | [ L W ] | [ W L ] | / L W / | / W L / | [ V W ] | [ W V ] | / V W / | / W V /"/>
+              <path class="geom-line geom-highlight" d="M 294.56 463.75 L 226.64 260 L 158.72 56.25" data-ref="[ P2 P3 ]" data-aliases="[ P3 P2 ] | / P2 P3 / | / P3 P2 / | [ P2 M ] | [ M P2 ] | / P2 M / | / M P2 / | [ P3 M ] | [ M P3 ] | / P3 M / | / M P3 /"/>
+              <path class="geom-line geom-highlight" d="M 268.27 463.75 L 336.18 260 L 404.1 56.25" data-ref="[ P3 P4 ]" data-aliases="[ P4 P3 ] | / P3 P4 / | / P4 P3 / | [ P3 N ] | [ N P3 ] | / P3 N / | / N P3 / | [ P3 U ] | [ U P3 ] | / P3 U / | / U P3 / | [ P3 W ] | [ W P3 ] | / P3 W / | / W P3 / | [ P4 N ] | [ N P4 ] | / P4 N / | / N P4 / | [ P4 U ] | [ U P4 ] | / P4 U / | / U P4 / | [ P4 W ] | [ W P4 ] | / P4 W / | / W P4 / | [ N U ] | [ U N ] | / N U / | / U N / | [ N W ] | [ W N ] | / N W / | / W N / | [ U W ] | [ W U ] | / U W / | / W U /"/>
+              <path class="geom-line geom-highlight" d="M 427.89 463.75 L 398.78 260 L 369.67 56.25" data-ref="[ P4 P5 ]" data-aliases="[ P5 P4 ] | / P4 P5 / | / P5 P4 / | [ P4 L ] | [ L P4 ] | / P4 L / | / L P4 / | [ P5 L ] | [ L P5 ] | / P5 L / | / L P5 /"/>
+              <path class="geom-line geom-highlight" d="M 54 358.59 L 380 358.59 L 706 358.59" data-ref="[ P5 P6 ]" data-aliases="[ P6 P5 ] | / P5 P6 / | / P6 P5 / | [ P5 M ] | [ M P5 ] | / P5 M / | / M P5 / | [ P5 U ] | [ U P5 ] | / P5 U / | / U P5 / | [ P5 V ] | [ V P5 ] | / P5 V / | / V P5 / | [ P6 M ] | [ M P6 ] | / P6 M / | / M P6 / | [ P6 U ] | [ U P6 ] | / P6 U / | / U P6 / | [ P6 V ] | [ V P6 ] | / P6 V / | / V P6 / | [ M U ] | [ U M ] | / M U / | / U M / | [ M V ] | [ V M ] | / M V / | / V M / | [ U V ] | [ V U ] | / U V / | / V U /"/>
+              <path class="geom-line geom-highlight" d="M 54 390.58 L 380 281.91 L 706 173.24" data-ref="[ P6 P1 ]" data-aliases="[ P1 P6 ] | / P1 P6 / | / P6 P1 / | [ P1 N ] | [ N P1 ] | / P1 N / | / N P1 / | [ P6 N ] | [ N P6 ] | / P6 N / | / N P6 /"/>
+              <path class="geom-line geom-highlight" d="M 144.33 463.75 L 367.48 260 L 590.64 56.25" data-ref="[ L M ]" data-aliases="[ M L ] | / L M / | / M L / | [ L N ] | [ N L ] | / L N / | / N L / | [ M N ] | [ N M ] | / M N / | / N M /"/>
+            </g>
+            <g id="points">
+              <circle class="geom-point given" cx="445.73" cy="260" r="3.9" data-ref="P1"><title>P1 = (10, 0)</title></circle>
+              <circle class="geom-point given" cx="182.82" cy="128.55" r="3.9" data-ref="P2"><title>P2 = (-6, 8)</title></circle>
+              <circle class="geom-point given" cx="281.41" cy="424.31" r="3.9" data-ref="P3"><title>P3 = (0, -10)</title></circle>
+              <circle class="geom-point given" cx="380" cy="128.55" r="3.9" data-ref="P4"><title>P4 = (6, 8)</title></circle>
+              <circle class="geom-point given" cx="412.86" cy="358.59" r="3.9" data-ref="P5"><title>P5 = (8, -6)</title></circle>
+              <circle class="geom-point given" cx="149.96" cy="358.59" r="3.9" data-ref="P6"><title>P6 = (-8, -6)</title></circle>
+              <circle class="geom-point trace result" cx="395.17" cy="234.72" r="4.6" data-ref="L"><title>L = (90/13, 20/13)</title></circle>
+              <circle class="geom-point trace result" cx="259.5" cy="358.59" r="4.6" data-ref="M"><title>M = (-4/3, -6)</title></circle>
+              <circle class="geom-point trace result" cx="322.49" cy="301.08" r="4.6" data-ref="N"><title>N = (5/2, -5/2)</title></circle>
+              <circle class="geom-point auxiliary" cx="303.32" cy="358.59" r="3.9" data-ref="U"><title>U = (4/3, -6)</title></circle>
+              <circle class="geom-point auxiliary" cx="642.9" cy="358.59" r="3.9" data-ref="V"><title>V = (22, -6)</title></circle>
+              <circle class="geom-point auxiliary" cx="351.83" cy="213.05" r="3.9" data-ref="W"><title>W = (30/7, 20/7)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="437.49" y="244.91" data-ref="P1">P<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="191.04" y="119.32" data-ref="P2">P<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="289.63" y="415.08" data-ref="P3">P<tspan class="geom-label-sub" dy="3">3</tspan></text>
+              <text class="geom-label" x="388.22" y="119.32" data-ref="P4">P<tspan class="geom-label-sub" dy="3">4</tspan></text>
+              <text class="geom-label" x="421.08" y="349.36" data-ref="P5">P<tspan class="geom-label-sub" dy="3">5</tspan></text>
+              <text class="geom-label" x="141.73" y="343.49" data-ref="P6">P<tspan class="geom-label-sub" dy="3">6</tspan></text>
+              <text class="geom-label" x="411.34" y="239.65" data-ref="L">L</text>
+              <text class="geom-label" x="238.6" y="348.86" data-ref="M">M</text>
+              <text class="geom-label" x="301.59" y="291.35" data-ref="N">N</text>
+              <text class="geom-label" x="312.64" y="377.68" data-ref="U">U</text>
+              <text class="geom-label" x="637.36" y="343.49" data-ref="V">V</text>
+              <text class="geom-label" x="354.03" y="236.6" data-ref="W">W</text>
+            </g>
+          </g>
+        </svg>
+        <figcaption>Pascal's Hexagrammum Mysticum: opposite-side intersections L, M, and N of six rational points on a circle align on Pascal's Mystic Line via triple Menelaus on diagonal triangle △UVW.</figcaption>
+        </figure>
+        <p>In <a class="reference internal" href="../../../modules/api/geometor/menelaus/planar_transversal/index.html#module-geometor.menelaus.planar_transversal" title="geometor.menelaus.planar_transversal"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.menelaus.planar_transversal</span></code></a>:</p>
+        <ul class="simple">
+        <li><p><strong>Pascal’s Hexagrammum Mysticum</strong> (<a class="reference internal" href="../../../modules/api/geometor/menelaus/planar_transversal/index.html#geometor.menelaus.planar_transversal.construct_pascal_hexagram" title="geometor.menelaus.planar_transversal.construct_pascal_hexagram"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_pascal_hexagram()</span></code></a>, cf. <code class="docutils literal notranslate"><span class="pre">geometor/pappus</span></code>): on circle <span class="geom-ref" data-ref="( O P1 )" title="( O P1 )">OP1</span> with rational vertices <span class="geom-ref" data-ref="P1" title="P1">P1</span>, <span class="geom-ref" data-ref="P2" title="P2">P2</span>, <span class="geom-ref" data-ref="P3" title="P3">P3</span>, <span class="geom-ref" data-ref="P4" title="P4">P4</span>, <span class="geom-ref" data-ref="P5" title="P5">P5</span>, <span class="geom-ref" data-ref="P6" title="P6">P6</span> and diagonal triangle <span class="geom-ref" data-ref="U" title="U">U</span>, <span class="geom-ref" data-ref="V" title="V">V</span>, <span class="geom-ref" data-ref="W" title="W">W</span>, three applications of Planar Menelaus combined with Euclid III.35/36 chord-power identities cancel to <span class="math notranslate nohighlight">\(-1\)</span>, aligning opposite-side intersections <span class="geom-ref" data-ref="L" title="L">L</span>, <span class="geom-ref" data-ref="M" title="M">M</span>, <span class="geom-ref" data-ref="N" title="N">N</span> on Pascal’s Mystic Line <span class="geom-ref" data-ref="[ L M ]" title="[ L M ]">LM</span>.</p></li>
+        <li><p><strong>Desargues’s Two-Triangle Theorem</strong> (<a class="reference internal" href="../../../modules/api/geometor/menelaus/planar_transversal/index.html#geometor.menelaus.planar_transversal.construct_desargues_axis" title="geometor.menelaus.planar_transversal.construct_desargues_axis"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_desargues_axis()</span></code></a>): proved via three Menelaus applications on perspective ray-triangles.</p></li>
+        <li><p><strong>Monge’s Three-Circle Theorem</strong> (<a class="reference internal" href="../../../modules/api/geometor/menelaus/planar_transversal/index.html#geometor.menelaus.planar_transversal.construct_monge_exsimilicenters" title="geometor.menelaus.planar_transversal.construct_monge_exsimilicenters"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_monge_exsimilicenters()</span></code></a>): proved via <span class="math notranslate nohighlight">\((-r_A/r_B)(-r_B/r_C)(-r_C/r_A) = -1\)</span>.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="projective-menelausceva-duality-etc-trilinear-polars">
+        <h2>3. Projective Menelaus–Ceva Duality &amp; ETC Trilinear Polars<a class="headerlink" href="#projective-menelausceva-duality-etc-trilinear-polars" title="Link to this heading">¶</a></h2>
+        <p>In <a class="reference internal" href="../../../modules/api/geometor/menelaus/duality_ceva/index.html#geometor.menelaus.duality_ceva.construct_trilinear_polar" title="geometor.menelaus.duality_ceva.construct_trilinear_polar"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_trilinear_polar()</span></code></a>, concurrent cevians through perspector <span class="geom-ref" data-ref="P" title="P">P</span> meet the sides of <span class="geom-ref" data-ref="&lt; A B C &gt;" title="&lt; A B C &gt;">△ABC</span> at <span class="geom-ref" data-ref="Dc" title="Dc">Dc</span>, <span class="geom-ref" data-ref="Ec" title="Ec">Ec</span>, <span class="geom-ref" data-ref="Fc" title="Fc">Fc</span> (<span class="math notranslate nohighlight">\(\text{Ceva product} = +1\)</span>). Intersecting the cevian-triangle sides with the extended sides of <span class="geom-ref" data-ref="&lt; A B C &gt;" title="&lt; A B C &gt;">△ABC</span> produces the harmonic conjugates <span class="geom-ref" data-ref="Dm" title="Dm">Dm</span>, <span class="geom-ref" data-ref="Em" title="Em">Em</span>, <span class="geom-ref" data-ref="Fm" title="Fm">Fm</span>, flipping all three signs <span class="math notranslate nohighlight">\((-1)^3(+1) = -1\)</span> onto the <a class="term-ref glossary-term" id="occ-term-polaris-trilinearis-2" href="../../glossary.html#term-polaris-trilinearis" data-term="polaris-trilinearis" title="polaris trilinearis (trilinear polar of a point): The Menelaus transversal line joining the harmonic conjugates (Dm, Em, Fm) of the Ceva traces (Dc, Ec, Fc) of a perspector P with respect to triangle ABC; equivalently, the Desargues axis of ABC and the cevian triangle DcEcFc.">trilinear polar</a> <span class="geom-ref" data-ref="[ Dm Em ]" title="[ Dm Em ]">DmEm</span>:</p>
+        <ul class="simple">
+        <li><p><a class="reference internal" href="../../../modules/api/geometor/menelaus/duality_ceva/index.html#geometor.menelaus.duality_ceva.verify_projective_menelaus_ceva_duality" title="geometor.menelaus.duality_ceva.verify_projective_menelaus_ceva_duality"><code class="xref py py-func docutils literal notranslate"><span class="pre">verify_projective_menelaus_ceva_duality()</span></code></a> proves that under homogeneous point-line polarity <span class="math notranslate nohighlight">\([x : y : z] \leftrightarrow xX + yY + zZ = 0\)</span> in <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span>, <a class="person-ref" id="occ-person-menelaus-1" href="../../persons.html#person-menelaus" data-person="menelaus" title="Menelaus of Alexandria (c. 70 – c. 140 CE) — Alexandrian Geometer &amp; Astronomer; Author of Sphaerica">Menelaus</a>’s <strong>collinearity of three side-cuts</strong> (<span class="math notranslate nohighlight">\(-1\)</span>) and <a class="person-ref" id="occ-person-ceva-1" href="../../persons.html#person-ceva" data-person="ceva" title="Giovanni Ceva (1647 – 1734) — Italian Geometer; Discoverer of Ceva&#x27;s Concurrency Theorem">Giovanni Ceva</a>’s <strong>concurrency of three vertex-joins</strong> (<span class="math notranslate nohighlight">\(+1\)</span>) are algebraically dual theorems!</p></li>
+        <li><p><a class="reference internal" href="../../../modules/api/geometor/menelaus/duality_ceva/index.html#geometor.menelaus.duality_ceva.etc_trilinear_polar_catalogue" title="geometor.menelaus.duality_ceva.etc_trilinear_polar_catalogue"><code class="xref py py-func docutils literal notranslate"><span class="pre">etc_trilinear_polar_catalogue()</span></code></a> connects directly to Kimberling triangle centers:
+        - <code class="docutils literal notranslate"><span class="pre">X(1)</span></code> (<strong>Incenter</strong>): trilinear polar is the <strong>anti-orthic / external-bisector axis</strong>.
+        - <code class="docutils literal notranslate"><span class="pre">X(2)</span></code> (<strong>Centroid</strong>): trilinear polar is the <strong>line at infinity</strong> <span class="math notranslate nohighlight">\([0 : 0 : 1]\)</span>.
+        - <code class="docutils literal notranslate"><span class="pre">X(4)</span></code> (<strong>Orthocenter</strong>): trilinear polar is the <strong>orthic axis</strong>—the exact planar counterpart of Menelaus’s line <span class="math notranslate nohighlight">\(E\Delta\Theta\)</span> in <em>Sphaerica</em> Prop. III.10!
+        - <code class="docutils literal notranslate"><span class="pre">X(7)</span></code> (<strong>Gergonne Point</strong>): trilinear polar is the <strong>incircle chordal / Gergonne axis</strong>.</p></li>
+        </ul>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../prop_09/notes.html" title="Proposition III.9 — Concurrency of Spherical Angle Bisectors">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../index.html">Sphaerica</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../prop_11_25/notes.html" title="Propositions III.11–III.25 — Astronomical Rising Times &amp; Closing Horizon"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../log/26.316-initial-codex/index.html">Initial Release: Menelai Sphaericorum Libri III Codex & Exact Symbolic Transversals</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../types/book.html">book</a></li>
+        <li><a href="../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../concordance.html"  >Concordance</a></li>
+        <li><a href="../../glossary.html"  >Glossary</a></li>
+        <li><a href="../../../connect.html"  >connect</a></li>
+        <li><a href="../../../log/index.html"  >Log</a></li>
+        <li><a href="../../../changelog.html"  >Changelog</a></li>
+        <li><a href="../../../modules/index.html"  >Modules</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 100 CE (Halley 1758 / Heiberg 1898 / Björnbo 1902) • Digital Edition GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../_static/documentation_options.js?v=360bc84d"></script>
+  <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>
