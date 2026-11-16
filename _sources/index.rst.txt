@@ -4,13 +4,13 @@
 
 .. container:: author-overline
 
-   the works of
+   semantic digital archive • the works of
 
 ======================
 Menelaus of Alexandria
 ======================
 
-The mission of this project is to capture a semantic digital library of the works of :person:`Menelaus of Alexandria <menelaus>` (c. 70–140 CE), the Alexandrian geometer and astronomer whose *Sphaerica* founded intrinsic spherical trigonometry and projective transversal theory.
+The works of :person:`Menelaus of Alexandria <menelaus>` (c. 70–140 CE) founded intrinsic spherical trigonometry and projective transversal theory, establishing the foundational theorems of spherical triangles in his masterwork *Sphaerica*. Within the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive, these landmark texts are liberated from static print bounds into addressable semantic units, calibrated vector diagrams, primary-source folio provenance, and exact symbolic algebra speaking one shared geometric language.
 
 .. collection::
    :type: book
