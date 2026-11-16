@@ -1,0 +1,29 @@
+{
+  "edition": "halley_1758_menelai_sphaericorum",
+  "source_pdf": "resources/pdfs/halley_1758_menelai_sphaericorum.pdf",
+  "total_pages": 129,
+  "dpi": 300,
+  "preserve_color": false,
+  "folio_png_count": 129,
+  "rendered_new_count": 129,
+  "extracted_text_pages": 1,
+  "extracted_graphics_count": 16,
+  "extracted_graphics": [
+    "0001-img1.png",
+    "0002-img1.png",
+    "0003-img1.png",
+    "0007-img1.png",
+    "0007-img2.png",
+    "0007-img3.png",
+    "0036-img1.png",
+    "0036-img2.png",
+    "0091-img1.png",
+    "0091-img2.png",
+    "0110-img1.png",
+    "0110-img2.png",
+    "0125-img1.png",
+    "0125-img2.png",
+    "0126-img1.png",
+    "0126-img2.png"
+  ]
+}

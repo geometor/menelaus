@@ -66,13 +66,77 @@ def test_apparatus_registries_and_public_domain_compliance() -> None:
             assert tok not in serialized, f"Forbidden modern reference {tok!r} found in {reg_name}"
 
 
-def test_four_unit_book_codex_tracks_and_zero_embedded_py_file() -> None:
+def test_canonical_book_codex_tracks_and_zero_embedded_py_file() -> None:
+    sphaerica_dir = DOCSRC / "sphaerica"
+
+    # Abolished unit directories must not exist
     for unit_num in (1, 2, 3, 4):
-        unit_dir = DOCSRC / "sphaerica" / f"unit-{unit_num}"
-        for track in ("en", "la", "summary", "notes"):
-            rst_path = unit_dir / f"unit-{unit_num}-{track}.rst"
-            assert rst_path.is_file(), f"Missing codex track file: {rst_path}"
-            content = rst_path.read_text(encoding="utf-8")
-            assert ":layout: book" in content
-            assert f".. _unit-{unit_num}-{track}:" in content
-            assert ".. py_file::" not in content
+        assert not (sphaerica_dir / f"unit-{unit_num}").exists(), f"Legacy unit-{unit_num} directory still exists!"
+
+    # Verify canonical books
+    expected_books = {
+        "liber_i": [
+            "praefatio",
+            "definitiones",
+            "prop_01",
+            "prop_04_05",
+            "prop_08_10",
+            "prop_11",
+            "prop_17",
+        ],
+        "liber_ii": [
+            "prop_01",
+            "prop_10",
+            "prop_11_12",
+        ],
+        "liber_iii": [
+            "prop_01",
+            "scholion",
+            "lemmata",
+            "ptolemy_i_13",
+            "prop_02_03",
+            "prop_06",
+            "prop_08",
+            "prop_09",
+            "prop_10",
+            "prop_11_25",
+        ],
+    }
+
+    for book_name, sections in expected_books.items():
+        book_dir = sphaerica_dir / book_name
+        assert book_dir.is_dir(), f"Missing book directory: {book_dir}"
+        book_index = book_dir / "index.rst"
+        assert book_index.is_file(), f"Missing book index: {book_index}"
+        index_content = book_index.read_text(encoding="utf-8")
+        assert ":layout: book" in index_content
+        assert ":folio:" in index_content
+
+        for sec in sections:
+            sec_dir = book_dir / sec
+            assert sec_dir.is_dir(), f"Missing section directory: {sec_dir}"
+            for track_file in ("index.rst", "la.rst", "summary.rst", "notes.rst"):
+                track_path = sec_dir / track_file
+                assert track_path.is_file(), f"Missing atomic track file: {track_path}"
+                content = track_path.read_text(encoding="utf-8")
+                assert ":layout: book" in content
+                assert ":folio:" in content
+                assert ":tracks:" in content
+
+    # Verify legacy anchors preserved on containers
+    liber_i_content = (sphaerica_dir / "liber_i" / "index.rst").read_text(encoding="utf-8")
+    assert ".. _unit-1-en:" in liber_i_content
+    assert ".. _unit-1-la:" in liber_i_content
+
+    liber_ii_content = (sphaerica_dir / "liber_ii" / "index.rst").read_text(encoding="utf-8")
+    assert ".. _unit-2-en:" in liber_ii_content
+    assert ".. _unit-2-la:" in liber_ii_content
+
+    liber_iii_content = (sphaerica_dir / "liber_iii" / "index.rst").read_text(encoding="utf-8")
+    assert ".. _unit-3-en:" in liber_iii_content
+    assert ".. _unit-4-en:" in liber_iii_content
+
+    # Strict zero .. py_file:: across docsrc
+    for rst in DOCSRC.rglob("*.rst"):
+        content = rst.read_text(encoding="utf-8")
+        assert ".. py_file::" not in content, f"Forbidden .. py_file:: found in {rst}"

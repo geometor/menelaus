@@ -1,15 +1,18 @@
+:type: book
 :navigation: header
 :order: 1
 :layout: book
 :title: Sphaerica
 :nav_title: Sphaerica
+:breadcrumb_title: Sphaerica
 :book_title: Sphaerica
 :book_subtitle: Menelai Sphaericorum Libri III — Menelaus of Alexandria (ed. Edmond Halley, 1758)
-:author: Menelaus of Alexandria (c. 70–140 CE)
+:author: Menelaus of Alexandria
 :series: GEOMETOR Classical Canon · Critical 4-Track Book Codex
 :publisher: GEOMETOR Scriptorium (ex Editionibus Halleii 1758, Heiberg 1898 et Björnbo 1902)
 :location: Alexandriae / Romae / Oxonii
 :year: c. 100 CE / 1758
+:excerpt: Menelaus of Alexandria's foundational treatise on spherical geometry, introducing intrinsic spherical triangles, the Menelaus transversal theorem, and harmonic cross-ratios.
 
 .. _menelaus-index:
 .. _sphaerica-index:
@@ -25,44 +28,35 @@ Sphaerica
    | *(c. 70 – c. 140 CE · Observed at Rome, 98 CE)*
    |
    | **SPHAERICORUM LIBRI TRES**
-   | 4 Synchronized Units · Halley Oxford Latin (:cite:`1758 <halley-1758>`) & Ptolemy *Syntaxis* I.13 Polytonic Greek (:cite:`Heiberg 1898 <ptolemy-almagest-i-13>`)
+   | Canonical Books I–III · Halley Oxford Latin (:cite:`1758 <halley-1758>`) & Ptolemy *Syntaxis* I.13 Polytonic Greek (:cite:`Heiberg 1898 <ptolemy-almagest-i-13>`)
    | With :person:`George Costard <costard>`'s *Praefatio*, :person:`Francesco Maurolico <maurolico>` (:cite:`1558 <maurolico-1558>`) & :person:`Axel Anthon Björnbo <bjornbo>` (:cite:`1902 <bjornbo-1902>`) Collation
-   | Original English Translation, Analytical Summaries & Exact ``SymPy`` / ``geometor.model`` Commentary
+   | Original English Translation, Verbatim Latin Tracks, Analytical Summaries & Exact ``SymPy`` / ``geometor.model`` Commentary
 
 ----
 
 Table of Contents
 -----------------
 
-*(Analytical Table of Contents)*
+Liber I: Intrinsic Spherical Triangles, Congruence & Excess
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-UNIT I — BOOK I: INTRINSIC SPHERICAL TRIANGLES, CONGRUENCE & EXCESS
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*(LIBER PRIMUS — Praefatio Costardi [pp. i–viii]; Definitiones I–VI & Propositiones I.1, I.4–5, I.8–10, I.11, I.17 [Halley pp. 1–47])*
 
-*(LIBER PRIMUS — Praefatio Costardi [pp. i–viii]; Definitiones I–VI & Propositiones I.1, I.4–5, I.8–11, I.14–17, I.21 [Halley pp. 1–47])*
+:ref:`Liber I Overview <liber-i>` · :ref:`English <unit-1-en>` · :ref:`Latin (Halley 1758) <unit-1-la>` · :ref:`Summary <unit-1-summary>` · :ref:`Notes <unit-1-notes>`
 
-:ref:`English <unit-1-en>` · :ref:`Latin (Halley 1758) <unit-1-la>` · :ref:`Summary <unit-1-summary>` · :ref:`Notes <unit-1-notes>`
+Liber II: Spherical Arcs, Great Circles & Rising-Time Inequalities
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-UNIT II — BOOK II: SPHERICAL ARCS, GREAT CIRCLES & RISING-TIME INEQUALITIES
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*(LIBER SECUNDUS — Propositiones II.1, II.10, II.11–12 [Halley pp. 48–79] & Censura Theodosii)*
 
-*(LIBER SECUNDUS — Propositiones II.1, II.6–12 [Halley pp. 48–79] & Pappus Synagoge VI Witnesses)*
+:ref:`Liber II Overview <liber-ii>` · :ref:`English <unit-2-en>` · :ref:`Latin (Halley 1758) <unit-2-la>` · :ref:`Summary <unit-2-summary>` · :ref:`Notes <unit-2-notes>`
 
-:ref:`English <unit-2-en>` · :ref:`Latin (Halley 1758) <unit-2-la>` · :ref:`Summary <unit-2-summary>` · :ref:`Notes <unit-2-notes>`
+Liber III: The Transversal Theorem, Sines & Harmonic Pencils
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-UNIT III — BOOK III (PART 1): THEOREM OF MENELAUS, CHORDS OF DOUBLE ARCS & SINES
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*(LIBER TERTIUS — Prop. III.1 (Figura Catha), Scholion Halleii, Lemmata I–II, Syntaxis I.13 Graece, Props. III.2–3 (Lex Sinuum), Prop. III.6, Prop. III.8 (Sectio Harmonica), Prop. III.9 (Incentrum), Prop. III.10 (Orthocentrum), Props. III.11–25 [Halley pp. 80–112; Heiberg pp. 68–75])*
 
-*(LIBER TERTIUS, PARS I — Prop. III.1, Scholion Halleii, Lemmata I–II, Syntaxis I.13 Graece & Prop. III.2–5 [Halley pp. 80–90; Heiberg pp. 68–76])*
-
-:ref:`English <unit-3-en>` · :ref:`Latin (Halley 1758) <unit-3-la>` · :ref:`Summary <unit-3-summary>` · :ref:`Notes <unit-3-notes>`
-
-UNIT IV — BOOK III (PART 2): ANHARMONIC CROSS-RATIO, ALTITUDES & PROJECTIVE LEGACY
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-*(LIBER TERTIUS, PARS II — Propositiones III.6–10 [Halley pp. 91–97], Converse of Menelaus & Ceva–Menelaus Duality)*
-
-:ref:`English <unit-4-en>` · :ref:`Latin (Halley 1758) <unit-4-la>` · :ref:`Summary <unit-4-summary>` · :ref:`Notes <unit-4-notes>`
+:ref:`Liber III Overview <liber-iii>` · :ref:`English <unit-3-en>` · :ref:`Latin (Halley 1758) <unit-3-la>` · :ref:`Summary <unit-3-summary>` · :ref:`Notes <unit-3-notes>`
 
 Scholarly Apparatus
 -------------------
@@ -75,36 +69,11 @@ Scholarly Apparatus
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: English Translation
+   :caption: Sphaericorum Libri III
 
-   unit-1/unit-1-en
-   unit-2/unit-2-en
-   unit-3/unit-3-en
-   unit-4/unit-4-en
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Latin & Greek Editions
-
-   unit-1/unit-1-la
-   unit-2/unit-2-la
-   unit-3/unit-3-la
-   unit-4/unit-4-la
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-   :caption: Summaries & GEOMETOR Commentary
-
-   unit-1/unit-1-summary
-   unit-1/unit-1-notes
-   unit-2/unit-2-summary
-   unit-2/unit-2-notes
-   unit-3/unit-3-summary
-   unit-3/unit-3-notes
-   unit-4/unit-4-summary
-   unit-4/unit-4-notes
+   liber_i/index
+   liber_ii/index
+   liber_iii/index
 
 .. toctree::
    :maxdepth: 1

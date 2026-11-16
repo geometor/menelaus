@@ -38,7 +38,15 @@ configure_local_intersphinx(
     Path(os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))),
 )
 
-project = "GEOMETOR • menelaus"
+site_title = "Menelaus of Alexandria"
+project = site_title
+html_title = f"{site_title} • {org_name}"
 author = "Menelaus of Alexandria"
 copyright = "c. 100 CE (Halley 1758 / Heiberg 1898 / Björnbo 1902) • Digital Edition GEOMETOR"
+
+autoapi_dirs = [str(_REPO_ROOT / "src" / "geometor")]
+autoapi_add_toctree_entry = False
+if "modules/api/geometor/menelaus/index.rst" not in exclude_patterns:  # noqa: F405
+    exclude_patterns.append("modules/api/geometor/menelaus/index.rst")  # noqa: F405
+
 suppress_warnings = ["autoapi.python_import_resolution", "toc.not_included"]

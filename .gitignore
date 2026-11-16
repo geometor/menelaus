@@ -37,6 +37,7 @@ docsrc/modules/api/
 tags
 *.pdf
 resources/pdfs/
-resources/scans/
-resources/**/*.png
+resources/**/scans/*.png
+resources/**/scans/*.jpg
+resources/**/scans/*.tif
 scratch/
