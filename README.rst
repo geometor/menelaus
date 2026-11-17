@@ -3,17 +3,22 @@ GEOMETOR • menelaus
 
 **Visit the Online Archive:** https://geometor.github.io/menelaus/
 
-**Menelaus of Alexandria • Sphaerica • semantic digital archive**
+.. image:: docsrc/_static/figures/menelaus-ceva-trilinear-polar.svg
+   :alt: GEOMETOR • menelaus featured geometric construction
+   :target: https://geometor.github.io/menelaus/
+   :align: center
+
+**Menelaus of Alexandria • Spherics • semantic digital archive**
 
 Mission
 -------
 
-``geometor/menelaus`` is part of the interconnected `GEOMETOR <https://geometor.com>`_ semantic digital archive. It preserves Menelaus of Alexandria's landmark treatise *Sphaerica* (*Sphaericorum Libri III*), which established intrinsic spherical trigonometry and the foundational transversal theorem uniting planar and spherical triangles. Through addressable semantic units, calibrated theme-adaptive vector diagrams, primary-source folio provenance, and exact SymPy symbolic demonstrations, Menelaus's geometry connects ancient astronomy directly to modern projective geometry across the GEOMETOR corpus.
+``geometor/menelaus`` is part of the interconnected `GEOMETOR <https://geometor.com>`_ semantic digital archive. It preserves Menelaus of Alexandria's landmark treatise *Spherics* (*Sphaericorum Libri III*), which established intrinsic spherical trigonometry and the foundational transversal theorem uniting planar and spherical triangles. Through addressable semantic units, calibrated theme-adaptive vector diagrams, primary-source folio provenance, and exact SymPy symbolic demonstrations, Menelaus's geometry connects ancient astronomy directly to modern projective geometry across the GEOMETOR corpus.
 
 Books in This Archive
 ---------------------
 
-- **`Sphaerica <https://geometor.github.io/menelaus/sphaerica/>`_** — Menelai Sphaericorum Libri III, establishing intrinsic spherical geometry, the Planar & Spherical Menelaus Transversal Theorems, and projective Ceva–Menelaus duality (ed. Edmond Halley, 1758).
+- **`Spherics <https://geometor.github.io/menelaus/sphaerica/>`_** — Menelai Sphaericorum Libri III, establishing intrinsic spherical geometry, the Planar & Spherical Menelaus Transversal Theorems, and projective Ceva–Menelaus duality (ed. Edmond Halley, 1758).
 
 Symbolic Geometry Capabilities
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

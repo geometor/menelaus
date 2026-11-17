@@ -1,9 +1,9 @@
 :layout: book
 :order: 3
-:canonical_id: Liber III
-:breadcrumb_title: Liber III
-:title: Liber III: The Transversal Theorem, Sines & Harmonic Pencils
-:nav_title: Liber III
+:canonical_id: Book III
+:breadcrumb_title: Book III
+:title: Book III: The Transversal Theorem, Sines & Harmonic Pencils
+:nav_title: Book III
 :folio: halley_1758_menelai_sphaericorum:0096
 :excerpt: The foundational quantitative treatise of spherical trigonometry: the Menelaus Transversal Theorem (Figura Catha), the Spherical Law of Sines, harmonic cross-ratio pencils, and the concurrency of spherical altitudes.
 
@@ -20,8 +20,8 @@
 .. _liber-iii:
 .. _liber-iii-index:
 
-Liber III: The Transversal Theorem, Sines & Harmonic Pencils
-============================================================
+Book III: The Transversal Theorem, Sines & Harmonic Pencils
+===========================================================
 
 .. rubric:: *Menelai Alexandrini Sphaericorum Liber Tertius* — Edmond Halley (1758, pp. 80–112) & Claudius Ptolemy (1898, pp. 68–75)
 
