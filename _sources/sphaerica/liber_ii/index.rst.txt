@@ -1,9 +1,9 @@
 :layout: book
 :order: 2
-:canonical_id: Liber II
-:breadcrumb_title: Liber II
-:title: Liber II: Spherical Arcs, Great Circles & Rising-Time Inequalities
-:nav_title: Liber II
+:canonical_id: Book II
+:breadcrumb_title: Book II
+:title: Book II: Spherical Arcs, Great Circles & Rising-Time Inequalities
+:nav_title: Book II
 :folio: halley_1758_menelai_sphaericorum:0064
 :excerpt: Cevian transversals across spherical triangles, monotonic arc-difference inequalities, and the universal critique and supersession of Theodosius's Sphaerica Book III.
 
@@ -15,8 +15,8 @@
 .. _liber-ii:
 .. _liber-ii-index:
 
-Liber II: Spherical Arcs, Great Circles & Rising-Time Inequalities
-==================================================================
+Book II: Spherical Arcs, Great Circles & Rising-Time Inequalities
+=================================================================
 
 .. rubric:: *Menelai Alexandrini Sphaericorum Liber Secundus* — Edmond Halley (1758, pp. 48–79)
 

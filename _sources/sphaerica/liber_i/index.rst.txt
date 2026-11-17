@@ -1,9 +1,9 @@
 :layout: book
 :order: 1
-:canonical_id: Liber I
-:breadcrumb_title: Liber I
-:title: Liber I: Intrinsic Spherical Triangles, Congruence & Excess
-:nav_title: Liber I
+:canonical_id: Book I
+:breadcrumb_title: Book I
+:title: Book I: Intrinsic Spherical Triangles, Congruence & Excess
+:nav_title: Book I
 :folio: halley_1758_menelai_sphaericorum:0017
 :excerpt: Intrinsic axiomatic geometry of spherical triangles on S^2, spherical congruence theorems (SAS, SSS, ASA, AAA), and the discovery of positive spherical excess.
 
@@ -15,8 +15,8 @@
 .. _liber-i:
 .. _liber-i-index:
 
-Liber I: Intrinsic Spherical Triangles, Congruence & Excess
-===========================================================
+Book I: Intrinsic Spherical Triangles, Congruence & Excess
+==========================================================
 
 .. rubric:: *Menelai Alexandrini Sphaericorum Liber Primus* — Edmond Halley (1758, pp. [i]–[viii], 1–47)
 
