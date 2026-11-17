@@ -18,7 +18,7 @@ Mission
 Books in This Archive
 ---------------------
 
-- **`Spherics <https://geometor.github.io/menelaus/sphaerica/>`_** — Menelai Sphaericorum Libri III, establishing intrinsic spherical geometry, the Planar & Spherical Menelaus Transversal Theorems, and projective Ceva–Menelaus duality (ed. Edmond Halley, 1758).
+- `Spherics <https://geometor.github.io/menelaus/sphaerica/>`_ — Menelai Sphaericorum Libri III, establishing intrinsic spherical geometry, the Planar & Spherical Menelaus Transversal Theorems, and projective Ceva–Menelaus duality (ed. Edmond Halley, 1758).
 
 Symbolic Geometry Capabilities
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
