@@ -26,6 +26,20 @@ Symbolic Geometry Capabilities
 - **Planar Transversal Theorem** (``geometor.menelaus.planar_transversal``): Exact SymPy construction of the Menelaus configuration, harmonic cross-ratio pencils, and Converse collinearity lemmas (Pascal's Hexagram, Monge's Exsimilicenters).
 - **Spherical Geometry & Duality** (``geometor.menelaus.spherical`` & ``geometor.menelaus.duality_ceva``): Intrinsic 3D unit-sphere models, spherical excess, signed sine and Ptolemaic chord ratios, and complete quadrangle harmonic conjugation.
 
+Python Package & Modules
+------------------------
+
+The ``geometor-menelaus`` Python package (``import geometor.menelaus``) provides the executable symbolic geometry, construction, and compilation modules powering this archive:
+
+- ``concordance.py`` — Concordance and scholarly apparatus registry loader for ``geometor-menelaus``.
+- ``duality_ceva.py`` — Exact projective Menelaus–Ceva point-line duality and trilinear polar constructions.
+- ``planar_transversal.py`` — Exact symbolic Planar Menelaus constructions, Converse theorems, and Rational Trigonometry.
+- ``render.py`` — Publication-grade ``.euclid-graphic`` SVG renderer for 2D planar and 3D spherical Menelaus models.
+- ``spherical.py`` — Exact 3D unit-sphere solver, intrinsic spherical invariants, and Spherical Menelaus Theorem.
+- ``sphinx_ext.py`` — Runtime Sphinx & photon-platform/publish integration for GEOMETOR Menelaus.
+
+See the `API Reference <https://geometor.github.io/menelaus/modules/>`_ for full module documentation.
+
 Repository Contents
 -------------------
 
