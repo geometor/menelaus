@@ -1,4 +1,4 @@
-:navigation: footer
+:navigation: header
 :order: 30
 :nav_title: Log
 

@@ -1,4 +1,5 @@
-:navigation: footer
+:navigation: header
+:order: 16
 :nav_title: Glossary
 :title: Glossary — Greek, Latin & Projective Lexicon
 
