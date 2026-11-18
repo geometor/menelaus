@@ -1,0 +1,38 @@
+{
+  "repository": "geometor/menelaus",
+  "rights_category": "public-domain",
+  "sources": [
+    {
+      "id": "halley-1758-menelaus",
+      "title": "Menelai Sphaericorum Libri III (ed. Edmond Halley, 1758)",
+      "author": "Edmond Halley (ed.)",
+      "year": "1758",
+      "era": "Google Books",
+      "languages": [
+        "Latin"
+      ],
+      "site_url": "https://books.google.com/books?q=Menelai+Sphaericorum+Halley+1758",
+      "local_path": "resources/pdfs/halley_1758_menelai_sphaericorum.pdf",
+      "pages": 129,
+      "publisher": "Clarendon Press, Oxford",
+      "rights": "Public Domain (1758)",
+      "excerpt": "1758 Oxford Latin edition of Menelaus's Spherics, 129 pp., Google Books."
+    },
+    {
+      "id": "bjornbo-1902-menelaus",
+      "title": "Studien über Menelaos' Sphärik (1902)",
+      "author": "Axel Anthon Björnbo",
+      "year": "1902",
+      "era": "Google Books",
+      "languages": [
+        "German"
+      ],
+      "site_url": "https://books.google.com/books?q=Studien+uber+Menelaos+Spharik+Bjornbo+1902",
+      "local_path": "resources/pdfs/bjornbo_1902_studien_menelaos.pdf",
+      "pages": 353,
+      "publisher": "B. G. Teubner, Leipzig",
+      "rights": "Public Domain (1902)",
+      "excerpt": "1902 Teubner historical/mathematical study, 353 pp., Google Books."
+    }
+  ]
+}
