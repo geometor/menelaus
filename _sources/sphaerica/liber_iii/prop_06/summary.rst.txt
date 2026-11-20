@@ -1,5 +1,5 @@
 :layout: book
-:order: 6
+:order: 8
 :canonical_id: III.6
 :breadcrumb_title: Proposition III.6 (Summary)
 :folio: halley_1758_menelai_sphaericorum:0107
@@ -11,6 +11,9 @@ Analytical Summary: Spherical Angle Bisectors & Harmonic Pairs
 ==============================================================
 
 .. rubric:: *Modern Elements-2.0 Decomposition of Proposition III.6*
+
+.. folio:: halley_1758_menelai_sphaericorum:0107
+   :page: 91
 
 1. Synthetic Analysis of Proposition III.6
 ------------------------------------------

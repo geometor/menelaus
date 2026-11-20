@@ -1,5 +1,5 @@
 :layout: book
-:order: 6
+:order: 8
 :canonical_id: III.6
 :breadcrumb_title: Proposition III.6 (Notes)
 :folio: halley_1758_menelai_sphaericorum:0107
@@ -11,6 +11,9 @@ Scholarly & GEOMETOR Notes: External Bisector Axis & Trilinear Polarity
 =======================================================================
 
 .. rubric:: *Planar and Spherical Connections in geometor.menelaus*
+
+.. folio:: halley_1758_menelai_sphaericorum:0107
+   :page: 91
 
 1. Planar Counterpart: External Angle-Bisector Axis
 ---------------------------------------------------

@@ -12,6 +12,9 @@ Scholarly & GEOMETOR Notes: Intrinsic Sphere Representation
 
 .. rubric:: *Exact Vector Representation on the Unit Sphere S^2 in geometor.model*
 
+.. folio:: halley_1758_menelai_sphaericorum:0017
+   :page: 1
+
 1. Great Circles as Planes Through the Origin
 ---------------------------------------------
 

@@ -1,5 +1,5 @@
 :layout: book
-:order: 7
+:order: 10
 :canonical_id: I.17
 :breadcrumb_title: Proposition I.17 (Latin)
 :folio: halley_1758_menelai_sphaericorum:0034

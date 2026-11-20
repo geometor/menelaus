@@ -12,6 +12,9 @@ Scholarly & GEOMETOR Notes: Simon Bredon and the Bodleian Manuscripts
 
 .. rubric:: *Historical & Stemmatic Context of Halley's 1758 Scholion*
 
+.. folio:: halley_1758_menelai_sphaericorum:0098
+   :page: 82
+
 1. Simon Bredon and Merton College Oxford (c. 1350)
 ---------------------------------------------------
 

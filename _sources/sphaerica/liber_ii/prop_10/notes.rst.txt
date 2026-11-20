@@ -12,6 +12,9 @@ Scholarly & GEOMETOR Notes: Theodosius III.5, 6, 9 & the Arabic Transmission
 
 .. rubric:: *Philological & Historical Context of Menelaus II.10*
 
+.. folio:: halley_1758_menelai_sphaericorum:0091
+   :page: 75
+
 1. Halley's Editorial Annotation
 --------------------------------
 

@@ -1,5 +1,5 @@
 :layout: book
-:order: 9
+:order: 11
 :canonical_id: III.10
 :breadcrumb_title: Proposition III.10 (Summary)
 :folio: halley_1758_menelai_sphaericorum:0111
@@ -11,6 +11,9 @@ Analytical Summary: The Orthic Axis & Triple Menelaus Proof
 ===========================================================
 
 .. rubric:: *Modern Elements-2.0 Decomposition of Proposition III.10*
+
+.. folio:: halley_1758_menelai_sphaericorum:0111
+   :page: 95
 
 1. Deductive Architecture of Menelaus's Masterpiece
 ---------------------------------------------------

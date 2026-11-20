@@ -12,6 +12,9 @@ Scholarly & GEOMETOR Notes: Book II Numbering & Stemmatics
 
 .. rubric:: *Philological Notes on Book II Propositions*
 
+.. folio:: halley_1758_menelai_sphaericorum:0064
+   :page: 48
+
 1. Medieval Proposition Numbering
 ---------------------------------
 

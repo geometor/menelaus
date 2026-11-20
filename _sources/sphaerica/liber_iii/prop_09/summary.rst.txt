@@ -1,5 +1,5 @@
 :layout: book
-:order: 8
+:order: 10
 :canonical_id: III.9
 :breadcrumb_title: Proposition III.9 (Summary)
 :folio: halley_1758_menelai_sphaericorum:0111
@@ -11,6 +11,9 @@ Analytical Summary: Incenter Concurrency & Incircle Existence on S²
 ===================================================================
 
 .. rubric:: *Modern Elements-2.0 Decomposition of Proposition III.9*
+
+.. folio:: halley_1758_menelai_sphaericorum:0111
+   :page: 95
 
 1. Synthetic Analysis of Angle Bisector Concurrency
 ---------------------------------------------------

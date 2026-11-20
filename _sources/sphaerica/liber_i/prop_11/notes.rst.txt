@@ -1,5 +1,5 @@
 :layout: book
-:order: 6
+:order: 9
 :canonical_id: I.11
 :breadcrumb_title: Proposition I.11 (Notes)
 :folio: halley_1758_menelai_sphaericorum:0027
@@ -11,6 +11,9 @@ Scholarly & GEOMETOR Notes: Exact Rational Excess
 =================================================
 
 .. rubric:: *Exact Algebraic Proof via Euler–Eriksson Formula in geometor.model*
+
+.. folio:: halley_1758_menelai_sphaericorum:0027
+   :page: 11
 
 1. Exact Rational Spherical Excess
 ----------------------------------

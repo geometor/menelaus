@@ -40,7 +40,12 @@ On the unit sphere :g:`S² <( S2 )>`, great-circle :term:`transversal <transvers
 3. By the **Chord-Sine Lemma** (*per Lemma II*), :math:`\mathrm{NK} : \mathrm{KM}` equals the perpendicular dropped from :math:`\mathrm{N}` onto diameter :math:`\mathrm{KEB}` to the perpendicular from :math:`\mathrm{M}` onto the same diameter—that is, :math:`\sin \widehat{\mathrm{NE}} : \sin \widehat{\mathrm{EM}}`. Likewise :math:`\mathrm{N\Sigma} : \mathrm{\Sigma\Lambda} = \sin \widehat{\mathrm{NA}} : \sin \widehat{\mathrm{A\Lambda}}`, and :math:`\mathrm{M\Delta} : \mathrm{\Delta\Lambda} = \sin \widehat{\mathrm{M\Theta}} : \sin \widehat{\mathrm{\Theta\Lambda}}`.
 4. Hence :math:`\sin \widehat{\mathrm{AN}} : \sin \widehat{\mathrm{A\Lambda}}` is compounded of :math:`\sin \widehat{\mathrm{NE}} : \sin \widehat{\mathrm{EM}}` and :math:`\sin \widehat{\mathrm{M\Theta}} : \sin \widehat{\mathrm{\Theta\Lambda}}`. *Q.E.D.*
 
-**[§3.2 · Limiting Parallel Case & Alternation, pp. 81–82]** Menelaus immediately treats the singular case where chord :math:`\mathrm{\Delta\Sigma}` is **parallel** to chord :math:`\mathrm{MN}` (so :math:`\mathrm{K}` recedes to infinity along the common diameter :math:`\mathrm{EBK}` parallel to both, by Euclid *Elements* XI.9): then the perpendiculars from :math:`\mathrm{N}` and :math:`\mathrm{M}` onto :math:`\mathrm{EBK}` are equal (:math:`\sin \widehat{\mathrm{NE}} = \sin \widehat{\mathrm{EM}}`, occurring when :math:`\widehat{\mathrm{EM}} + \widehat{\mathrm{NE}}` equals a semicircle!), and the first factor becomes the ratio of equality (:math:`1 : 1`). Inverting the compounded ratio yields the companion *katà diaíresin* identity:
+**[§3.2 · Limiting Parallel Case & Alternation, pp. 81–82]**
+
+.. folio:: halley_1758_menelai_sphaericorum:0097
+   :page: 81
+
+Now if straight line :math:`\mathrm{\Delta\Sigma}` be **parallel** to straight line :math:`\mathrm{MN}`: then the common diameter :math:`\mathrm{EB}` will be parallel to both straight lines :math:`\mathrm{\Delta\Sigma}, \mathrm{MN}` (by Euclid *Elements* XI.9); hence the perpendiculars from :math:`\mathrm{N}` and :math:`\mathrm{M}` onto diameter :math:`\mathrm{EB}` are equal (:math:`\sin \widehat{\mathrm{NE}} = \sin \widehat{\mathrm{EM}}`, since :math:`\widehat{\mathrm{EM}} + \widehat{\mathrm{NE}}` equals a semicircle), and :math:`\sin \widehat{\mathrm{NA}} : \sin \widehat{\mathrm{A\Lambda}} = \sin \widehat{\mathrm{M\Theta}} : \sin \widehat{\mathrm{\Theta\Lambda}}`. Inverting the compounded ratio yields the companion *katà diaíresin* identity:
 
 .. math::
 

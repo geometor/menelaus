@@ -12,6 +12,9 @@ Analytical Summary: The Philological Arc from Chord to Sine & Figura Catha
 
 .. rubric:: *Deductive & Terminological Evolution of Proposition III.1*
 
+.. folio:: halley_1758_menelai_sphaericorum:0098
+   :page: 82
+
 1. Chords of Double Arcs vs. Sines
 ----------------------------------
 

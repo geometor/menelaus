@@ -1,5 +1,5 @@
 :layout: book
-:order: 4
+:order: 5
 :canonical_id: Ptolemy I.13
 :breadcrumb_title: Ptolemy Almagest I.13 (Greek)
 :folio: ptolemy_1898_syntaxis_vol1_pt1:0078

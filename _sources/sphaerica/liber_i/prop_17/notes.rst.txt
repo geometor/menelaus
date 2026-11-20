@@ -1,5 +1,5 @@
 :layout: book
-:order: 7
+:order: 10
 :canonical_id: I.17
 :breadcrumb_title: Proposition I.17 (Notes)
 :folio: halley_1758_menelai_sphaericorum:0034
@@ -11,6 +11,9 @@ Scholarly & GEOMETOR Notes: Absolute Unit of Length
 ===================================================
 
 .. rubric:: *Polar Triangle Duality vs. Menelaus's Direct Demonstration*
+
+.. folio:: halley_1758_menelai_sphaericorum:0034
+   :page: 18
 
 1. Modern Proof via Polar Duality
 ---------------------------------

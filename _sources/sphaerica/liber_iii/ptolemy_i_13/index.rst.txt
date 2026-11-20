@@ -1,5 +1,5 @@
 :layout: book
-:order: 4
+:order: 5
 :canonical_id: Ptolemy I.13
 :breadcrumb_title: Ptolemy Almagest I.13
 :folio: ptolemy_1898_syntaxis_vol1_pt1:0078
@@ -18,8 +18,6 @@ Ptolemy's Almagest I.13 — The Surviving Greek Witness
 
 Preliminaries to Spherical Proofs (pp. 68–75)
 ---------------------------------------------
-
-Because Menelaus's original Greek text of the *Sphaerica* was lost in antiquity, the sole surviving Greek mathematical witness to the transversal theorems is Chapter 13 of Book I of Claudius Ptolemy's *Syntaxis Mathematica* (*Almagest*, c. 140 CE; :cite:`ed. Heiberg, 1898 <ptolemy-1898>`).
 
 **[§3.5 · Original Translation from Heiberg's Greek Text, pp. 68–69, 74–75]**
 

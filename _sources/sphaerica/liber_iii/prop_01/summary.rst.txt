@@ -12,6 +12,9 @@ Analytical Summary: Gnomonic Reduction & the Transversal Metric
 
 .. rubric:: *Modern Elements-2.0 Decomposition of Proposition III.1*
 
+.. folio:: halley_1758_menelai_sphaericorum:0096
+   :page: 80
+
 1. Synthetic Architecture
 -------------------------
 

@@ -1,5 +1,5 @@
 :layout: book
-:order: 7
+:order: 9
 :canonical_id: III.8
 :breadcrumb_title: Proposition III.8 (Latin)
 :folio: halley_1758_menelai_sphaericorum:0109

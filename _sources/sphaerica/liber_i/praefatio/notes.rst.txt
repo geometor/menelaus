@@ -12,6 +12,9 @@ Scholarly Notes: Manuscript Stemma & Philological Witnesses
 
 .. rubric:: *Textual Witnesses, Chronological Witnesses & Apparatus*
 
+.. folio:: halley_1758_menelai_sphaericorum:0009
+   :page: [i]
+
 1. Historical Witness to Menelaus's Life & Observations
 -------------------------------------------------------
 

@@ -1,5 +1,5 @@
 :layout: book
-:order: 4
+:order: 5
 :canonical_id: Ptolemy I.13
 :breadcrumb_title: Ptolemy Almagest I.13 (Notes)
 :folio: ptolemy_1898_syntaxis_vol1_pt1:0078
@@ -11,6 +11,9 @@ Scholarly & GEOMETOR Notes: The Menelaus–Ptolemy Chronology & Witness
 =====================================================================
 
 .. rubric:: *Philological Context of the Almagest I.13 Witness*
+
+.. folio:: ptolemy_1898_syntaxis_vol1_pt1:0078
+   :page: 68
 
 1. Historical Witness and Relative Chronology
 ---------------------------------------------

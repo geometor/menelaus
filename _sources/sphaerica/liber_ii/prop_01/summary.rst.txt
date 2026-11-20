@@ -12,6 +12,9 @@ Analytical Summary: Cevian Transversals in Obtuse Spherical Triangles
 
 .. rubric:: *Deductive Significance of Proposition II.1*
 
+.. folio:: halley_1758_menelai_sphaericorum:0064
+   :page: 48
+
 1. **The Transversal Gateway**:
    Book II bridges the metric properties of a single triangle (Book I) and the quantitative six-arc transversal product of Book III. Proposition II.1 opens this transition by constructing a great-circle arc through an arbitrary base point :math:`\Delta` making a specified inclination with the containing sides.
 

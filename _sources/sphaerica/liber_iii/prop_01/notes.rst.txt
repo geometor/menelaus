@@ -12,6 +12,9 @@ Scholarly & GEOMETOR Notes: Exact 3D S² Verification & Radical Cancellation
 
 .. rubric:: *Exact SymPy Verification in geometor.menelaus.spherical*
 
+.. folio:: halley_1758_menelai_sphaericorum:0096
+   :page: 80
+
 1. Gnomonic Projection and Tangent Plane Mechanics
 --------------------------------------------------
 

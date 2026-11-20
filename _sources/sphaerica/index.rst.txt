@@ -12,6 +12,7 @@
 :publisher: GEOMETOR Scriptorium (ex Editionibus Halleii 1758, Heiberg 1898 et Björnbo 1902)
 :location: Alexandriae / Romae / Oxonii
 :year: c. 100 CE / 1758
+:folio: halley_1758_menelai_sphaericorum:0007
 :tracks: English: index | Latin: title-la
 :excerpt: Menelaus of Alexandria's foundational treatise on spherical geometry, introducing intrinsic spherical triangles, the Menelaus transversal theorem, and harmonic cross-ratios.
 
@@ -23,6 +24,9 @@ Spherics
 ========
 
 .. rubric:: *Menelai Sphaericorum Libri III* — Menelaus of Alexandria (ed. Edmond Halley, 1758)
+
+.. folio:: halley_1758_menelai_sphaericorum:0007
+   :page: [title]
 
 .. container:: title-page
 
@@ -42,21 +46,21 @@ Table of Contents
 Book I: Intrinsic Spherical Triangles, Congruence & Excess
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*(LIBER PRIMUS — Praefatio Costardi [pp. i–viii]; Definitiones I–VI & Propositiones I.1, I.4–5, I.8–10, I.11, I.17 [Halley pp. 1–47])*
+*(LIBER PRIMUS — Praefatio Costardi [pp. i–viii]; Definitiones I–VI & Propositiones I.1, I.4, I.5, I.8, I.9, I.10, I.11, I.17 [Halley pp. 1–47])*
 
 :ref:`Book I Overview <liber-i>` · :ref:`English <unit-1-en>` · :ref:`Latin <unit-1-la>` · :ref:`Summary <unit-1-summary>` · :ref:`Notes <unit-1-notes>`
 
 Book II: Spherical Arcs, Great Circles & Rising-Time Inequalities
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*(LIBER SECUNDUS — Propositiones II.1, II.10, II.11–12 [Halley pp. 48–79] & Censura Theodosii)*
+*(LIBER SECUNDUS — Propositiones II.1, II.10, II.11, II.12, II.13 [Halley pp. 48–79] & Censura Theodosii)*
 
 :ref:`Book II Overview <liber-ii>` · :ref:`English <unit-2-en>` · :ref:`Latin <unit-2-la>` · :ref:`Summary <unit-2-summary>` · :ref:`Notes <unit-2-notes>`
 
 Book III: The Transversal Theorem, Sines & Harmonic Pencils
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*(LIBER TERTIUS — Prop. III.1 (Figura Catha), Scholion Halleii, Lemmata I–II, Syntaxis I.13 Graece, Props. III.2–3 (Lex Sinuum), Prop. III.6, Prop. III.8 (Sectio Harmonica), Prop. III.9 (Incentrum), Prop. III.10 (Orthocentrum), Props. III.11–25 [Halley pp. 80–112; Heiberg pp. 68–75])*
+*(LIBER TERTIUS — Prop. III.1 (Figura Catha), Scholion Halleii, Lemmata I–II, Syntaxis I.13 Graece, Props. III.2–3 (Lex Sinuum), Prop. III.6, Prop. III.8 (Sectio Harmonica), Prop. III.9 (Incentrum), Prop. III.10 (Orthocentrum), Props. III.11–15 [Halley pp. 80–112; Heiberg pp. 68–75])*
 
 :ref:`Book III Overview <liber-iii>` · :ref:`English <unit-3-en>` · :ref:`Latin <unit-3-la>` · :ref:`Summary <unit-3-summary>` · :ref:`Notes <unit-3-notes>`
 

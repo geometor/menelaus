@@ -12,6 +12,9 @@ Analytical Summary: Constructive Spherical Angle Transfer
 
 .. rubric:: *Deductive Decomposition of Proposition I.1*
 
+.. folio:: halley_1758_menelai_sphaericorum:0018
+   :page: 2
+
 1. **Enunciation & Classical Parallel**:
    Proposition I.1 provides the spherical constructive analogue of Euclid *Elements* I.23 (*At a given point on a given straight line, to construct a rectilinear angle equal to a given rectilinear angle*).
 

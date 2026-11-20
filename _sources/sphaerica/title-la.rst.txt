@@ -8,6 +8,7 @@
 :persons_label: Index Nominum
 :bibliography_label: Bibliographia
 :glossary_label: Glossarium
+:folio: halley_1758_menelai_sphaericorum:0007
 :tracks: English: index | Latin: title-la
 
 .. _sphaerica-title-la:
@@ -17,6 +18,9 @@ Menelai Sphaericorum Libri III
 ==============================
 
 .. rubric:: *Menelai Alexandrini Sphaericorum Libri Tres* — Edidit :person:`Edmundus Halleius <halley>` (Oxonii, 1758)
+
+.. folio:: halley_1758_menelai_sphaericorum:0007
+   :page: [title]
 
 .. container:: title-page
 

@@ -12,6 +12,9 @@ Analytical Summary: The Intrinsic Axiomatic Shift
 
 .. rubric:: *Axiomatic Foundations of Menelaus's Sphaerica*
 
+.. folio:: halley_1758_menelai_sphaericorum:0017
+   :page: 1
+
 1. **Intrinsic vs. Extrinsic Geometry**:
    Before Menelaus, Greek treatises on the sphere—notably Autolycus of Pitane (*On the Moving Sphere*) and Theodosius of Bithynia (*Sphaerica*)—treated geometric configurations on a sphere purely from an extrinsic three-dimensional viewpoint, slicing the solid sphere by Euclidean planes and examining straight chords and solid angles. Menelaus takes the revolutionary conceptual step of treating the spherical surface :math:`S^2` as a two-dimensional geometric arena endowed with its own intrinsic geodesic lines (arcs of great circles).
 

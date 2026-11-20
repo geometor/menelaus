@@ -1,5 +1,5 @@
 :layout: book
-:order: 4
+:order: 5
 :canonical_id: Ptolemy I.13
 :breadcrumb_title: Ptolemy Almagest I.13 (Summary)
 :folio: ptolemy_1898_syntaxis_vol1_pt1:0078
@@ -11,6 +11,9 @@ Analytical Summary: Ptolemy's Chords vs. Menelaus's Sines
 =========================================================
 
 .. rubric:: *Modern Elements-2.0 Comparison of Ptolemaic and Menelaean Formulations*
+
+.. folio:: ptolemy_1898_syntaxis_vol1_pt1:0078
+   :page: 68
 
 1. Ptolemy's Chord Formulation
 ------------------------------

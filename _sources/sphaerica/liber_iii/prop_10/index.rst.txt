@@ -1,5 +1,5 @@
 :layout: book
-:order: 9
+:order: 11
 :canonical_id: III.10
 :breadcrumb_title: Proposition III.10
 :folio: halley_1758_menelai_sphaericorum:0111
@@ -27,7 +27,7 @@ Proposition III.10 — Theorem: Spherical Orthocenter Concurrency (pp. 95–97)
    :alt: Complete quadrangle harmonic conjugation turning Ceva concurrence (+1) into Menelaus collinearity (-1)
    :caption: Ceva–Menelaus Harmonic Duality: harmonic conjugates Dm, Em, and Fm of concurrent cevian traces Dc, Ec, and Fc align on the trilinear polar of perspector P.
 
-**[§4.4 · Menelaus's Masterpiece Proof via Triple Menelaus & Orthic Harmonic Polarity, pp. 95–97]** Let :math:`\triangle \mathrm{AB\Gamma}` be a spherical triangle, and from vertices :math:`\mathrm{A}` and :math:`\mathrm{\Gamma}` drop perpendicular arcs :math:`\mathrm{A\Delta} \perp \mathrm{B\Gamma}` and :math:`\mathrm{\Gamma E} \perp \mathrm{AB}` meeting at :math:`\mathrm{Z}`; join :math:`\mathrm{BZ}` and produce it to meet :math:`\mathrm{A\Gamma}` at :math:`\mathrm{H}` (crossing :math:`\mathrm{E\Delta}` at :math:`\mathrm{K}`). Menelaus claims :math:`\mathrm{BH} \perp \mathrm{A\Gamma}`:
+**[§4.4 · Demonstration via Triple Menelaus & Orthic Harmonic Polarity, pp. 95–97]** Let :math:`\triangle \mathrm{AB\Gamma}` be a spherical triangle, and from vertices :math:`\mathrm{A}` and :math:`\mathrm{\Gamma}` drop perpendicular arcs :math:`\mathrm{A\Delta} \perp \mathrm{B\Gamma}` and :math:`\mathrm{\Gamma E} \perp \mathrm{AB}` meeting at :math:`\mathrm{Z}`; join :math:`\mathrm{BZ}` and produce it to meet :math:`\mathrm{A\Gamma}` at :math:`\mathrm{H}` (crossing :math:`\mathrm{E\Delta}` at :math:`\mathrm{K}`). I say that :math:`\mathrm{BH}` is perpendicular to :math:`\mathrm{A\Gamma}`:
 
 1. **Constructing the Orthic Axis (Trilinear Polar)**:
    Draw the great-circle arc :math:`\mathrm{E\Delta}` through the feet :math:`\mathrm{\Delta}, \mathrm{E}` of the two altitudes, produce it to meet :math:`\mathrm{A\Gamma}` produced at :math:`\mathrm{\Theta}`, and join :math:`\mathrm{H\Delta}` and :math:`\mathrm{HE}`.
