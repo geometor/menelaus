@@ -1,13 +1,13 @@
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • menelaus Medallion
+   :target: https://geometor.github.io/menelaus/
+   :width: 150px
+   :align: right
+
 GEOMETOR • menelaus
 ===================
 
 **Visit the Online Archive:** https://geometor.github.io/menelaus/
-
-.. image:: docsrc/_static/logo.png
-   :alt: GEOMETOR • menelaus Medallion
-   :target: https://geometor.github.io/menelaus/
-   :width: 180px
-   :align: center
 
 .. image:: docsrc/_static/figures/menelaus-ceva-trilinear-polar.svg
    :alt: GEOMETOR • menelaus featured geometric construction
