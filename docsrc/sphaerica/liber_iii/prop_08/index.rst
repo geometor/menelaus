@@ -1,5 +1,5 @@
 :layout: book
-:order: 7
+:order: 9
 :canonical_id: III.8
 :breadcrumb_title: Proposition III.8
 :folio: halley_1758_menelai_sphaericorum:0109
@@ -27,7 +27,7 @@ Proposition III.8 — Theorem: Spherical Harmonic Division (pp. 93–94)
    :alt: Pencil of four great circles concurrent at V cutting two oblique transversals with invariant sine cross-ratio
    :caption: Spherical pencil invariance (generalizing Sphaerica Prop. III.8 & Pappus Synagoge VI/VII): four great circles concurrent at vertex V cut two oblique transversals with identical spherical sine cross-ratio −2.
 
-In :func:`~geometor.menelaus.spherical.verify_spherical_cross_ratio_invariance` (generalizing *Sphaerica* Prop. III.8 and :person:`Pappus <pappus>`'s *Synagoge* VI/VII), four great circles concurrent at vertex :g:`V` cut great circles :g:`X1X4 <[ X1 X4 ]>` and :g:`Y1Y4 <[ Y1 Y4 ]>` in four-tuples (:g:`X1`, :g:`X2`, :g:`X3`, :g:`X4`) and (:g:`Y1`, :g:`Y2`, :g:`Y3`, :g:`Y4`) having identical spherical sine cross-ratio :math:`-2` (and :math:`-1` in the harmonic right-angle bisector case of Prop. III.8).
+Four great circles concurrent at vertex :g:`V` cut great circles :g:`X1X4 <[ X1 X4 ]>` and :g:`Y1Y4 <[ Y1 Y4 ]>` in four-tuples (:g:`X1`, :g:`X2`, :g:`X3`, :g:`X4`) and (:g:`Y1`, :g:`Y2`, :g:`Y3`, :g:`Y4`) having identical spherical sine cross-ratio :math:`-2` (and :math:`-1` in the harmonic right-angle bisector case).
 
 **[§4.2 · Proof & Double Converse, Halley pp. 93–95]** Let :math:`\triangle \mathrm{AB\Gamma}` have angle :math:`\angle \mathrm{B}` right (:math:`\mathrm{BA} \perp \mathrm{B\Gamma}`), and from :math:`\mathrm{B}` let two arcs :math:`\mathrm{B\Delta}` (internal) and :math:`\mathrm{BE}` (external) make equal angles :math:`\angle \mathrm{AB\Delta} = \angle \mathrm{ABE}` with :math:`\mathrm{AB}`:
 

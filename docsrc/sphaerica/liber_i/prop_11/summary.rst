@@ -1,5 +1,5 @@
 :layout: book
-:order: 6
+:order: 9
 :canonical_id: I.11
 :breadcrumb_title: Proposition I.11 (Summary)
 :folio: halley_1758_menelai_sphaericorum:0027
@@ -11,6 +11,9 @@ Analytical Summary: Spherical Angle-Sum Excess
 ==============================================
 
 .. rubric:: *Deductive Significance of Proposition I.11*
+
+.. folio:: halley_1758_menelai_sphaericorum:0027
+   :page: 11
 
 1. **Overturning Euclid Elements I.32**:
    In Euclidean plane geometry, the sum of the three angles of any triangle equals exactly two right angles (:math:`A + B + C = \pi`). Menelaus proves the foundational theorem of elliptic/spherical non-Euclidean geometry: on a sphere, the interior angle sum strictly exceeds two right angles (:math:`A + B + C > \pi`).

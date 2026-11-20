@@ -1,5 +1,5 @@
 :layout: book
-:order: 6
+:order: 9
 :canonical_id: I.11
 :breadcrumb_title: Proposition I.11 (Latin)
 :folio: halley_1758_menelai_sphaericorum:0027

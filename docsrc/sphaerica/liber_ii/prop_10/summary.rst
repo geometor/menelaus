@@ -12,6 +12,9 @@ Analytical Summary: Universal Rising-Time Theorem & Theodosian Critique
 
 .. rubric:: *Modern Elements-2.0 Decomposition of Proposition II.10*
 
+.. folio:: halley_1758_menelai_sphaericorum:0091
+   :page: 75
+
 1. The Epistemological Break
 ----------------------------
 

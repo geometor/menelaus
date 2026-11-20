@@ -1,5 +1,5 @@
 :layout: book
-:order: 8
+:order: 10
 :canonical_id: III.9
 :breadcrumb_title: Proposition III.9 (Notes)
 :folio: halley_1758_menelai_sphaericorum:0111
@@ -11,6 +11,9 @@ Scholarly & GEOMETOR Notes: Spherical Incenter and Ceva's Concurrency
 =====================================================================
 
 .. rubric:: *From Menelaus III.9 to Ceva's Concurrency Criterion*
+
+.. folio:: halley_1758_menelai_sphaericorum:0111
+   :page: 95
 
 1. Antecedent of Ceva's Concurrency
 -----------------------------------

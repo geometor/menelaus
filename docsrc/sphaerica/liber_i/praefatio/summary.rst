@@ -12,6 +12,9 @@ Analytical Summary: Costard's Preface & Oxford Philology
 
 .. rubric:: *Transmission History of Menelaus's Sphaerica from Alexandria to Oxford*
 
+.. folio:: halley_1758_menelai_sphaericorum:0009
+   :page: [i]
+
 1. **The Oxford Editorial Programme (1703–1758)**:
    George Costard locates Halley's edition within Oxford's systematic revival of classical Greek mathematics under David Gregory and Edmond Halley: Euclid (*Opera*, 1703), Apollonius (*De Sectione Rationis*, 1706), Theodosius (*Sphaerica*, 1707), and Apollonius's *Conics* with Pappus's lemmas (1710).
 

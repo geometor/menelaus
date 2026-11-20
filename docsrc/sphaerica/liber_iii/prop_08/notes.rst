@@ -1,5 +1,5 @@
 :layout: book
-:order: 7
+:order: 9
 :canonical_id: III.8
 :breadcrumb_title: Proposition III.8 (Notes)
 :folio: halley_1758_menelai_sphaericorum:0109
@@ -11,6 +11,9 @@ Scholarly & GEOMETOR Notes: Pappus's Cross-Ratio Invariance & Modern Projective 
 ========================================================================================
 
 .. rubric:: *From Menelaus III.8 to Pappus Synagoge VII and Modern S² Cross-Ratios*
+
+.. folio:: halley_1758_menelai_sphaericorum:0109
+   :page: 93
 
 1. Pappus of Alexandria's Generalization
 ----------------------------------------

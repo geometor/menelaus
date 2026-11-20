@@ -1,5 +1,5 @@
 :layout: book
-:order: 6
+:order: 8
 :canonical_id: III.6
 :breadcrumb_title: Proposition III.6
 :folio: halley_1758_menelai_sphaericorum:0107

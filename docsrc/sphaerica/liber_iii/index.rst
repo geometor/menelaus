@@ -36,8 +36,8 @@ Book III is the mathematical pinnacle of the *Sphaerica* and the foundational co
    Establishes the Planar Menelaus Theorem, the Chord-Sine projection lemma, the right-spherical-triangle canon, the **Spherical Law of Sines**, and the Rule of Four Quantities and Tangents.
 3. **Harmonic Pencils & Concurrencies (Props. III.6–III.10)**:
    Proves the internal and external angle-bisector theorem in sines, spherical harmonic division and 4-ray cross-ratio pencil invariance, the concurrence of angle bisectors (incenter), and the crowning three-transversal proof of the **concurrency of spherical altitudes** (orthocenter) fifteen centuries before Ceva and Poncelet.
-4. **Astronomical Rising Times (Props. III.11–III.25)**:
-   Concludes with exact arc-difference ratio bounds governing ancient and medieval spherical astronomy.
+4. **Astronomical Rising Times (Props. III.11–III.15)**:
+   Concludes with exact arc-difference ratio bounds and small-circle extremum inequalities (numbered III.11–III.25 in Abū Naṣr Manṣūr's Arabic redaction) governing ancient and medieval spherical astronomy.
 
 Sections & Propositions
 -----------------------
@@ -51,11 +51,17 @@ Sections & Propositions
 
    prop_01/index
    scholion/index
-   lemmata/index
+   lemma_01/index
+   lemma_02/index
    ptolemy_i_13/index
-   prop_02_03/index
+   prop_02/index
+   prop_03/index
    prop_06/index
    prop_08/index
    prop_09/index
    prop_10/index
-   prop_11_25/index
+   prop_11/index
+   prop_12/index
+   prop_13/index
+   prop_14/index
+   prop_15/index

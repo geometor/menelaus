@@ -35,8 +35,8 @@ This master concordance aligns the principal definitions, lemmas, and propositio
      - *Elements* I.23 (copy rectilinear angle)
      - ``elements:G.39``; :class:`~geometor.menelaus.spherical.GreatCircle`
    * - :ref:`Liber I <liber-i>`
-     - Lib. I Prop. 4, 5, 8 [pp. 5–8]
-     - Maur. I.4–5, 8; Björnbo I.4–5, 8
+     - Lib. I Prop. 4, 5, 8–10 [pp. 5–10]
+     - Maur. I.4–5, 8–10; Björnbo I.4–5, 8–10
      - :person:`Proclus <proclus>` *In Eucl.* p. 345 (direct I.25)
      - *Elements* I.4 (SAS), I.20 / XI.20, I.8 (SSS), I.24–25
      - ``geometor/proclus``; intrinsic SAS/SSS congruence
@@ -53,31 +53,31 @@ This master concordance aligns the principal definitions, lemmas, and propositio
      - **Contrasts** *Elements* VI.4 (planar AAA similarity)
      - :func:`~geometor.menelaus.spherical.polar_triangle` (AAA congruence)
    * - :ref:`Liber II <liber-ii>`
-     - Lib. II Prop. 1, 6–12 [pp. 48–79]
-     - Maur. II.1–19; Björnbo II.1–12
+     - Lib. II Prop. 1, 10–13 [pp. 48–79]
+     - Maur. II.1–19; Björnbo II.1–13
      - :person:`Pappus <pappus>` *Synagoge* VI; *Theodosius* III.5–9
      - Euclid *Phaenomena* (rising-time arcs)
      - ``geometor/pappus`` (Book VI astronomical tradition)
    * - :ref:`Liber III <liber-iii>`
-     - **Lib. III Lemma I** [p. 83]
+     - **Lib. III Lemma I–II** [pp. 83–84]
      - Maur. III Praem.; Björnbo §9
      - :cite:`Almagest I.13 <ptolemy-almagest-i-13>` (Heiberg pp. 68–70)
      - *Elements* I.31, VI.2, VI.4, VI.23
      - :func:`~geometor.menelaus.planar_transversal.construct_menelaus_planar`; ``geometor/altshiller-court`` Ch. VI
    * - :ref:`Liber III <liber-iii>`
-     - **Lib. III Prop. 1 & Scholion** [pp. 80–86]
+     - **Lib. III Prop. 1 & Scholion** [pp. 80–82]
      - Maur. III.1 (*Figura Catha*); Björnbo III.1
      - :cite:`Almagest I.13 <ptolemy-almagest-i-13>` (Heiberg pp. 74–76)
      - Central projection from sphere center onto planar transversal
      - :func:`~geometor.menelaus.spherical.verify_spherical_menelaus`, :func:`~geometor.menelaus.spherical.gnomonic_projection_menelaus`
    * - :ref:`Liber III <liber-iii>`
-     - Lib. III Prop. 2–5 [pp. 86–90]
-     - Maur. III.2–6; Björnbo III.2–5
+     - Lib. III Prop. 2–3 [pp. 86–88]
+     - Maur. III.2–4; Björnbo III.2–3
      - Applied in *Almagest* I.14–16 & II
-     - Spherical Rule of Four Quantities & Law of Tangents
+     - Spherical Rule of Four Quantities & Sine Law
      - :func:`~geometor.menelaus.spherical.spherical_excess_report` (`sine_law_common_ratio`)
    * - :ref:`Liber III <liber-iii>`
-     - **Lib. III Prop. 6–8** [pp. 91–94]
+     - **Lib. III Prop. 6–8** [pp. 91–95]
      - Maur. III.7–9; Björnbo III.6–8
      - Anticipates *Pappus* VII.129 cross-ratio invariance on :math:`S^2`!
      - *Elements* VI.3 & external angle-bisector ratio
@@ -88,3 +88,9 @@ This master concordance aligns the principal definitions, lemmas, and propositio
      - Complete spherical quadrilateral & altitude concurrency
      - *Elements* IV.4 (incenter) & orthic axis
      - :func:`~geometor.menelaus.spherical.spherical_orthocenter_menelaus`, :func:`~geometor.menelaus.duality_ceva.construct_trilinear_polar`; ``geometor/etc`` `X(1)`, `X(4)`, `X(7)`
+   * - :ref:`Liber III <liber-iii>`
+     - **Lib. III Prop. 11–15** [pp. 97–112]
+     - Maur. III.12–19; Björnbo III.11–25
+     - *Theodosius* III.11 & Apollonius (*Liber הכללי*)
+     - Arc-sine monotonicity (:math:`\alpha/\beta > \sin\alpha/\sin\beta`) & rising-time bounds
+     - Astronomical rising-time inequalities & small-circle ratio bounds

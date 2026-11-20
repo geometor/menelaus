@@ -27,7 +27,7 @@ Book I — Definitions (*Definitiones I–VI*)
    :alt: Intrinsic spherical triangle ABC on unit sphere S^2 alongside its polar supplementary triangle A*B*C*
    :caption: Intrinsic spherical triangle △ABC bounded by minor great-circle arcs on S², shown alongside its supplementary polar triangle △A*B*C*.
 
-In the figure above, intrinsic spherical triangle :g:`A`, :g:`B`, :g:`C` is bounded by minor great-circle arcs :g:`AB </ A B />`, :g:`BC </ B C />`, and :g:`CA </ C A />` on :math:`S^2`, paired with its supplementary :term:`polar triangle <triangulum-polare>` :g:`A*`, :g:`B*`, :g:`C*`.
+Spherical triangle :g:`A`, :g:`B`, :g:`C` bounded by minor great-circle arcs :g:`AB </ A B />`, :g:`BC </ B C />`, and :g:`CA </ C A />` on :math:`S^2`, paired with its supplementary :term:`polar triangle <triangulum-polare>` :g:`A*`, :g:`B*`, :g:`C*`.
 
 .. toctree::
    :hidden:

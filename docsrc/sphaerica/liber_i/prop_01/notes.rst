@@ -12,6 +12,9 @@ Scholarly & GEOMETOR Notes: Angle Transfer on S^2
 
 .. rubric:: *Constructive Mechanics in geometor.model & Relation to Euclid I.23*
 
+.. folio:: halley_1758_menelai_sphaericorum:0018
+   :page: 2
+
 1. Elimination of Extrinsic Superposition
 -----------------------------------------
 

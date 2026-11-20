@@ -73,35 +73,58 @@ def test_canonical_book_codex_tracks_and_zero_embedded_py_file() -> None:
     for unit_num in (1, 2, 3, 4):
         assert not (sphaerica_dir / f"unit-{unit_num}").exists(), f"Legacy unit-{unit_num} directory still exists!"
 
-    # Verify canonical books
+    # Verify canonical books (31 atomic sections; zero bundled multi-proposition ranges)
     expected_books = {
         "liber_i": [
             "praefatio",
             "definitiones",
             "prop_01",
-            "prop_04_05",
-            "prop_08_10",
+            "prop_04",
+            "prop_05",
+            "prop_08",
+            "prop_09",
+            "prop_10",
             "prop_11",
             "prop_17",
         ],
         "liber_ii": [
             "prop_01",
             "prop_10",
-            "prop_11_12",
+            "prop_11",
+            "prop_12",
+            "prop_13",
         ],
         "liber_iii": [
             "prop_01",
             "scholion",
-            "lemmata",
+            "lemma_01",
+            "lemma_02",
             "ptolemy_i_13",
-            "prop_02_03",
+            "prop_02",
+            "prop_03",
             "prop_06",
             "prop_08",
             "prop_09",
             "prop_10",
-            "prop_11_25",
+            "prop_11",
+            "prop_12",
+            "prop_13",
+            "prop_14",
+            "prop_15",
         ],
     }
+
+    bundled_forbidden = (
+        "prop_04_05",
+        "prop_08_10",
+        "prop_11_12",
+        "lemmata",
+        "prop_02_03",
+        "prop_11_25",
+    )
+    for book_dir in (sphaerica_dir / "liber_i", sphaerica_dir / "liber_ii", sphaerica_dir / "liber_iii"):
+        for legacy in bundled_forbidden:
+            assert not (book_dir / legacy).exists(), f"Bundled directory still exists: {book_dir / legacy}"
 
     for book_name, sections in expected_books.items():
         book_dir = sphaerica_dir / book_name
@@ -111,6 +134,7 @@ def test_canonical_book_codex_tracks_and_zero_embedded_py_file() -> None:
         index_content = book_index.read_text(encoding="utf-8")
         assert ":layout: book" in index_content
         assert ":folio:" in index_content
+        assert ".. folio::" in index_content
 
         for sec in sections:
             sec_dir = book_dir / sec
@@ -121,6 +145,7 @@ def test_canonical_book_codex_tracks_and_zero_embedded_py_file() -> None:
                 content = track_path.read_text(encoding="utf-8")
                 assert ":layout: book" in content
                 assert ":folio:" in content
+                assert ".. folio::" in content, f"Missing .. folio:: directive in {track_path}"
                 assert ":tracks:" in content
 
     # Verify legacy anchors preserved on containers

@@ -23,7 +23,7 @@ Book II: Spherical Arcs, Great Circles & Rising-Time Inequalities
 .. folio:: halley_1758_menelai_sphaericorum:0064
    :page: 48
 
-Where Book I established the pure intrinsic geometry of an isolated spherical triangle, Book II (*Propositions II.1–II.12*, Halley pp. 48–79) applies those triangle inequalities to families of great circles cutting across an oblique great circle (such as the ecliptic) and systems of parallel circles (diurnal parallels to the celestial equator).
+Where Book I established the pure intrinsic geometry of an isolated spherical triangle, Book II (*Propositions II.1, II.10–II.13*, Halley pp. 48–79) applies those triangle inequalities to families of great circles cutting across an oblique great circle (such as the ecliptic) and systems of parallel circles (diurnal parallels to the celestial equator).
 
 On page 75, before Proposition II.10, Menelaus delivers his famous programmatic critique of his predecessor :person:`Theodosius of Bithynia <theodosius>`:
 
@@ -47,4 +47,6 @@ Sections & Propositions
 
    prop_01/index
    prop_10/index
-   prop_11_12/index
+   prop_11/index
+   prop_12/index
+   prop_13/index

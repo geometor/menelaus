@@ -1,5 +1,5 @@
 :layout: book
-:order: 7
+:order: 10
 :canonical_id: I.17
 :breadcrumb_title: Proposition I.17 (Summary)
 :folio: halley_1758_menelai_sphaericorum:0034
@@ -11,6 +11,9 @@ Analytical Summary: AAA Congruence & Scale Invariance Failure
 =============================================================
 
 .. rubric:: *Deductive Architecture of Proposition I.17*
+
+.. folio:: halley_1758_menelai_sphaericorum:0034
+   :page: 18
 
 1. **Failure of Planar Similarity (Contrast Euclid Elements VI.4)**:
    In Euclidean planar geometry, two equiangular triangles are similar (:math:`\triangle ABC \sim \triangle DEF`), but not necessarily congruent: their sides are merely proportional, allowing arbitrary scale magnification or dilation by a continuous parameter :math:`k \in \mathbb{R}_{> 0}`. On the sphere :math:`S^2`, scale invariance fails completely: two equiangular triangles must be strictly congruent!

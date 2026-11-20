@@ -1,5 +1,5 @@
 :layout: book
-:order: 7
+:order: 9
 :canonical_id: III.8
 :breadcrumb_title: Proposition III.8 (Summary)
 :folio: halley_1758_menelai_sphaericorum:0109
@@ -11,6 +11,9 @@ Analytical Summary: Spherical Harmonic Division & Projective Invariance
 ========================================================================
 
 .. rubric:: *Modern Elements-2.0 Decomposition of Proposition III.8*
+
+.. folio:: halley_1758_menelai_sphaericorum:0109
+   :page: 93
 
 1. Geometric Architecture of Harmonic Division on S²
 -----------------------------------------------------

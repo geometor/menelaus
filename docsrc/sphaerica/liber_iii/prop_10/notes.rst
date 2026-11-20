@@ -1,5 +1,5 @@
 :layout: book
-:order: 9
+:order: 11
 :canonical_id: III.10
 :breadcrumb_title: Proposition III.10 (Notes)
 :folio: halley_1758_menelai_sphaericorum:0111
@@ -11,6 +11,9 @@ Scholarly & GEOMETOR Notes: Orthocenter Concurrency & Projective Duality
 ========================================================================
 
 .. rubric:: *Exact Vector Proofs, Collinearities & Trilinear Polarity*
+
+.. folio:: halley_1758_menelai_sphaericorum:0111
+   :page: 95
 
 1. Exact Symbolic Proof of Spherical Orthocenter Concurrency
 -------------------------------------------------------------

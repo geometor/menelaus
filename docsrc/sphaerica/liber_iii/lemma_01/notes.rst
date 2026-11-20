@@ -1,0 +1,54 @@
+:layout: book
+:order: 3
+:canonical_id: III.Lemma.1
+:breadcrumb_title: Lemma I (Notes)
+:folio: halley_1758_menelai_sphaericorum:0099
+:tracks: English: index | Latin: la | Summary: summary | Notes: notes
+
+.. _sphaerica-iii-lemmata-notes:
+.. _sphaerica-iii-lemma-1-notes:
+.. _liber-iii-lemma-01-notes:
+
+Scholarly & GEOMETOR Notes: Planar Transversal & Rational Trigonometry
+======================================================================
+
+.. rubric:: *Exact SymPy Verification & Wildberger Rational Trigonometry*
+
+.. folio:: halley_1758_menelai_sphaericorum:0099
+   :page: 83
+
+1. Exact Symbolic Verification of Planar Menelaus & Its Converse
+----------------------------------------------------------------
+
+In :mod:`geometor.menelaus.planar_transversal` (:func:`~geometor.menelaus.planar_transversal.construct_menelaus_planar`), triangle :math:`A = (3, 6)`, :math:`B = (0, 0)`, :math:`C = (9, 0)` is cut by :term:`transversal <transversalis>` :g:`DF <[ D F ]>` through :g:`D` :math:`= (12, 0)` (external on :g:`BC <[ B C ]>`) and :g:`F` :math:`= (2, 4)` (internal on :g:`AB <[ A B ]>`), meeting :g:`CA <[ C A ]>` at :g:`E` :math:`= (7, 2)` with auxiliary parallel :g:`CH </ C H />` meeting :g:`AB <[ A B ]>` at :g:`H` :math:`= (3/2, 3)`:
+
+.. math::
+
+   \frac{\overline{AF}}{\overline{FB}} = \frac{1}{2}, \qquad
+   \frac{\overline{BD}}{\overline{DC}} = -4, \qquad
+   \frac{\overline{CE}}{\overline{EA}} = \frac{1}{2}
+   \quad\Longrightarrow\quad
+   \left(\frac{1}{2}\right)(-4)\left(\frac{1}{2}\right) = -1.
+
+Furthermore, :func:`~geometor.menelaus.planar_transversal.verify_planar_menelaus_universal` proves the universal algebraic identity over :math:`\mathbb{Q}[x_A, y_A, x_B, y_B, x_C, y_C, u, v, w]`: for :math:`F = (1-u)A + uB`, :math:`D = (1-v)B + vC`, :math:`E = (1-w)C + wA`,
+
+.. math::
+
+   \det\begin{pmatrix} x_D & y_D & 1 \\ x_E & y_E & 1 \\ x_F & y_F & 1 \end{pmatrix}
+   \;\equiv\;
+   \det\begin{pmatrix} x_A & y_A & 1 \\ x_B & y_B & 1 \\ x_C & y_C & 1 \end{pmatrix}
+   \cdot \Bigl(u v w + (1 - u)(1 - v)(1 - w)\Bigr),
+
+making both the **Forward Theorem** and the **Converse Theorem** two halves of a single polynomial factorization.
+
+2. Rational Trigonometry Reformulation (Wildberger Quadrances & Spreads)
+------------------------------------------------------------------------
+
+.. picture:: /_static/figures/menelaus-rational-trig.svg
+   :alt: Rational Trigonometry quadrance and spread invariants of Planar Menelaus
+   :caption: Rational Trigonometry view of Planar Menelaus: polynomial quadrance balance Q(A,F)·Q(B,D)·Q(C,E) = Q(F,B)·Q(D,C)·Q(E,A) and Spread Law telescoping across △ABC and transversal DF.
+
+In Norman J. Wildberger's Rational Trigonometry (:cite:`Divine Proportions, 2005 <wildberger-2005>`, cf. :func:`~geometor.menelaus.planar_transversal.menelaus_rational_trig_invariants`), replacing Euclidean distance and angle with :term:`quadrance and spread <quadrantia-et-extensio>` :math:`Q(P, R) = (x_R - x_P)^2 + (y_R - y_P)^2` and :math:`s(\ell_1, \ell_2)` eliminates all square roots and transcendental functions across :g:`△ABC << A B C >>` and transversal :g:`DF <[ D F ]>`. On our canonical configuration :math:`A = (3,6), B = (0,0), C = (9,0)` with :math:`D = (12,0), E = (7,2), F = (2,4)`:
+
+* :math:`Q(A,F) = 5`, :math:`Q(F,B) = 20`, :math:`Q(B,D) = 144`, :math:`Q(D,C) = 9`, :math:`Q(C,E) = 8`, :math:`Q(E,A) = 32`.
+* :math:`5 \times 144 \times 8 = 5760 = 20 \times 9 \times 32`, and the Spread Law across the three sub-triangles :math:`\triangle AEF`, :math:`\triangle BDF`, :math:`\triangle CDE` telescopes identically to :math:`1`.
