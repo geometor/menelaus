@@ -11,7 +11,9 @@
 :series: GEOMETOR Classical Canon · Critical 4-Track Book Codex
 :publisher: GEOMETOR Scriptorium (ex Editionibus Halleii 1758, Heiberg 1898 et Björnbo 1902)
 :location: Alexandriae / Romae / Oxonii
-:year: c. 100 CE / 1758
+:year: 100
+:year_label: ca. 100 CE
+:edition_year: 1758
 :folio: halley_1758_menelai_sphaericorum:0007
 :tracks: English: index | Latin: title-la
 :excerpt: Menelaus of Alexandria's foundational treatise on spherical geometry, introducing intrinsic spherical triangles, the Menelaus transversal theorem, and harmonic cross-ratios.
