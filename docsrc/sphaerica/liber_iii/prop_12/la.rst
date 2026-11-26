@@ -25,6 +25,18 @@ Sit triangulum Sphaericum ``ΑΒΓ``, cujus angulus ``Β`` acutus, angulus vero 
 .. folio:: halley_1758_menelai_sphaericorum:0116
    :page: 100
 
+.. picture:: 0116.g1.svg
+   :alt: Calibrated vector diagram for folio 0116.g1
+
+.. picture:: 0116.g1.png
+   :alt: Archival scan of folio 0116.g1
+
+.. picture:: 0116.g2.svg
+   :alt: Calibrated vector diagram for folio 0116.g2
+
+.. picture:: 0116.g2.png
+   :alt: Archival scan of folio 0116.g2
+
 ad angulos rectos super basim ``ΑΒ``, ducantur arcus ``ΔΕ``, ``ΖΗ``, ``ΘΚ``: dico quod si arcus ``ΓΔ``, ``ΖΘ`` fuerint aequales, arcus ``ΑΕ`` major erit arcu ``ΗΚ``; quodque si duo arcus ``ΑΕ``, ``ΓΔ`` simul sumpti fuerint aequales duobus ``ΗΚ``, ``ΖΘ`` simul sumptis, erit arcus ``ΓΔ`` minor arcu ``ΖΘ``: quod si differentia arcuum ``ΑΕ``, ``ΓΔ`` aequalis fuerit differentiae inter arcus ``ΘΖ``, ``ΚΗ``, auferendo scilicet minorem ex majore, erit arcus ``ΓΔ`` major arcu ``ΖΘ``. Universim vero ratio quam habet arcus ``ΑΕ`` ad ``ΗΚ`` major erit ratione ``ΓΔ`` ad ``ΖΘ``.
 
 Quoniam enim arcus ``ΒΓ`` minor est quadrante circuli, angulus autem qui ad ``Β`` acutus est, qui vero ad ``Α``, ``Ε``, ``Η``, ``Κ`` sunt recti; erit (*per 5am. III. hujus*) ut sinus summae arcuum ``ΑΒ``, ``ΒΓ`` ad sinum differentiae eorundem, ita sinus summae arcuum ``ΔΒ``, ``ΒΕ`` ad sinum differentiae arcuum ``ΔΒ``, ``ΒΕ``; & ita sinus summae arcuum ``ΖΒ``, ``ΒΗ`` ad sinum differentiae eorundem, ac denique ita sinus summae arcuum ``ΘΒ``, ``ΒΚ`` ad sinum differentiae ipsorum; quae cum ita se habeant, evenient ea omnia quae in praemissis dicta sunt.

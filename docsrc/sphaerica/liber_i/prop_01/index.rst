@@ -16,6 +16,12 @@ Proposition I.1 — Problem: Constructing an Equal Spherical Angle
 .. folio:: halley_1758_menelai_sphaericorum:0018
    :page: 2
 
+.. picture:: 0018.g1.svg
+   :alt: Calibrated vector diagram for folio 0018.g1
+
+.. picture:: 0018.g1.png
+   :alt: Archival scan of folio 0018.g1
+
 .. admonition:: Enunciation (*Halley 1758, p. 2*)
 
    *At a given point on a given arc of a great circle on the surface of a sphere, to construct a spherical angle equal to a given spherical angle contained by two arcs of great circles on that surface.*

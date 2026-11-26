@@ -16,6 +16,12 @@ Proposition II.1 — Problem: Oblique Spherical Angle Construction
 .. folio:: halley_1758_menelai_sphaericorum:0064
    :page: 48
 
+.. picture:: 0064.g1.svg
+   :alt: Calibrated vector diagram for folio 0064.g1
+
+.. picture:: 0064.g1.png
+   :alt: Archival scan of folio 0064.g1
+
 .. admonition:: Enunciation (*Halley 1758, p. 48*)
 
    *From a point taken on the side of an obtuse-angled spherical triangle opposite to the obtuse angle, to draw an arc of a great circle which, with one of the arcs containing the obtuse angle, shall comprehend an angle equal to that same obtuse angle.*

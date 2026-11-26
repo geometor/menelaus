@@ -23,6 +23,12 @@ Prop. X. Theor. (*Halley 1758, pp. 9–10*)
    .. folio:: halley_1758_menelai_sphaericorum:0026
       :page: 10
 
+   .. picture:: 0026.g1.svg
+      :alt: Calibrated vector diagram for folio 0026.g1
+
+   .. picture:: 0026.g1.png
+      :alt: Archival scan of folio 0026.g1
+
    *duo latera simul majora fuerint semicirculo, erit angulus exterior minor interiore sibi opposito.*
 
 Sit ``ΑΒΓ`` triangulum Sphaericum, & duo latera ejus ``ΑΒ``, ``ΒΓ`` simul sumpta sint aequalia semicirculo, & producatur arcus ``ΑΓ``: dico angulum ``ΒΓΔ`` exteriorem aequalem esse angulo ``Α`` interiori eidemque opposito. Ac si fuerint duo arcus ``ΑΒ``, ``ΒΓ`` minores semicirculo, erit angulus ``ΒΓΔ`` major angulo ``Α``. Si vero arcus ``ΑΒ``, ``ΒΓ`` majores fuerint semicirculo, erit angulus ``ΒΓΔ`` minor angulo ``Α``.

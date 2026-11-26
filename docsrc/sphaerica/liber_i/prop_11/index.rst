@@ -16,6 +16,12 @@ Proposition I.11 — Theorem: Spherical Angle-Sum Excess
 .. folio:: halley_1758_menelai_sphaericorum:0027
    :page: 11
 
+.. picture:: 0027.g1.svg
+   :alt: Calibrated vector diagram for folio 0027.g1
+
+.. picture:: 0027.g1.png
+   :alt: Archival scan of folio 0027.g1
+
 .. admonition:: Enunciation (*Halley 1758, p. 11*)
 
    *In every spherical triangle, when one side is produced, the exterior angle is less than both remote interior angles taken together; and the three interior angles of the triangle taken together are greater than two right angles.*

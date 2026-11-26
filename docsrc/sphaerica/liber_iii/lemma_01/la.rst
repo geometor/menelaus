@@ -17,6 +17,12 @@ Lemma I. (*Halley 1758, p. 83*)
 .. folio:: halley_1758_menelai_sphaericorum:0099
    :page: 83
 
+.. picture:: 0099.g1.svg
+   :alt: Calibrated vector diagram for folio 0099.g1
+
+.. picture:: 0099.g1.png
+   :alt: Archival scan of folio 0099.g1
+
 .. admonition:: Enuntiatio (*Halley 1758, p. 83*)
 
    *Si ad duas rectas* ``ΑΒ``, ``ΑΓ`` *concurrentes in* ``Α`` *ducantur duae aliae* ``ΓΔ``, ``ΒΕ`` *sese intersecantes in puncto* ``Ζ``: *dico rectam* ``ΑΕ`` *esse ad* ``ΕΓ`` *in ratione composita ex ratione* ``ΔΖ`` *ad* ``ΖΓ`` *& ratione* ``ΒΑ`` *ad* ``ΒΔ``.

@@ -16,6 +16,12 @@ Prop. VIII. Theor. (*Halley 1758, pp. 8–9*)
 .. folio:: halley_1758_menelai_sphaericorum:0024
    :page: 8
 
+.. picture:: 0024.g1.svg
+   :alt: Calibrated vector diagram for folio 0024.g1
+
+.. picture:: 0024.g1.png
+   :alt: Archival scan of folio 0024.g1
+
 .. admonition:: Enuntiatio (*Halley 1758, p. 8*)
 
    *Si duo triangula Sphaerica habeant duo latera duobus lateribus aequalia, alterum alteri; angulum autem unius angulo alterius, qui sub aequalibus illis lateribus comprehenditur, majorem: erit arcus qui subtenditur angulo majori major eo qui subtenditur minori; ac si fuerit arcus major, erit etiam angulus major.*

@@ -18,6 +18,12 @@ Proposition III.2 — Theorem: The Spherical Law of Sines
 .. folio:: halley_1758_menelai_sphaericorum:0102
    :page: 86
 
+.. picture:: 0102.g1.svg
+   :alt: Calibrated vector diagram for folio 0102.g1
+
+.. picture:: 0102.g1.png
+   :alt: Archival scan of folio 0102.g1
+
 .. admonition:: Enunciation (*Halley 1758, p. 86*)
 
    *If of two spherical triangles two angles be equal, and two other angles be either equal to one another or taken together equal to two right angles: I say that the sines of the sides which are subtended by the two equal angles are to the sines of the sides which are subtended by the two other angles (either equal or equal to two right angles) respectively, in the same ratio; and conversely.*

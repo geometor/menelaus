@@ -54,6 +54,12 @@ Proposition III.10 — Theorem: Spherical Orthocenter Concurrency (pp. 95–97)
 4. **Right Angle at H via Prop. III.6 & Converse I of Prop. III.8**:
    Applying **Proposition III.6** to :math:`\triangle \mathrm{\Theta\Delta H}` and :math:`\triangle \mathrm{\Theta EH}` (whose angles at :math:`\mathrm{\Delta}` and :math:`\mathrm{E}` are bisected by :math:`\mathrm{\Delta\Gamma}` and :math:`\mathrm{E\Gamma}`) yields :math:`\sin \widehat{\mathrm{\Theta E}} : \sin \widehat{\mathrm{\Theta\Delta}} = \sin \widehat{\mathrm{EH}} : \sin \widehat{\mathrm{H\Delta}} = \sin \widehat{\mathrm{EK}} : \sin \widehat{\mathrm{K\Delta}}` (since :math:`\mathrm{HZK}` bisects :math:`\angle \mathrm{EH\Delta}`). Since :math:`\angle \mathrm{EHK} = \angle \mathrm{\Delta HK}` AND :math:`(\mathrm{\Theta}, \mathrm{K}; \mathrm{E}, \mathrm{\Delta})` is harmonic in sines, the first converse of **Proposition III.8** forces :math:`\angle \mathrm{\Theta HK}` (i.e., :math:`\angle \mathrm{AHB}`) to be a **right angle**! *Q.E.D.*
 
+.. picture:: 0112.g1.svg
+   :alt: Calibrated vector diagram for folio 0112.g1
+
+.. picture:: 0112.g1.png
+   :alt: Archival scan of folio 0112.g1
+
 .. toctree::
    :hidden:
 

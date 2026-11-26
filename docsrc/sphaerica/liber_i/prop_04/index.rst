@@ -17,6 +17,12 @@ Proposition I.4 — Theorem: SAS Spherical Congruence
 .. folio:: halley_1758_menelai_sphaericorum:0021
    :page: 5
 
+.. picture:: 0021.g1.svg
+   :alt: Calibrated vector diagram for folio 0021.g1
+
+.. picture:: 0021.g1.png
+   :alt: Archival scan of folio 0021.g1
+
 .. admonition:: Enunciation (*Halley 1758, p. 5*)
 
    *If in two spherical triangles some angle of the one be equal to an angle of the other, and the arcs containing those equal angles be equal, each to each; the two remaining arcs shall be equal. And if the two remaining arcs be equal, the angles contained by the equal arcs in either triangle shall be equal.*

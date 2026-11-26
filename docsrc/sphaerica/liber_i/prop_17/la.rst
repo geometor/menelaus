@@ -28,3 +28,10 @@ Jam duo arcus ``ΘΒ``, ``ΒΙ`` aequales sunt duobus ``ΔΕ``, ``ΕΖ``, & angu
 Et quoniam angulus ``Γ`` exterior trianguli ``ΘΚΓ`` aequalis est interiori & opposito angulo ``Θ``, erunt (*per decimam hujus*) arcus ``ΘΚ``, ``ΚΓ`` simul sumpti aequales semicirculo: pariterque cum angulus ``Ι`` exterior trianguli ``ΑΙΚ`` aequalis sit opposito & interiori angulo ``Α``, erunt quoque duo arcus ``ΑΚ``, ``ΚΙ`` aequales semicirculo; ac proinde duo arcus ``ΚΘ``, ``ΚΓ`` sunt aequales duobus arcubus ``ΙΚ``, ``ΚΑ``.
 
 Auferantur utrinque duo arcus communes ``ΙΚ``, ``ΚΓ``, ac reliquus arcus ``ΘΙ`` erit aequalis arcui ``ΑΓ``. Sed arcus ``ΘΙ`` aequalis est arcui ``ΖΔ``; quare arcus ``ΖΔ`` aequalis est arcui ``ΑΓ``: & angulus ``Α`` aequalis est angulo ``Δ``, uti angulus ``Γ`` angulo ``Ζ``: quapropter (*per 14m hujus*) arcus ``ΑΒ`` aequalis est arcui ``ΔΕ``, & ``ΒΓ`` arcui ``ΕΖ``. *Quod erat demonstrandum.*
+
+.. picture:: 0035.g1.svg
+   :alt: Calibrated vector diagram for folio 0035.g1
+
+.. picture:: 0035.g1.png
+   :alt: Archival scan of folio 0035.g1
+

@@ -17,6 +17,12 @@ Proposition I.8 — Theorem: Spherical Hinge & Greater Base
 .. folio:: halley_1758_menelai_sphaericorum:0024
    :page: 8
 
+.. picture:: 0024.g1.svg
+   :alt: Calibrated vector diagram for folio 0024.g1
+
+.. picture:: 0024.g1.png
+   :alt: Archival scan of folio 0024.g1
+
 .. admonition:: Enunciation (*Halley 1758, p. 8*)
 
    *If two spherical triangles have two sides equal to two sides respectively, each to each; and the angle of the one contained by those equal sides be greater than the angle of the other: the arc subtended by the greater angle shall be greater than the arc subtended by the lesser; and if the arc be greater, the angle shall also be greater.*

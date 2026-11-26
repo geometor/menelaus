@@ -17,6 +17,12 @@ Prop. II. Theor. (*Halley 1758, pp. 86–87*)
 .. folio:: halley_1758_menelai_sphaericorum:0102
    :page: 86
 
+.. picture:: 0102.g1.svg
+   :alt: Calibrated vector diagram for folio 0102.g1
+
+.. picture:: 0102.g1.png
+   :alt: Archival scan of folio 0102.g1
+
 .. admonition:: Enuntiatio (*Halley 1758, p. 86*)
 
    *Si duorum triangulorum Sphaericorum duo anguli fuerint aequales, duo vero alii anguli vel aequales inter se, vel simul sumpti duobus rectis aequales: dico quod Sinus laterum, quae duobus angulis aequalibus subtenduntur, sunt ad sinus laterum quae duobus aliis angulis, vel aequalibus vel duobus rectis aequalibus, subtenduntur respective, in eadem ratione; & è contra.*

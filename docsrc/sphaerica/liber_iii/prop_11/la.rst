@@ -24,6 +24,12 @@ Prop. XI. Theor. (*Halley 1758, pp. 97–99*)
 .. folio:: halley_1758_menelai_sphaericorum:0114
    :page: 98
 
+.. picture:: 0114.g1.svg
+   :alt: Calibrated vector diagram for folio 0114.g1
+
+.. picture:: 0114.g1.png
+   :alt: Archival scan of folio 0114.g1
+
 Sit triangulum Sphaericum ``ΑΒΓ``, cujus crus ``ΒΓ`` majus sit reliquo ``ΓΑ``, sed non majus quadrante circuli; & capiantur in ``ΒΓ`` arcus ``ΓΔ``, ``ΖΘ``, & ducantur per terminos eorum arcus ``ΔΕ``, ``ΖΗ``, ``ΘΚ``, continentes cum basi angulos aequales angulo ``Α``: dico quod si fuerit arcus ``ΓΔ`` aequalis arcui ``ΖΘ``; erit ``ΓΛ`` differentia inter arcus ``ΓΑ``, ``ΔΕ``, minor quam ``ΖΜ`` differentia ipsorum ``ΖΗ``, ``ΘΚ``: Si vero differentiae inter dictos arcus fuerint aequales; erit arcus ``ΓΔ`` major arcu ``ΖΘ``. Ac si fuerit arcus ``ΓΔ`` una cum excessu quo ``ΓΑ`` superat ``ΔΕ`` aequalis arcui ``ΖΘ`` una cum differentia ipsorum ``ΖΗ``, ``ΘΚ``, erit etiam arcus ``ΓΔ`` major quam ``ΖΘ``. Quod si differentia inter arcum ``ΓΔ`` & ``ΓΛ``, quo scilicet ``ΓΑ`` superat ``ΔΕ``, aequalis fuerit differentiae inter ``ΖΘ`` & ``ΖΜ``, quo ``ΖΗ`` superat ``ΘΚ``; tum arcus ``ΓΔ`` minor erit arcu ``ΖΘ``. Denique dico rationem arcus ``ΓΔ`` ad arcum ``ΖΘ`` majorem esse ratione arcus ``ΓΛ`` ad arcum ``ΖΜ``.
 
 Quoniam enim triangula ``ΑΒΓ``, ``ΔΒΕ`` &c. angulum habent ad ``Β`` communem, angulos vero ad puncta ``Α``, ``Ε``, ``Η``, ``Κ`` aequales; erit sinus arcus ``ΒΓ`` ad sinum arcus ``ΒΔ`` sicut sinus arcus ``ΓΑ`` ad sinum arcus ``ΔΕ``, (*per 2m III hujus.*) Et simili ratione, erit sinus arcus ``ΒΔ`` ad sinum arcus ``ΒΖ`` sicut sinus arcus ``ΔΕ`` ad sinum arcus ``ΖΗ``; uti & sinus arcus ``ΖΒ`` ad sinum arcus ``ΒΘ`` sicut sinus arcus ``ΖΗ`` ad sinum arcus ``ΘΚ``. Arcus autem ``ΒΓ`` major est arcu ``ΓΑ``, sed non major quarta circuli; quae cum ita se habeant, evenient ea omnia quae in hac propositione dicta sunt, quorum demonstratio, ut & plurium his similium, è parte prima *libri Lemmatum Cyclicorum* petenda est.
@@ -36,6 +42,12 @@ Sint ``ΑΒ``, ``ΒΓ`` duo arcus, quorum sinus sint rectae ``ΑΘ``, ``ΓΚ``, 
 
 .. folio:: halley_1758_menelai_sphaericorum:0115
    :page: 99
+
+.. picture:: 0115.g1.svg
+   :alt: Calibrated vector diagram for folio 0115.g1
+
+.. picture:: 0115.g1.png
+   :alt: Archival scan of folio 0115.g1
 
 Ducatur recta ``ΑΓ``, quae producatur ad occursum diametri ``ΒΘ`` etiam productae ad punctum ``Ν``, ac erit ``ΑΝ`` ad ``ΝΓ`` sicut ``ΑΘ`` ad ``ΓΚ``, ac dividendo ``ΓΝ`` erit ad ``ΑΓ`` sicut ``ΓΚ`` ad ``ΑΙ`` sive ad differentiam ipsarum ``ΑΘ``, ``ΓΚ``. Sed ``ΝΓ`` major est arcu ``ΒΓ``, utpote Tangente major, & subtensa ``ΑΓ`` minor est arcu ``ΑΓ``: ratio igitur arcus ``ΑΓ`` ad arcum ``ΓΒ`` major est ratione rectae ``ΓΑ`` ad rectam ``ΝΓ``. Componendo itaque ratio arcus ``ΑΒ`` ad ``ΒΓ`` major erit ratione ``ΑΝ`` ad ``ΝΓ``, hoc est ratione ``ΑΘ`` ad ``ΚΓ``. **Q. E. D.**
 

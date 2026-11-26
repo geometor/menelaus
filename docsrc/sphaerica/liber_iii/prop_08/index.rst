@@ -46,6 +46,18 @@ Four great circles concurrent at vertex :g:`V` cut great circles :g:`X1X4 <[ X1 
 3. **Second Converse (pp. 94–95)**:
    Conversely, if :math:`\sin \widehat{\mathrm{\Gamma E}} : \sin \widehat{\mathrm{EA}} = \sin \widehat{\mathrm{\Gamma\Delta}} : \sin \widehat{\mathrm{\Delta A}}` and :math:`\angle \mathrm{AB\Gamma}` is a **right angle**, then :math:`\angle \mathrm{EBA} = \angle \mathrm{AB\Delta}`! (Both converses become the engine of Menelaus's orthocenter proof in Prop. III.10!)
 
+.. picture:: 0110.g1.svg
+   :alt: Calibrated vector diagram for folio 0110.g1
+
+.. picture:: 0110.g1.png
+   :alt: Archival scan of folio 0110.g1
+
+.. picture:: 0110.g2.svg
+   :alt: Calibrated vector diagram for folio 0110.g2
+
+.. picture:: 0110.g2.png
+   :alt: Archival scan of folio 0110.g2
+
 .. toctree::
    :hidden:
 

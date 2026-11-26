@@ -16,6 +16,12 @@ Prop. IV. Theor. (*Halley 1758, pp. 5–6*)
 .. folio:: halley_1758_menelai_sphaericorum:0021
    :page: 5
 
+.. picture:: 0021.g1.svg
+   :alt: Calibrated vector diagram for folio 0021.g1
+
+.. picture:: 0021.g1.png
+   :alt: Archival scan of folio 0021.g1
+
 .. admonition:: Enuntiatio (*Halley 1758, p. 5*)
 
    *Si in duobus triangulis Sphaericis angulus aliquis unius aequalis fuerit angulo alterius, arcusque qui continent aequales illos angulos fuerint aequales, singuli singulis; erunt duo reliqui arcus aequales. Quod si duo reliqui arcus fuerint aequales, erunt anguli ab aequalibus arcubus contenti in utroque triangulo aequales.*

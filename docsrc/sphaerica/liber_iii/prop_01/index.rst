@@ -16,6 +16,12 @@ Proposition III.1 — The Spherical Menelaus Transversal Theorem
 .. folio:: halley_1758_menelai_sphaericorum:0096
    :page: 80
 
+.. picture:: 0096.g1.svg
+   :alt: Calibrated vector diagram for folio 0096.g1
+
+.. picture:: 0096.g1.png
+   :alt: Archival scan of folio 0096.g1
+
 Proposition III.1 — Theorem: *Theorema Menelai* / *Figura Catha* (pp. 80–82)
 ----------------------------------------------------------------------------
 
@@ -44,6 +50,12 @@ On the unit sphere :g:`S² <( S2 )>`, great-circle :term:`transversal <transvers
 
 .. folio:: halley_1758_menelai_sphaericorum:0097
    :page: 81
+
+.. picture:: 0097.g1.svg
+   :alt: Calibrated vector diagram for folio 0097.g1
+
+.. picture:: 0097.g1.png
+   :alt: Archival scan of folio 0097.g1
 
 Now if straight line :math:`\mathrm{\Delta\Sigma}` be **parallel** to straight line :math:`\mathrm{MN}`: then the common diameter :math:`\mathrm{EB}` will be parallel to both straight lines :math:`\mathrm{\Delta\Sigma}, \mathrm{MN}` (by Euclid *Elements* XI.9); hence the perpendiculars from :math:`\mathrm{N}` and :math:`\mathrm{M}` onto diameter :math:`\mathrm{EB}` are equal (:math:`\sin \widehat{\mathrm{NE}} = \sin \widehat{\mathrm{EM}}`, since :math:`\widehat{\mathrm{EM}} + \widehat{\mathrm{NE}}` equals a semicircle), and :math:`\sin \widehat{\mathrm{NA}} : \sin \widehat{\mathrm{A\Lambda}} = \sin \widehat{\mathrm{M\Theta}} : \sin \widehat{\mathrm{\Theta\Lambda}}`. Inverting the compounded ratio yields the companion *katà diaíresin* identity:
 

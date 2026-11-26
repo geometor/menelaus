@@ -23,6 +23,12 @@ Proposition III.13 — Theorem: Oblique-Ascension Differences
    .. folio:: halley_1758_menelai_sphaericorum:0118
       :page: 102
 
+   .. picture:: 0118.g1.svg
+      :alt: Calibrated vector diagram for folio 0118.g1
+
+   .. picture:: 0118.g1.png
+      :alt: Archival scan of folio 0118.g1
+
    *arcs intercepted between those which form equal angles with the base be equal, the arcs intercepted on the base between the perpendiculars shall be unequal; and the greater of them shall lie adjacent to the less side of the triangle. But if the two arcs cut off from the base by the perpendiculars be equal to one another, then the arcs intercepted between those which make equal angles with the base shall be unequal; and the greater of them shall be adjacent to the greater side; and the other consequences shall come to pass as we stated, after the example of the preceding propositions.*
 
 Let :math:`\triangle \mathrm{AB\Gamma}` be a spherical triangle, and let side :math:`\widehat{\mathrm{A\Gamma}}` be greater than :math:`\widehat{\mathrm{\Gamma B}}`, yet not greater than a quadrant of a circle; and on :math:`\mathrm{B\Gamma}` let arcs :math:`\widehat{\mathrm{\Gamma\Delta}}, \widehat{\mathrm{\Delta Z}}` be taken, from whose endpoints let arcs be drawn to base :math:`\mathrm{AB}` containing with it angles equal to the angle at :math:`\mathrm{A}` on the same side, such as arcs :math:`\mathrm{\Delta E}, \mathrm{ZH}`; as also arcs :math:`\mathrm{\Gamma\Theta}, \mathrm{\Delta K}, \mathrm{Z\Lambda}` perpendicular to base :math:`\mathrm{AB}`: I say that if arc :math:`\widehat{\mathrm{AE}}` be equal to arc :math:`\widehat{\mathrm{EH}}`, arc :math:`\widehat{\mathrm{\Theta K}}` will be less than arc :math:`\widehat{\mathrm{K\Lambda}}`; and if arc :math:`\widehat{\mathrm{\Theta K}}` be equal to arc :math:`\widehat{\mathrm{K\Lambda}}`, arc :math:`\widehat{\mathrm{AE}}` will be greater than arc :math:`\widehat{\mathrm{EH}}`; and the other things just stated will come to pass. And universally the ratio which arc :math:`\widehat{\mathrm{AE}}` has to :math:`\widehat{\mathrm{EH}}` will be greater than the ratio of arc :math:`\widehat{\mathrm{\Theta K}}` to :math:`\widehat{\mathrm{K\Lambda}}`.
@@ -31,6 +37,18 @@ Since in the two spherical triangles :math:`\triangle \mathrm{AB\Gamma}, \triang
 
 .. folio:: halley_1758_menelai_sphaericorum:0119
    :page: 103
+
+.. picture:: 0119.g1.svg
+   :alt: Calibrated vector diagram for folio 0119.g1
+
+.. picture:: 0119.g1.png
+   :alt: Archival scan of folio 0119.g1
+
+.. picture:: 0119.g2.svg
+   :alt: Calibrated vector diagram for folio 0119.g2
+
+.. picture:: 0119.g2.png
+   :alt: Archival scan of folio 0119.g2
 
 arcs :math:`\widehat{\mathrm{AE}}, \widehat{\mathrm{\Theta K}}` will be greater than the difference of arcs :math:`\widehat{\mathrm{EK}}, \widehat{\mathrm{H\Lambda}}`—that is, of arcs :math:`\widehat{\mathrm{EH}}, \widehat{\mathrm{\Lambda K}}`—in the first figure; while in the second figure, the sum of arcs :math:`\widehat{\mathrm{AE}}, \widehat{\mathrm{\Theta K}}` will be greater than the sum of :math:`\widehat{\mathrm{EH}}, \widehat{\mathrm{K\Lambda}}`. In either figure, therefore, arc :math:`\widehat{\mathrm{AE}}` is greater than :math:`\widehat{\mathrm{EH}}`.
 
@@ -42,6 +60,12 @@ In like manner it can be shown that if angle :math:`\angle \mathrm{A}` of triang
 
 .. folio:: halley_1758_menelai_sphaericorum:0120
    :page: 104
+
+.. picture:: 0120.g1.svg
+   :alt: Calibrated vector diagram for folio 0120.g1
+
+.. picture:: 0120.g1.png
+   :alt: Archival scan of folio 0120.g1
 
 *arcs* :math:`\widehat{\mathrm{AO}}` *equal to* :math:`\widehat{\mathrm{EK}}`, *as also* :math:`\widehat{\mathrm{AP}}` *to* :math:`\widehat{\mathrm{H\Lambda}}`; *and let arcs* :math:`\mathrm{OM}, \mathrm{PN}` *be drawn constituting with base* :math:`\mathrm{AB}` *angles* :math:`\angle \mathrm{M}, \angle \mathrm{N}` *equal to angle* :math:`\angle \mathrm{B}`; *and let* :math:`\widehat{\mathrm{\Pi B}}` *be made equal to* :math:`\widehat{\mathrm{OM}}`, *and* :math:`\widehat{\mathrm{M\Xi}}` *equal to* :math:`\widehat{\mathrm{PN}}`: *therefore (by Book III Prop. 2) arc* :math:`\widehat{\mathrm{OM}}` *will be equal to arc* :math:`\widehat{\mathrm{KB}}` *in the preceding figures, and* :math:`\widehat{\mathrm{PN}}` *to arc* :math:`\widehat{\mathrm{B\Lambda}}`. *Accordingly arc* :math:`\widehat{\mathrm{\Theta O}}` *will be equal to the difference of arcs* :math:`\widehat{\mathrm{AE}}, \widehat{\mathrm{\Theta K}}` *in the first figure, or to the sum of* :math:`\widehat{\mathrm{AE}}, \widehat{\mathrm{\Theta K}}` *in the second: and arc* :math:`\widehat{\mathrm{OP}}` *will be equal to the difference or sum of arcs* :math:`\widehat{\mathrm{EH}}, \widehat{\mathrm{K\Lambda}}`. *Arc* :math:`\widehat{\mathrm{\Theta\Pi}}` *will also be equal to arc* :math:`\widehat{\mathrm{\Theta K}}`, *and* :math:`\widehat{\mathrm{O\Xi}}` *to* :math:`\widehat{\mathrm{K\Lambda}}`. *Now, by the eleventh preceding proposition, the ratio of arc* :math:`\widehat{\mathrm{O\Theta}}` *to* :math:`\widehat{\mathrm{\Theta\Pi}}` *is greater than the ratio of* :math:`\widehat{\mathrm{OP}}` *to* :math:`\widehat{\mathrm{\Xi O}}`; *that is, the ratio of the difference or sum of arcs* :math:`\widehat{\mathrm{AE}}, \widehat{\mathrm{\Theta K}}` *to arc* :math:`\widehat{\mathrm{\Theta K}}` *is greater than the ratio of the difference or sum of arcs* :math:`\widehat{\mathrm{EH}}, \widehat{\mathrm{K\Lambda}}` *to arc* :math:`\widehat{\mathrm{K\Lambda}}`: *componendo therefore in the case of the first figure, or dividendo in the case of the second figure, the ratio of* :math:`\widehat{\mathrm{AE}}` *to* :math:`\widehat{\mathrm{\Theta K}}` *will be greater than the ratio of* :math:`\widehat{\mathrm{EH}}` *to* :math:`\widehat{\mathrm{K\Lambda}}`. *And permutando the ratio of* :math:`\widehat{\mathrm{AE}}` *to* :math:`\widehat{\mathrm{EH}}` *will be greater than the ratio of* :math:`\widehat{\mathrm{\Theta K}}` *to* :math:`\widehat{\mathrm{K\Lambda}}`; *which ratio indeed (by the immediately preceding proposition) is greater than the ratio of* :math:`\widehat{\mathrm{\Gamma\Delta}}` *to* :math:`\widehat{\mathrm{\Delta Z}}`; *therefore the ratio of* :math:`\widehat{\mathrm{AE}}` *to* :math:`\widehat{\mathrm{EH}}` *is much greater than the ratio of* :math:`\widehat{\mathrm{\Gamma\Delta}}` *to* :math:`\widehat{\mathrm{\Delta Z}}`. *Quod erat demonstrandum."*
 

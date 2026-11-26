@@ -32,6 +32,12 @@ Produce arc :math:`\mathrm{AB}` past :math:`\mathrm{B}` to :math:`\mathrm{I}`, a
 
 *Quod erat demonstrandum.*
 
+.. picture:: 0035.g1.svg
+   :alt: Calibrated vector diagram for folio 0035.g1
+
+.. picture:: 0035.g1.png
+   :alt: Archival scan of folio 0035.g1
+
 .. toctree::
    :hidden:
 

@@ -15,6 +15,12 @@ Prop. I. Probl. (*Halley 1758, p. 2*)
 .. folio:: halley_1758_menelai_sphaericorum:0018
    :page: 2
 
+.. picture:: 0018.g1.svg
+   :alt: Calibrated vector diagram for folio 0018.g1
+
+.. picture:: 0018.g1.png
+   :alt: Archival scan of folio 0018.g1
+
 .. admonition:: Enuntiatio (*Halley 1758, p. 2*)
 
    *Ad punctum datum in arcu circuli magni dati in superficie Sphaerae, oporteat angulum facere aequalem angulo dato, sub duobus arcubus circulorum magnorum in ea superficie contento.*

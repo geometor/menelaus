@@ -16,6 +16,12 @@ Prop. XI. (*Halley 1758, pp. 76–77*)
 .. folio:: halley_1758_menelai_sphaericorum:0092
    :page: 76
 
+.. picture:: 0092.g1.svg
+   :alt: Calibrated vector diagram for folio 0092.g1
+
+.. picture:: 0092.g1.png
+   :alt: Archival scan of folio 0092.g1
+
 .. admonition:: Enuntiatio (*Halley 1758, p. 76*)
 
    *Sese intersecent duo circuli in Sphaera maximi, & in eorum uno capiantur duo arcus aequaliter distantes à puncto sectionis duorum illorum circulorum; & per terminos horum arcuum, perque polos alterutrius circulorum, transeant circuli maximi: abscindent hi circuli ex altero circulorum primorum arcus aequales.*

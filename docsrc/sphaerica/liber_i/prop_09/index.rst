@@ -16,6 +16,12 @@ Proposition I.9 — Theorem: Greater Side Subtends Greater Angle
 .. folio:: halley_1758_menelai_sphaericorum:0025
    :page: 9
 
+.. picture:: 0025.g1.svg
+   :alt: Calibrated vector diagram for folio 0025.g1
+
+.. picture:: 0025.g1.png
+   :alt: Archival scan of folio 0025.g1
+
 .. admonition:: Enunciation (*Halley 1758, p. 9*)
 
    *In every spherical triangle, the greater arc subtends the greater angle.*

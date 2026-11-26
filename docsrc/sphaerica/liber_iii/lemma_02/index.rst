@@ -25,6 +25,12 @@ For let there be circle :math:`\mathrm{AB\Gamma\Delta}`, in which let straight l
 .. folio:: halley_1758_menelai_sphaericorum:0100
    :page: 84
 
+.. picture:: 0100.g1.svg
+   :alt: Calibrated vector diagram for folio 0100.g1
+
+.. picture:: 0100.g1.png
+   :alt: Archival scan of folio 0100.g1
+
 :math:`\mathrm{AZ}, \mathrm{\Gamma H}` be dropped onto :math:`\mathrm{\Delta B}`: I say that :math:`\mathrm{AZ}` is to :math:`\mathrm{\Gamma H}`—that is, the sine of arc :math:`\widehat{\mathrm{AB}}` to the sine of arc :math:`\widehat{\mathrm{\Gamma B}}`—as :math:`\mathrm{AE}` is to :math:`\mathrm{E\Gamma}`.
 
 For since straight lines :math:`\mathrm{AZ}, \mathrm{\Gamma H}` are perpendicular to the same straight line :math:`\mathrm{\Delta B}`, triangles :math:`\triangle \mathrm{AEZ}` and :math:`\triangle \mathrm{\Gamma EH}` will be similar; and therefore as :math:`\mathrm{AE}` is to :math:`\mathrm{E\Gamma}`, so is :math:`\mathrm{AZ}` to :math:`\mathrm{\Gamma H}`; and so is the sine of arc :math:`\widehat{\mathrm{AB}}` to the sine of arc :math:`\widehat{\mathrm{\Gamma B}}`. *Quod erat demonstrandum.*

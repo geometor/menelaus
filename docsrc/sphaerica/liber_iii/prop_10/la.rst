@@ -29,4 +29,10 @@ Transeat enim per puncta ``Δ``, ``Ε`` arcus ``ΕΔ``, qui producatur usque dum
 .. folio:: halley_1758_menelai_sphaericorum:0112
    :page: 96
 
+.. picture:: 0112.g1.svg
+   :alt: Calibrated vector diagram for folio 0112.g1
+
+.. picture:: 0112.g1.png
+   :alt: Archival scan of folio 0112.g1
+
 Jam in triangulo ``ΑΔΓ`` angulus ``ΑΔΓ`` est rectus; quare (*per octavam III hujus*) angulus ``ΘΔΓ`` aequalis erit angulo ``ΓΔΗ``, ac proinde angulus ``ΑΔΗ`` aequalis erit angulo ``ΑΔΕ``: ac ob angulum ``ΓΕΑ`` rectum, erit quoque (*per eandem octavam*) angulus ``ΔΕΓ`` aequalis angulo ``ΓΕΗ``. Quoniam vero ``ΔΕΗ`` triangulum est Sphaericum, ac dividuntur anguli ejus ad ``Δ`` & ``Ε`` bifariam à ductis arcubus ``ΔΖ``, ``ΖΕ``; si ducatur arcus ``ΗΖ`` è puncto ``Η`` ad concursum eorum in ``Ζ``, erit quoque angulus ``ΕΗΔ`` bifariam divisus, *per nonam III. hujus*. In triangulis autem ``ΘΔΗ``, ``ΘΕΗ`` anguli ``Δ`` & ``Ε`` divisi sunt bifariam ab arcubus ``ΔΓ``, ``ΕΓ``, quare (*per 6m III. hujus*) tam sinus arcus ``ΘΕ`` ad sinum ``ΕΗ``, quam sinus arcus ``ΘΔ`` ad sinum arcus ``ΔΗ``, erit in eadem ratione, nempe ut sinus arcus ``ΘΓ`` ad sinum arcus ``ΓΗ``: permutando itaque sinus ``ΘΕ`` erit ad sinum ``ΘΔ`` sicut sinus ``ΕΗ`` ad sinum ``ΗΔ``, hoc est ut sinus arcus ``ΕΚ`` ad sinum arcus ``ΚΔ``, quia angulus ``ΕΗΔ`` bifariam divisus est arcu ``ΗΖΚ``. Quocirca cum angulus ``ΕΗΚ`` aequalis est angulo ``ΔΗΚ``, ac sinus arcus ``ΘΕ`` est ad sinum ``ΘΔ`` sicut sinus ``ΕΚ`` ad sinum ``ΚΔ``, erit (*è conversa 8vae III hujus*) angulus ``ΘΗΚ`` rectus. **Q. E. D.**

@@ -18,6 +18,12 @@ Lemma I — The Planar Menelaus Transversal Theorem
 .. folio:: halley_1758_menelai_sphaericorum:0099
    :page: 83
 
+.. picture:: 0099.g1.svg
+   :alt: Calibrated vector diagram for folio 0099.g1
+
+.. picture:: 0099.g1.png
+   :alt: Archival scan of folio 0099.g1
+
 .. admonition:: Enunciation (*Halley 1758, p. 83*)
 
    *If to two straight lines* :math:`\mathrm{AB}, \mathrm{A\Gamma}` *meeting at* :math:`\mathrm{A}` *there be drawn two other straight lines* :math:`\mathrm{\Gamma\Delta}, \mathrm{BE}` *intersecting one another at point* :math:`\mathrm{Z}`: *I say that straight line* :math:`\mathrm{AE}` *is to* :math:`\mathrm{E\Gamma}` *in the ratio compounded of the ratio* :math:`\mathrm{\Delta Z}` *to* :math:`\mathrm{Z\Gamma}` *and the ratio* :math:`\mathrm{BA}` *to* :math:`\mathrm{B\Delta}`.*
