@@ -16,6 +16,12 @@ Proposition III.6 — Spherical Internal & External Angle Bisectors
 .. folio:: halley_1758_menelai_sphaericorum:0107
    :page: 91
 
+.. picture:: 0107.g1.svg
+   :alt: Calibrated vector diagram for folio 0107.g1
+
+.. picture:: 0107.g1.png
+   :alt: Archival scan of folio 0107.g1
+
 Proposition III.6 — Theorem: Spherical Angle Bisectors (p. 91)
 --------------------------------------------------------------
 

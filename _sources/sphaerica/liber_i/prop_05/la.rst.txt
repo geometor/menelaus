@@ -16,6 +16,12 @@ Prop. V. Theor. (*Halley 1758, pp. 6–7*)
 .. folio:: halley_1758_menelai_sphaericorum:0022
    :page: 6
 
+.. picture:: 0022.g1.svg
+   :alt: Calibrated vector diagram for folio 0022.g1
+
+.. picture:: 0022.g1.png
+   :alt: Archival scan of folio 0022.g1
+
 .. admonition:: Enuntiatio (*Halley 1758, p. 6*)
 
    *Cujuscunque trianguli Sphaerici quilibet duo arcus simul sumpti sunt majores reliquo.*

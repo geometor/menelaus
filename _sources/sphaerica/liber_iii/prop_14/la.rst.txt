@@ -23,6 +23,12 @@ Prop. XIV. Theor. (*Halley 1758, pp. 104–107*)
    .. folio:: halley_1758_menelai_sphaericorum:0121
       :page: 105
 
+   .. picture:: 0121.g1.svg
+      :alt: Calibrated vector diagram for folio 0121.g1
+
+   .. picture:: 0121.g1.png
+      :alt: Archival scan of folio 0121.g1
+
    *basi & latere majore, ubicunque sumantur, major erit ratione arcuum interceptorum ab aliis illis arcubus ductis: posito scilicet quod in omnibus his rationibus antecedentes sint arcus illi qui adjacent lateri majori, consequentes vero qui ab eodem remotiores sunt.*
 
 Sit ``ΑΒΓ`` triangulum Sphaericum, cujus latus ``ΑΓ`` majus sit latere ``ΒΓ``, sed non majus quadrante circuli, & à vertice ``Γ`` ducatur ad basim ``ΑΒ`` arcus quilibet ``ΓΔ``, qui non minor sit quam ``ΒΓ``; & in ``ΒΓ`` capiantur duo arcus ``ΓΕ``, ``ΕΖ``, & ducantur per eorum extremitates ad basim arcus ``ΕΗ``, ``ΖΘ``, continentes cum ea angulos aequales angulo ``Α``; ducantur etiam alii arcus ``ΕΚ``, ``ΖΛ`` facientes cum eadem basi angulos aequales angulo ad ``Δ``: dico rationem arcus ``ΑΗ`` ad arcum ``ΗΘ`` majorem esse ratione arcus ``ΔΚ`` ad ``ΚΛ``.
@@ -31,6 +37,12 @@ Nam si fuerit angulus ``ΑΒΓ`` rectus, erit, (*per quartam hujus*) sinus arcus
 
 .. folio:: halley_1758_menelai_sphaericorum:0122
    :page: 106
+
+.. picture:: 0122.g1.svg
+   :alt: Calibrated vector diagram for folio 0122.g1
+
+.. picture:: 0122.g1.png
+   :alt: Archival scan of folio 0122.g1
 
 constabit arcum ``ΑΔ`` majorem habere rationem ad arcum ``ΔΒ`` quam habet arcus ``ΗΚ`` ad ``ΚΒ``, atque hanc rationem majorem esse ea quam habet ``ΘΛ`` ad ``ΛΒ``.
 

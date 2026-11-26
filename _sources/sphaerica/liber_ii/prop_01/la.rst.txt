@@ -15,6 +15,12 @@ Prop. I. Probl. (*Halley 1758, p. 48*)
 .. folio:: halley_1758_menelai_sphaericorum:0064
    :page: 48
 
+.. picture:: 0064.g1.svg
+   :alt: Calibrated vector diagram for folio 0064.g1
+
+.. picture:: 0064.g1.png
+   :alt: Archival scan of folio 0064.g1
+
 .. admonition:: Enuntiatio (*Halley 1758, p. 48*)
 
    *A sumpto puncto in latere trianguli Sphaerici obtusanguli, angulo obtuso opposito; ducere arcum circuli magni, qui cum altero ex arcubus, obtusum angulum continentibus, comprehendat angulum eidem obtuso angulo aequalem.*

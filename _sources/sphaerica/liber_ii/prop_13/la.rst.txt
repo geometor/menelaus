@@ -23,6 +23,12 @@ Prop. XIII. (*Halley 1758, pp. 78–79*)
    .. folio:: halley_1758_menelai_sphaericorum:0095
       :page: 79
 
+   .. picture:: 0095.g1.svg
+      :alt: Calibrated vector diagram for folio 0095.g1
+
+   .. picture:: 0095.g1.png
+      :alt: Archival scan of folio 0095.g1
+
    *contingant unum eundemque è parallelis parallelo vero priori majorem; neque opus est ut sit inclinatio ejus ad easdem partes ad quas inclinat circulus ille primarius, in quo sumpsimus arcus aequales: tum circuli paralleli abscindent è circulis maximis ductis arcus inaequales, quorum minor erit qui propior est parallelorum maximo. Abscindent etiam iidem circuli magni è maximo parallelorum arcus inaequales, quorum qui propior est communi circuli magni primarii & maximi parallelorum intersectioni, minor erit remotiore ab eadem.*
 
 Tangat enim circulum maximum ``ΑΒ`` circulus aliquis è parallelis unus, qui sit ``ΑΔΕ``; maximus autem parallelorum sit ``ΒΞΧ``, & in arcu ``ΑΒ`` capiantur duo arcus aequales ``ΘΚ``, ``ΛΜ``; per quorum terminos describantur circuli paralleli ``ΚΣ``, ``ΛΟ``, ``ΜΠ``, aliique circuli maximi ``ΘΧ``, ``ΚΡ``, ``ΛΞ``, ``ΜΤ``, quos omnes contingat idem circulus parallelus circulo ``ΑΔΕ`` major: dico quod arcus ``ΠO`` minor est arcu ``ΣΘ``, quodque arcus ``ΤΞ`` minor est quam ``ΧΡ``.

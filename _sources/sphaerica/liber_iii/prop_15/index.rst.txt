@@ -23,6 +23,12 @@ Proposition III.15 — Theorem: Final Arc-Sine & Small-Circle Bounds (*Finis*)
 .. folio:: halley_1758_menelai_sphaericorum:0124
    :page: 108
 
+.. picture:: 0124.g1.svg
+   :alt: Calibrated vector diagram for folio 0124.g1
+
+.. picture:: 0124.g1.png
+   :alt: Archival scan of folio 0124.g1
+
 **Part I — Fundamental Rectangle of Semidiameters (p. 108).** Let :math:`\mathrm{AB}, \mathrm{B\Gamma}` be two great circles inclined to one another, and on :math:`\mathrm{AB}` let two points :math:`\mathrm{\Delta}, \mathrm{E}` be taken, through which let perpendiculars :math:`\mathrm{\Delta\Gamma}, \mathrm{EH}` be drawn to arc :math:`\mathrm{B\Gamma}`: I say that the sine of arc :math:`\widehat{\mathrm{\Gamma H}}` is to the sine of arc :math:`\widehat{\mathrm{E\Delta}}`, as the rectangle under the semidiameter of the sphere and the semidiameter of the circle parallel to :math:`\mathrm{B\Gamma}` and touching circle :math:`\mathrm{BA}` is to the rectangle under the semidiameters of the circles passing through points :math:`\mathrm{\Delta}, \mathrm{E}` and parallel to circle :math:`\mathrm{B\Gamma}`.
 
 Let arcs :math:`\mathrm{\Gamma\Delta}, \mathrm{HE}` be produced to the pole of circle :math:`\mathrm{B\Gamma}`, which let be :math:`\mathrm{Z}`; and to :math:`\mathrm{BA}` let arc :math:`\mathrm{AZ}` be perpendicular. Now since both angles :math:`\angle \mathrm{ZAE}, \angle \mathrm{ZHB}` are right, and angle :math:`\angle \mathrm{AEZ}` is equal to angle :math:`\angle \mathrm{BEH}`, the sine of arc :math:`\widehat{\mathrm{AZ}}` will be to the sine of arc :math:`\widehat{\mathrm{ZE}}` (*by Book III Prop. 2*) as the sine of arc :math:`\widehat{\mathrm{BH}}` is to the sine of arc :math:`\widehat{\mathrm{BE}}`. Moreover, figure :math:`\mathrm{B\Gamma ZAE}` is after the manner of the figure of the first proposition of this Book; therefore the ratio of the sine of arc :math:`\widehat{\mathrm{\Gamma H}}` to the sine of arc :math:`\widehat{\mathrm{\Delta E}}` will be compounded of the ratio of the sine of arc :math:`\widehat{\mathrm{\Gamma Z}}` to the sine of arc :math:`\widehat{\mathrm{Z\Delta}}`, and the ratio of the sine of arc :math:`\widehat{\mathrm{BH}}` to the sine of arc :math:`\widehat{\mathrm{BE}}`. But this latter ratio was shown to be the same as the ratio of the sine of arc :math:`\widehat{\mathrm{AZ}}` to the sine of arc :math:`\widehat{\mathrm{ZE}}`: wherefore the sine of arc :math:`\widehat{\mathrm{\Gamma H}}` is to the sine of arc :math:`\widehat{\mathrm{\Delta E}}` as the rectangle under the sines of arcs :math:`\widehat{\mathrm{\Gamma Z}}, \widehat{\mathrm{AZ}}` is to the rectangle under the sines of arcs :math:`\widehat{\mathrm{\Delta Z}}, \widehat{\mathrm{ZE}}`. Now the sine of arc :math:`\widehat{\mathrm{\Gamma Z}}` is the semidiameter of the sphere, and the sine of arc :math:`\widehat{\mathrm{AZ}}` is the semidiameter of the circle passing through :math:`\mathrm{A}` and parallel to circle :math:`\mathrm{B\Gamma}`, which also touches circle :math:`\mathrm{AB}` at point :math:`\mathrm{A}`; and the sines of arcs :math:`\widehat{\mathrm{\Delta Z}}, \widehat{\mathrm{ZE}}` are the semidiameters of the circles passing through points :math:`\mathrm{\Delta}, \mathrm{E}` and parallel to the same circle :math:`\mathrm{B\Gamma}`. Thus the proposition is established.
@@ -31,6 +37,12 @@ Hence can be demonstrated, as we stated, the principal Proposition of the third 
 
 .. folio:: halley_1758_menelai_sphaericorum:0125
    :page: 109
+
+.. picture:: 0125.g1.svg
+   :alt: Calibrated vector diagram for folio 0125.g1
+
+.. picture:: 0125.g1.png
+   :alt: Archival scan of folio 0125.g1
 
 the ratio of arc :math:`\widehat{\mathrm{\Gamma H}}` to arc :math:`\widehat{\mathrm{\Delta E}}` is greater than a certain ratio, and when less.
 
@@ -43,6 +55,12 @@ For through the pole :math:`\mathrm{Z}` let great-circle arcs :math:`\mathrm{Z\D
 .. folio:: halley_1758_menelai_sphaericorum:0126
    :page: 110
 
+.. picture:: 0126.g1.svg
+   :alt: Calibrated vector diagram for folio 0126.g1
+
+.. picture:: 0126.g1.png
+   :alt: Archival scan of folio 0126.g1
+
 and the sine of arc :math:`\widehat{\mathrm{\Gamma M}}` will be to the sine of arc :math:`\widehat{\mathrm{K\Delta}}` as the rectangle contained under the semidiameter of the sphere and the sine of arc :math:`\widehat{\mathrm{AZ}}` is to the rectangle under the sines of arcs :math:`\widehat{\mathrm{\Delta Z}}, \widehat{\mathrm{ZK}}`. But the rectangle under the semidiameter of the sphere and the sine of arc :math:`\widehat{\mathrm{AZ}}` is equal to the square from the sine of arc :math:`\widehat{\mathrm{KZ}}`; which square indeed is greater than the rectangle under the sines of :math:`\widehat{\mathrm{\Delta Z}}, \widehat{\mathrm{ZK}}`: wherefore arc :math:`\widehat{\mathrm{\Gamma M}}` is greater than arc :math:`\widehat{\mathrm{\Delta K}}`. In like manner it will be demonstrated that arc :math:`\widehat{\mathrm{MH}}` is less than arc :math:`\widehat{\mathrm{KE}}`. Since these things are so, the excess of arc :math:`\widehat{\mathrm{BK}}` above arc :math:`\widehat{\mathrm{MB}}` will be greater than the excess of arc :math:`\widehat{\mathrm{EB}}` above arc :math:`\widehat{\mathrm{BH}}`, and greater than the excess of arc :math:`\widehat{\mathrm{\Delta B}}` above arc :math:`\widehat{\mathrm{B\Gamma}}`. Whence it is manifest that arc :math:`\mathrm{ZKM}` cuts off from the two circles :math:`\mathrm{AB}, \mathrm{B\Theta}` two arcs whose difference is greater than that which exists between any other two arcs cut off in the same manner.
 
 **Part III — Upper & Lower Ratio Bounds of the Intercepted Arcs (pp. 110–112).** Now let point :math:`\mathrm{Z}` be the pole of circle :math:`\mathrm{BH\Gamma}`, and let arc :math:`\widehat{\mathrm{B\Delta}}` be not greater than a quadrant; and let arcs :math:`\mathrm{\Gamma\Delta Z}, \mathrm{HEZ}` pass through pole :math:`\mathrm{Z}`, so that arc :math:`\widehat{\mathrm{\Gamma H}}` is greater than arc :math:`\widehat{\mathrm{\Delta E}}`: I say that the ratio of :math:`\widehat{\mathrm{\Gamma H}}` to :math:`\widehat{\mathrm{\Delta E}}` is less than the ratio of the diameter of the sphere to the diameter of the circle parallel to circle :math:`\mathrm{B\Gamma}` and passing through point :math:`\mathrm{\Delta}`.
@@ -53,6 +71,12 @@ And since the sine of arc :math:`\widehat{\mathrm{\Gamma H}}` is to the sine of 
 
 .. folio:: halley_1758_menelai_sphaericorum:0127
    :page: 111
+
+.. picture:: 0127.g1.svg
+   :alt: Calibrated vector diagram for folio 0127.g1
+
+.. picture:: 0127.g1.png
+   :alt: Archival scan of folio 0127.g1
 
 For since arc :math:`\widehat{\mathrm{\Gamma H}}` is greater than arc :math:`\widehat{\mathrm{\Delta E}}`, the ratio of those same arcs will be greater than the ratio of the sine of arc :math:`\widehat{\mathrm{\Gamma H}}` to the sine of arc :math:`\widehat{\mathrm{\Delta E}}`. And this ratio is that which the rectangle under the semidiameter of the sphere and the semidiameter of the circle touching :math:`\mathrm{B\Delta}` and parallel to circle :math:`\mathrm{B\Gamma}` has to the rectangle under the semidiameters of the circles parallel to the same :math:`\mathrm{B\Gamma}` and passing through points :math:`\mathrm{\Delta}, \mathrm{E}`: therefore the ratio of arc :math:`\widehat{\mathrm{\Gamma H}}` to arc :math:`\widehat{\mathrm{\Delta E}}` is greater than the aforesaid ratio.
 
@@ -66,6 +90,12 @@ Since the rectangle under the sines of arcs :math:`\widehat{\mathrm{EZ}}, \wideh
 
 .. folio:: halley_1758_menelai_sphaericorum:0128
    :page: 112
+
+.. picture:: 0128.g1.svg
+   :alt: Calibrated vector diagram for folio 0128.g1
+
+.. picture:: 0128.g1.png
+   :alt: Archival scan of folio 0128.g1
 
 are equal to arc :math:`\widehat{\mathrm{\Delta E}}`. But (*by what was demonstrated above*) the ratio of arc :math:`\widehat{\mathrm{MN}}` to arc :math:`\widehat{\mathrm{K\Lambda}}`, or of arc :math:`\widehat{\mathrm{\Delta E}}` to arc :math:`\widehat{\mathrm{\Gamma H}}`, is less than the ratio of the semidiameter of the Sphere to the sine of arc :math:`\widehat{\mathrm{KZ}}`: which ratio indeed is the same as the ratio of the sine of arc :math:`\widehat{\mathrm{EZ}}` to the semidiameter of the circle touching circle :math:`\mathrm{BE\Delta}` and parallel to :math:`\mathrm{B\Gamma}` itself. Therefore the ratio of arc :math:`\widehat{\mathrm{\Delta E}}` to :math:`\widehat{\mathrm{\Gamma H}}` is less than the said ratios; and hence *invertendo*, the ratio of :math:`\widehat{\mathrm{\Gamma H}}` to :math:`\widehat{\mathrm{\Delta E}}` is greater than the ratio of the diameter of the circle touching circle :math:`\mathrm{B\Delta}` to the diameter of the circle passing through :math:`\mathrm{E}` and parallel to the plane of circle :math:`\mathrm{BHF}`. *Quod erat demonstrandum.*
 

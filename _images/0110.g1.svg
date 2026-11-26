@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 589 330" width="589" height="330" class="euclid-graphic" data-graphic-id="0110.g1" data-folio="0110" data-graphic="g1">
+  <title>Menelaus Sphaerica — Folio 0110 (g1)</title>
+  <desc>Calibrated Ink-to-Vector .euclid-graphic diagram for folio 0110.g1.</desc>
+  <style>
+    :root {
+      --geom-fg: #18181b;
+      --geom-bg: #ffffff;
+      --geom-point-stroke: #ffffff;
+      --geom-poly-fill: #000000;
+      --geom-accent: #c88a1e;
+      --geom-assert: #16a34a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --geom-fg: #d6cfc5;
+        --geom-bg: #1e1e20;
+        --geom-point-stroke: #1e1e20;
+        --geom-poly-fill: #d6cfc5;
+        --geom-accent: #e8b85a;
+        --geom-assert: #5ec27e;
+      }
+    }
+    .euclid-graphic {
+      font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      background-color: var(--geom-bg);
+    }
+    .geom-line, .geom-arc {
+      stroke: var(--geom-fg);
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      transition: stroke 0.15s, stroke-width 0.15s;
+    }
+    .geom-polygon {
+      fill: var(--geom-poly-fill);
+      fill-opacity: 0.04;
+      stroke: none;
+      transition: fill-opacity 0.15s, stroke 0.15s;
+    }
+    .geom-point {
+      fill: var(--geom-fg);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1;
+      transition: fill 0.15s, r 0.15s;
+    }
+    .geom-label {
+      font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      fill: var(--geom-fg);
+      user-select: none;
+    }
+    .geom-tick-mark {
+      stroke: var(--geom-assert);
+      stroke-width: 2;
+      stroke-linecap: round;
+      fill: none;
+    }
+    .geom-overlay {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.12s ease;
+    }
+    [data-ref]:hover, .highlight, .geom-highlight-active {
+      opacity: 1 !important;
+      stroke: var(--geom-accent) !important;
+      cursor: pointer;
+    }
+    text[data-ref]:hover, text.highlight, text.geom-highlight-active {
+      opacity: 1 !important;
+      fill: var(--geom-accent) !important;
+      stroke: none !important;
+    }
+    circle.geom-point:hover, circle.geom-point.highlight, circle.geom-point.geom-highlight-active {
+      opacity: 1 !important;
+      fill: var(--geom-accent) !important;
+      stroke: none !important;
+    }
+    .geom-assert-active {
+      opacity: 1 !important;
+      stroke: var(--geom-assert) !important;
+    }
+    path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1); }
+    path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2); }
+    path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3); }
+  </style>
+  <defs>
+    <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+    </marker>
+    <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+      <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+      <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+    </marker>
+    <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+      <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+      <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+    </marker>
+  </defs>
+  <g id="elements">
+    <path id="edge-0" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P1 P6 /" d="M 536.0 253.2 L 548.0 257.6 L 560.0 262.0" />
+    <path id="edge-1" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P4 P5 /" d="M 145.6 248.0 L 180.6 245.6 L 215.5 243.2" />
+    <path id="edge-2" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P2 P3 /" d="M 212.4 60.4 Q 197.1 51.2 107.0 167.0 Q 56.2 234.3 36.5 264.3" />
+    <path id="edge-3" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P2 P5 /" d="M 212.4 60.4 Q 221.3 77.8 217.0 92.0 Q 216.0 107.5 215.0 121.0 Q 214.0 136.0 213.0 151.0 Q 213.0 166.0 213.0 181.0 Q 213.0 196.5 213.0 210.0 Q 213.8 223.4 215.5 243.2" />
+    <path id="edge-4" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P1 P2 /" d="M 536.0 253.2 Q 252.0 35.4 280.0 68.0 Q 253.8 40.9 212.4 60.4" />
+    <path id="edge-5" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P4 P3 /" d="M 145.6 248.0 L 91.1 256.2 L 36.5 264.3" />
+    <path id="edge-6" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P5 P1 /" d="M 215.5 243.2 Q 238.2 244.9 256.0 243.0 Q 276.5 242.0 295.0 241.0 Q 315.5 241.0 334.0 241.0 Q 354.5 241.0 373.0 241.0 Q 393.5 240.5 412.0 242.0 Q 432.5 244.5 451.0 245.0 Q 470.5 246.5 492.0 250.0 Q 518.0 252.4 536.0 253.2" />
+    <path id="edge-7" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P2 P4 /" d="M 212.4 60.4 Q 199.3 87.8 189.0 116.0 Q 184.5 129.0 174.0 158.0 Q 165.0 197.5 156.0 211.0 Q 149.2 230.5 145.6 248.0" />
+  </g>
+  <g id="graphics">
+  </g>
+  <g id="highlights" style="pointer-events: none;">
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P1 P6 /" d="M 536.0 253.2 L 548.0 257.6 L 560.0 262.0" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P4 P5 /" d="M 145.6 248.0 L 180.6 245.6 L 215.5 243.2" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P2 P3 /" d="M 212.4 60.4 Q 197.1 51.2 107.0 167.0 Q 56.2 234.3 36.5 264.3" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P2 P5 /" d="M 212.4 60.4 Q 221.3 77.8 217.0 92.0 Q 216.0 107.5 215.0 121.0 Q 214.0 136.0 213.0 151.0 Q 213.0 166.0 213.0 181.0 Q 213.0 196.5 213.0 210.0 Q 213.8 223.4 215.5 243.2" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P1 P2 /" d="M 536.0 253.2 Q 252.0 35.4 280.0 68.0 Q 253.8 40.9 212.4 60.4" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P4 P3 /" d="M 145.6 248.0 L 91.1 256.2 L 36.5 264.3" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P5 P1 /" d="M 215.5 243.2 Q 238.2 244.9 256.0 243.0 Q 276.5 242.0 295.0 241.0 Q 315.5 241.0 334.0 241.0 Q 354.5 241.0 373.0 241.0 Q 393.5 240.5 412.0 242.0 Q 432.5 244.5 451.0 245.0 Q 470.5 246.5 492.0 250.0 Q 518.0 252.4 536.0 253.2" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P2 P4 /" d="M 212.4 60.4 Q 199.3 87.8 189.0 116.0 Q 184.5 129.0 174.0 158.0 Q 165.0 197.5 156.0 211.0 Q 149.2 230.5 145.6 248.0" />
+  </g>
+  <g id="points">
+    <circle class="geom-point" cx="536.0" cy="253.2" r="3.2" fill="#18181b" data-ref="P1" />
+    <circle class="geom-point" cx="212.4" cy="60.4" r="3.2" fill="#18181b" data-ref="P2" />
+    <circle class="geom-point" cx="36.5" cy="264.3" r="3.2" fill="#18181b" data-ref="P3" />
+    <circle class="geom-point" cx="145.6" cy="248.0" r="3.2" fill="#18181b" data-ref="P4" />
+    <circle class="geom-point" cx="215.5" cy="243.2" r="3.2" fill="#18181b" data-ref="P5" />
+    <circle class="geom-point" cx="560.0" cy="262.0" r="3.2" fill="#18181b" data-ref="P6" />
+  </g>
+  <g id="labels">
+  </g>
+</svg>

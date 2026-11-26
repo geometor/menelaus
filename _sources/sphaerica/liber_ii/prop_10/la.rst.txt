@@ -15,6 +15,12 @@ Proposition II.10 — Censura Theodosii & Theorema Universale (Latin)
 .. folio:: halley_1758_menelai_sphaericorum:0091
    :page: 75
 
+.. picture:: 0091.g1.svg
+   :alt: Calibrated vector diagram for folio 0091.g1
+
+.. picture:: 0091.g1.png
+   :alt: Archival scan of folio 0091.g1
+
 Censura Methodi Theodosianae (p. 75)
 ------------------------------------
 

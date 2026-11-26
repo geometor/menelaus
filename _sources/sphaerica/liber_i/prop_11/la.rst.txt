@@ -15,6 +15,12 @@ Prop. XI. Theor. — De Excessu Trium Angulorum (*Halley 1758, p. 11*)
 .. folio:: halley_1758_menelai_sphaericorum:0027
    :page: 11
 
+.. picture:: 0027.g1.svg
+   :alt: Calibrated vector diagram for folio 0027.g1
+
+.. picture:: 0027.g1.png
+   :alt: Archival scan of folio 0027.g1
+
 .. admonition:: Enuntiatio (*Halley 1758, p. 11*)
 
    *In omni triangulo Sphaerico, producto uno latere, angulus exterior minor erit utrisque interioribus eidem oppositis simul sumptis: & tres anguli trianguli simul sumpti majores erunt duobus rectis.*

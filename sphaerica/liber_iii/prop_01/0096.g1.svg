@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 705 475" width="705" height="475" class="euclid-graphic" data-graphic-id="0096.g1" data-folio="0096" data-graphic="g1">
+  <title>Menelaus Sphaerica — Folio 0096 (g1)</title>
+  <desc>Calibrated Ink-to-Vector .euclid-graphic diagram for folio 0096.g1.</desc>
+  <style>
+    :root {
+      --geom-fg: #18181b;
+      --geom-bg: #ffffff;
+      --geom-point-stroke: #ffffff;
+      --geom-poly-fill: #000000;
+      --geom-accent: #c88a1e;
+      --geom-assert: #16a34a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --geom-fg: #d6cfc5;
+        --geom-bg: #1e1e20;
+        --geom-point-stroke: #1e1e20;
+        --geom-poly-fill: #d6cfc5;
+        --geom-accent: #e8b85a;
+        --geom-assert: #5ec27e;
+      }
+    }
+    .euclid-graphic {
+      font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      background-color: var(--geom-bg);
+    }
+    .geom-line, .geom-arc {
+      stroke: var(--geom-fg);
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      transition: stroke 0.15s, stroke-width 0.15s;
+    }
+    .geom-polygon {
+      fill: var(--geom-poly-fill);
+      fill-opacity: 0.04;
+      stroke: none;
+      transition: fill-opacity 0.15s, stroke 0.15s;
+    }
+    .geom-point {
+      fill: var(--geom-fg);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1;
+      transition: fill 0.15s, r 0.15s;
+    }
+    .geom-label {
+      font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      fill: var(--geom-fg);
+      user-select: none;
+    }
+    .geom-tick-mark {
+      stroke: var(--geom-assert);
+      stroke-width: 2;
+      stroke-linecap: round;
+      fill: none;
+    }
+    .geom-overlay {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.12s ease;
+    }
+    [data-ref]:hover, .highlight, .geom-highlight-active {
+      opacity: 1 !important;
+      stroke: var(--geom-accent) !important;
+      cursor: pointer;
+    }
+    text[data-ref]:hover, text.highlight, text.geom-highlight-active {
+      opacity: 1 !important;
+      fill: var(--geom-accent) !important;
+      stroke: none !important;
+    }
+    circle.geom-point:hover, circle.geom-point.highlight, circle.geom-point.geom-highlight-active {
+      opacity: 1 !important;
+      fill: var(--geom-accent) !important;
+      stroke: none !important;
+    }
+    .geom-assert-active {
+      opacity: 1 !important;
+      stroke: var(--geom-assert) !important;
+    }
+    path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1); }
+    path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2); }
+    path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3); }
+  </style>
+  <defs>
+    <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+    </marker>
+    <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+      <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+      <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+    </marker>
+    <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+      <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+      <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+    </marker>
+  </defs>
+  <g id="elements">
+    <path id="edge-0" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P1 P21 /" d="M 653.3 361.3 Q 634.4 344.9 634.0 349.0 Q 629.2 347.6 623.6 347.7" />
+    <path id="edge-1" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P2 P27 /" d="M 589.9 251.9 L 583.6 253.1 L 577.3 254.3" />
+    <path id="edge-2" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P4 P15 /" d="M 510.5 318.7 L 485.3 362.2 L 460.0 405.6" />
+    <path id="edge-3" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P4 P12 /" d="M 510.5 318.7 Q 554.7 256.1 540.0 273.0 Q 536.8 273.8 550.4 255.4" />
+    <path id="edge-4" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P4 P12 /" d="M 510.5 318.7 Q 524.7 243.1 528.0 267.0 Q 530.8 268.8 550.4 255.4" />
+    <path id="edge-5" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P4 P16 /" d="M 510.5 318.7 Q 507.2 251.6 503.0 274.0 Q 507.6 267.2 473.8 287.7" />
+    <path id="edge-6" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P5 P10 /" d="M 451.0 253.2 L 443.0 252.3 L 435.0 251.4" />
+    <path id="edge-7" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P5 P25 /" d="M 451.0 253.2 L 459.0 255.3 L 467.1 257.3" />
+    <path id="edge-8" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P5 P16 /" d="M 451.0 253.2 Q 449.5 263.4 450.0 272.0 Q 438.1 284.2 473.8 287.7" />
+    <path id="edge-9" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P6 P30 /" d="M 204.6 232.4 Q 218.2 211.8 215.0 212.0 Q 218.5 210.0 224.0 208.0" />
+    <path id="edge-10" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P7 P23 /" d="M 414.8 269.9 L 399.9 272.5 L 385.0 275.1" />
+    <path id="edge-11" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P7 P8 /" d="M 414.8 269.9 Q 423.6 287.1 426.0 284.0 Q 431.4 282.2 435.2 295.5" />
+    <path id="edge-12" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P7 P10 /" d="M 414.8 269.9 Q 435.1 254.1 431.0 258.0 Q 433.0 259.3 435.0 251.4" />
+    <path id="edge-13" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P8 P16 /" d="M 435.2 295.5 L 454.5 291.6 L 473.8 287.7" />
+    <path id="edge-14" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P9 P12 /" d="M 565.5 226.9 L 557.9 241.1 L 550.4 255.4" />
+    <path id="edge-15" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P11 P19 /" d="M 191.5 394.7 Q 236.7 357.6 231.0 366.0 Q 235.0 365.0 251.1 356.1" />
+    <path id="edge-16" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P11 P18 /" d="M 191.5 394.7 Q 153.2 430.1 166.0 421.0 Q 166.0 424.1 166.0 426.8" />
+    <path id="edge-17" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P12 P27 /" d="M 550.4 255.4 Q 570.3 242.8 569.0 251.0 Q 572.9 253.4 577.3 254.3" />
+    <path id="edge-18" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P12 P29 /" d="M 550.4 255.4 Q 548.8 271.8 556.0 269.0 Q 559.4 272.5 569.2 270.1" />
+    <path id="edge-19" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P12 P17 /" d="M 550.4 255.4 Q 538.8 260.8 540.0 255.0 Q 543.6 257.4 528.9 238.1" />
+    <path id="edge-20" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P13 P17 /" d="M 494.0 209.2 Q 529.0 244.9 520.0 233.0 Q 521.6 230.4 528.9 238.1" />
+    <path id="edge-21" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P14 P31 /" d="M 156.1 390.5 L 153.9 408.1 L 151.7 425.7" />
+    <path id="edge-22" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P15 P16 /" d="M 460.0 405.6 Q 434.0 412.7 444.0 389.0 Q 445.0 373.0 446.0 357.0 Q 447.0 341.0 448.0 325.0 Q 437.1 311.7 473.8 287.7" />
+    <path id="edge-23" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P15 P24 /" d="M 460.0 405.6 L 450.3 420.1 L 440.5 434.5" />
+    <path id="edge-24" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P16 P25 /" d="M 473.8 287.7 Q 490.6 259.7 481.0 265.0 Q 482.0 266.9 467.1 257.3" />
+    <path id="edge-25" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P18 P31 /" d="M 166.0 426.8 L 158.8 426.2 L 151.7 425.7" />
+    <path id="edge-26" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P20 P28 /" d="M 86.2 415.2 L 76.6 417.3 L 67.0 419.4" />
+    <path id="edge-27" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P20 P31 /" d="M 86.2 415.2 Q 96.9 429.9 116.0 425.0 Q 134.2 424.7 151.7 425.7" />
+    <path id="edge-28" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P21 P26 /" d="M 623.6 347.7 Q 624.7 343.1 623.0 342.0 Q 625.9 341.9 613.2 330.3" />
+    <path id="edge-29" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P22 P30 /" d="M 250.7 214.5 L 237.4 211.3 L 224.0 208.0" />
+    <path id="edge-30" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P27 P29 /" d="M 577.3 254.3 Q 575.4 259.9 576.0 262.0 Q 579.4 264.0 569.2 270.1" />
+    <path id="edge-31" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P3 P30 /" d="M 356.7 64.7 Q 338.2 56.1 335.0 59.0 Q 172.5 268.5 224.0 208.0" />
+    <path id="edge-32" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P28 P6 /" d="M 67.0 419.4 Q 70.5 410.3 72.0 404.0 Q 241.7 181.8 204.6 232.4" />
+    <path id="edge-33" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P13 P25 /" d="M 494.0 209.2 Q 515.0 248.4 484.0 242.0 Q 470.5 240.4 467.1 257.3" />
+    <path id="edge-34" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P2 P9 /" d="M 589.9 251.9 Q 585.1 244.1 584.0 240.0 Q 571.2 226.6 565.5 226.9" />
+    <path id="edge-35" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P14 P20 /" d="M 156.1 390.5 L 121.2 402.9 L 86.2 415.2" />
+    <path id="edge-36" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P3 P13 /" d="M 356.7 64.7 Q 378.7 95.1 422.0 137.0 Q 468.0 180.9 494.0 209.2" />
+    <path id="edge-37" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P29 P26 /" d="M 569.2 270.1 Q 552.9 267.5 601.0 311.0 Q 600.9 315.4 613.2 330.3" />
+    <path id="edge-38" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P23 P19 /" d="M 385.0 275.1 Q 380.0 279.4 323.0 306.0 Q 287.9 322.3 251.1 356.1" />
+    <path id="edge-39" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P22 P23 /" d="M 250.7 214.5 Q 297.6 241.2 310.0 243.0 Q 394.5 270.9 385.0 275.1" />
+    <path id="edge-40" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P1 P2 /" d="M 653.3 361.3 Q 641.4 327.9 636.0 319.0 Q 611.1 268.6 589.9 251.9" />
+    <path id="edge-41" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P4 P26 /" d="M 510.5 318.7 Q 554.2 276.1 557.0 301.0 Q 606.9 330.4 613.2 330.3" />
+    <path id="edge-42" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P9 P17 /" d="M 565.5 226.9 Q 554.8 228.1 545.0 229.0 Q 535.1 226.4 528.9 238.1" />
+    <path id="edge-43" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P14 P6 /" d="M 156.1 390.5 Q 159.9 376.2 168.0 345.0 Q 172.0 325.0 176.0 313.0 Q 179.0 304.0 190.0 275.0 Q 194.7 268.3 204.6 232.4" />
+    <path id="edge-44" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P9 P3 /" d="M 565.5 226.9 Q 613.8 247.6 407.0 86.0 Q 376.2 66.6 356.7 64.7" />
+    <path id="edge-45" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P8 P19 /" d="M 435.2 295.5 Q 386.9 317.2 375.0 318.0 Q 361.0 324.5 335.0 333.0 Q 321.0 336.4 295.0 346.2 Q 273.0 355.9 251.1 356.1" />
+    <path id="edge-46" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P18 P24 /" d="M 166.0 426.8 Q 184.5 428.6 201.0 428.0 Q 218.0 429.0 235.0 430.0 Q 252.0 430.0 269.0 430.0 Q 286.0 430.5 303.0 433.0 Q 320.5 434.5 336.0 434.0 Q 353.0 435.5 370.0 435.0 Q 386.0 434.5 406.0 436.0 Q 422.8 436.8 440.5 434.5" />
+    <path id="edge-47" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P22 P10 /" d="M 250.7 214.5 Q 267.1 208.7 279.0 212.0 Q 292.0 214.5 305.0 215.0 Q 322.5 218.0 334.0 221.0 Q 348.5 224.5 361.0 226.0 Q 381.5 232.0 392.0 234.0 Q 414.5 235.3 435.0 251.4" />
+    <path id="edge-48" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P11 P14 /" d="M 191.5 394.7 Q 197.7 371.1 181.0 383.0 Q 169.4 385.2 156.1 390.5" />
+    <path id="edge-49" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P4 P16 /" d="M 510.5 318.7 Q 504.7 311.6 496.0 310.0 Q 487.1 313.2 473.8 287.7" />
+    <path id="edge-50" class="geom-line" fill="none" stroke="#18181b" stroke-width="2.2" data-ref="/ P21 P4 /" d="M 623.6 347.7 Q 603.7 349.1 581.0 338.0 Q 526.2 317.6 510.5 318.7" />
+  </g>
+  <g id="graphics">
+  </g>
+  <g id="highlights" style="pointer-events: none;">
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P1 P21 /" d="M 653.3 361.3 Q 634.4 344.9 634.0 349.0 Q 629.2 347.6 623.6 347.7" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P2 P27 /" d="M 589.9 251.9 L 583.6 253.1 L 577.3 254.3" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P4 P15 /" d="M 510.5 318.7 L 485.3 362.2 L 460.0 405.6" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P4 P12 /" d="M 510.5 318.7 Q 554.7 256.1 540.0 273.0 Q 536.8 273.8 550.4 255.4" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P4 P12 /" d="M 510.5 318.7 Q 524.7 243.1 528.0 267.0 Q 530.8 268.8 550.4 255.4" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P4 P16 /" d="M 510.5 318.7 Q 507.2 251.6 503.0 274.0 Q 507.6 267.2 473.8 287.7" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P5 P10 /" d="M 451.0 253.2 L 443.0 252.3 L 435.0 251.4" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P5 P25 /" d="M 451.0 253.2 L 459.0 255.3 L 467.1 257.3" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P5 P16 /" d="M 451.0 253.2 Q 449.5 263.4 450.0 272.0 Q 438.1 284.2 473.8 287.7" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P6 P30 /" d="M 204.6 232.4 Q 218.2 211.8 215.0 212.0 Q 218.5 210.0 224.0 208.0" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P7 P23 /" d="M 414.8 269.9 L 399.9 272.5 L 385.0 275.1" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P7 P8 /" d="M 414.8 269.9 Q 423.6 287.1 426.0 284.0 Q 431.4 282.2 435.2 295.5" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P7 P10 /" d="M 414.8 269.9 Q 435.1 254.1 431.0 258.0 Q 433.0 259.3 435.0 251.4" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P8 P16 /" d="M 435.2 295.5 L 454.5 291.6 L 473.8 287.7" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P9 P12 /" d="M 565.5 226.9 L 557.9 241.1 L 550.4 255.4" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P11 P19 /" d="M 191.5 394.7 Q 236.7 357.6 231.0 366.0 Q 235.0 365.0 251.1 356.1" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P11 P18 /" d="M 191.5 394.7 Q 153.2 430.1 166.0 421.0 Q 166.0 424.1 166.0 426.8" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P12 P27 /" d="M 550.4 255.4 Q 570.3 242.8 569.0 251.0 Q 572.9 253.4 577.3 254.3" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P12 P29 /" d="M 550.4 255.4 Q 548.8 271.8 556.0 269.0 Q 559.4 272.5 569.2 270.1" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P12 P17 /" d="M 550.4 255.4 Q 538.8 260.8 540.0 255.0 Q 543.6 257.4 528.9 238.1" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P13 P17 /" d="M 494.0 209.2 Q 529.0 244.9 520.0 233.0 Q 521.6 230.4 528.9 238.1" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P14 P31 /" d="M 156.1 390.5 L 153.9 408.1 L 151.7 425.7" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P15 P16 /" d="M 460.0 405.6 Q 434.0 412.7 444.0 389.0 Q 445.0 373.0 446.0 357.0 Q 447.0 341.0 448.0 325.0 Q 437.1 311.7 473.8 287.7" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P15 P24 /" d="M 460.0 405.6 L 450.3 420.1 L 440.5 434.5" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P16 P25 /" d="M 473.8 287.7 Q 490.6 259.7 481.0 265.0 Q 482.0 266.9 467.1 257.3" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P18 P31 /" d="M 166.0 426.8 L 158.8 426.2 L 151.7 425.7" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P20 P28 /" d="M 86.2 415.2 L 76.6 417.3 L 67.0 419.4" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P20 P31 /" d="M 86.2 415.2 Q 96.9 429.9 116.0 425.0 Q 134.2 424.7 151.7 425.7" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P21 P26 /" d="M 623.6 347.7 Q 624.7 343.1 623.0 342.0 Q 625.9 341.9 613.2 330.3" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P22 P30 /" d="M 250.7 214.5 L 237.4 211.3 L 224.0 208.0" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P27 P29 /" d="M 577.3 254.3 Q 575.4 259.9 576.0 262.0 Q 579.4 264.0 569.2 270.1" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P3 P30 /" d="M 356.7 64.7 Q 338.2 56.1 335.0 59.0 Q 172.5 268.5 224.0 208.0" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P28 P6 /" d="M 67.0 419.4 Q 70.5 410.3 72.0 404.0 Q 241.7 181.8 204.6 232.4" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P13 P25 /" d="M 494.0 209.2 Q 515.0 248.4 484.0 242.0 Q 470.5 240.4 467.1 257.3" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P2 P9 /" d="M 589.9 251.9 Q 585.1 244.1 584.0 240.0 Q 571.2 226.6 565.5 226.9" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P14 P20 /" d="M 156.1 390.5 L 121.2 402.9 L 86.2 415.2" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P3 P13 /" d="M 356.7 64.7 Q 378.7 95.1 422.0 137.0 Q 468.0 180.9 494.0 209.2" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P29 P26 /" d="M 569.2 270.1 Q 552.9 267.5 601.0 311.0 Q 600.9 315.4 613.2 330.3" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P23 P19 /" d="M 385.0 275.1 Q 380.0 279.4 323.0 306.0 Q 287.9 322.3 251.1 356.1" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P22 P23 /" d="M 250.7 214.5 Q 297.6 241.2 310.0 243.0 Q 394.5 270.9 385.0 275.1" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P1 P2 /" d="M 653.3 361.3 Q 641.4 327.9 636.0 319.0 Q 611.1 268.6 589.9 251.9" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P4 P26 /" d="M 510.5 318.7 Q 554.2 276.1 557.0 301.0 Q 606.9 330.4 613.2 330.3" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P9 P17 /" d="M 565.5 226.9 Q 554.8 228.1 545.0 229.0 Q 535.1 226.4 528.9 238.1" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P14 P6 /" d="M 156.1 390.5 Q 159.9 376.2 168.0 345.0 Q 172.0 325.0 176.0 313.0 Q 179.0 304.0 190.0 275.0 Q 194.7 268.3 204.6 232.4" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P9 P3 /" d="M 565.5 226.9 Q 613.8 247.6 407.0 86.0 Q 376.2 66.6 356.7 64.7" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P8 P19 /" d="M 435.2 295.5 Q 386.9 317.2 375.0 318.0 Q 361.0 324.5 335.0 333.0 Q 321.0 336.4 295.0 346.2 Q 273.0 355.9 251.1 356.1" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P18 P24 /" d="M 166.0 426.8 Q 184.5 428.6 201.0 428.0 Q 218.0 429.0 235.0 430.0 Q 252.0 430.0 269.0 430.0 Q 286.0 430.5 303.0 433.0 Q 320.5 434.5 336.0 434.0 Q 353.0 435.5 370.0 435.0 Q 386.0 434.5 406.0 436.0 Q 422.8 436.8 440.5 434.5" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P22 P10 /" d="M 250.7 214.5 Q 267.1 208.7 279.0 212.0 Q 292.0 214.5 305.0 215.0 Q 322.5 218.0 334.0 221.0 Q 348.5 224.5 361.0 226.0 Q 381.5 232.0 392.0 234.0 Q 414.5 235.3 435.0 251.4" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P11 P14 /" d="M 191.5 394.7 Q 197.7 371.1 181.0 383.0 Q 169.4 385.2 156.1 390.5" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P4 P16 /" d="M 510.5 318.7 Q 504.7 311.6 496.0 310.0 Q 487.1 313.2 473.8 287.7" />
+    <path class="geom-line geom-overlay" fill="none" data-ref="/ P21 P4 /" d="M 623.6 347.7 Q 603.7 349.1 581.0 338.0 Q 526.2 317.6 510.5 318.7" />
+  </g>
+  <g id="points">
+    <circle class="geom-point" cx="653.3" cy="361.3" r="3.2" fill="#18181b" data-ref="P1" />
+    <circle class="geom-point" cx="589.9" cy="251.9" r="3.2" fill="#18181b" data-ref="P2" />
+    <circle class="geom-point" cx="356.7" cy="64.7" r="3.2" fill="#18181b" data-ref="P3" />
+    <circle class="geom-point" cx="510.5" cy="318.7" r="3.2" fill="#18181b" data-ref="P4" />
+    <circle class="geom-point" cx="451.0" cy="253.2" r="3.2" fill="#18181b" data-ref="P5" />
+    <circle class="geom-point" cx="204.6" cy="232.4" r="3.2" fill="#18181b" data-ref="P6" />
+    <circle class="geom-point" cx="414.8" cy="269.9" r="3.2" fill="#18181b" data-ref="P7" />
+    <circle class="geom-point" cx="435.2" cy="295.5" r="3.2" fill="#18181b" data-ref="P8" />
+    <circle class="geom-point" cx="565.5" cy="226.9" r="3.2" fill="#18181b" data-ref="P9" />
+    <circle class="geom-point" cx="435.0" cy="251.4" r="3.2" fill="#18181b" data-ref="P10" />
+    <circle class="geom-point" cx="191.5" cy="394.7" r="3.2" fill="#18181b" data-ref="P11" />
+    <circle class="geom-point" cx="550.4" cy="255.4" r="3.2" fill="#18181b" data-ref="P12" />
+    <circle class="geom-point" cx="494.0" cy="209.2" r="3.2" fill="#18181b" data-ref="P13" />
+    <circle class="geom-point" cx="156.1" cy="390.5" r="3.2" fill="#18181b" data-ref="P14" />
+    <circle class="geom-point" cx="460.0" cy="405.6" r="3.2" fill="#18181b" data-ref="P15" />
+    <circle class="geom-point" cx="473.8" cy="287.7" r="3.2" fill="#18181b" data-ref="P16" />
+    <circle class="geom-point" cx="528.9" cy="238.1" r="3.2" fill="#18181b" data-ref="P17" />
+    <circle class="geom-point" cx="166.0" cy="426.8" r="3.2" fill="#18181b" data-ref="P18" />
+    <circle class="geom-point" cx="251.1" cy="356.1" r="3.2" fill="#18181b" data-ref="P19" />
+    <circle class="geom-point" cx="86.2" cy="415.2" r="3.2" fill="#18181b" data-ref="P20" />
+    <circle class="geom-point" cx="623.6" cy="347.7" r="3.2" fill="#18181b" data-ref="P21" />
+    <circle class="geom-point" cx="250.7" cy="214.5" r="3.2" fill="#18181b" data-ref="P22" />
+    <circle class="geom-point" cx="385.0" cy="275.1" r="3.2" fill="#18181b" data-ref="P23" />
+    <circle class="geom-point" cx="440.5" cy="434.5" r="3.2" fill="#18181b" data-ref="P24" />
+    <circle class="geom-point" cx="467.1" cy="257.3" r="3.2" fill="#18181b" data-ref="P25" />
+    <circle class="geom-point" cx="613.2" cy="330.3" r="3.2" fill="#18181b" data-ref="P26" />
+    <circle class="geom-point" cx="577.3" cy="254.3" r="3.2" fill="#18181b" data-ref="P27" />
+    <circle class="geom-point" cx="67.0" cy="419.4" r="3.2" fill="#18181b" data-ref="P28" />
+    <circle class="geom-point" cx="569.2" cy="270.1" r="3.2" fill="#18181b" data-ref="P29" />
+    <circle class="geom-point" cx="224.0" cy="208.0" r="3.2" fill="#18181b" data-ref="P30" />
+    <circle class="geom-point" cx="151.7" cy="425.7" r="3.2" fill="#18181b" data-ref="P31" />
+  </g>
+  <g id="labels">
+  </g>
+</svg>

@@ -23,6 +23,12 @@ Prop. XV. Theor. (*Halley 1758, pp. 107–112*)
 .. folio:: halley_1758_menelai_sphaericorum:0124
    :page: 108
 
+.. picture:: 0124.g1.svg
+   :alt: Calibrated vector diagram for folio 0124.g1
+
+.. picture:: 0124.g1.png
+   :alt: Archival scan of folio 0124.g1
+
 Sint duo circuli magni ``ΑΒ``, ``ΒΓ`` inclinati inter se, & sumantur in ``ΑΒ`` duo puncta ``Δ``, ``Ε``, per quae ducantur ad arcum ``ΒΓ`` normales ``ΔΓ``, ``ΕΗ``: dico quod sinus arcus ``ΓΗ`` est ad sinum arcus ``ΕΔ``, sicut rectangulum sub semidiametro sphaerae & semidiametro circuli ipsi ``ΒΓ`` aequidistantis circulumque ``ΒΑ`` contingentis, ad rectangulum sub semidiametris circulorum per puncta ``Δ``, ``Ε`` transeuntium circuloque ``ΒΓ`` aequidistantium.
 
 Producantur arcus ``ΓΔ``, ``ΗΕ`` ad polum circuli ``ΒΓ``, qui sit ``Ζ``; & ad ``ΒΑ`` normalis sit arcus ``ΑΖ``. Jam quoniam uterque angulus ``ΖΑΕ``, ``ΖΗΒ`` est rectus, & angulus ``ΑΕΖ`` est angulo ``ΒΕΗ`` aequalis, erit sinus arcus ``ΑΖ`` ad sinum arcus ``ΖΕ`` (*per 2am III. hujus*) sicut sinus arcus ``ΒΗ`` ad sinum arcus ``ΒΕ``. Est autem Figura ``ΒΓΖΑΕ`` ad modum figurae propositionis primae hujus; componetur igitur ratio sinus arcus ``ΓΗ`` ad sinum arcus ``ΔΕ`` ex ratione sinus arcus ``ΓΖ`` ad sinum ``ΖΔ``, & ratione sinus arcus ``ΒΗ`` ad sinum arcus ``ΒΕ``. Verum haec ratio eadem ostensa est ac ratio sinus arcus ``ΑΖ`` ad sinum arcus ``ΖΕ``; quare sinus arcus ``ΓΗ`` est ad sinum arcus ``ΔΕ`` ut rectangulum sub sinibus arcuum ``ΓΖ``, ``ΑΖ`` ad rectangulum sub sinibus arcuum ``ΔΖ``, ``ΖΕ``. Sinus autem arcus ``ΓΖ`` semidiameter est sphaerae, & sinus arcus ``ΑΖ`` semidiameter est circuli transeuntis per ``Α`` & circulo ``ΒΓ`` aequidistantis, qui etiam contingit circulum ``ΑΒ`` in puncto ``Α``; & sinus arcuum ``ΔΖ``, ``ΖΕ`` sunt semidiametri circulorum per puncta ``Δ``, ``Ε`` transeuntium, eidemque circulo ``ΒΓ`` aequidistantium. Constat ergo propositum.
@@ -31,6 +37,12 @@ Hinc demonstrari potest, uti diximus, Propositio principalis libri tertii Sphaer
 
 .. folio:: halley_1758_menelai_sphaericorum:0125
    :page: 109
+
+.. picture:: 0125.g1.svg
+   :alt: Calibrated vector diagram for folio 0125.g1
+
+.. picture:: 0125.g1.png
+   :alt: Archival scan of folio 0125.g1
 
 ratio arcus ``ΓΗ`` ad arcum ``ΔΕ`` certa quadam ratione major est, quadam vero minor.
 
@@ -43,6 +55,12 @@ Ducantur enim per polum ``Ζ`` arcus circulorum magnorum ``ΖΔΓ``,
 .. folio:: halley_1758_menelai_sphaericorum:0126
    :page: 110
 
+.. picture:: 0126.g1.svg
+   :alt: Calibrated vector diagram for folio 0126.g1
+
+.. picture:: 0126.g1.png
+   :alt: Archival scan of folio 0126.g1
+
 ``ΖΚΜ``, ``ΖΕΗ``, & erit sinus arcus ``ΓΜ`` ad sinum arcus ``ΚΔ`` ut rectangulum sub semidiametro sphaerae & sinu arcus ``ΑΖ`` contentum, ad rectangulum sub sinibus arcuum ``ΔΖ``, ``ΖΚ``. Sed rectangulum sub semidiametro sphaerae & sinu arcus ``ΑΖ`` aequale est quadrato ex sinu arcus ``ΚΖ``; quod quidem quadratum majus est rectangulo sub sinubus ``ΔΖ``, ``ΖΚ``: quare arcus ``ΓΜ`` major est arcu ``ΔΚ``. Pari modo demonstrabitur arcum ``ΜΗ`` minorem esse arcu ``ΚΕ``. Quae cum ita se habeant, erit excessus arcus ``ΒΚ`` supra arcum ``ΜΒ`` major excessu arcus ``ΕΒ`` supra arcum ``ΒΗ``, ac major excessu arcus ``ΔΒ`` supra arcum ``ΒΓ``. Unde manifestum est arcum ``ΖΚΜ`` abscindere è duobus circulis ``ΑΒ``, ``ΒΘ`` duos arcus, quorum differentia major sit ea quae est inter quoslibet alios duos arcus eodem modo abscissos.
 
 Sit jam punctum ``Ζ`` polus circuli ``ΒΗΓ``, ac sit arcus ``ΒΔ`` non major quadrante; transeant autem arcus ``ΓΔΖ``, ``ΗΕΖ`` per polum ``Ζ``, ut sit arcus ``ΓΗ`` major arcu ``ΔΕ``: dico rationem ``ΓΗ`` ad ``ΔΕ`` minorem esse ratione diametri sphaerae ad diametrum circuli circulo ``ΒΓ`` aequidistantis & per punctum ``Δ`` transeuntis.
@@ -53,6 +71,12 @@ Cum vero sinus arcus ``ΓΗ`` ad sinum arcus ``ΔΕ`` sit sicut rectangulum sub 
 
 .. folio:: halley_1758_menelai_sphaericorum:0127
    :page: 111
+
+.. picture:: 0127.g1.svg
+   :alt: Calibrated vector diagram for folio 0127.g1
+
+.. picture:: 0127.g1.png
+   :alt: Archival scan of folio 0127.g1
 
 Quoniam enim arcus ``ΓΗ`` major est arcu ``ΔΕ``, erit eorundem arcuum ratio major ratione sinus arcus ``ΓΗ`` ad sinum arcus ``ΔΕ``. Haec autem ratio ea est quam habet rectangulum sub semidiametro sphaerae & semidiametro circuli qui tangit circulum ``ΒΔ`` circuloque ``ΒΓ`` aequidistat, ad rectangulum sub semidiametris circulorum eidem ``ΒΓ`` aequidistantium perque puncta ``Δ``, ``Ε``, transeuntium: ratio igitur arcus ``ΓΗ`` ad arcum ``ΔΕ`` major est ratione praedicta.
 
@@ -66,6 +90,12 @@ Quoniam enim rectangulum sub sinibus arcuum ``ΕΖ``, ``ΖΔ`` majus est rectang
 
 .. folio:: halley_1758_menelai_sphaericorum:0128
    :page: 112
+
+.. picture:: 0128.g1.svg
+   :alt: Calibrated vector diagram for folio 0128.g1
+
+.. picture:: 0128.g1.png
+   :alt: Archival scan of folio 0128.g1
 
 aequales sunt arcui ``ΔΕ``. Sed (*per superius demonstrata*) ratio arcus ``ΜΝ`` ad arcum ``ΚΛ``, sive arcus ``ΔΕ`` ad arcum ``ΓΗ``, minor est ratione semidiametri Sphaerae ad sinum arcus ``ΚΖ``; quae quidem ratio eadem est ac ratio sinus arcus ``ΕΖ`` ad semidiametrum circuli circulum ``ΒΕΔ`` contingentis ipsique ``ΒΓ`` aequidistantis. Est igitur ratio arcus ``ΔΕ`` ad ``ΓΗ`` minor dictis rationibus; adeoque invertendo, ratio ``ΓΗ`` ad ``ΔΕ`` major est ratione diametri circuli contingentis circulum ``ΒΔ``, ad diametrum circuli per ``Ε`` transeuntis & plano circuli ``ΒΗΓ`` aequidistantis. **Q. E. D.**
 

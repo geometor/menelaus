@@ -25,6 +25,12 @@ Sint duo triangula Sphaerica ``ΑΒΓ``, ``ΔΕΖ``, quorum duo anguli
 .. folio:: halley_1758_menelai_sphaericorum:0104
    :page: 88
 
+.. picture:: 0104.g1.svg
+   :alt: Calibrated vector diagram for folio 0104.g1
+
+.. picture:: 0104.g1.png
+   :alt: Archival scan of folio 0104.g1
+
 ``Α``, ``Δ`` sint recti, duo vero alii anguli ad ``Γ``, ``Ζ`` aequales sint sed non recti, & sint puncta ``Η``, ``Θ`` poli utriusque basis ``ΓΑ``, ``ΖΔ``: dico sinum arcus ``ΑΒ`` esse ad sinum arcus ``ΑΓ`` in ratione composita ex ratione sinus arcus ``ΕΔ`` ad sinum arcus ``ΔΖ`` & ratione sinus arcus ``ΗΒ`` ad sinum arcus ``ΕΘ``.
 
 Fiat enim arcus ``ΓΚ`` aequalis arcui ``ΔΖ``, & per ``Η`` polum arcus ``ΑΓ`` ducatur arcus ``ΗΛΚ`` occurrens arcui ``ΓΒ`` in ``Λ``; & erit arcus ``ΚΛ`` aequalis arcui ``ΔΕ``, uti ``ΛΗ`` arcui ``ΕΘ``. Quoniam vero figura ``ΑΗΛΓ`` est ad modum figurae Prop. I. hujus, erit sinus arcus ``ΑΒ`` ad sinum arcus ``ΒΗ`` in ratione composita ex ratione sinus arcus ``ΑΓ`` ad sinum arcus ``ΓΚ``, & ratione sinus arcus ``ΚΛ`` ad sinum arcus ``ΛΗ``: unde transpositis terminis, ratio sinus arcus ``ΑΒ`` ad sinum arcus ``ΑΓ`` composita erit ex ratione sinus arcus ``ΒΗ`` ad sinum arcus ``ΛΗ``, & ratione sinus arcus ``ΚΛ`` ad sinum arcus ``ΓΚ``. Sed arcus ``ΓΚ`` aequalis est arcui ``ΖΔ``, & arcus ``ΚΛ`` arcui ``ΔΕ``, sicut & arcus ``ΛΗ`` arcui ``ΘΕ``: quapropter ratio sinus arcus ``ΑΒ`` ad sinum arcus ``ΑΓ`` componitur ex ratione sinus arcus ``ΔΕ`` ad sinum arcus ``ΖΔ`` & ex ratione sinus arcus ``ΒΗ`` ad sinum arcus ``ΘΕ``. **Q. E. D.**

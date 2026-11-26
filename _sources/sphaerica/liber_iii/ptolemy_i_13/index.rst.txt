@@ -16,6 +16,30 @@ Ptolemy's Almagest I.13 — The Surviving Greek Witness
 .. folio:: ptolemy_1898_syntaxis_vol1_pt1:0078
    :page: 68
 
+.. picture:: 0079.g1.svg
+   :alt: Calibrated vector diagram for folio 0079.g1
+
+.. picture:: 0079.g1.png
+   :alt: Archival scan of folio 0079.g1
+
+.. picture:: 0080.g1.svg
+   :alt: Calibrated vector diagram for folio 0080.g1
+
+.. picture:: 0080.g1.png
+   :alt: Archival scan of folio 0080.g1
+
+.. picture:: 0080.g2.svg
+   :alt: Calibrated vector diagram for folio 0080.g2
+
+.. picture:: 0080.g2.png
+   :alt: Archival scan of folio 0080.g2
+
+.. picture:: 0081.g1.svg
+   :alt: Calibrated vector diagram for folio 0081.g1
+
+.. picture:: 0081.g1.png
+   :alt: Archival scan of folio 0081.g1
+
 Preliminaries to Spherical Proofs (pp. 68–75)
 ---------------------------------------------
 
@@ -39,6 +63,12 @@ The Spherical Theorem (Heiberg pp. 74–75)
 
 .. folio:: ptolemy_1898_syntaxis_vol1_pt1:0084
    :page: 74
+
+.. picture:: 0085.g1.svg
+   :alt: Calibrated vector diagram for folio 0085.g1
+
+.. picture:: 0085.g1.png
+   :alt: Archival scan of folio 0085.g1
 
 .. epigraph::
 

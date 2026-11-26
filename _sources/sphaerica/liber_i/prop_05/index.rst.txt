@@ -16,6 +16,12 @@ Proposition I.5 — Theorem: Spherical Triangle Inequality
 .. folio:: halley_1758_menelai_sphaericorum:0022
    :page: 6
 
+.. picture:: 0022.g1.svg
+   :alt: Calibrated vector diagram for folio 0022.g1
+
+.. picture:: 0022.g1.png
+   :alt: Archival scan of folio 0022.g1
+
 .. admonition:: Enunciation (*Halley 1758, p. 6*)
 
    *Any two arcs of any spherical triangle taken together are greater than the remaining arc.*

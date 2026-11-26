@@ -25,6 +25,12 @@ Sit enim circulus ``ΑΒΓΔ``, in quo subtendat arcum aliquem recta ``ΑΓ``, &
 .. folio:: halley_1758_menelai_sphaericorum:0100
    :page: 84
 
+.. picture:: 0100.g1.svg
+   :alt: Calibrated vector diagram for folio 0100.g1
+
+.. picture:: 0100.g1.png
+   :alt: Archival scan of folio 0100.g1
+
 ad ``ΔΒ`` rectae ``ΑΖ``, ``ΓΗ``: dico ``ΑΖ`` esse ad ``ΓΗ``, hoc est sinum arcus ``ΑΒ`` ad sinum arcus ``ΓΒ``, sicut ``ΑΕ`` ad ``ΕΓ``.
 
 Quoniam enim rectae ``ΑΖ``, ``ΓΗ`` normales sunt ad eandem ``ΔΒ``, similia erunt triangula ``ΑΕΖ``, ``ΓΕΗ``; atque adeo ut ``ΑΕ`` ad ``ΕΓ`` ita ``ΑΖ`` ad ``ΓΗ``; & ita sinus arcus ``ΑΒ`` ad Sinum arcus ``ΓΒ``. **Q. E. D.**

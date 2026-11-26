@@ -23,6 +23,12 @@ Proposition II.13 — Theorem: Oblique Arcs Touching a Larger Parallel
    .. folio:: halley_1758_menelai_sphaericorum:0095
       :page: 79
 
+   .. picture:: 0095.g1.svg
+      :alt: Calibrated vector diagram for folio 0095.g1
+
+   .. picture:: 0095.g1.png
+      :alt: Archival scan of folio 0095.g1
+
    *touch one and the same parallel circle, yet larger than the prior parallel; nor is it necessary that its inclination be toward the same parts toward which that primary circle in which we took equal arcs inclines: then the parallel circles shall cut off from the great circles drawn unequal arcs, of which that nearer to the greatest of the parallels shall be less than the more remote. The same great circles shall also cut off from the greatest of the parallels unequal arcs, of which that nearer to the common intersection of the primary great circle and the greatest of the parallels shall be less than the more remote from the same.*
 
 Let one of the parallel circles, namely :math:`\mathrm{A\Delta E}`, touch great circle :math:`\mathrm{AB}`; and let the greatest of the parallels be :math:`\mathrm{B\Xi X}`; and on arc :math:`\mathrm{AB}` let two equal arcs :math:`\widehat{\mathrm{\Theta K}}, \widehat{\mathrm{\Lambda M}}` be taken; through whose endpoints let parallel circles :math:`\mathrm{K\Sigma}, \mathrm{\Lambda O}, \mathrm{M\Pi}`, and other great circles :math:`\mathrm{\Theta X}, \mathrm{KP}, \mathrm{\Lambda\Xi}, \mathrm{MT}`, be described, all of which touch one and the same parallel circle larger than circle :math:`\mathrm{A\Delta E}`: I say that arc :math:`\widehat{\mathrm{\Pi O}}` is less than arc :math:`\widehat{\mathrm{\Sigma\Theta}}`, and that arc :math:`\widehat{\mathrm{T\Xi}}` is less than :math:`\widehat{\mathrm{XP}}`.

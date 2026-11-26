@@ -23,6 +23,12 @@ Prop. XIII. (*Halley 1758, pp. 101–104*)
    .. folio:: halley_1758_menelai_sphaericorum:0118
       :page: 102
 
+   .. picture:: 0118.g1.svg
+      :alt: Calibrated vector diagram for folio 0118.g1
+
+   .. picture:: 0118.g1.png
+      :alt: Archival scan of folio 0118.g1
+
    *arcus, intercepti inter illos qui aequales angulos cum basi constituunt, fuerint aequales, inaequales erunt arcus in basi inter normales intercepti; & eorum major adjacebit lateri trianguli minori. Quod si fuerint duo arcus è basi à normalibus abscissi aequales inter se, tum arcus, intercepti inter eos qui faciunt cum basi angulos aequales, erunt inaequales; & eorum major conterminus erit lateri majori; & evenient caetera accidentia, prout diximus, ad exemplum praecedentium.*
 
 Sit triangulum Sphaericum ``ΑΒΓ``, ac sit latus ``ΑΓ`` majus quam ``ΓΒ``, sed non majus quadrante circuli; ac capiantur in ``ΒΓ`` arcus ``ΓΔ``, ``ΔΖ``, à quorum terminis ducantur ad basim ``ΑΒ`` arcus continentes cum ea angulos aequales angulo ad ``Α`` iisdem relativo, sicut arcus ``ΔΕ``, ``ΖΗ``; uti etiam arcus ``ΓΘ``, ``ΔΚ``, ``ΖΛ`` basi ``ΑΒ`` perpendiculares: dico quod si fuerit arcus ``ΑΕ`` aequalis arcui ``ΕΗ``, erit arcus ``ΘΚ`` minor arcu ``ΚΛ``; ac si fuerit arcus ``ΘΚ`` aequalis arcui ``ΚΛ`` major erit arcus ``ΑΕ`` arcu ``ΕΗ``; evenientque caetera modo dicta. Et universim ratio quam habet arcus ``ΑΕ`` ad ``ΕΗ`` major erit ratione arcus ``ΘΚ`` ad ``ΚΛ``.
@@ -31,6 +37,18 @@ Quoniam in duobus triangulis Sphaericis ``ΑΒΓ``, ``ΕΒΔ``, anguli apud punc
 
 .. folio:: halley_1758_menelai_sphaericorum:0119
    :page: 103
+
+.. picture:: 0119.g1.svg
+   :alt: Calibrated vector diagram for folio 0119.g1
+
+.. picture:: 0119.g1.png
+   :alt: Archival scan of folio 0119.g1
+
+.. picture:: 0119.g2.svg
+   :alt: Calibrated vector diagram for folio 0119.g2
+
+.. picture:: 0119.g2.png
+   :alt: Archival scan of folio 0119.g2
 
 arcuum ``ΑΕ``, ``ΘΚ`` major differentia arcuum ``ΕΚ``, ``ΗΛ`` sive arcuum ``ΕΗ``, ``ΛΚ``, in figura prima: in figura secunda, summa arcuum ``ΑΕ``, ``ΘΚ`` major erit summa ipsorum ``ΕΗ``, ``ΚΛ``. In utraque itaque figura arcus ``ΑΕ`` major est quam ``ΕΗ``.
 
@@ -42,5 +60,11 @@ Pari modo ostendi potest quod, si angulus ``Α`` trianguli ``ΑΒΓ`` fuerit obt
 
 .. folio:: halley_1758_menelai_sphaericorum:0120
    :page: 104
+
+.. picture:: 0120.g1.svg
+   :alt: Calibrated vector diagram for folio 0120.g1
+
+.. picture:: 0120.g1.png
+   :alt: Archival scan of folio 0120.g1
 
 *arcus,* ``ΑΟ`` *ipsi* ``ΕΚ`` *aequalis, uti &* ``ΑΡ`` *ipsi* ``ΗΛ``; *& ducantur arcus* ``ΟΜ``, ``ΡΝ``, *constituentes cum basi* ``ΑΒ`` *angulos* ``Μ`` *&* ``Ν`` *angulo* ``Β`` *aequales; & fiat* ``ΠΒ`` *ipsi* ``ΟΜ``, *&* ``ΜΞ`` *ipsi* ``ΡΝ`` *aequalis: erit igitur (per 2m. III. hujus) arcus* ``ΟΜ`` *aequalis arcui* ``ΚΒ`` *in praecedentibus figuris, &* ``ΡΝ`` *arcui* ``ΒΛ``. *Proinde arcus* ``ΘΟ`` *aequalis erit differentiae arcuum* ``ΑΕ``, ``ΘΚ``, *in priore figura; vel summae ipsorum* ``ΑΕ``, ``ΘΚ``, *in secunda: & arcus* ``ΟΡ`` *aequalis erit differentiae vel summae arcuum* ``ΕΗ``, ``ΚΛ``. *Erit etiam arcus* ``ΘΠ`` *aequalis arcui* ``ΘΚ``, *&* ``ΟΞ`` *ipsi* ``ΚΛ``. *Jam, per undecimam praecedentem, ratio arcus* ``ΟΘ`` *ad* ``ΘΠ`` *major est ratione* ``ΟΡ`` *ad* ``ΞΟ``; *hoc est, ratio differentiae vel summae arcuum* ``ΑΕ``, ``ΘΚ`` *ad arcum* ``ΘΚ`` *major est ratione differentiae vel summae arcuum* ``ΕΗ``, ``ΚΛ`` *ad arcum* ``ΚΛ``: *componendo igitur, in casu prioris figurae; vel dividendo, in casu figurae secunda, ratio* ``ΑΕ`` *ad* ``ΘΚ`` *major erit ratione* ``ΕΗ`` *ad* ``ΚΛ``. *Permutando autem ratio* ``ΑΕ`` *ad* ``ΕΗ`` *major erit ratione* ``ΘΚ`` *ad* ``ΚΛ``; *quae quidem ratio (per proxime praecedentem) major est ratione* ``ΓΔ`` *ad* ``ΔΖ``; *ratio igitur* ``ΑΕ`` *ad* ``ΕΗ`` *multo major est ratione* ``ΓΔ`` *ad* ``ΔΖ``. **Q. E. D.**

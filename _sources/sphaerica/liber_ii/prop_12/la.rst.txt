@@ -26,6 +26,12 @@ Sit circulus Sphaerae magnus ``ΑΜΒ``, quem contingat aliquis è circulis para
 .. folio:: halley_1758_menelai_sphaericorum:0094
    :page: 78
 
+.. picture:: 0094.g1.svg
+   :alt: Calibrated vector diagram for folio 0094.g1
+
+.. picture:: 0094.g1.png
+   :alt: Archival scan of folio 0094.g1
+
 tingant eundem circulum parallelum minorem circulo ``ΑΔΕ``, & ad idem latus ad quod inclinat circulus ``ΑΜΒ`` inclinati sint super circulum ``ΓΒ``: dico quod ``ΠΟ`` major est quam ``ΘΣ``, & ``ΧΡ`` quam ``ΞΤ``.
 
 Quoniam angulus ``ΘΒΓ`` minor est recto, angulus vero ``ΘΧΒ`` non minor recto, erit arcus ``ΘΧ`` minor arcu ``ΘΒ``. Cum itaque triangulum ``ΒΘΧ`` habet crus ``ΒΘ`` majus crure ``ΘΧ``, neque ``ΒΘ`` majus est quadrante circuli, nec angulus ``Θ`` major est recto, & ex arcu ``ΒΘ`` abscissi sunt duo arcus aequales ``ΘΚ``, ``ΛΜ``; ducuntur etiam arcus ``ΚΡ``, ``ΛΞ``, ``ΜΤ`` constituentes cum basi ``ΒΓ`` angulos aequales angulo ``ΘΧΒ`` eidem relativo: & erit arcus ``ΧΡ`` (*per 7m II. hujus*) major arcu ``ΞΤ``, & erunt duo arcus ``ΘΧ``, ``ΜΤ`` simul sumpti minores duobus arcubus ``ΚΡ``, ``ΛΞ`` simul sumptis; hoc est, arcus ``ΘΧ``, ``ΧΠ`` simul sumpti minores erunt ipsis ``ΣΧ``, ``ΧΟ`` simul sumptis. Hinc constabit ``ΠΟ`` majorem esse arcu ``ΘΣ``. Angulus autem ``ΒΘΧ`` non major erit recto, uti dictum est, quia in triangulo ``ΒΧΘ`` angulus ad ``Χ`` non minor est recto, latera vero alium ejus angulum, nempe angulum ad ``Θ``, continentia sunt singula minora quadrante circuli. Demonstratum autem est in libro primo Prop. XXI, quod si haec ita se habeant, angulus contentus ``ΒΘΧ`` non major erit recto. **Q. E. D.**

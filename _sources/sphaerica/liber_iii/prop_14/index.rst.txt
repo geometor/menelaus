@@ -23,6 +23,12 @@ Proposition III.14 — Theorem: General Oblique-Ascension Comparisons
    .. folio:: halley_1758_menelai_sphaericorum:0121
       :page: 105
 
+   .. picture:: 0121.g1.svg
+      :alt: Calibrated vector diagram for folio 0121.g1
+
+   .. picture:: 0121.g1.png
+      :alt: Archival scan of folio 0121.g1
+
    *base and the greater side, wherever they be taken, shall be greater than the ratio of the arcs intercepted by those other drawn arcs—provided indeed that in all these ratios the antecedents be those arcs which lie adjacent to the greater side, and the consequents those which are more remote from the same.*
 
 Let :math:`\triangle \mathrm{AB\Gamma}` be a spherical triangle, whose side :math:`\widehat{\mathrm{A\Gamma}}` is greater than side :math:`\widehat{\mathrm{B\Gamma}}`, yet not greater than a quadrant of a circle, and from vertex :math:`\mathrm{\Gamma}` let any arc :math:`\mathrm{\Gamma\Delta}` be drawn to base :math:`\mathrm{AB}`, which is not less than :math:`\widehat{\mathrm{B\Gamma}}`; and on :math:`\mathrm{B\Gamma}` let two arcs :math:`\widehat{\mathrm{\Gamma E}}, \widehat{\mathrm{EZ}}` be taken, and through their extremities let arcs :math:`\mathrm{EH}, \mathrm{Z\Theta}` be drawn to the base containing with it angles equal to angle :math:`\angle \mathrm{A}`; let there also be drawn other arcs :math:`\mathrm{EK}, \mathrm{Z\Lambda}` making with the same base angles equal to the angle at :math:`\mathrm{\Delta}`: I say that the ratio of arc :math:`\widehat{\mathrm{AH}}` to arc :math:`\widehat{\mathrm{H\Theta}}` is greater than the ratio of arc :math:`\widehat{\mathrm{\Delta K}}` to :math:`\widehat{\mathrm{K\Lambda}}`.
@@ -33,6 +39,12 @@ But if the angle at :math:`\mathrm{B}` be not right, let perpendicular arcs :mat
 
 .. folio:: halley_1758_menelai_sphaericorum:0122
    :page: 106
+
+.. picture:: 0122.g1.svg
+   :alt: Calibrated vector diagram for folio 0122.g1
+
+.. picture:: 0122.g1.png
+   :alt: Archival scan of folio 0122.g1
 
 that arc :math:`\widehat{\mathrm{A\Delta}}` has a greater ratio to arc :math:`\widehat{\mathrm{\Delta B}}` than arc :math:`\widehat{\mathrm{HK}}` has to :math:`\widehat{\mathrm{KB}}`, and that this ratio is greater than that which :math:`\widehat{\mathrm{\Theta\Lambda}}` has to :math:`\widehat{\mathrm{\Lambda B}}`.
 

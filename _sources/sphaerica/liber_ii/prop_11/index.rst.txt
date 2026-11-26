@@ -17,6 +17,12 @@ Proposition II.11 — Theorem: Symmetry of Polar Interceptions
 .. folio:: halley_1758_menelai_sphaericorum:0092
    :page: 76
 
+.. picture:: 0092.g1.svg
+   :alt: Calibrated vector diagram for folio 0092.g1
+
+.. picture:: 0092.g1.png
+   :alt: Archival scan of folio 0092.g1
+
 .. admonition:: Enunciation (*Halley 1758, p. 76*)
 
    *Let two great circles on a sphere intersect one another, and on one of them let two arcs be taken equidistant from the point of intersection of those two circles; and through the endpoints of these arcs, and through the poles of either of the circles, let great circles pass: these circles shall cut off equal arcs from the other of the first circles.*

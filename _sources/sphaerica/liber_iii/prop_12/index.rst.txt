@@ -25,6 +25,18 @@ Let :math:`\triangle \mathrm{AB\Gamma}` be a spherical triangle, whose angle :ma
 .. folio:: halley_1758_menelai_sphaericorum:0116
    :page: 100
 
+.. picture:: 0116.g1.svg
+   :alt: Calibrated vector diagram for folio 0116.g1
+
+.. picture:: 0116.g1.png
+   :alt: Archival scan of folio 0116.g1
+
+.. picture:: 0116.g2.svg
+   :alt: Calibrated vector diagram for folio 0116.g2
+
+.. picture:: 0116.g2.png
+   :alt: Archival scan of folio 0116.g2
+
 and on side :math:`\mathrm{B\Gamma}` let two arcs :math:`\widehat{\mathrm{\Gamma\Delta}}, \widehat{\mathrm{Z\Theta}}` be taken, through whose endpoints arcs :math:`\mathrm{\Delta E}, \mathrm{ZH}, \mathrm{\Theta K}` are drawn at right angles upon base :math:`\mathrm{AB}`: I say that if arcs :math:`\widehat{\mathrm{\Gamma\Delta}}, \widehat{\mathrm{Z\Theta}}` be equal, arc :math:`\widehat{\mathrm{AE}}` will be greater than arc :math:`\widehat{\mathrm{HK}}`; and if the two arcs :math:`\widehat{\mathrm{AE}}, \widehat{\mathrm{\Gamma\Delta}}` taken together be equal to the two :math:`\widehat{\mathrm{HK}}, \widehat{\mathrm{Z\Theta}}` taken together, arc :math:`\widehat{\mathrm{\Gamma\Delta}}` will be less than arc :math:`\widehat{\mathrm{Z\Theta}}`: and if the difference of arcs :math:`\widehat{\mathrm{AE}}, \widehat{\mathrm{\Gamma\Delta}}` be equal to the difference between arcs :math:`\widehat{\mathrm{\Theta Z}}, \widehat{\mathrm{KH}}` (taking away the less from the greater), arc :math:`\widehat{\mathrm{\Gamma\Delta}}` will be greater than arc :math:`\widehat{\mathrm{Z\Theta}}`. And universally the ratio which arc :math:`\widehat{\mathrm{AE}}` has to :math:`\widehat{\mathrm{HK}}` will be greater than the ratio of :math:`\widehat{\mathrm{\Gamma\Delta}}` to :math:`\widehat{\mathrm{Z\Theta}}`.
 
 For since arc :math:`\widehat{\mathrm{B\Gamma}}` is less than a quadrant of a circle, and the angle at :math:`\mathrm{B}` is acute, while the angles at :math:`\mathrm{A}, \mathrm{E}, \mathrm{H}, \mathrm{K}` are right; (*by Book III Prop. 5*) as the sine of the sum of arcs :math:`\widehat{\mathrm{AB}}, \widehat{\mathrm{B\Gamma}}` is to the sine of their difference, so is the sine of the sum of arcs :math:`\widehat{\mathrm{\Delta B}}, \widehat{\mathrm{BE}}` to the sine of the difference of arcs :math:`\widehat{\mathrm{\Delta B}}, \widehat{\mathrm{BE}}`; and so the sine of the sum of arcs :math:`\widehat{\mathrm{ZB}}, \widehat{\mathrm{BH}}` to the sine of their difference, and finally so the sine of the sum of arcs :math:`\widehat{\mathrm{\Theta B}}, \widehat{\mathrm{BK}}` to the sine of their difference; and since these things are so, all those relations stated in the premises will come to pass.

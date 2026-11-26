@@ -16,6 +16,12 @@ Proposition III.9 — Concurrency of Spherical Angle Bisectors
 .. folio:: halley_1758_menelai_sphaericorum:0111
    :page: 95
 
+.. picture:: 0111.g1.svg
+   :alt: Calibrated vector diagram for folio 0111.g1
+
+.. picture:: 0111.g1.png
+   :alt: Archival scan of folio 0111.g1
+
 Proposition III.9 — Theorem & Corollary: Spherical Incenter (p. 95)
 -------------------------------------------------------------------
 

@@ -29,6 +29,18 @@ Quoniam enim angulus ``ΑΒΓ`` est rectus, angulus vero ``ΑΒΔ`` aequalis ang
 .. folio:: halley_1758_menelai_sphaericorum:0110
    :page: 94
 
+.. picture:: 0110.g1.svg
+   :alt: Calibrated vector diagram for folio 0110.g1
+
+.. picture:: 0110.g1.png
+   :alt: Archival scan of folio 0110.g1
+
+.. picture:: 0110.g2.svg
+   :alt: Calibrated vector diagram for folio 0110.g2
+
+.. picture:: 0110.g2.png
+   :alt: Archival scan of folio 0110.g2
+
 Ponatur jam sinum arcus ``ΓΕ`` esse ad sinum arcus ``ΕΑ`` sicut sinus arcus ``ΓΔ`` ad sinum arcus ``ΔΑ``, & simul angulum ``ΕΒΑ`` aequalem esse angulo ``ΑΒΔ``: dico angulum ``ΑΒΓ`` rectum esse. Nam cum arcus ``ΒΑ`` dividat angulum ``ΕΒΔ`` bifariam, erit (*per 6tam III*) sinus arcus ``ΒΕ`` ad sinum arcus ``ΒΔ`` ut sinus arcus ``ΕΑ`` ad sinum arcus ``ΑΔ``, hoc est ut sinus arcus ``ΓΕ`` ad sinum arcus ``ΓΔ``: quare arcus ``ΒΓ`` dividit angulum qui deinceps est angulo ``ΕΒΔ`` bifariam; unde duo anguli qui ad ``Β`` simul sumpti aequales sunt duobus rectis, & angulus ``ΑΒΓ`` est rectus. **Q. E. D.**
 
 Ponatur rursus sinum arcus ``ΓΕ`` esse ad sinum arcus ``ΕΑ`` sicut sinus arcus ``ΓΔ`` ad sinum arcus ``ΔΑ``, angulo ``ΑΒΓ`` existente recto: dico angulum ``ΕΒΑ`` aequalem esse angulo ``ΑΒΔ``. Eodem enim modo constabit arcum ``ΒΑ`` bisecare angulum ``ΕΒΔ``. **Q. E. D.**

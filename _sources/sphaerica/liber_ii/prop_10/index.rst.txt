@@ -16,6 +16,12 @@ Proposition II.10 — Universal Theorem Superseding Theodosius III
 .. folio:: halley_1758_menelai_sphaericorum:0091
    :page: 75
 
+.. picture:: 0091.g1.svg
+   :alt: Calibrated vector diagram for folio 0091.g1
+
+.. picture:: 0091.g1.png
+   :alt: Archival scan of folio 0091.g1
+
 Menelaus's Programmatic Critique of Theodosius (p. 75)
 ------------------------------------------------------
 

@@ -23,6 +23,12 @@ Proposition I.10 — Theorem: Semicircle Exterior-Angle Criterion
 .. folio:: halley_1758_menelai_sphaericorum:0026
    :page: 10
 
+.. picture:: 0026.g1.svg
+   :alt: Calibrated vector diagram for folio 0026.g1
+
+.. picture:: 0026.g1.png
+   :alt: Archival scan of folio 0026.g1
+
 Let :math:`\triangle \mathrm{AB\Gamma}` be a spherical triangle, and let its two sides :math:`\widehat{\mathrm{AB}}, \widehat{\mathrm{B\Gamma}}` taken together be equal to a semicircle, and let arc :math:`\mathrm{A\Gamma}` be produced: I say that the exterior angle :math:`\angle \mathrm{B\Gamma\Delta}` is equal to the interior angle :math:`\angle \mathrm{A}` opposite to it. And if the two arcs :math:`\widehat{\mathrm{AB}}, \widehat{\mathrm{B\Gamma}}` be less than a semicircle, angle :math:`\angle \mathrm{B\Gamma\Delta}` shall be greater than angle :math:`\angle \mathrm{A}`. But if arcs :math:`\widehat{\mathrm{AB}}, \widehat{\mathrm{B\Gamma}}` be greater than a semicircle, angle :math:`\angle \mathrm{B\Gamma\Delta}` shall be less than angle :math:`\angle \mathrm{A}`.
 
 Produce arc :math:`\mathrm{AB}` to meet arc :math:`\mathrm{A\Gamma}`, which let it meet at :math:`\mathrm{\Delta}`. Now since arcs :math:`\widehat{\mathrm{AB}}, \widehat{\mathrm{B\Gamma}}` are equal to a semicircle, and the two arcs :math:`\widehat{\mathrm{AB}}, \widehat{\mathrm{B\Delta}}` are also equal to a semicircle, arc :math:`\widehat{\mathrm{B\Delta}}` will be equal to arc :math:`\widehat{\mathrm{B\Gamma}}`, and (*by Proposition I.2*) angle :math:`\angle \mathrm{B\Gamma\Delta}` will be equal to angle :math:`\angle \mathrm{B\Delta\Gamma}`. But angle :math:`\angle \mathrm{B\Delta\Gamma}` is equal to angle :math:`\angle \mathrm{A}`; wherefore angle :math:`\angle \mathrm{B\Gamma\Delta}` is equal to angle :math:`\angle \mathrm{A}`.
