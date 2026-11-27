@@ -44,24 +44,3 @@ Sections & Propositions
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   prop_01/index
-   scholion/index
-   lemma_01/index
-   lemma_02/index
-   ptolemy_i_13/index
-   prop_02/index
-   prop_03/index
-   prop_06/index
-   prop_08/index
-   prop_09/index
-   prop_10/index
-   prop_11/index
-   prop_12/index
-   prop_13/index
-   prop_14/index
-   prop_15/index
