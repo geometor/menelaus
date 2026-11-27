@@ -37,18 +37,3 @@ Sections & Propositions
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   praefatio/index
-   definitiones/index
-   prop_01/index
-   prop_04/index
-   prop_05/index
-   prop_08/index
-   prop_09/index
-   prop_10/index
-   prop_11/index
-   prop_17/index

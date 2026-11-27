@@ -40,13 +40,3 @@ Sections & Propositions
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   prop_01/index
-   prop_10/index
-   prop_11/index
-   prop_12/index
-   prop_13/index
